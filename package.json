@@ -6,15 +6,18 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": "echo tests not implemented yet"
+    "test": "echo tests not implemented yet",
+    "validate": "node ./scripts/validate-data.js"
   },
   "dependencies": {
+    "ajv": "^8.11.0",
     "core-js": "^3.6.5",
     "d3-array": "^3.0.1",
     "d3-brush": "^3.0.0",
     "d3-scale": "^4.0.0",
     "d3-selection": "^3.0.0",
     "element-plus": "^1.0.2-beta.55",
+    "fast-glob": "^3.2.11",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"
   },
