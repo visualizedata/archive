@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test": "echo tests not implemented yet",
+    "format": "prettier --write ./src/**/*.{js,json,vue}",
+    "lint": "eslint src/**/*.{js,vue}",
+    "test": "jest",
     "validate": "node ./scripts/validate-data.js"
   },
   "dependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/preset-env": "^7.17.10",
     "ajv": "^8.11.0",
     "core-js": "^3.6.5",
     "d3-array": "^3.0.1",
@@ -18,7 +22,9 @@
     "d3-selection": "^3.0.0",
     "element-plus": "^1.0.2-beta.55",
     "fast-glob": "^3.2.11",
+    "prettier": "^2.6.2",
     "vue": "^3.0.0",
+    "vue-eslint-parser": "^8.3.0",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
@@ -28,8 +34,9 @@
     "@vue/cli-service": "^4.5.13",
     "@vue/compiler-sfc": "^3.1.5",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint": "^8.15.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.7.1"
   },
   "eslintConfig": {
     "root": true,

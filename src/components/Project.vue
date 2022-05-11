@@ -62,7 +62,7 @@
 
 <script>
 export default {
-  name: "Project",
+  name: 'Project',
   props: {
     name: String,
     title: String,
@@ -81,22 +81,10 @@ export default {
   data() {
     return {
       observer: null,
-    };
+    }
   },
-  mounted() {
-    const { image, $el } = this;
-
-    this.observer = new IntersectionObserver(([entry]) => {
-      const img = $el.querySelector("img");
-
-      if (entry.isIntersecting) {
-        img.src = require(`@/assets/images/${image}`);        
-        this.observer.disconnect();
-      }
-    });
-    this.observer.observe($el);
-  },
-};
+  mounted() {},
+}
 </script>
 
 <style scoped>
@@ -137,7 +125,7 @@ export default {
 }
 
 .project-header__title {
-  font-family: "neue-regular";
+  font-family: 'neue-regular';
   margin: 4px 0px;
   font-size: 0.8em;
   white-space: nowrap;
@@ -147,7 +135,7 @@ export default {
 }
 
 .project-header__name {
-  font-family: "neue-display-wide";
+  font-family: 'neue-display-wide';
   font-size: 1em;
   white-space: nowrap;
 }
@@ -156,7 +144,7 @@ export default {
 }
 
 .project-header__year {
-  font-family: "neue-regular";
+  font-family: 'neue-regular';
   font-size: 14px;
 }
 
@@ -207,7 +195,7 @@ img.link-icon:hover {
   margin-top: 4px;
 }
 .project-header__hover-section__tags .tag {
-  font-family: "neue-regular";
+  font-family: 'neue-regular';
   margin: 2px;
 }
 

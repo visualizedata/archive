@@ -1,49 +1,114 @@
-# How to contribute updates to this repository
+<img src="./.github/assets/tns.png" width="50" height="50"/>
 
-It is recommended to follow the best practices detailed in the MS Data Visualization GitHub workflow document found at https://github.com/visualizedata/github-workflow
+# MSDV Archive
 
----
+<a href="http://newschool.edu"><img src="https://img.shields.io/badge/made%20at-The%20New%20School-E82E21.svg" height="20px"/></a> <img src="https://img.shields.io/badge/npm-16.15.0-informational.svg" height="20px"/>
 
-Please be mindful of keeping your project links active. Please submit a pull request with your new project URL if you relocate your work to a different domain name or hosting provider.
+This repository archives projects made by students of the MS Data Visualization program at Parsons School of Design.
 
----
+> ⚠️ Please submit a pull request with your new project URL if you relocate your work to a different domain name or hosting provider.
 
-### WIP/wishlist
+# Getting Started
 
-- [ ] add filter query to URL via router
-- [ ] performance improvements (e.g. remove unused fonts, lazy load components)
-- [ ] look into ways to reduce bundle size?
-- [ ] dependabot alert - upgrade vue-cli to remove `glob-parent` vulnerability
-- [ ] a11y audit
-- [ ] make filters a sticky header on scroll
-- [ ] show number of projects in each tag in dropdown
-- [ ] show scroll on project details when project overview is displayed rather than on hover
-- [ ] add a close button to project details on mobile
+## Prerequisites
 
+You will need access to the following command line tools.
 
-### Data
+Required:
 
-Project data is stored in `@/src/projects.json`. It is imported into the `Body` component.
+- **Node.js (v16.15.0)**
+  [https://nodejs.org/](https://nodejs.org/)
+- **Yarn**
+  [https://yarnpkg.com/](https://yarnpkg.com/)
+
+Optional:
+
+- A Node.js version manager like [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm)
+
+## Yarn Commands
+
+This repository uses `yarn` to run commands. These commands are defined inside of the `package.json` file.
+
+```sh
+# Example:
+# yarn [command]
+yarn dev
+```
+
+| command  | description                                                      | why is this helpful                                                                      |
+| :------- | :--------------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
+| dev      | starts development server                                        | gives us a live preview of our site that we can view in the browser                      |
+| format   | runs prettier to format files according to .pretterrc.yml config | keeps code style consistent and reduces the number of line changes between Pull Requests |
+| lint     | runs eslint to check for code errors and bugs                    | helps catch errors like typos before we build the site                                   |
+| test     | runs jest to execute unit tests to check components              | checks that recent changes don't change how our components function                      |
+| validate | validates that all JSON files in /data follow the correct schema | ensures that there aren't any unknown or missing properties in our JSON                  |
+| build    | builds static deployment assets                                  | compiles framework specific files (like .vue) to browser compatible javascript           |
+
+## GitHub Actions
+
+This repository is set up to use GitHub Actions to check the status of commits made and to deploy the project to GitHub Pages. Each workflow is defined in a separate Yaml file in `.github/workflows/`
+
+| workflow | description                                                                                                    |
+| :------- | :------------------------------------------------------------------------------------------------------------- |
+| test     | runs formatter, linter, and ensures that build process do not throw any errors                                 |
+| validate | checks that all JSON files in /data folder use the correct schema and don't have unknown or missing properties |
+| deploy   | builds web assets and pushes automatically to github pages branch                                              |
+
+## Data
+
+Project data is stored in `./data/projects.json`. The file follows the schema defined in `./data/schema.json` which follows a [JSON Schema](https://json-schema.org/) specification.
 
 The projects array follows this template:
 
-```
-        {
-            "description": "Project description",
-            "image": "static/preview-YEAR/<STUDENT NAME>.png",
-            "name": "Student Name",
-            "portfolio": "<PORTFOLIO LINK>",
-            "repo": "<PROJECT REPO>",
-            "subtitle": "Project intro text",
-            "tags": ["#data", "#technology"],
-            "title": "Project title",
-            "url": "<PROJECT LINK>",
-            "video": "<VIDEO LINK>",
-            "year": YYYY
-        },
+```json
+{
+   "description": "Project description",
+   "image": "static/preview-YEAR/<STUDENT NAME>.png",
+   "name": "Student Name",
+   "portfolio": "<PORTFOLIO LINK>",
+   "repo": "<PROJECT REPO>",
+   "subtitle": "Project intro text",
+   "tags": ["#data", "#technology"],
+   "title": "Project title",
+   "url": "<PROJECT LINK>",
+   "video": "<VIDEO LINK>",
+   "year": YYYY
+}
 ```
 
+The `validate` GitHub workflow will run anytime a commit is made (including pull requests). You can also validate before pushing code by running
+
+```sh
+yarn validate
+```
+
+## Local Development
+
+### Starting a local development server
+
+1. Make sure you have the right version of Node.js
+   ```sh
+   node --version
+   # v.16.15.1
+   ```
+2. Install dependencies
+   ```sh
+   yarn install
+   ```
+3. Start development server
+   ```sh
+   yarn dev
+   ```
+
+## Deploying
+
+Unbundled code (i.e., what you should use as a starting point) is in the `main` branch. The `gh-pages` branch, which is served to http://visualizedata.github.io/thesis (redirects to https://parsons.nyc/thesis), is a deployed version of the `dist` folder generated by running `yarn build`. This process happens whenever a push is made to the `main` branch.
+
 ---
+
+# How to contribute updates to this repository
+
+It is recommended to follow the best practices detailed in the MS Data Visualization GitHub workflow document found at https://github.com/visualizedata/github-workflow
 
 ### Workflow for contributing to MS Data Visualization repositories
 
@@ -69,48 +134,18 @@ The projects array follows this template:
    - Synced the fork main with the latest version of the upstream main (#3).
    - Merged the fork main to the fork branch and resolved any merge conflicts (#4).
 
-### Deploying
-
-Unbundled code (i.e., what you should use as a starting point) is in the `main` branch. The `gh-pages` branch, which is served to http://visualizedata.github.io/thesis (redirects to https://parsons.nyc/thesis), is a deployed version of the `dist` folder generated by running `npm run build`/`yarn build`. To redeploy code on `gh-pages`, follow instructions at https://cli.vuejs.org/guide/deployment.html#github-pages from the `main` branch.
-
 ### Tips
 
 Use [GitHub issues](https://guides.github.com/features/issues/) to log problems and communicate.
 
 Sometimes, you mess up and need to go back to a previous commit. [Use `revert`](https://www.atlassian.com/git/tutorials/undoing-changes/git-checkout). Do not use `reset`! Here's a helpful [Stack Overflow answer](http://stackoverflow.com/questions/4114095/how-to-revert-git-repository-to-a-previous-commit).
 
-### Helpful resources
+---
 
+# Helpful resources
+
+- [Vue Documentation](https://vuejs.org/guide/introduction.html)
+- [Understanding JSON Schema](https://json-schema.org/understanding-json-schema/)
 - [Introduction to GitHub Flow](https://guides.github.com/introduction/flow/)
 - [GitHub Help: Collaborating on projects using issues and pull requests](https://help.github.com/categories/collaborating-on-projects-using-issues-and-pull-requests/)
 - [GitHub Guides: contributing to open source](https://guides.github.com/activities/contributing-to-open-source/)
-
-# Vue CLI
-
-## Project setup
-
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-
-```
-yarn build
-```
-
-### Lints and fixes files
-
-```
-yarn lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).

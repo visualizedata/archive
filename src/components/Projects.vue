@@ -24,24 +24,24 @@
         <!-- previously: videoStudent is absolute path, so <source :src="videoStudent" type="video/mp4" /> -->
         <!-- if videos are hosted locally, we need src="require(`@/assets/media/${videoStudent}`)"  -->
         <!-- Temporary: use requireVideoUrl() to return a video url depending on the scenarios above -->
-         <source :src="requireVideoUrl()" type="video/mp4" />
+        <source :src="requireVideoUrl()" type="video/mp4" />
       </video>
     </div>
   </div>
 </template>
 
 <script>
-import Project from "@/components/Project.vue";
+import Project from '@/components/Project.vue'
 
 export default {
-  name: "Projects",
+  name: 'Projects',
   components: {
     Project,
   },
   data() {
     return {
       videoStudent: null,
-    };
+    }
   },
   props: {
     height: Number,
@@ -51,19 +51,18 @@ export default {
   },
   methods: {
     setVideoStudent(student) {
-      this.videoStudent = student;
+      this.videoStudent = student
     },
-    
-    requireVideoUrl(){
-     if (this.videoStudent !== null){
-        return this.videoStudent.includes('http') ? this.videoStudent : require(`@/assets/media/${this.videoStudent}`)
-     }
-      
-     else return ""
-    }
-  },
 
-};
+    requireVideoUrl() {
+      if (this.videoStudent !== null) {
+        return this.videoStudent.includes('http')
+          ? this.videoStudent
+          : require(`@/assets/media/${this.videoStudent}`)
+      } else return ''
+    },
+  },
+}
 </script>
 
 <style scoped>

@@ -8,12 +8,12 @@
 
 <script>
 // @ is an alias to /src
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
-import Body from "@/components/Body.vue";
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+import Body from '@/components/Body.vue'
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     Header,
     Footer,
@@ -23,20 +23,20 @@ export default {
     return {
       height: 0,
       width: 0,
-    };
+    }
   },
   mounted() {
-    window.addEventListener("resize", this.onResize);
-    this.onResize();
+    window.addEventListener('resize', this.onResize)
+    this.onResize()
   },
   unmounted() {
-    window.removeEventListener("resize", this.onResize);
+    window.removeEventListener('resize', this.onResize)
   },
   methods: {
     onResize() {
-      this.height = window.innerHeight;
-      this.width = window.innerWidth;
+      this.height = window.innerHeight
+      this.width = window.innerWidth
     },
   },
-};
+}
 </script>

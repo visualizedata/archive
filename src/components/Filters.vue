@@ -78,11 +78,11 @@
 </template>
 
 <script>
-const FILTER_HEIGHT = 40;
-import BarFilter from "./BarFilter.vue";
+const FILTER_HEIGHT = 40
+import BarFilter from './BarFilter.vue'
 
 export default {
-  name: "Filters",
+  name: 'Filters',
   components: {
     BarFilter,
   },
@@ -96,47 +96,49 @@ export default {
   data() {
     return {
       filterHeight: FILTER_HEIGHT,
-    };
+    }
   },
   computed: {
     sortTooltipContent() {
-      if (this.paramSort.selected === "name") {
-        return this.paramSort.asc ? "click to sort Z-A" : "click to sort A-Z";
-      }
-      if (this.paramSort.selected === "year") {
+      if (this.paramSort.selected === 'name') {
         return this.paramSort.asc
-          ? "click to sort newest first"
-          : "click to sort oldest first";
+          ? 'click to sort Z-A'
+          : 'click to sort A-Z'
       }
-      return "";
+      if (this.paramSort.selected === 'year') {
+        return this.paramSort.asc
+          ? 'click to sort newest first'
+          : 'click to sort oldest first'
+      }
+      return ''
     },
     filterTag() {
-      return this.filters.TAG;
+      return this.filters.TAG
     },
     filterSearch() {
-      return this.filters.SEARCH;
+      return this.filters.SEARCH
     },
     filterYear() {
-      return this.filters.YEAR;
+      return this.filters.YEAR
     },
     paramSort() {
-      return this.params.SORT;
+      return this.params.SORT
     },
     sortIcon() {
       if (this.paramSort.asc) {
-        return "el-icon-sort-down";
+        return 'el-icon-sort-down'
       }
-      return "el-icon-sort-up";
+      return 'el-icon-sort-up'
     },
   },
-};
+}
 </script>
 
 <style scoped>
 .filters {
   width: 80%;
   margin: 0px 10% 20px 10%;
-  font-family: "neue-regular";
+  font-family: 'neue-regular';
 }
 .filters .el-row {
   display: flex;

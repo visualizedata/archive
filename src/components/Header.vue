@@ -12,9 +12,7 @@
         >
           Data Visualization
         </a>
-        <div class="title-thesis">
-          Thesis Projects And Research
-        </div>
+        <div class="title-thesis">Thesis Projects And Research</div>
       </div>
     </div>
     <div class="header-row">
@@ -30,8 +28,8 @@
 
 <script>
 export default {
-  name: "Header",
-};
+  name: 'Header',
+}
 </script>
 
 <style scoped>
@@ -56,13 +54,13 @@ export default {
 }
 
 .title-tns {
-  font-family: "neue-display-random";
+  font-family: 'neue-display-random';
   font-size: 1.5em;
   line-height: 1em;
 }
 
 .title-dv {
-  font-family: "neue-display-random";
+  font-family: 'neue-display-random';
   font-size: 2.5em;
   color: #e82e21;
   text-decoration: none;
@@ -71,7 +69,7 @@ export default {
 }
 
 .title-thesis {
-  font-family: "neue-display-random";
+  font-family: 'neue-display-random';
   font-size: 1em;
   color: black;
   text-align: left;
@@ -79,7 +77,7 @@ export default {
 }
 
 .body-description {
-  font-family: "neue-regular";
+  font-family: 'neue-regular';
   font-size: 1.5em;
   font-weight: 700;
   color: black;

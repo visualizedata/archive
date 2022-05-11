@@ -38,16 +38,16 @@
 </template>
 
 <script>
-import { select } from "d3-selection";
-import { scaleLinear, scaleBand } from "d3-scale";
-import { max, bisectCenter } from "d3-array";
-import { brushX } from "d3-brush";
+import { select } from 'd3-selection'
+import { scaleLinear, scaleBand } from 'd3-scale'
+import { max, bisectCenter } from 'd3-array'
+import { brushX } from 'd3-brush'
 export default {
-  name: "BarFilter",
+  name: 'BarFilter',
   data() {
     return {
       width: 250,
-    };
+    }
   },
   props: {
     yearData: Object,
@@ -60,59 +60,62 @@ export default {
       return scaleBand()
         .domain(this.yearData.all.map((d) => d[0]))
         .range([0, this.width])
-        .paddingInner(0.1);
+        .paddingInner(0.1)
     },
     yScale() {
       return scaleLinear()
         .domain([0, max(this.yearData.all, (d) => d[1])])
-        .range([0, this.filterHeight]);
+        .range([0, this.filterHeight])
     },
     brush() {
-      return brushX().on("end", this.brushed);
+      return brushX().on('end', this.brushed)
     },
   },
   mounted() {
-    select(this.$refs.yearBrush).call(this.brush);
+    select(this.$refs.yearBrush).call(this.brush)
   },
   methods: {
     brushed({ selection, sourceEvent }) {
       if (!sourceEvent) {
-        return;
+        return
       }
-      const domain = this.xScale.domain();
-      const fullRange = [...domain.map(this.xScale), this.xScale.range()[1]];
+      const domain = this.xScale.domain()
+      const fullRange = [
+        ...domain.map(this.xScale),
+        this.xScale.range()[1],
+      ]
       if (selection && selection.length) {
         const newSelection = [
           domain[bisectCenter(fullRange, selection[0])],
           domain[bisectCenter(fullRange, selection[1]) - 1], // correct for index
-        ];
-        this.onYearChange(newSelection);
+        ]
+        this.onYearChange(newSelection)
         select(this.$refs.yearBrush).call(
           this.brush.move,
           [newSelection[0], newSelection[1] + 1].map(this.xScale) // correct for brush stopping at left of bar
-        );
+        )
       } else if (
         this.selectedYear[0] === domain[0] ||
         this.selectedYear[1] === domain[1]
       ) {
         // if selection is full domain (ie no filter applied), click selects one bar
-        const target = sourceEvent.layerX - this.xScale.bandwidth() / 2; // target bar's horizontal center
+        const target = sourceEvent.layerX - this.xScale.bandwidth() / 2 // target bar's horizontal center
         const newSelection = [
           domain[bisectCenter(fullRange, target)],
           domain[bisectCenter(fullRange, target)],
-        ];
-        this.onYearChange(newSelection);
+        ]
+        this.onYearChange(newSelection)
         select(this.$refs.yearBrush).call(
           this.brush.move,
           [newSelection[0], newSelection[1] + 1].map(this.xScale) // correct for brush stopping at left of bar
-        );
+        )
       } else {
         // otherwise, reset to full domain
-        this.onYearChange([domain[0], domain[domain.length - 1]]);
+        this.onYearChange([domain[0], domain[domain.length - 1]])
       }
     },
   },
-};
+}
 </script>
 
 <style>

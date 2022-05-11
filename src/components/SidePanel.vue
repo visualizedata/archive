@@ -4,16 +4,16 @@
 
 <script>
 export default {
-  name: "SidePanel",
+  name: 'SidePanel',
   props: {
     isEnabled: Boolean,
   },
   data() {
     return {
       isOpen: false,
-    };
+    }
   },
-};
+}
 </script>
 
 <style></style>
