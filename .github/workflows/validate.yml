@@ -1,13 +1,14 @@
-# ------------------------------------------------
 # validate json workflow
-# ------------------------------------------------
 name: Validate JSON
 
 # ------------------------------------------------
 # this workflow will run
-# • anytime a commit is made
+# • anytime a commit is made to a JSON file
 # ------------------------------------------------
-on: push
+on:
+  push:
+    paths:
+      - ./data/**/*.json
 
 jobs:
   validate:
@@ -15,7 +16,7 @@ jobs:
     # workflow runs on an ubuntu image
     # --------------------------------------------
     runs-on: ubuntu-latest
-    
+
     # --------------------------------------------
     # define the steps we want to run
     # --------------------------------------------
@@ -39,7 +40,7 @@ jobs:
       - name: Setup node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "${{ steps.nvm.outputs.NVMRC }}"
+          node-version: '${{ steps.nvm.outputs.NVMRC }}'
 
       # ------------------------------------------
       # find yarn cache location
@@ -52,7 +53,7 @@ jobs:
       # set up yarn cache
       # ------------------------------------------
       - uses: actions/cache@v1
-        id: yarn-cache 
+        id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
