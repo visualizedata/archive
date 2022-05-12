@@ -29,9 +29,9 @@ import { rollup, ascending, descending } from 'd3-array'
 import projects from '@/projects.json'
 import { FILTERS, PARAMS } from '../constants'
 
-import Projects from '@/components/Projects'
-import SidePanel from '@/components/SidePanel'
-import Filters from '@/components/Filters'
+import Projects from '@/components/Projects.vue'
+import SidePanel from '@/components/SidePanel.vue'
+import Filters from '@/components/Filters.vue'
 
 export default {
   name: 'Body',
