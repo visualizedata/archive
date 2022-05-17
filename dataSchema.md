@@ -50,11 +50,11 @@ for metadata.json
 
 Following is a checklist of all the data files to be processed. Some files needs to be manually adjust. So the instructions are also included here.
 
+All the json files can be found at [src/archive-json-wip](https://github.com/visualizedata/archive/tree/testing/src/archive-json-wip)
 
 
 ### Thesis Data
 
-[updated thesis json](https://github.com/JessieJessJe/archive-data/blob/main/thesis_all.json)
 
 - [x] before 2022
 - [x] 2022
@@ -74,32 +74,35 @@ Following is a checklist of all the data files to be processed. Some files needs
 
 #### Collection
 
-- [ ] undp 2015 [currently working on](https://parsons.nyc/undp/)
+- [x] smithsonian ms1-2021
+  - [x] modify name: Gisli Gudjonsson -> G\u00edsli Gudj\u00f3nsson
+  - [ ] 1 typo: `decription` in data.json
+  
+- [x] smithsonian ms1-2020
+  - [x] modify name: Soonk Paik -> Seungyu Paik
 
-- [ ] undp 2016 `repo?`
+- [x] met ms1-2019
+  - [x] modify name: Antonie C. Dreyer -> Antonie Dreyer
+  
+- [x] met ms1-2018
 
-- [ ] undp 2017 `repo?`
-- [x] met [ms1-2018](https://github.com/JessieJessJe/archive-data/blob/main/ms1_2018.json)
-- [x] met [ms1-2019](https://github.com/JessieJessJe/archive-data/blob/main/ms1_2019.json)
-  - [ ] modify name: Antonie C. Dreyer
-  - [ ] missing: Xingyang Cai
-- [x] smithsonian [ms1-2020](https://github.com/JessieJessJe/archive-data/blob/main/ms1_2020.json)
-  - [ ] modify name: Soonk Paik
-- [x] smithsonian [ms1-2021](https://github.com/JessieJessJe/archive-data/blob/main/ms1_2021.json)
-  - [ ] modify name: Baihan Lin, Gisli Gudjonsson
-  - [ ] 1 typo: `decription`
+- [ ] undp 2018
+
+- [ ] undp 2017 
+
+- [ ] undp 2016
+
+- [ ] undp 2015
 
 
 # Next Step
 
 	
-* What's the value of `image_url` -- aka the path of the image assets? currently there are two scenarios:
-
-  * preview.png from each author's repo (absolute path)
-  * directly hosted from repo (relative path)
+* move images to the location [src/assets/images](https://github.com/visualizedata/archive/tree/testing/src/assets/images) and update `image_url` accordingly
  
 * Process `undp` data
 
-* Manual adjustments 
+* Update `metadata.json` 
 
-* Any changes on metadata.json
+* Manual adjustments if needed
+
