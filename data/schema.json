@@ -8,12 +8,14 @@
       "title",
       "subtitle",
       "description",
+      "student_url",
       "project_url",
       "project_repo",
       "category",
       "tags",
       "year",
-      "image_url"
+      "image",
+      "video"
     ],
     "properties": {
       "author": {
@@ -47,16 +49,25 @@
         }
       },
       "tags": {
-        "type": "array"
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
       },
       "year": {
         "type": "integer"
       },
-      "image_url": {
-        "type": "string"
+      "image": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
       },
       "video": {
-        "type": "string"
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
       }
     }
   }

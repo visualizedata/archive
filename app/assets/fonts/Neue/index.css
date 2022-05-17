@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'neue-regular';
+  src: url('./Neue-Regular.eot') format('embedded-opentype');
+  src: url('./Neue-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./Neue-Regular.woff') format('woff'),
+    url('./Neue-Regular.otf') format('opentype'),
+    url('./Neue-Regular.ttf') format('truetype'),
+    url('./Neue-Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'neue-regular-italic';
+  src: url('./Neue-RegularItalic.eot') format('embedded-opentype');
+  src: url('./Neue-RegularItalic.eot?#iefix') format('embedded-opentype'),
+    url('./Neue-RegularItalic.woff') format('woff'),
+    url('./Neue-RegularItalic.otf') format('opentype'),
+    url('./Neue-RegularItalic.ttf') format('truetype'),
+    url('./Neue-RegularItalic.svg') format('svg');
+}

@@ -1,0 +1,12 @@
+@import 'element-plus/dist/index.css';
+@import '@fontsource/inter/latin.css';
+@import './fonts/Neue/index.css';
+@import './fonts/NeueDisplay/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply font-sans;
+}

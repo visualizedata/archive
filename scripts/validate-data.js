@@ -11,12 +11,17 @@ const ROOT_DIR = path.resolve(__dirname, '..')
 const UTF_8 = { encoding: 'utf-8' }
 
 async function main() {
+  // generate list of files
   const files = await listFiles()
 
+  // validate files and return results
   const results = await validateFiles(files)
 
-  const success = results.checks.every((check) => check.ok)
+  // check that each entry has a status prop set to "pass"
+  const success = results.checks.every((check) => check.status === 'pass')
 
+  // if successful, print results
+  // otherwise, print error
   if (success) {
     sendSuccess(JSON.stringify(results, null, 2))
   } else {
@@ -43,14 +48,15 @@ async function listFiles() {
     ignore: ['**/schema.json'],
   })
 
-  console.log(files)
+  console.log('Found the following files:')
+  console.log(files.join('\n'))
 
   return files
 }
 
 async function validateFiles(files) {
   /**
-   * @type {{ checks: Array<{ file: string; ok: boolean; err?: string[] }> }}
+   * @type {{ checks: Array<{ file: string; status: "pass" | "fail"; err?: string[] }> }}
    */
   const results = {
     checks: [],
@@ -62,7 +68,7 @@ async function validateFiles(files) {
 
     let check = {
       filepath,
-      ok: false,
+      status: 'fail',
       err: [],
     }
 
@@ -71,7 +77,7 @@ async function validateFiles(files) {
       const json = JSON.parse(contents)
       const isValid = await validate(json)
 
-      check.ok = isValid
+      check.status = isValid ? 'pass' : 'fail'
     } catch (e) {
       check.err.push(JSON.stringify(e, null, 2))
     }
