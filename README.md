@@ -89,7 +89,7 @@ yarn validate
 1. Make sure you have the right version of Node.js
    ```sh
    node --version
-   # v.16.15.1
+   # v16.15.0
    ```
 2. Install dependencies
    ```sh
