@@ -2,6 +2,8 @@
   <div>
     <div>
       <router-link to="/">Back</router-link>
+
+      Keynote Page
     </div>
 
     <div v-if="project">

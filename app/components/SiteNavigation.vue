@@ -16,9 +16,6 @@
 <script setup>
 import TNSLogo from '@/assets/logos/tns-logo.svg'
 import { ref } from 'vue'
-import { useKeynotes } from '@/store/keynotes'
-
-const keynotes = useKeynotes()
 
 const activeIndex = ref('1')
 const activeIndex2 = ref('1')
