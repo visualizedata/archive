@@ -1,4 +1,13 @@
 ### Node ###
+# yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 # DS Store
 .DS_Store
 */.DS_Store
@@ -75,7 +84,6 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
-.yarn
 
 # dotenv environment variables file
 .env

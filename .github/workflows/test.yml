@@ -55,6 +55,12 @@ jobs:
         run: npm install -g yarn
 
       # ------------------------------------------
+      # set yarn version
+      # ------------------------------------------
+      - name: Set yarn version
+        run: yarn set version stable
+
+      # ------------------------------------------
       # find yarn cache location
       # ------------------------------------------
       - name: Get yarn cache directory path
