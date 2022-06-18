@@ -12,15 +12,9 @@ on:
   push:
     branches:
       - 'in-progress'
-    paths:
-      - '**.vue'
-      - '**.js'
   pull_request:
     branches:
       - 'main'
-    paths:
-      - '**.vue'
-      - '**.js'
 
 jobs:
   test:
@@ -55,6 +49,12 @@ jobs:
           node-version: '${{ steps.nvm.outputs.NVMRC }}'
 
       # ------------------------------------------
+      # setup yarn
+      # ------------------------------------------
+      - name: Setup yarn
+        run: npm install -g yarn
+
+      # ------------------------------------------
       # find yarn cache location
       # ------------------------------------------
       - name: Get yarn cache directory path
@@ -71,12 +71,6 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-
-      # ------------------------------------------
-      # setup yarn
-      # ------------------------------------------
-      - name: Setup yarn
-        run: npm install -g yarn
 
       # ------------------------------------------
       # install dependencies
