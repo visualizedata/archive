@@ -1,10 +1,47 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "required": ["year", "title"],
+  "required": [],
+  "additionalProperties": false,
   "properties": {
     "year": {
       "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "pattern": "(^(http|https)|^$)"
+    },
+    "students": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "video_source_url": {
+      "type": "string",
+      "pattern": "(^(http|https)|^$)"
+    },
+    "video_embed_html": {
+      "type": "string",
+      "pattern": "(^(http|https)|^$)"
     }
   }
 }

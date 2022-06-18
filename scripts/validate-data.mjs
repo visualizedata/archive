@@ -176,7 +176,9 @@ async function validateFiles(files, schema) {
     }
 
     if (validate.errors) {
-      const messages = validate.errors.map((err) => err.message)
+      const messages = validate.errors.map((err) => {
+        return `${err.instancePath} - ${err.message}`
+      })
       check.err.push(...messages)
     }
 

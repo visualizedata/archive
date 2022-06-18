@@ -101,11 +101,19 @@ yarn validate
    node --version
    # v16.15.0
    ```
-2. Install dependencies
+2. Make sure you have the right version of Node.js
+   ```sh
+   yarn --version
+   # 3.2.1
+
+   # if version does not match, execute the following
+   yarn set version 3.2.1
+   ```
+3. Install dependencies
    ```sh
    yarn install
    ```
-3. Start development server
+4. Start development server
    ```sh
    yarn dev
    ```

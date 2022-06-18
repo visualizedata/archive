@@ -34,13 +34,16 @@
         "type": "string"
       },
       "student_url": {
-        "type": "string"
+        "type": "string",
+        "pattern": "(^(http|https)|^$)"
       },
       "project_url": {
-        "type": "string"
+        "type": "string",
+        "pattern": "(^(http|https)|^$)"
       },
       "project_repo": {
-        "type": "string"
+        "type": "string",
+        "pattern": "(^(http|https)|^$)"
       },
       "category": {
         "type": "array",

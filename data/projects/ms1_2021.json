@@ -130,7 +130,7 @@
     "title": "Project Title: How We Gaze",
     "subtitle": "Project Title: How We Gaze",
     "description": "How We Gaze is a meta-gallery that shows how individuals gaze at pieces of artwork. The gazes hosted in the gallery are crowd-sourced - individuals are invited to view pieces of artwork, and see their gaze visualized in real-time. Each gaze is visualized as an animation, as well as a blurred out aggregate image that represents a participants\u2019 viewing session.How We Gaze works best on Google Chrome on Desktop, and is currently not optimized for mobile.",
-    "student_url": " ",
+    "student_url": "",
     "project_url": "https://omarnema.com/parsons-studio-1/qual/gaze-study-svelte/public/",
     "project_repo": "",
     "category": ["ms1"],
