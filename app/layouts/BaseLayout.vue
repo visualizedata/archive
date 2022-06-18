@@ -1,24 +1,33 @@
 <template>
-  <SiteNavigation />
-  <div class="base-layout--wrapper">
-    <SiteHeader />
-    <main><slot /></main>
-    <SiteFooter />
+  <div class="base-layout">
+    <SiteNavigation />
+    <div class="base-layout--content">
+      <div class="base-layout--main">
+        <slot />
+      </div>
+      <SiteFooter />
+    </div>
   </div>
 </template>
 
 <script setup>
-import SiteHeader from '@/components/SiteHeader.vue'
-import SiteFooter from '@/components/SiteFooter.vue'
-import SiteNavigation from '@/components/SiteNavigation.vue'
+import SiteFooter from '@/components/layout/SiteFooter.vue'
+import SiteNavigation from '@/components/layout/SiteNavigation.vue'
 </script>
 
 <style scoped>
-.base-layout--wrapper {
-  @apply flex flex-col mx-auto min-h-screen max-w-screen-xl py-8 px-6;
+.base-layout {
+  @apply flex flex-col fixed inset-0 overflow-auto min-h-screen;
+}
+.base-layout--content {
+  @apply flex flex-col flex-grow overflow-auto;
 
   main {
     @apply flex-grow;
   }
+}
+
+.base-layout--main {
+  @apply flex flex-col flex-grow mx-auto py-8 px-6 w-full;
 }
 </style>

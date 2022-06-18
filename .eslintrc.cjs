@@ -4,7 +4,7 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: ['plugin:vue/recommended'],
+  extends: ['eslint:recommended', 'plugin:vue/recommended'],
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: '@babel/eslint-parser',
@@ -196,7 +196,7 @@ module.exports = {
     'vue/require-valid-default-prop': 'error',
     'vue/return-in-computed-property': 'error',
     'vue/return-in-emits-validator': 'error',
-    'vue/script-indent': 'error',
+    'vue/script-indent': 'off',
     'vue/singleline-html-element-content-newline': 'off',
     'vue/sort-keys': 'off',
     'vue/space-in-parens': 'error',

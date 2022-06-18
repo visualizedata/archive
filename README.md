@@ -6,7 +6,7 @@
 
 This repository archives projects made by students of the MS Data Visualization program at Parsons School of Design.
 
-> ⚠️ Please submit a pull request with your new project URL if you relocate your work to a different domain name or hosting provider.
+> **Note**: Please submit a pull request with your new project URL if you relocate your work to a different domain name or hosting provider.
 
 # Getting Started
 
@@ -18,12 +18,20 @@ Required:
 
 - **Node.js (v16.15.0)**
   [https://nodejs.org/](https://nodejs.org/)
-- **Yarn**
+- **Yarn (v3.2.1)**
   [https://yarnpkg.com/](https://yarnpkg.com/)
 
 Optional:
 
 - A Node.js version manager like [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm)
+
+## Development Decisions
+
+* Vite is a build-tool, similar to webpack, which provides a development server and bundles the final project assets. Vite 
+
+> **Warning**: This project uses ESM. Use `.mjs` extension instead of `.js`. If CommonJS is needed, use `.cjs`. Do not remove `"type": "module"` from `package.json`
+
+* By design, Node.js will default to using CommonJS modules. This project uses ESM (or ECMAScript modules) which is consistent with the build. Node.js will run correctly with ESM providing the following: your file extension ends in `.mjs` and you have `"type": "module"` set in `package.json`
 
 ## Yarn Commands
 
@@ -144,8 +152,16 @@ Sometimes, you mess up and need to go back to a previous commit. [Use `revert`](
 
 # Helpful resources
 
+Node.js
+- [ESM Modules](https://nodejs.org/api/esm.html#modules-ecmascript-modules)
+
+Vue
 - [Vue Documentation](https://vuejs.org/guide/introduction.html)
+
+JSON Schema
 - [Understanding JSON Schema](https://json-schema.org/understanding-json-schema/)
+
+GitHub
 - [Introduction to GitHub Flow](https://guides.github.com/introduction/flow/)
 - [GitHub Help: Collaborating on projects using issues and pull requests](https://help.github.com/categories/collaborating-on-projects-using-issues-and-pull-requests/)
 - [GitHub Guides: contributing to open source](https://guides.github.com/activities/contributing-to-open-source/)

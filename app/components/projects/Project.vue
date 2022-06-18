@@ -67,10 +67,10 @@ export default {
       type: String,
       default: '',
     },
-    // image: {
-    //   type: String,
-    //   default: '',
-    // },
+    image: {
+      type: Array,
+      default: () => [],
+    },
     repo: {
       type: String,
       default: '',

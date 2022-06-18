@@ -2,28 +2,35 @@
   "name": "thesis",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 3.2.1"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "format": "prettier --write ./app/**/*.{js,json,vue} ./data/**/*.json",
-    "lint": "eslint src/**/*.{js,vue}",
+    "format": "prettier --write ./app/**/*.{js,cjs,mjs,json,vue} ./data/**/*.json ./scripts/*.mjs",
+    "lint": "eslint {app,scripts}/*.{js,mjs,vue}",
     "test": "jest",
-    "validate": "node ./scripts/validate-data.js"
+    "validate": "node ./scripts/validate-data.mjs"
   },
   "dependencies": {
-    "@babel/core": "^7.17.10",
+    "@babel/core": "^7.18.5",
     "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "^7.17.10",
     "@fontsource/inter": "^4.5.10",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@testing-library/vue": "^6.4.2",
-    "@types/jest": "^27.5.0",
+    "@types/jest": "^28.1.2",
     "@vitejs/plugin-legacy": "^1.8.2",
     "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/shared": "^3.2.37",
     "@vue/vue3-jest": "^27.0.0",
     "ajv": "^8.11.0",
     "autoprefixer": "^10.4.7",
     "babel-jest": "^28.1.0",
+    "chalk": "^5.0.1",
     "core-js": "^3.22.5",
     "d3-array": "^3.1.6",
     "d3-brush": "^3.0.0",
@@ -33,7 +40,7 @@
     "fast-glob": "^3.2.11",
     "fuse.js": "^6.6.2",
     "jest": "^28.1.0",
-    "jest-environment-jsdom": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.1",
     "pinia": "^2.0.14",
     "postcss": "^8.4.13",
     "postcss-import": "^14.1.0",
@@ -52,29 +59,15 @@
     "@vue/cli-plugin-router": "^5.0.4",
     "@vue/cli-service": "^5.0.4",
     "@vue/compiler-sfc": "^3.2.33",
-    "babel-eslint": "^10.1.0",
     "eslint": "^8.15.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.7.1",
     "vite-svg-loader": "^3.3.0"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "packageManager": "yarn@3.2.1"
 }

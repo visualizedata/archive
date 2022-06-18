@@ -1,41 +1,56 @@
 <template>
-  <div>
+  <MaxWidth>
+    <SiteHeader />
     <div>
-      <router-link to="/">Back</router-link>
-
-      Keynote Page
-    </div>
-
-    <div v-if="project">
-      <h1>{{ project.title }}</h1>
-      <h2>{{ project.subtitle }}</h2>
-      <h3>{{ project.author.join(', ') }}</h3>
-
-      <img :src="project.image" />
-
-      <p>
-        {{ project.description }}
-      </p>
-
-      <div>
-        <div v-for="tag in project.tags" :key="tag">#{{ tag }}</div>
+      <div class="keynote-info">
+        <h1>{{ page.title }}</h1>
+        <h2>{{ parsedDate(page.date) }}</h2>
       </div>
 
-      <template v-if="project.video.length > 0">
-        <video :src="project.video" controls />
+      <!-- eslint-disable-next-line vue/no-v-html -->
+      <div class="video-wrapper" v-html="page.video_embed_html" />
+
+      <div class="keynote-description">
+        <p>{{ page.description }}</p>
+      </div>
+
+      <template v-if="page.students.length > 0">
+        <div class="keynote-students">
+          <h2>Students</h2>
+          <ul>
+            <li v-for="student in page.students" :key="student">
+              {{ student }}
+            </li>
+          </ul>
+        </div>
       </template>
     </div>
-  </div>
+  </MaxWidth>
 </template>
 
 <script setup>
+import SiteHeader from '@/components/layout/SiteHeader.vue'
+import MaxWidth from '@/components/common/MaxWidth.vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { useProjects } from '../store/projects'
+import { useKeynotes } from '../store/keynotes'
 const route = useRoute()
-const projects = useProjects()
+const keynotes = useKeynotes()
 
-const slug = route.params.slug
-const project = projects.findBySlug(slug)
+// parameters defined in @/router/index.js
+const selectedYear = computed(() => route.params.year)
+
+const page = computed(() =>
+  selectedYear.value ? keynotes.getByYear(selectedYear.value) : undefined
+)
+
+const parsedDate = (str) => {
+  if (str.length < 1) {
+    return ''
+  }
+  const d = new Date(str)
+  return d.toLocaleDateString('en-US', { dateStyle: 'long' })
+}
 </script>
 
 <style scoped>
@@ -44,7 +59,7 @@ h1 {
 }
 
 h2 {
-  @apply text-xl font-neue-regular;
+  @apply text-xl font-neue-regular font-bold;
 }
 
 h3 {
@@ -53,5 +68,36 @@ h3 {
 
 p {
   @apply leading-normal max-w-prose text-justify;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  padding-bottom: calc(9 / 16 * 100%);
+
+  &::v-deep(video),
+  &::v-deep(iframe),
+  &::v-deep(embed) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.keynote-info {
+  @apply p-6;
+}
+
+.keynote-students {
+  @apply max-w-2xl p-6;
+
+  ul {
+    @apply flex flex-wrap gap-4 pt-2;
+
+    li {
+      @apply block font-medium;
+    }
+  }
 }
 </style>

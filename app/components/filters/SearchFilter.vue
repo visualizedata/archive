@@ -1,8 +1,9 @@
 <template>
   <div class="filter search-filter">
+    <span>Search</span>
     <el-input
       v-model="inputValue"
-      placeholder="Search name, title, or description"
+      placeholder="Type name, title, or description"
       clearable
     />
   </div>
@@ -18,7 +19,7 @@ const router = useRouter()
 const filters = useFilters()
 
 const inputValue = ref('')
-const query = computed(() => filters.searchQuery)
+const query = computed(() => filters.searchQuery || '')
 
 const updateQuery = (q) => {
   const parsedQuery = q.length > 0 ? q : undefined

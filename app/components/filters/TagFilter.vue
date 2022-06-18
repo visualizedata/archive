@@ -1,33 +1,37 @@
 <template>
   <div class="filter search-filter">
-    <el-select
-      v-model="selectedTags"
-      placeholder="Select Tags"
-      multiple
-      clearable
-      @change="onTagChange"
-    >
-      <el-option
-        v-for="([tag, count], index) in tagOptions"
-        :key="tag + count + index"
-        :value="tag"
+    <span>Tags</span>
+    <div class="flex">
+      <el-select
+        v-model="selectedTags"
+        class="flex-grow"
+        placeholder="Select Tags"
+        multiple
+        clearable
+        @change="onTagChange"
       >
-        {{ tag }}
-        <span
-          :style="{
-            fontSize: '0.7rem',
-            opacity: 0.5,
-          }"
+        <el-option
+          v-for="([tag, count], index) in tagOptions"
+          :key="tag + count + index"
+          :value="tag"
         >
-          ({{ count }})
-        </span>
-      </el-option>
-    </el-select>
+          {{ tag }}
+          <span
+            :style="{
+              fontSize: '0.7rem',
+              opacity: 0.5,
+            }"
+          >
+            ({{ count }})
+          </span>
+        </el-option>
+      </el-select>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, watch, computed } from 'vue'
+import { computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useFilters } from '@/store/filters'
 
@@ -35,7 +39,7 @@ const router = useRouter()
 const route = useRoute()
 const filters = useFilters()
 
-const selectedTags = computed(() => filters.activeTags)
+const selectedTags = computed(() => filters.activeTags || [])
 
 const tagOptions = Object.entries(filters.tags).sort((a, b) => {
   const a_count = a[1]

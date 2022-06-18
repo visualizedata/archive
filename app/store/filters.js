@@ -1,6 +1,6 @@
-import { entries } from 'lodash'
 import { defineStore } from 'pinia'
-import { useProjects } from './projects'
+
+import allProjects from './_allProjects.js'
 
 const createMetadata = (projects) => {
   const tags = {},
@@ -45,10 +45,7 @@ const createMetadata = (projects) => {
  */
 export const useFilters = defineStore('filters', {
   state: () => {
-    const projectStore = useProjects()
-    const { tags, categories, years } = createMetadata(
-      projectStore.projects
-    )
+    const { tags, categories, years } = createMetadata(allProjects())
     return {
       // search
       searchQuery: null,

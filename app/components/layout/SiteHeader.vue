@@ -1,28 +1,20 @@
 <template>
   <div class="header">
     <div class="header-row header-row-border-bottom">
-      <a class="title-tns" href="https://newschool.edu">The New School</a>
+      <span class="title-tns">The New School</span>
     </div>
 
     <div class="header-row">
       <div class="section-border-top" />
       <div>
-        <a
-          class="title-dv"
-          href="http://www.newschool.edu/parsons/ms-data-visualization/"
-        >
-          Data Visualization
-        </a>
+        <span class="title-dv"> Data Visualization </span>
         <div class="title-thesis">Thesis Projects And Research</div>
       </div>
     </div>
 
-    <div class="header-row">
+    <div v-if="$props.description" class="header-row">
       <div class="body-description">
-        This interdisciplinary graduate program brings together design,
-        statistics, and computer science, developing critical abilities and
-        facility for innovation in work settings in which data increasingly
-        shapes opinion, policy, and decision-making.
+        {{ $props.description }}
       </div>
     </div>
   </div>
@@ -62,7 +54,7 @@ export default {
 }
 
 .title-dv {
-  @apply font-neue-display-random text-tns-red;
+  @apply font-neue-display-random text-tns-red leading-none pt-2 pb-2;
   font-size: 2.5em;
   text-decoration: none;
   display: flex;
@@ -78,8 +70,7 @@ export default {
 }
 
 .body-description {
-  @apply font-neue-regular;
-
+  @apply font-neue-regular flex-grow;
   font-size: 1.5em;
   font-weight: 500;
   color: black;

@@ -1,6 +1,7 @@
 /* eslint-env node */
+import lineClampPlugin from '@tailwindcss/line-clamp'
 
-module.exports = {
+export default {
   content: ['./app/**/*.{vue,js}'],
   theme: {
     fontFamily: {
@@ -18,10 +19,15 @@ module.exports = {
         'background': 'var(--background, #FFF)',
         'text': 'var(--text, #000)',
       },
+      background: {
+        'tns-red': '#E82E21',
+        'background': 'var(--background, #FFF)',
+        'text': 'var(--text, #000)',
+      },
       width: {
         container: '90rem',
       },
     },
   },
-  plugins: [require('@tailwindcss/line-clamp')],
+  plugins: [lineClampPlugin],
 }

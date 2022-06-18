@@ -1,6 +1,7 @@
+/* eslint-env jest */
 ///<reference types="@types/jest"/>
-const { defineComponent } = require('vue')
-const { render, fireEvent } = require('@testing-library/vue')
+import { defineComponent } from 'vue'
+import { render, fireEvent } from '@testing-library/vue'
 
 /*------------------------------------------------
   This file demonstrates how to create a test 

@@ -1,0 +1,35 @@
+{
+  "year": 2020,
+  "title": "2020 Keynote",
+  "department": "MS Data Visualization",
+  "description": "",
+
+  "location": "Online",
+  "date": "",
+  "time": "",
+  "url": "",
+
+  "students": [
+    "Marisa Asari",
+    "Robin Coenen",
+    "Mio Akasako",
+    "Saloni Naishad Shah",
+    "Michael Desai",
+    "Dan Ran",
+    "Amanda Anderson-You",
+    "Yiran Ni",
+    "Nour Zein",
+    "Zui Chen",
+    "Neil Oliver",
+    "Lulu Tanenbaum",
+    "Antonie Dreyer",
+    "Janice Yamanaka-Lew",
+    "Brad MacDonald",
+    "John Outwater",
+    "Caitlyn Ralph",
+    "Daniel Grunenbaum",
+    "Xingwei Huang"
+  ],
+  "vide_source_url": "https://www.youtube.com/watch?v=Q97Bl3aiECs",
+  "video_embed_html": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Q97Bl3aiECs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+}
