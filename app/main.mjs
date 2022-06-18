@@ -1,12 +1,12 @@
-import { createApp } from 'vue'
+import { createApp, defineAsyncComponent } from 'vue'
 import { createPinia } from 'pinia'
 import ElementPlus from 'element-plus'
 import router from './router'
-import App from './App.vue'
 
 import '@/assets/global.css'
 
-const app = createApp(App)
+const RootApp = defineAsyncComponent(() => import('./App.vue'))
+const app = createApp(RootApp)
 const pinia = createPinia()
 
 // attach pinia

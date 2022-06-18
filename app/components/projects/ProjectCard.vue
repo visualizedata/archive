@@ -88,6 +88,37 @@ const a11yNavigateToProject = (event) => {
 // -----------------------------------------------
 const imagecontainer = ref()
 
+const importImage = async (src) => {
+  // dynamic imports require a file extension
+  const extension = src.split('.').pop()
+  const path = src.replaceAll(`.${extension}`, '')
+  switch (extension) {
+    case 'jpg': {
+      return await import(`../../assets/images/${path}.jpg`).then(
+        (m) => m.default
+      )
+    }
+    case 'jpeg': {
+      return await import(`../../assets/images/${path}.jpeg`).then(
+        (m) => m.default
+      )
+    }
+    case 'png': {
+      return await import(`../../assets/images/${path}.png`).then(
+        (m) => m.default
+      )
+    }
+    case 'gif': {
+      return await import(`../../assets/images/${path}.gif`).then(
+        (m) => m.default
+      )
+    }
+    default: {
+      throw new Error('invalid image extensions')
+    }
+  }
+}
+
 const onVisible = (entries, observer) => {
   entries.forEach(async (entry) => {
     const img = entry.target
@@ -98,13 +129,13 @@ const onVisible = (entries, observer) => {
     if (isVisible && !hasLoaded) {
       try {
         // try importing image from url and bind to src attribute
-        const data = await import(`../../assets/images/${props.imageUrl}`)
-        img.src = data.default
+        const data = await importImage(props.imageUrl)
+        img.src = data
         img.style.background = ''
       } catch (e) {
         // if an error is thrown when importing image, import fallback
         img.src = await import(
-          `../../assets/__placeholders__/image_not_found.png`
+          `../../assets/images/__placeholders__/image_not_found.png`
         )
         img.style.background = 'red'
       } finally {

@@ -60,7 +60,8 @@
       "image": {
         "type": "array",
         "items": {
-          "type": "string"
+          "type": "string",
+          "pattern": ".*.(jpg|jpeg|gif|png)$"
         }
       },
       "video": {

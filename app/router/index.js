@@ -1,15 +1,11 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Index from '../views/Index.vue'
-import Project from '../views/Project.vue'
-import Keynote from '../views/Keynote.vue'
-import Error404 from '../views/Error404.vue'
 
 import { useFilters } from '@/store/filters'
 
 const routes = [
   {
     path: '/',
-    component: Index,
+    component: () => import('../views/Index.vue'),
     children: [
       // Redirect project base root to homepage
       {
@@ -19,7 +15,7 @@ const routes = [
       // project route
       {
         path: '/project/:slug',
-        component: Project,
+        component: () => import('../views/Project.vue'),
       },
     ],
   },
@@ -31,12 +27,12 @@ const routes = [
   // keynote route
   {
     path: '/keynote/:year',
-    component: Keynote,
+    component: () => import('../views/Keynote.vue'),
   },
   // Error Page
   {
     path: '/error',
-    component: Error404,
+    component: () => import('../views/Error404.vue'),
   },
   // Redirect routes with no matches to error page
   {
@@ -88,7 +84,6 @@ const updateParams = (query) => {
 }
 
 router.beforeEach((to) => {
-  console.log('update params')
   updateParams(to.query)
 })
 

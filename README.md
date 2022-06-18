@@ -35,6 +35,8 @@ Optional:
 
 ## Yarn Commands
 
+> **Warning**: Make sure you are using the correct version of yarn. Run the following command in your terminal: `yarn set version 3.2.1`
+
 This repository uses `yarn` to run commands. These commands are defined inside of the `package.json` file.
 
 ```sh

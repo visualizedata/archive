@@ -15,8 +15,21 @@
 </template>
 
 <script setup>
-import SiteHeader from '@/components/layout/SiteHeader.vue'
-import ProjectFilters from '@/components/projects/ProjectFilters.vue'
-import ProjectsDisplay from '@/components/projects/ProjectsDisplay.vue'
-import MaxWidth from '../components/common/MaxWidth.vue'
+import { defineAsyncComponent } from 'vue'
+
+const SiteHeader = defineAsyncComponent(() =>
+  import('@/components/layout/SiteHeader.vue')
+)
+
+const ProjectFilters = defineAsyncComponent(() =>
+  import('@/components/projects/ProjectFilters.vue')
+)
+
+const ProjectsDisplay = defineAsyncComponent(() =>
+  import('@/components/projects/ProjectsDisplay.vue')
+)
+
+const MaxWidth = defineAsyncComponent(() =>
+  import('@/components/common/MaxWidth.vue')
+)
 </script>

@@ -27,8 +27,6 @@ export const useProjects = defineStore('projects', {
       // filter by tags and years prior to running fuse
       let projects = state.projects
 
-      console.log({ searchQuery, activeTags, activeYears })
-
       if (!filterStore) {
         return []
       }
