@@ -1,0 +1,28 @@
+{
+  "year": 2022,
+  "title": "2022 Keynote",
+  "department": "MS Data Visualization",
+  "description": "",
+
+  "location": "Online",
+  "date": "2022-05-18",
+  "time": "5:00PM",
+  "url": "",
+
+  "students": [
+    "Molly Cook",
+    "Juliet Craig",
+    "Gísli Gudjónsson",
+    "Jiahui(Jessie) Han",
+    "Yann Kerblat",
+    "Yoana Kosturska",
+    "Baihan Lin",
+    "Wenqin Lu",
+    "Shea Molloy",
+    "Omar Nema",
+    "Jeremy Odell",
+    "Kasey Zhuravlev"
+  ],
+  "video_source_url": "https://vimeo.com/705791086",
+  "video_embed_html": "<iframe src=\"https://player.vimeo.com/video/705791086?h=cecead9c7e&title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "author",
+      "title",
+      "subtitle",
+      "description",
+      "student_url",
+      "project_url",
+      "project_repo",
+      "category",
+      "tags",
+      "year",
+      "image",
+      "video"
+    ],
+    "properties": {
+      "author": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "title": {
+        "type": "string"
+      },
+      "subtitle": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "student_url": {
+        "type": "string",
+        "pattern": "(^(http|https)|^$)"
+      },
+      "project_url": {
+        "type": "string",
+        "pattern": "(^(http|https)|^$)"
+      },
+      "project_repo": {
+        "type": "string",
+        "pattern": "(^(http|https)|^$)"
+      },
+      "category": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "year": {
+        "type": "integer"
+      },
+      "image": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": ".*.(jpg|jpeg|gif|png)$"
+        }
+      },
+      "video": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

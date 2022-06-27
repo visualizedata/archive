@@ -1,0 +1,4 @@
+printWidth: 75
+semi: false
+singleQuote: true
+quoteProps: 'consistent'

@@ -1,0 +1,115 @@
+--- # ------------------------------------------------
+# ------------------------------------------------
+# deploy workflow
+name: Deploy
+
+# ------------------------------------------------
+# this workflow will run
+# • anytime a commit is pushed to the main branch
+# ------------------------------------------------
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  deploy:
+    # --------------------------------------------
+    # workflow runs on an ubuntu image
+    # --------------------------------------------
+    runs-on: ubuntu-latest
+
+    # --------------------------------------------
+    # define the steps we want to run
+    # --------------------------------------------
+    steps:
+      # ------------------------------------------
+      # check out files tracked by git
+      # ------------------------------------------
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # ------------------------------------------
+      # find node version
+      # ------------------------------------------
+      - name: Determine node version
+        run: test -f .nvmrc && echo ::set-output name=NVMRC::$(cat .nvmrc)
+        id: nvm
+
+      # ------------------------------------------
+      # setup node env
+      # ------------------------------------------
+      - name: Setup node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '${{ steps.nvm.outputs.NVMRC }}'
+
+      # ------------------------------------------
+      # setup yarn
+      # ------------------------------------------
+      - name: Setup yarn
+        run: npm install -g yarn
+
+      # ------------------------------------------
+      # set yarn version
+      # ------------------------------------------
+      - name: Set yarn version
+        run: yarn set version stable
+
+      # ------------------------------------------
+      # find yarn cache location
+      # ------------------------------------------
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      # ------------------------------------------
+      # set up yarn cache
+      # ------------------------------------------
+      - uses: actions/cache@v1
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      # ------------------------------------------
+      # install dependencies
+      # ------------------------------------------
+      - name: Install dependencies
+        run: yarn install
+
+      # ------------------------------------------
+      # check formatting
+      # ------------------------------------------
+      - name: Run formatter
+        run: yarn format
+
+      # ------------------------------------------
+      # check linting
+      # ------------------------------------------
+      - name: Run linter
+        run: yarn lint
+
+      # ------------------------------------------
+      # run unit tests
+      # ------------------------------------------
+      - name: Run unit tests
+        run: yarn test
+
+      # ------------------------------------------
+      # build assets
+      # ------------------------------------------
+      - name: Build assets
+        run: yarn build
+
+      # ------------------------------------------
+      # deploy: this step pushes our dist folder
+      # to github pages
+      # ------------------------------------------
+      - name: Deploy to github pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: ./dist
