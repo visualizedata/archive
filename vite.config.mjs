@@ -40,6 +40,7 @@ const svgConfig = {
 
 export default defineConfig({
   root: path.resolve(__dirname, 'app'),
+  base: "./",
   css: {
     postcss: postcssConfig,
   },
