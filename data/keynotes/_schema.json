@@ -40,8 +40,7 @@
       "pattern": "(^(http|https)|^$)"
     },
     "video_embed_html": {
-      "type": "string",
-      "pattern": "(^(http|https)|^$)"
+      "type": "string"
     }
   }
 }
