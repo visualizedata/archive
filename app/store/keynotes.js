@@ -29,7 +29,12 @@ export const useKeynotes = defineStore('keynotes', {
     paths: (state) => {
       return Object.keys(state.keynotes)
         .sort((a, b) => {
-          return a.toLowerCase() - b.toLowerCase() ? 1 : -1
+          const x = a.toUpperCase()
+          const y = b.toUpperCase()
+
+          if (x > y) return -1
+          if (x < y) return 1
+          return 0
         })
         .map((slug) => ({
           path: `/keynote/${slug}`,

@@ -5,6 +5,13 @@ import Fuse from 'fuse.js'
 
 import allProjects from './_allProjects.js'
 
+const sortProjects = (arr) => {
+  return [...arr].sort((a, b) => {
+    // sort by title, then by year
+    return a.title.localeCompare(b.title) && b.year > a.year ? 1 : -1
+  })
+}
+
 /**
  * useProjects
  * @description this is our pinia state slice for `projects`
@@ -64,10 +71,10 @@ export const useProjects = defineStore('projects', {
 
         const results = fuse.search(searchQuery)
 
-        return results.map((result) => result.item)
+        projects = results.map((result) => result.item)
       }
 
-      return projects
+      return sortProjects(projects)
     },
   },
 })

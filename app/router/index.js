@@ -49,18 +49,29 @@ const router = createRouter({
   },
 })
 
+/**
+ *
+ * @param {Array<unknown>} arr
+ * @returns {Array<unknown>}
+ */
+const removeDuplicates = (arr) => {
+  return [...new Set(arr)]
+}
+
 const cleanStrArr = (arr) => {
   if (!arr) {
     return []
   }
-  return arr.split('|').filter((tag) => tag.length > 0) || []
+  return removeDuplicates(
+    arr.split('|').filter((tag) => tag.length > 0) || []
+  )
 }
 
 const cleanNumArr = (arr) => {
   if (!arr) {
     return []
   }
-  return (
+  return removeDuplicates(
     arr
       .split('|')
       .map((tag) => parseInt(tag))

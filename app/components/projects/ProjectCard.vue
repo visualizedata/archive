@@ -92,26 +92,19 @@ const importImage = async (src) => {
   // dynamic imports require a file extension
   const extension = src.split('.').pop()
   const path = src.replaceAll(`.${extension}`, '')
+
   switch (extension) {
     case 'jpg': {
-      return await import(`../../assets/images/${path}.jpg`).then(
-        (m) => m.default
-      )
+      return new URL(`../../assets/images/${path}.jpg`, import.meta.url)
     }
     case 'jpeg': {
-      return await import(`../../assets/images/${path}.jpeg`).then(
-        (m) => m.default
-      )
+      return new URL(`../../assets/images/${path}.jpeg`, import.meta.url)
     }
     case 'png': {
-      return await import(`../../assets/images/${path}.png`).then(
-        (m) => m.default
-      )
+      return new URL(`../../assets/images/${path}.png`, import.meta.url)
     }
     case 'gif': {
-      return await import(`../../assets/images/${path}.gif`).then(
-        (m) => m.default
-      )
+      return new URL(`../../assets/images/${path}.gif`, import.meta.url)
     }
     default: {
       throw new Error('invalid image extensions')
@@ -130,13 +123,14 @@ const onVisible = (entries, observer) => {
       try {
         // try importing image from url and bind to src attribute
         const data = await importImage(props.imageUrl)
-        img.src = data
+        img.src = data.href
         img.style.background = ''
       } catch (e) {
         // if an error is thrown when importing image, import fallback
-        img.src = await import(
-          `../../assets/images/__placeholders__/image_not_found.png`
-        )
+        img.src = new URL(
+          `../../assets/images/__placeholders__/image_not_found.png`,
+          import.meta.url
+        ).href
         img.style.background = 'red'
       } finally {
         // after previous blocks, set opacity to 1 and set status to loaded
@@ -160,7 +154,7 @@ onMounted(() => {
 })
 </script>
 
-<style scoped>
+<style scoped lang="postcss">
 .project-card {
   @apply border flex flex-col;
 }
