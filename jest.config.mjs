@@ -7,8 +7,8 @@ const config = {
     '<rootDir>/pages/**/*.vue',
   ],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
-    '^~/(.*)$': '<rootDir>/src/$1',
+    '^@/(.*)$': '<rootDir>/app/$1',
+    '^~/(.*)$': '<rootDir>/app/$1',
     '^vue$': 'vue',
   },
   moduleFileExtensions: ['js', 'mjs', 'vue', 'json'],
