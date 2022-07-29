@@ -21,6 +21,7 @@ const config = {
     '^.+\\.(mjs|js)$': 'babel-jest',
     '.*\\.(vue)$': '@vue/vue3-jest',
   },
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.mjs'],
 }
 
 export default config

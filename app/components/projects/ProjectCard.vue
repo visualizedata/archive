@@ -7,7 +7,7 @@
     @keypress="a11yNavigateToProject"
   >
     <div class="project-image">
-      <img :id="imageUrl" :src="importImg(imageUrl)" />
+      <img :id="imageUrl" :src="importImg(imageUrl)" aria-hidden="true" />
     </div>
     <div class="project-details">
       <h1>{{ title }}</h1>
