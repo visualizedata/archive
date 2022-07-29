@@ -33,7 +33,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-import { useFilters } from '@/store/filters'
+import { useFilters } from '@/store/filters.mjs'
 
 const router = useRouter()
 const route = useRoute()

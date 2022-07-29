@@ -112,7 +112,7 @@
 
 <script setup>
 import { useRoute, useRouter } from 'vue-router'
-import { useProjects } from '../store/projects'
+import { useProjects } from '../store/projects.mjs'
 
 import CloseIcon from '@/assets/icons/close.svg'
 

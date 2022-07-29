@@ -12,7 +12,7 @@
 <script setup>
 import { ref, watch, computed, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-import { useFilters } from '@/store/filters.js'
+import { useFilters } from '@/store/filters.mjs'
 
 const route = useRoute()
 const router = useRouter()

@@ -7,8 +7,8 @@ const config = {
     '<rootDir>/pages/**/*.vue',
   ],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
-    '^~/(.*)$': '<rootDir>/src/$1',
+    '^@/(.*)$': '<rootDir>/app/$1',
+    '^~/(.*)$': '<rootDir>/app/$1',
     '^vue$': 'vue',
   },
   moduleFileExtensions: ['js', 'mjs', 'vue', 'json'],
@@ -18,9 +18,10 @@ const config = {
   },
   testMatch: ['./**/*.test.(mjs|js)'],
   transform: {
-    '^.+\\.(mjs|js)$': 'babel-jest',
+    '.*\\.(mjs|js)$': ['babel-jest', { configFile: './.babelrc' }],
     '.*\\.(vue)$': '@vue/vue3-jest',
   },
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.mjs'],
 }
 
 export default config

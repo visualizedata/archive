@@ -7,7 +7,7 @@
     @keypress="a11yNavigateToProject"
   >
     <div class="project-image">
-      <img :id="imageUrl" ref="imagecontainer" />
+      <img :id="imageUrl" :src="importImg(imageUrl)" aria-hidden="true" />
     </div>
     <div class="project-details">
       <h1>{{ title }}</h1>
@@ -18,8 +18,9 @@
 </template>
 
 <script setup>
-import { defineProps, onMounted, ref } from 'vue'
+import { defineProps } from 'vue'
 import { useRouter } from 'vue-router'
+// import { importImage } from '~/utils/importImage.mjs'
 import ProjectTags from './ProjectTags.vue'
 
 const props = defineProps({
@@ -83,75 +84,55 @@ const a11yNavigateToProject = (event) => {
   }
 }
 
+const importImg = (src) => {
+  return new URL(`../../assets/images/${src}`, import.meta.url).href
+}
+
 // -----------------------------------------------
 // LAZY LOAD COVER IMAGES
 // -----------------------------------------------
-const imagecontainer = ref()
+// const imagecontainer = ref()
 
-const importImage = async (src) => {
-  // dynamic imports require a file extension
-  const extension = src.split('.').pop()
-  const path = src.replaceAll(`.${extension}`, '')
+// const onVisible = (entries, observer) => {
+//   entries.forEach(async (entry) => {
+//     const img = entry.target
+//     const isVisible = entry.intersectionRatio > 0.9
+//     const hasLoaded = img.getAttribute('data-status') === 'loaded'
 
-  switch (extension) {
-    case 'jpg': {
-      return new URL(`../../assets/images/${path}.jpg`, import.meta.url)
-    }
-    case 'jpeg': {
-      return new URL(`../../assets/images/${path}.jpeg`, import.meta.url)
-    }
-    case 'png': {
-      return new URL(`../../assets/images/${path}.png`, import.meta.url)
-    }
-    case 'gif': {
-      return new URL(`../../assets/images/${path}.gif`, import.meta.url)
-    }
-    default: {
-      throw new Error('invalid image extensions')
-    }
-  }
-}
+//     // if image is visible and we have not yet attached an image
+//     if (isVisible && !hasLoaded) {
+//       try {
+//         // try importing image from url and bind to src attribute
+//         const href = await importImage(props.imageUrl)
+//         img.src = href
+//         img.style.background = ''
+//       } catch (e) {
+//         // if an error is thrown when importing image, import fallback
+//         const href = await importImage(
+//           `__placeholders__/image_not_found.png`
+//         )
+//         img.src = href
+//         img.style.background = 'red'
+//       } finally {
+//         // after previous blocks, set opacity to 1 and set status to loaded
+//         // and disconnect observer
+//         img.style.opacity = '1.0'
+//         img.setAttribute('data-status', 'loaded')
+//         observer.disconnect()
+//       }
+//     }
+//   })
+// }
 
-const onVisible = (entries, observer) => {
-  entries.forEach(async (entry) => {
-    const img = entry.target
-    const isVisible = entry.intersectionRatio > 0.9
-    const hasLoaded = img.getAttribute('data-status') === 'loaded'
+// const observer = new IntersectionObserver(onVisible, {
+//   root: null, // defaults to viewport
+//   rootMargin: '0px',
+//   threshold: 1.0,
+// })
 
-    // if image is visible and we have not yet attached an image
-    if (isVisible && !hasLoaded) {
-      try {
-        // try importing image from url and bind to src attribute
-        const data = await importImage(props.imageUrl)
-        img.src = data.href
-        img.style.background = ''
-      } catch (e) {
-        // if an error is thrown when importing image, import fallback
-        img.src = new URL(
-          `../../assets/images/__placeholders__/image_not_found.png`,
-          import.meta.url
-        ).href
-        img.style.background = 'red'
-      } finally {
-        // after previous blocks, set opacity to 1 and set status to loaded
-        // and disconnect observer
-        img.style.opacity = '1.0'
-        img.setAttribute('data-status', 'loaded')
-        observer.disconnect()
-      }
-    }
-  })
-}
-
-const observer = new IntersectionObserver(onVisible, {
-  root: null, // defaults to viewport
-  rootMargin: '0px',
-  threshold: 1.0,
-})
-
-onMounted(() => {
-  observer.observe(imagecontainer.value)
-})
+// onMounted(() => {
+//   observer.observe(imagecontainer.value)
+// })
 </script>
 
 <style scoped lang="postcss">
@@ -178,7 +159,7 @@ onMounted(() => {
     inset: 0;
     border: 0;
     outline: 0;
-    opacity: 0;
+    /* opacity: 0; */
     transition: opacity 0.3s ease;
   }
 }

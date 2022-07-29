@@ -46,6 +46,8 @@ export default defineConfig({
   },
   build: {
     outDir: path.resolve(__dirname, 'dist'),
+    sourcemap: true,
+    target: 'es2020',
   },
   plugins: [
     vue(),
@@ -61,6 +63,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './app'),
+      '~': path.resolve(__dirname, './app'),
     },
   },
 })
