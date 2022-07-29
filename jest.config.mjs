@@ -18,7 +18,7 @@ const config = {
   },
   testMatch: ['./**/*.test.(mjs|js)'],
   transform: {
-    '^.+\\.(mjs|js)$': 'babel-jest',
+    '.*\\.(mjs|js)$': ['babel-jest', { configFile: './.babelrc' }],
     '.*\\.(vue)$': '@vue/vue3-jest',
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.mjs'],

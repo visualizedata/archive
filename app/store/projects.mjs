@@ -1,9 +1,9 @@
 import { defineStore } from 'pinia'
 
-import { useFilters } from './filters'
+import { useFilters } from './filters.mjs'
 import Fuse from 'fuse.js'
 
-import allProjects from './_allProjects.js'
+import { fetchProjects } from '../utils/fetchProjects.mjs'
 
 const sortProjects = (arr) => {
   return [...arr].sort((a, b) => {
@@ -18,7 +18,7 @@ const sortProjects = (arr) => {
  */
 export const useProjects = defineStore('projects', {
   state: () => ({
-    projects: allProjects(),
+    projects: fetchProjects(),
   }),
   getters: {
     findBySlug: (state) => {

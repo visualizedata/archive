@@ -7,7 +7,7 @@ const allKeysnotes = () => {
 
   const merged = Object.values(files).reduce((state, input) => {
     // input is a "module" and the data we want is stored in `input.default`
-    const data = input.default
+    const data = input.default || input
 
     // if data is an array, join it to our existing "state" array
     if (data.year) {

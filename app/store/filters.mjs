@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-import allProjects from './_allProjects.js'
+import { fetchProjects } from '../utils/fetchProjects.mjs'
 
 const createMetadata = (projects) => {
   const tags = {},
@@ -45,7 +45,7 @@ const createMetadata = (projects) => {
  */
 export const useFilters = defineStore('filters', {
   state: () => {
-    const { tags, categories, years } = createMetadata(allProjects())
+    const { tags, categories, years } = createMetadata(fetchProjects())
     return {
       // search
       searchQuery: null,

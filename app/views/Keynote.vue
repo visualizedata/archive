@@ -33,7 +33,7 @@ import SiteHeader from '@/components/layout/SiteHeader.vue'
 import MaxWidth from '@/components/common/MaxWidth.vue'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { useKeynotes } from '../store/keynotes'
+import { useKeynotes } from '../store/keynotes.mjs'
 const route = useRoute()
 const keynotes = useKeynotes()
 
