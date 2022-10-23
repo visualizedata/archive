@@ -44,6 +44,6 @@ const reset = () => {
 }
 
 .btn {
-  @apply text-tns-red border-tns-red hover:bg-tns-red hover:text-white hover:border-tns-red;
+  @apply text-tns-red border-tns-red hover:bg-tns-red hover:text-tns-red hover:border-tns-red !bg-transparent;
 }
 </style>

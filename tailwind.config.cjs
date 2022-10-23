@@ -1,11 +1,11 @@
 /* eslint-env node */
-import lineClampPlugin from '@tailwindcss/line-clamp'
 
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: ['./app/**/*.{vue,js}'],
   theme: {
     fontFamily: {
-      'sans': ['Inter', 'sans-serif'],
+      'sans': ['neue-regular', 'sans-serif'],
       'mono': ['Fira Mono', 'monospace'],
       'neue-regular': ['neue-regular', 'sans-serif'],
       'neue-display-black': ['neue-display-black', 'sans-serif'],
@@ -29,5 +29,8 @@ export default {
       },
     },
   },
-  plugins: [lineClampPlugin],
+  plugins: [
+    // enables "line-clamp-[number]" css class
+    require('@tailwindcss/line-clamp'),
+  ],
 }

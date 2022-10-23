@@ -1,19 +1,21 @@
 <template>
-  <div
-    class="project-card"
-    role="button"
-    tabindex="0"
-    @click="navigateToProject"
-    @keypress="a11yNavigateToProject"
-  >
-    <div class="project-image">
+  <div class="project-card">
+    <div
+      role="button"
+      tabindex="0"
+      class="project-image"
+      @click="navigateToProject"
+      @keypress="a11yNavigateToProject"
+    >
       <img :id="imageUrl" :src="importImg(imageUrl)" aria-hidden="true" />
     </div>
-    <div class="project-details">
+    <div class="project-details cursor-pointer" @click="navigateToProject">
       <h1>{{ title }}</h1>
       <h2>{{ author }}</h2>
     </div>
-    <ProjectTags :tags="tags" :category="category" :year="year" />
+    <div class="p-2 text-xs">
+      <ProjectTags :tags="tags" :category="category" :year="year" />
+    </div>
   </div>
 </template>
 
@@ -150,6 +152,8 @@ const importImg = (src) => {
   background-size: cover;
 
   position: relative;
+
+  overflow: hidden;
 
   img {
     width: 100%;

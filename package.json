@@ -3,14 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "engines": {
-    "npm": "please-use-yarn",
-    "yarn": ">= 3.2.1"
-  },
   "scripts": {
     "dev": "vite",
-    "preview": "yarn build && vite preview",
-    "build": "vite build --emptyOutDir ",
+    "preview": "pnpm build && vite preview",
+    "build": "pnpm build --emptyOutDir ",
     "format": "prettier --write ./app/**/*.{js,cjs,mjs,json,vue} ./data/**/*.json ./scripts/*.mjs",
     "lint": "eslint {app,scripts}/*.{js,mjs,vue}",
     "test": "jest",
@@ -21,6 +17,7 @@
     "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "^7.17.10",
     "@fontsource/inter": "^4.5.10",
+    "@headlessui/vue": "^1.7.3",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@testing-library/vue": "^6.4.2",
     "@types/jest": "^28.1.2",
@@ -52,7 +49,8 @@
     "vite": "^3.0.4",
     "vue": "^3.2.33",
     "vue-eslint-parser": "^8.3.0",
-    "vue-router": "^4.0.15"
+    "vue-router": "^4.0.15",
+    "vue-social-sharing": "4.0.0-alpha4"
   },
   "devDependencies": {
     "@types/jest-axe": "^3.5.4",

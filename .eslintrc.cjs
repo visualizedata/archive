@@ -12,6 +12,7 @@ module.exports = {
   },
   plugins: ['vue', 'prettier'],
   root: true,
+  ignorePatterns: ['**/*.d.ts'],
   rules: {
     'prettier/prettier': 'warn',
     'vue/array-bracket-newline': 'error',
@@ -46,7 +47,7 @@ module.exports = {
     'vue/html-comment-content-spacing': 'error',
     'vue/html-comment-indent': 'error',
     'vue/html-end-tags': 'error',
-    'vue/html-indent': 'error',
+    'vue/html-indent': 'off',
     'vue/html-quotes': 'error',
     'vue/html-self-closing': [
       'error',
@@ -144,7 +145,7 @@ module.exports = {
     'vue/no-this-in-before-route-enter': 'error',
     'vue/no-undef-components': [
       'error',
-      { ignorePatterns: ['^el-', '^router-', 'slot'] },
+      { ignorePatterns: ['^el-', '^router-', 'slot', '^share-network$'] },
     ],
     'vue/no-undef-properties': 'error',
     'vue/no-unsupported-features': 'error',

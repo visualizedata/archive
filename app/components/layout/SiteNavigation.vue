@@ -33,5 +33,7 @@ const keynotes = useKeynotes()
 <style scoped>
 .navigation {
   @apply sticky top-0;
+
+  z-index: 99;
 }
 </style>

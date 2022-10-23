@@ -3,40 +3,32 @@
     <div class="modal-close-target" @click="closeModal" />
     <div class="modal-contents">
       <div class="close-button">
-        <router-link to="/"><CloseIcon /></router-link>
+        <router-link to="/">
+          <CloseIcon />
+        </router-link>
       </div>
 
       <div v-if="project">
         <div class="project-info">
           <h1>{{ project.title }}</h1>
           <h2>{{ project.subtitle }}</h2>
-          <h3>
-            {{ project.author.join(', ') }}
-          </h3>
+          <h3>By {{ project.author.join(', ') }}</h3>
 
           <div class="project-info--meta">
             <template
-              v-if="project.student_url && project.student_url.length > 0"
-            >
-              <a
-                :href="project.student_url"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                Student Website
-              </a>
-            </template>
-
-            <template
               v-if="project.project_url && project.project_url.length > 0"
             >
-              <a
+              <Button
+                as="a"
                 :href="project.project_url"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
-                Project Website
-              </a>
+                <span class="pl-2 pr-1">
+                  <GlobeIcon class="w-4 h-4" />
+                </span>
+                <span class="p-1 pr-3">View Project</span>
+              </Button>
             </template>
 
             <template
@@ -44,14 +36,52 @@
                 project.project_repo && project.project_repo.length > 0
               "
             >
-              <a
+              <Button
+                as="a"
                 :href="project.project_repo"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
-                Project Repository
-              </a>
+                <span class="pl-2 pr-1">
+                  <GitBranchIcon class="w-4 h-4" />
+                </span>
+                <span class="p-1 pr-3">View Code</span>
+              </Button>
             </template>
+
+            <template
+              v-if="
+                project.student_url &&
+                project.student_url.length > 0 &&
+                project.student_url !== project.project_url &&
+                project.student_url !== project.project_repo
+              "
+            >
+              <Button
+                as="a"
+                :href="project.student_url"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <span class="pl-2 pr-1">
+                  <GlobeIcon class="w-4 h-4" />
+                </span>
+                <span class="p-1 pr-3">Student's Website</span>
+              </Button>
+            </template>
+
+            <ShareButtons
+              :url="currentPageURL"
+              :title="shareTitle"
+              :description="project.description"
+            />
+          </div>
+          <div class="pt-6 pb-0">
+            <ProjectTags
+              :year="project.year"
+              :tags="project.tags"
+              :category="project.category"
+            />
           </div>
         </div>
 
@@ -74,36 +104,9 @@
         </template>
 
         <div class="project-description">
-          <p>
-            {{ project.description }}
+          <p v-for="p in project.description.split('\n')" :key="p">
+            {{ p }}
           </p>
-        </div>
-
-        <div class="project-tags">
-          <h3>Tags</h3>
-          <el-tag round type="info" size="large" class="text-base">
-            {{ project.year }}
-          </el-tag>
-          <el-tag
-            v-for="category in project.category"
-            :key="category"
-            round
-            type="info"
-            size="large"
-            class="text-base"
-          >
-            {{ category }}
-          </el-tag>
-          <el-tag
-            v-for="tag in project.tags"
-            :key="tag"
-            round
-            type="info"
-            size="large"
-            class="text-base"
-          >
-            {{ tag }}
-          </el-tag>
         </div>
       </div>
     </div>
@@ -111,10 +114,17 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useProjects } from '../store/projects.mjs'
 
 import CloseIcon from '@/assets/icons/close.svg'
+import GlobeIcon from '@/assets/icons/globe.svg'
+import GitBranchIcon from '@/assets/icons/git-branch.svg'
+
+import Button from '@/components/common/Button.vue'
+import ShareButtons from '@/components/common/ShareButtons.vue'
+import ProjectTags from '@/components/projects/ProjectTags.vue'
 
 const router = useRouter()
 const route = useRoute()
@@ -122,6 +132,12 @@ const projects = useProjects()
 
 const slug = route.params.slug
 const project = projects.findBySlug(slug)
+
+const currentPageURL = ref(window.location.toString())
+
+const shareTitle = ref(
+  `"${project.title}" by ${project.author.join(', ')}`
+)
 
 const importImg = (src) => {
   return new URL(`../assets/images/${src}`, import.meta.url).href
@@ -142,15 +158,15 @@ const closeModal = () => {
 
 <style scoped>
 h1 {
-  @apply text-2xl font-neue-display-random;
+  @apply text-2xl font-neue-display-random pb-2 max-w-lg;
 }
 
 h2 {
-  @apply text-xl font-neue-regular;
+  @apply text-xl font-neue-regular pb-2 leading-normal max-w-lg;
 }
 
 h3 {
-  @apply text-lg font-sans text-stone-500;
+  @apply text-xl font-sans text-stone-500;
 }
 
 p {
@@ -158,11 +174,12 @@ p {
 }
 
 .modal-overlay {
-  @apply p-8 z-50;
+  @apply p-8;
   position: fixed;
   inset: 0;
   overflow: auto;
   background: rgba(0, 0, 0, 0.7);
+  z-index: 99;
 }
 
 @keyframes fadeIn {
@@ -189,34 +206,50 @@ p {
 }
 
 .close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
+  a {
+    position: absolute;
 
-  @apply p-4;
+    @apply top-3 right-3;
 
-  svg {
-    width: 2em;
-    height: 2em;
+    @apply inline-flex 
+    justify-center 
+    rounded-sm
+    bg-opacity-20 
+    h-10
+    w-10
+    place-items-center
+    text-sm 
+    font-medium 
+    text-black
+    hover:bg-opacity-30 
+    focus:outline-none 
+    focus-visible:ring-2 
+    focus-visible:ring-white
+    focus-visible:ring-opacity-75;
 
-    transform: scale(0.9);
-    transition: transform ease 0.3s;
+    svg {
+      width: 2em;
+      height: 2em;
 
-    &:hover {
-      transform: scale(1);
+      * {
+        fill: inherit;
+      }
+
+      transform: scale(0.9);
+      transition: transform ease 0.3s;
+
+      &:hover {
+        transform: scale(1);
+      }
     }
   }
 }
 
 .project-info {
-  @apply p-8 pt-10 bg-gray-200;
+  @apply px-8 pt-10 pb-6 bg-gray-200;
 
   &--meta {
     @apply pt-4 flex flex-wrap gap-3;
-
-    a {
-      @apply inline-block text-tns-red rounded-full border border-tns-red py-1 px-3 hover:text-white hover:bg-tns-red transition;
-    }
   }
 }
 
@@ -230,13 +263,13 @@ p {
 
 .project-description {
   @apply p-6;
+
+  p {
+    @apply max-w-lg leading-relaxed;
+  }
 }
 
 .project-images {
   @apply space-y-2 p-6 bg-gray-100;
-}
-
-.project-tags {
-  @apply p-6 flex gap-2 border-t;
 }
 </style>
