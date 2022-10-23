@@ -18,8 +18,8 @@ Required:
 
 - **Node.js (v16.15.0)**
   [https://nodejs.org/](https://nodejs.org/)
-- **Yarn (v3.2.1)**
-  [https://yarnpkg.com/](https://yarnpkg.com/)
+- **pnpm (v7.14.0)**
+  [https://pnpm.io/installation#using-npm](https://pnpm.io/installation#using-npm)
 
 Optional:
 
@@ -33,16 +33,14 @@ Optional:
 
 * By design, Node.js will default to using CommonJS modules. This project uses ESM (or ECMAScript modules) which is consistent with the build. Node.js will run correctly with ESM providing the following: your file extension ends in `.mjs` and you have `"type": "module"` set in `package.json`
 
-## Yarn Commands
+## pnpm Commands
 
-> **Warning**: Make sure you are using the correct version of yarn. Run the following command in your terminal: `yarn set version 3.2.1`
-
-This repository uses `yarn` to run commands. These commands are defined inside of the `package.json` file.
+This repository uses `pnpm` to run commands. These commands are defined inside of the `package.json` file.
 
 ```sh
 # Example:
-# yarn [command]
-yarn dev
+# pnpm [command]
+pnpm dev
 ```
 
 | command  | description                                                      | why is this helpful                                                                      |
@@ -89,7 +87,7 @@ The projects array follows this template:
 The `validate` GitHub workflow will run anytime a commit is made (including pull requests). You can also validate before pushing code by running
 
 ```sh
-yarn validate
+pnpm validate
 ```
 
 ## Local Development
@@ -101,21 +99,18 @@ yarn validate
    node --version
    # v16.15.0
    ```
-2. Make sure you have the right version of Node.js
+2. Make sure you have the right version of pnpm
    ```sh
-   yarn --version
-   # 3.2.1
-
-   # if version does not match, execute the following
-   yarn set version 3.2.1
+   pnpm --version
+   # >= 7.14.0
    ```
 3. Install dependencies
    ```sh
-   yarn install
+   pnpm install
    ```
 4. Start development server
    ```sh
-   yarn dev
+   pnpm dev
    ```
 
 ## Deploying
