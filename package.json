@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "preview": "pnpm build && vite preview",
-    "build": "pnpm build --emptyOutDir ",
+    "build": "vite build --emptyOutDir",
     "format": "prettier --write ./app/**/*.{js,cjs,mjs,json,vue} ./data/**/*.json ./scripts/*.mjs",
     "lint": "eslint {app,scripts}/*.{js,mjs,vue}",
     "test": "jest",
