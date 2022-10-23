@@ -11,17 +11,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const svgConfig = {
-  svgoConfig: {
-    plugins: [
-      {
-        name: 'removeViewBox',
-        active: false,
-      },
-    ],
-  },
-}
-
+/** @type { import('vite').UserConfigExport } */
 export default defineConfig({
   root: path.resolve(__dirname, 'app'),
   base: './',
@@ -34,8 +24,19 @@ export default defineConfig({
     target: 'es2020',
   },
   plugins: [
+    // provides support for reading `.vue` files
     vue(),
-    svg(svgConfig),
+    // turns `.svg` files into Vue components
+    svg({
+      svgoConfig: {
+        plugins: [
+          {
+            name: 'removeViewBox',
+            active: false,
+          },
+        ],
+      },
+    }),
     AutoImport({
       resolvers: [ElementPlusResolver()],
     }),
