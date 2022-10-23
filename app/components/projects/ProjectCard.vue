@@ -4,6 +4,7 @@
       role="button"
       tabindex="0"
       class="project-image"
+      :aria-label="title"
       @click="navigateToProject"
       @keypress="a11yNavigateToProject"
     >
