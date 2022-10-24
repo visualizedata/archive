@@ -12,47 +12,69 @@ This repository archives projects made by students of the MS Data Visualization 
 
 ## Prerequisites
 
-You will need access to the following command line tools.
+You will need the following command line tools.
 
 Required:
 
 - **Node.js (v16.15.0)**
   [https://nodejs.org/](https://nodejs.org/)
-- **Yarn (v3.2.1)**
-  [https://yarnpkg.com/](https://yarnpkg.com/)
+- **pnpm (v7.14.0)**
+  [https://pnpm.io/installation#using-npm](https://pnpm.io/installation#using-npm)
 
 Optional:
 
 - A Node.js version manager like [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm)
 
-## Development Decisions
+## Development Tooling
 
-* Vite is a build-tool, similar to webpack, which provides a development server and bundles the final project assets. Vite 
+### Vue (Version 3)
 
-> **Warning**: This project uses ESM. Use `.mjs` extension instead of `.js`. If CommonJS is needed, use `.cjs`. Do not remove `"type": "module"` from `package.json`
+Version 3 of Vue includes different component APIs than Vue 2, including a new **composition api** flow.
 
-* By design, Node.js will default to using CommonJS modules. This project uses ESM (or ECMAScript modules) which is consistent with the build. Node.js will run correctly with ESM providing the following: your file extension ends in `.mjs` and you have `"type": "module"` set in `package.json`
+- [Vue 3 Composition API](https://vuejs.org/api/composition-api-setup.html#composition-api-setup)
 
-## Yarn Commands
+### Vite
 
-> **Warning**: Make sure you are using the correct version of yarn. Run the following command in your terminal: `yarn set version 3.2.1`
+[Vite](https://vitejs.dev) is a tool that provides a development server and bundles JavaScript modules into publishable assets. You can configure Vite through the `vite.config.mjs` file.
 
-This repository uses `yarn` to run commands. These commands are defined inside of the `package.json` file.
+- [Vite Guide](https://vitejs.dev/guide/)
+- [Vite Config](https://vitejs.dev/config/)
+
+### ESM (ECMAScript Modules)
+
+This project uses ESM (or ECMAScript modules). Node.js will defaults to using CommonJS modules but will use ESM if your file extension ends in `.mjs` and you have `"type": "module"` set in `package.json`
+
+> **Warning**: Use `.mjs` extension instead of `.js`. If CommonJS is needed, use `.cjs`. Do not remove `"type": "module"` from `package.json`
+
+- [Node.js ESM Documentation](https://nodejs.org/api/esm.html#modules-ecmascript-modules)
+
+### Type Annotations
+
+If you open this repository using [Visual Studio Code](https://code.visualstudio.com), you will notice that it provides **type checking**. This is a helpful way to avoid bugs like if you pass a string into a function that expects a number. To configure this behavior, you can adjust the `jsconfig.json` file.
+
+- [jsconfig.json Documentation](https://code.visualstudio.com/docs/languages/javascript#_javascript-projects-jsconfigjson)
+- [Type Checking Documentation](https://code.visualstudio.com/docs/languages/javascript#_type-checking)
+
+### pnpm
+
+This repository uses `pnpm` to run commands. pnpm is an alternative to `npm` but uses less storage space on your computer by installing local dependencies within a shared location.
+
+Our `package.json` file defines some common scripts that are used during development. They can be invoked by running `pnpm [script name]`.
 
 ```sh
 # Example:
-# yarn [command]
-yarn dev
+# pnpm [script name]
+pnpm dev
 ```
 
-| command  | description                                                      | why is this helpful                                                                      |
-| :------- | :--------------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
-| dev      | starts development server                                        | gives us a live preview of our site that we can view in the browser                      |
-| format   | runs prettier to format files according to .pretterrc.yml config | keeps code style consistent and reduces the number of line changes between Pull Requests |
-| lint     | runs eslint to check for code errors and bugs                    | helps catch errors like typos before we build the site                                   |
-| test     | runs jest to execute unit tests to check components              | checks that recent changes don't change how our components function                      |
-| validate | validates that all JSON files in /data follow the correct schema | ensures that there aren't any unknown or missing properties in our JSON                  |
-| build    | builds static deployment assets                                  | compiles framework specific files (like .vue) to browser compatible javascript           |
+| script name | description                                                      | why is this helpful                                                                      |
+| :---------- | :--------------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
+| dev         | starts development server                                        | gives us a live preview of our site that we can view in the browser                      |
+| format      | runs prettier to format files according to .pretterrc.yml config | keeps code style consistent and reduces the number of line changes between Pull Requests |
+| lint        | runs eslint to check for code errors and bugs                    | helps catch errors like typos before we build the site                                   |
+| test        | runs jest to execute unit tests to check components              | checks that recent changes don't change how our components function                      |
+| validate    | validates that all JSON files in /data follow the correct schema | ensures that there aren't any unknown or missing properties in our JSON                  |
+| build       | builds static deployment assets                                  | compiles framework specific files (like .vue) to browser compatible javascript           |
 
 ## GitHub Actions
 
@@ -89,7 +111,7 @@ The projects array follows this template:
 The `validate` GitHub workflow will run anytime a commit is made (including pull requests). You can also validate before pushing code by running
 
 ```sh
-yarn validate
+pnpm validate
 ```
 
 ## Local Development
@@ -97,26 +119,32 @@ yarn validate
 ### Starting a local development server
 
 1. Make sure you have the right version of Node.js
+
    ```sh
    node --version
    # v16.15.0
    ```
-2. Make sure you have the right version of Node.js
-   ```sh
-   yarn --version
-   # 3.2.1
 
-   # if version does not match, execute the following
-   yarn set version 3.2.1
+2. Make sure you have the right version of pnpm
+
+   ```sh
+   pnpm --version
+   # >= 7.14.0
    ```
+
 3. Install dependencies
+
    ```sh
-   yarn install
+   pnpm install
    ```
+
 4. Start development server
+
    ```sh
-   yarn dev
+   pnpm dev
    ```
+
+5. You can now open <http://localhost:8080> in your browser.
 
 ## Deploying
 
@@ -126,9 +154,9 @@ An update to `gh-pages` is made when a commit is pushed to the `main` branch.
 
 # How to contribute updates to this repository
 
-It is recommended to follow the best practices detailed in the MS Data Visualization GitHub workflow document found at https://github.com/visualizedata/github-workflow
+It is recommended to follow the best practices detailed in the MS Data Visualization GitHub workflow document found at <https://github.com/visualizedata/github-workflow>
 
-### Workflow for contributing to MS Data Visualization repositories
+## Workflow for contributing to MS Data Visualization repositories
 
 1. Initial setup:
 
@@ -152,7 +180,7 @@ It is recommended to follow the best practices detailed in the MS Data Visualiza
    - Synced the fork main with the latest version of the upstream main (#3).
    - Merged the fork main to the fork branch and resolved any merge conflicts (#4).
 
-### Tips
+## Tips
 
 Use [GitHub issues](https://guides.github.com/features/issues/) to log problems and communicate.
 
@@ -162,16 +190,29 @@ Sometimes, you mess up and need to go back to a previous commit. [Use `revert`](
 
 # Helpful resources
 
+Vite
+
+- [Vite Guide](https://vitejs.dev/guide/)
+- [Vite Config](https://vitejs.dev/config/)
+
 Node.js
+
 - [ESM Modules](https://nodejs.org/api/esm.html#modules-ecmascript-modules)
 
 Vue
+
 - [Vue Documentation](https://vuejs.org/guide/introduction.html)
 
+pnpm
+
+- [Getting Started](https://pnpm.io/installation)
+
 JSON Schema
+
 - [Understanding JSON Schema](https://json-schema.org/understanding-json-schema/)
 
 GitHub
+
 - [Introduction to GitHub Flow](https://guides.github.com/introduction/flow/)
 - [GitHub Help: Collaborating on projects using issues and pull requests](https://help.github.com/categories/collaborating-on-projects-using-issues-and-pull-requests/)
 - [GitHub Guides: contributing to open source](https://guides.github.com/activities/contributing-to-open-source/)

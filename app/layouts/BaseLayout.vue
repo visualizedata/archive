@@ -17,7 +17,7 @@ import SiteNavigation from '@/components/layout/SiteNavigation.vue'
 
 <style scoped>
 .base-layout {
-  @apply flex flex-col fixed inset-0 overflow-auto min-h-screen;
+  @apply flex flex-col min-h-screen;
 }
 .base-layout--content {
   @apply flex flex-col flex-grow overflow-auto;

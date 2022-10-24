@@ -1,5 +1,6 @@
 /* eslint-env node */
-/** @type {import('jest').config} */
+
+/** @type {import('jest').Config} */
 const config = {
   collectCoverage: true,
   collectCoverageFrom: [

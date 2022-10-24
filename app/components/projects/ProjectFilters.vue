@@ -22,7 +22,7 @@ import YearFilter from '@/components/filters/YearFilter.vue'
     anything larger than a small screen will use 
       position:sticky
   */
-  @apply static md:sticky top-0 py-4 bg-white border-b z-50;
+  @apply static md:sticky py-4 bg-white border-b z-50 top-28;
 
   @apply md:grid md:grid-cols-4 md:gap-4;
 }

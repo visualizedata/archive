@@ -1,31 +1,30 @@
 <template>
   <div class="project-tags">
-    <el-tag type="info" size="small" class="text-base">
+    <button type="button" @click.prevent="goToYear(year)">
       {{ year }}
-    </el-tag>
-    <el-tag
+    </button>
+    <button
       v-for="c in category"
-      :key="c"
-      type="info"
-      size="small"
-      class="text-base"
+      :key="`cat-${c}`"
+      type="button"
+      @click.prevent="goToCategory(c)"
     >
       {{ c }}
-    </el-tag>
-    <el-tag
-      v-for="tag in tags"
-      :key="tag"
-      type="info"
-      size="small"
-      class="text-base"
+    </button>
+    <button
+      v-for="(tag, key) in tags"
+      :key="`tag-${tag}-${key}`"
+      type="button"
+      @click.prevent="goToTag(tag)"
     >
       {{ tag }}
-    </el-tag>
+    </button>
   </div>
 </template>
 
 <script setup>
 import { defineProps } from 'vue'
+import { useRouter } from 'vue-router'
 
 defineProps({
   tags: {
@@ -41,10 +40,53 @@ defineProps({
     default: 0,
   },
 })
+
+const router = useRouter()
+
+const goToCategory = (category) => {
+  router.push({
+    path: `/`,
+    query: {
+      categories: category,
+    },
+  })
+  window.scrollTo({
+    top: 0,
+  })
+}
+
+const goToTag = (tag) => {
+  console.log('clicked tag')
+  router.push({
+    path: `/`,
+    query: {
+      tags: tag,
+    },
+  })
+  window.scrollTo({
+    top: 0,
+  })
+}
+
+const goToYear = (year) => {
+  router.push({
+    path: `/`,
+    query: {
+      years: year,
+    },
+  })
+  window.scrollTo({
+    top: 0,
+  })
+}
 </script>
 
 <style scoped>
 .project-tags {
-  @apply p-2 flex flex-wrap-reverse gap-2;
+  @apply flex gap-2;
+
+  button {
+    @apply before:content-['#'] font-medium text-gray-700 hover:underline;
+  }
 }
 </style>
