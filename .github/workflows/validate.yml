@@ -3,8 +3,12 @@ name: Validate JSON
 
 # ------------------------------------------------
 # this workflow will run
-# • anytime a commit is made
+# • anytime a PR is opened against "main"
 # ------------------------------------------------
+on:
+  pull_request:
+    branches:
+      - 'main'
 
 jobs:
   validate:
