@@ -1,0 +1,202 @@
+[
+    {
+        "author": [
+            "Sam Vickars"
+        ],
+        "title": "Canada\u2018s Indian Residential School System",
+        "subtitle": "Canada\u2018s Indian Residential School System was a network of boarding schools, industrial schools, and federal hostels created to remove indigenous children from their homes and families.",
+        "description": "Canada\u2018s Indian Residential School System was a network of boarding schools, industrial schools, and federal hostels created to remove indigenous children from their homes and families. While many schools originated long before Confederation in 1867, the Indian Residential School System was primarily active following the approval of the Indian Act in 1876 \u2014 a group of laws aiming to do away with the Indian tribal system and forcibly enfranchise First Nations peoples -- until the the last federally-operated school closed in 1996. Overall, there were 130 schools, as recognized by the National Truth and Reconciliation Commission and not including various Metis and Inuit institutions, in which roughly 150,000 native children were placed. They were located throughout every Canadian province except Prince Edward Island, Newfoundland, and New Brunswick. The schools were funded by the Canadian Government and operated by various religious groups. In recent \u201cyear\u201ds and in light of official apologies issued by the Government of Canada, individual provinces and territories, the Vatican, and church groups, information about the schools and their students\u2019 welfare has become public knowledge: physical and sexual abuse was common, both between students and involving administrators; malnourishment and poor living conditions were typical; and assimilation, deprivation of cultural traditions, and punishment was the standard. It is estimated that 6000 children died while in attendance. This project aims to investigate the IRS system visually, beginning with the stories of survivors and transitioning into the narrative of each school, it\u2019s student demographics, policies, everyday life, and management. What follows is a selection of survivor stories, as gathered by the National Truth and Reconciliation Commission between 2008 and 2015.",
+        "student_url": "https://samvickars.com/",
+        "project_url": "https://parsons.nyc/thesis-2017/samVickars/",
+        "project_repo": "https://github.com/svickars/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "society",
+            "politics"
+        ],
+        "year": 2017,
+        "image": [
+            "preview-2017/sam.png"
+        ],
+        "video": [
+            "SamVickars_2017.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Aseem Agarwal"
+        ],
+        "title": "How is Delhi Slowing Down?",
+        "subtitle": "Congestion on roads in urban cities.",
+        "description": "Congestion on roads in urban cities is a common phenomenon and also regarded sometimes as the hallmark of vibrant business districts. But when it comes to Delhi, the capital city of India, it is a point of major concern with studies forecasting speeds of 5 kmph on all major roads in the next five \u201cyear\u201ds. Road density has already reached saturation level and more and more vehicles are added every day on the streets of Delhi. Looking at the severity of the situation, there is less scope for long term planning and what is needed is an exhaustive analysis from multiple perspectives. This project aims to collect and use big data to carry out granular analysis at scale in terms of congestion or excess time faced by different areas and routes. It is both visual and analytical, where the former is carried out using spatial representation that can bring forward unknown relationships. The outcome is a tool that can be used by urban planners and analysts who can combine or filter multiple variables to understand patterns behind congestion across the city.",
+        "student_url": "https://github.com/agaase",
+        "project_url": "http://parsons.nyc/thesis-2017/aseemAgarwal/",
+        "project_repo": "https://github.com/agaase/msdv-thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "data",
+            "policy"
+        ],
+        "year": 2017,
+        "image": [
+            "preview-2017/aseem.png"
+        ],
+        "video": [
+            "AseemAgarwal_2017.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Ian Smith"
+        ],
+        "title": "Lincmap",
+        "subtitle": "Catering to America\u2019s material overflow, the self-storage industry has exploded into a booming $36 billion dollar market.",
+        "description": "This project attempts to provide a data visualization tool for qualitative analysis of career history data at a large scale using automation and dimensionality reduction. Individuals may use it to explore unbiased information regarding career choices to plan or research career paths for themselves, or to confirm or deny commonly held beliefs about which skills or activities complement which careers and vice versa.",
+        "student_url": "http://codesmithlab.com/",
+        "project_url": "http://parsons.nyc/thesis-2017/ianSmith/",
+        "project_repo": "https://github.com/Ianssmith/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "language",
+            "understanding"
+        ],
+        "year": 2017,
+        "image": [
+            "preview-2017/ian.png"
+        ],
+        "video": [
+            "https://vimeo.com/218038907"
+        ]
+    },
+    {
+        "author": [
+            "Joshua Lee"
+        ],
+        "title": "Player Interactions in Online Games",
+        "subtitle": "This thesis attempts to explore the activity of players in a Massive Multiplayer Online Role Playing Game (MMORPG)...",
+        "description": "This thesis attempts to explore the activity of players in a Massive Multiplayer Online Role Playing Game (MMORPG) by visualizing the interactions they engage in while playing the game and reveal patterns behind them. What do they do while playing the game? Who do they meet and who do they talk to? Do they spend more time interacting with humans or the virtual environment? What are their usage patterns like and what motivates them to become so invested in these shared virtual environments? Not much is known about the structure and nature of these interactions. Hence, I plan to investigate these interactions through a visualization to better understand the psychology and the patterns behind them. I will be using the shared virtual environment of Aion (an MMORPG released in 2009) as the backdrop for this project. It will be the environment through which these interactions are captured and visualized from. I picked Aion is because it is a highly successful MMORPG that has been around for a long time, and has a large player base. Aion was developed by a Korean gaming company called NCSOFT, and they have gaming servers and offices in Asia, Europe, and North America. I have personally played this game myself in the past and am familiar with the concept and mechanics of the game.",
+        "student_url": "http://joshualee.sg/",
+        "project_url": "https://parsons.nyc/thesis-2017/joshuaLee/",
+        "project_repo": "https://github.com/neuralism/thesis-app",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "competition",
+            "play"
+        ],
+        "year": 2017,
+        "image": [
+            "preview-2017/joshua.png"
+        ],
+        "video": [
+            "https://github.com/neuralism/thesis-app/blob/master/client/video/visualization.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Nancy Zhao"
+        ],
+        "title": "The Afterlife of Broadway Musicals",
+        "subtitle": "Broadway musical theatre is not a ephemeral and New York local phenomenon.",
+        "description": "Broadway musical theatre is not a ephemeral and New York local phenomenon. It is a powerful brand, and a form of cultural export, which through international touring and international productions, has created a global network of audience. However, while eyes and ears are on the 40 theatres on the Great White Way, the theatre industry has hardly examined this mechanism of international business and Broadway\u2019s cultural impact.",
+        "student_url": "https://github.com/nancyzhao888",
+        "project_url": "http://parsons.nyc/thesis-2017/nancyZhao/",
+        "project_repo": "https://github.com/nancyzhao888/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "arts",
+            "leisure"
+        ],
+        "year": 2017,
+        "image": [
+            "preview-2017/nancy.png"
+        ],
+        "video": [
+            "https://nancyzhao888.github.io/thesis/work/broadway/video/presentation.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "PJ Moriarty"
+        ],
+        "title": "Wave9",
+        "subtitle": "Commonly, numerical values expressed in multiple orders of magnitude are difficult to comprehend, particularly so for audiences that are less mathematically inclined...",
+        "description": "Commonly, numerical values expressed in multiple orders of magnitude are difficult to comprehend, particularly so for audiences that are less mathematically inclined. The deliverable of this project is intended to narrow this gap in comprehension in order to create meaning and make interpretable a true model of the solar system to a general audience. Using the physical landscape of Manhattan as its backdrop, the wave 9 mobile application guides audiences on a walking tour through a physical model of the solar system that begins at Parsons campus in downtown New York and stretches up Fifth Avenue to the Metropolitan Museum of Art, where the model concludes. Along the way, guided by the applications map, audiences encounter various markers which trigger 3D renderings within the mobile app visualizing the various planets of our solar system using augmented reality technology. The three dimensional renderings set within the recognizable landscape of New York city provides audience with a level of comprehension of size, scale, interplanetary relationship, and solar enormity in a clear, intuitive, and accessible way.",
+        "student_url": "https://github.com/moriartp",
+        "project_url": "https://parsons.nyc/thesis-2017/pjMoriarty/index.html",
+        "project_repo": "https://github.com/moriartp/ms2",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "landscapes",
+            "pathways"
+        ],
+        "year": 2017,
+        "image": [
+            "preview-2017/pj.png"
+        ],
+        "video": [
+            "PJMoriarty_2017.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Riley Hoonan"
+        ],
+        "title": "Mapping Dada",
+        "subtitle": "How do we measure influence?",
+        "description": "How do we measure influence? If you allow that a link from one page to another allows us to measure relevance, ala the PageRankU+2122 algorithm, and that proximity (e.g. the number of links from one page to another) gives us a sense of how that relevance diminishes with distance, \u2018influence\u2019 is only a function of chronological order. This project is a case study in applying this methodology to the art movement, Dada, using the closed network of wikipedia to provide a consistent dataset. From this dataset (the scraped URLs and basic metadata of pages linking to and from Dada) a map of the conceptual framework, players and geography of Dada is established, contextualizing the art movement within it\u2019s moment in history.",
+        "student_url": "https://rileyhoonan.com/",
+        "project_url": "http://www.mappingdada.info/",
+        "project_repo": "https://github.com/rhoon/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "arts",
+            "leisure"
+        ],
+        "year": 2017,
+        "image": [
+            "preview-2017/riley.png"
+        ],
+        "video": [
+            "RileyHoonan_2017.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Sambhav Jain"
+        ],
+        "title": "Visualizing Law",
+        "subtitle": "A visual exploration of the current sex offender registration.",
+        "description": "This thesis is about the visual exploration of the current sex offender registration and community notification laws in the United States. It is an attempt to understand how examining these laws and their impact on society from an objective lens can debunk myths and create awareness. It tries to explore the collateral consequences that these laws have, specifically the residence restrictions that are imposed on offenders, and raises questions about the effectiveness of their intentions. This work also aims to serve as a tool for lawmakers to visualize what the consequences of their actions might look like, and help them to preempt decisions that may not be in the best interest of society.",
+        "student_url": "https://www.sambhav-jain.com/",
+        "project_url": "http://parsons.nyc/thesis-2017/sambhavJain/",
+        "project_repo": "https://github.com/jainsambhav91/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "data",
+            "policy"
+        ],
+        "year": 2017,
+        "image": [
+            "preview-2017/sambhav.png"
+        ],
+        "video": [
+            "https://github.com/jainsambhav91/thesis/blob/master/work/finalViz/viz2-final2.mp4?raw=true"
+        ]
+    }
+]

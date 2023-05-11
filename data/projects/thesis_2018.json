@@ -1,0 +1,402 @@
+[
+    {
+        "author": [
+            "Yicen Shi"
+        ],
+        "title": "Bacteria Invasion",
+        "subtitle": "Food safety is essential to civilizations.",
+        "description": "Food safety is essential to civilizations. Consumption of bacteria-contaminated food could result in various physiological consequences that are even detrimental. Sadly, there have been over 14,500 recall cases authorized in the United States over the past 7 \u201cyear\u201ds, and many of which even have global impact on food that are either imported or exported from all over the world. Moreover, documented by Centers for Disease Control and Prevention, bacteria contamination in food have led to several food borne illness outbreaks. Using data documented by Food and Drug Administration, this research project delves deeper into food safety issues, closely analyzing food recall cases that are associated with bacteria contamination in finding patterns of distributions of questionable food sources as well as disposing \u201cbig \u201cname\u201ds\u201d for producing and selling these foods.",
+        "student_url": "https://shiy918.myportfolio.com/",
+        "project_url": "https://parsons.nyc/thesis-2018/yicenShi/visualizations",
+        "project_repo": "https://github.com/shiy918/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "food",
+            "culture"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/yicen.png"
+        ],
+        "video": [
+            "YicenShi_2018.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Aucher Serr"
+        ],
+        "title": "Exploring the Potential of Green Roofs",
+        "subtitle": "This thesis explores the ways in which green roofs can be used.",
+        "description": "This thesis explores the ways in which green roofs can be used to counteract three major urban ecological challenges in New York City. Taking the city\u2019s existing infrastructural landscape as the starting point, this thesis moves to identify underutilized spaces where green roofs would be most amenable and beneficial from the perspective of (1) stormwater retention, (2) surface temperature regulation, and (3) biodiversity enhancement. Users will then be given opportunities to explore the data themselves and engage with questions regarding the aggregative effects, benefits, and costs of such interventions. Ultimately the goal of this project is to provide creative ways of interacting with the New York City \u2018building-scape\u2019 in order to foster community engagement and informed decision making for residents and policy-makers alike.",
+        "student_url": "https://www.aucherserr.com/",
+        "project_url": "https://auchers.github.io/data-visualization-thesis/#/",
+        "project_repo": "https://github.com/auchers/data-visualization-thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "landscapes",
+            "pathways"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/aucher.png"
+        ],
+        "video": [
+            "https://github.com/auchers/data-visualization-thesis/blob/master/thesis-preview.gif"
+        ]
+    },
+    {
+        "author": [
+            "Benzamin Yi"
+        ],
+        "title": "The Los Angeles Riots 1992",
+        "subtitle": "The Los Angeles Riots of 1992 has a personal story to me.",
+        "description": "The Los Angeles Riots of 1992 has a personal story to me that I only realized after doing research many \u201cyear\u201ds later. In order to follow through the events that took place while I was quarantined at home in the midst of the chaos, I created this visualization that had an hour-by-hour record of the events that happened from the beginning of the violence to the end of the violence. The only consequence I personally faced was not being able to get the Flamin\u2019 Hot Lays I got at my neighborhood market, Jay\u2019s Market, but instead had to go to my dad\u2019s friend\u2019s liquor store. Little did I know that the liquor store stood because my dad among other Koreans living in Los Angeles, acquired rifles and stood guard on the rooftop to deter looters. The lives that were lost in the riots were senseless. The Los Angeles Times gathered data including stories of who each person was and how they lost their lives. A memorial is usually created with the \u201cname\u201ds of the honorable who died defending our country or in a tragic event that marks history. I created this visualization in order to memorialize the events, as well as the \u201cname\u201ds of those who died as a means of symbolizing an ongoing tension of power relationships and race relations that still go unresolved. The sense of injustice is what ingnited the city, while little was done to absolve or resolve any of it. It\u2019s easy to forget this event when everything is seemingly normal today, but there still lies a growing tension that should not be ignored. With that, this memorial hopes to remind us that we had to go through this tragedy and that we should do a lot more to assure the prevention of another riot like this.",
+        "student_url": "https://github.com/benzyi",
+        "project_url": "https://parsons.nyc/thesis-2018/benzaminYi",
+        "project_repo": "https://github.com/benzyi/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "society",
+            "politics"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/benzamin.png"
+        ],
+        "video": [
+            "BenzaminYi_2018.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Elena Paunova"
+        ],
+        "title": "Nice To Meet You",
+        "subtitle": "Nice to meet you is about measuring ethnic, linguistic, religious, and cultural heterogeneity in the world.",
+        "description": "Nice to meet you is about measuring ethnic, linguistic, religious, and cultural heterogeneity in the world. We intuitively understand that what language we are born speaking, what religion we follow and what color we are, predetermine a very significant part of our lives and who we are. The goal is to use this intuition to learn more about different societies via these proxy variables and test if the complexity of each country correlates with its economic outcomes, political system, geographic location, religion, or level of moral freedom. We further employ a clustering algorithm and create a taxonomy that organizes the countries in our world by their shared complexity (heterogeneity vs homogeneity). As a result a new world emerges, one in which our closest neighbors are not the ones sharing our borders but countries located thousands of miles away. The combined analysis and visualization leads us to the conclusion that there is ultimately more that binds us than divides us.",
+        "student_url": "https://universeofatoms.com/",
+        "project_url": "http://beta.youmeet.me/who/similarity/default",
+        "project_repo": "http://beta.youmeet.me/who/similarity/default",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "society",
+            "politics"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/elena.png"
+        ],
+        "video": [
+            "ElenaPaunova_2018.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Ellie Frymire"
+        ],
+        "title": "An Exploration of the Movement #metoo",
+        "subtitle": "Following the wake of several women coming forward against Harvey Weinstein...",
+        "description": "Following the wake of several women coming forward against Harvey Weinstein, on October 15th, 2017, Alyssa Milano started an online movement behind the hashtag #metoo. She posted, \u201cIf you\u2019ve been sexually harassed or assaulted write \u2018me too\u2019 as a reply to this tweet\u201d (@Alyssa_Milano). What followed was a flood of stories, building a community of support, natively and primarily through social media. The movement encouraged more women to come forward \u2014 not only validating the experience of victims, but exposing more perpetrators beyond Weinstein. But is that all that was said within #metoo? How can we leverage this public platform to take the pulse of the crowd? This project explores the text of tweets in the 6 months following the start of the hashtag, using unsupervised machine learning to derive organic themes. By analyzing the scope of language used in #metoo tweets through k-means cluster analysis, we can uncover hidden themes. The project aims to answer the question: \u201cwhat are people really saying with #metoo?\u201d",
+        "student_url": "https://github.com/efrymire",
+        "project_url": "https://parsons.nyc/thesis-2018/ellieFrymire",
+        "project_repo": "https://github.com/efrymire/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "language",
+            "understanding"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/ellie.png"
+        ],
+        "video": [
+            "EllieFrymire_2018.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Fl\u00e1vio Pessoa"
+        ],
+        "title": "CS Education and Computational Trends",
+        "subtitle": "The relationship between computer science education and computational trends in Github.",
+        "description": "Teaching children how to code is a common goal in education in the US. Initiatives by the public and private sectors \u2013 such as code.org and CSforAll \u2013 are trying to address this with extensive funding and recommendations for courses and syllabi. But the long-term objectives of such initiatives are not clear. Will they create better citzens and more informed students? Or are they focused on a more productive workforce? These different agendas need to be aligned with concrete paths for the children and also juxtaposed with their professional and lived experience. Based on CSTA K 12 Computer Science Standards, and Github repositories as proxies for applied computer science, this visualization shows gaps and opportunities on both sides.",
+        "student_url": "https://flaviopessoa.com.br/",
+        "project_url": "https://parsons.nyc/thesis-2018/flavioPessoa/thesis",
+        "project_repo": "https://github.com/pessoaflavio/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "language",
+            "understanding"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/flavio.png"
+        ],
+        "video": [
+            "https://github.com/visualizedata/thesis/blob/main/assets/media/FlavioPessoa_2018.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "George Sieniawski"
+        ],
+        "title": "Strength in Numbers",
+        "subtitle": "Global seapower competition is intensifying.",
+        "description": "Global seapower competition is intensifying. As China dredges up \u22483,200 acres of territory ex nihilo in the South China Sea and emplaces sea missiles astride the Philippine archipelago, and as Russia disperses its submarines more widely across the Mediterranean as it conducts simulated attack strafing runs against NATO vessels in the Baltic Sea, the Obama and Trump national security teams have faced increasingly intricate naval diplomacy and maritime security challenges in recent \u201cyear\u201ds. With these shifts in mind, this thesis examines the overall patterns in U.S. naval diplomacy worldwide from 2012 to 2018, querying diplomatic tension in the STRATFOR dataset under both the Obama and Trump administrations and comparing them to vessel movements as well as freedom of navigation operations (FONOPS). In addition, this thesis examines the geostrategic impact of Secretary of State Hillary Clinton\u2019s diplomatic pivot to Asia in 2011 and Secretary of Defense Leon Panetta\u2019s decision in 2012 to move 60% of the U.S. fleet to the Pacific, breaking with decades of a roughly even 50%-50% Atlantic-Pacific force posture.",
+        "student_url": "https://github.com/visualizedata/thesis-2018/tree/master/georgeSieniawski",
+        "project_url": "https://parsons.nyc/thesis-2018/georgeSieniawski/public/",
+        "project_repo": "https://github.com/visualizedata/thesis-2018/tree/master/georgeSieniawski",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "landscapes",
+            "pathways"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/george.png"
+        ],
+        "video": [
+            "GeorgeSieniawski_2018.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Joe Steele"
+        ],
+        "title": "Moving the Line",
+        "subtitle": "In the 1930\u2018s, the Home Owner\u2019s Loan Corporation was conceived with the singular purpose of providing federal support on mortgage underwriting risk.",
+        "description": "In the 1930\u2018s, the Home Owner\u2019s Loan Corporation was conceived with the singular purpose of providing federal support on mortgage underwriting risk. In practice, the firm quantified that risk largely through the lens of perceived racial desirability. The borders drawn by the HOLC, literal red lines that demarcated neighbourhoods to be starved of investment, still express contemporary inequalities in socioeconomic security. In general, there persists today in America an embedded network of such structural factors, contributing to unequal social outcomes. Compounding the issue of discursively challenging these structures are broad misconceptions on their character and import. However, with issues as directly geospatial as redlining and de jure segregation, there exists an opportunity in visual media to create direct, concise, and easily-interpretable representations of typically oblique content- content that remains both vital to contemporary social welfare, and fundamentally misunderstood by the American layman.",
+        "student_url": "https://github.com/jsteele2003",
+        "project_url": "https://parsons.nyc/thesis-2018/joeSteele/redlining/dist",
+        "project_repo": "https://github.com/jsteele2003/msdv_thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "landscapes",
+            "pathways"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/joe.png"
+        ],
+        "video": [
+            ""
+        ]
+    },
+    {
+        "author": [
+            "Julian Lange"
+        ],
+        "title": "On and Beyond the Edge",
+        "subtitle": "Olympic Games and World Championships showcase the world\u2019s best athletes.",
+        "description": "Olympic Games and World Championships showcase the world\u2019s best athletes. While medalists earn a significant premium over fourth place finishers, the margins of victory have become vanishingly small. This series of interactive visualizations examines three stories from those margins. First, situated in the 2018 Winter Olympic Games, viewers are invited to test hypothetical scenarios in which athletes\u2019 performances improve by thin margins. The second visualization highlights a story from the swimming pool, where technological advances in equipment effectively changed the parameters of a sport. Finally, viewers can re-live the 2018 Winter Olympic Games men\u2019s singles luge event via an animation that displays the top eight athletes side-by-side on the track.",
+        "student_url": "https://www.julianhlange.com/",
+        "project_url": "https://parsons.nyc/thesis-2018/julianLange",
+        "project_repo": "https://github.com/julianhlange/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "competition",
+            "play"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/julian.png"
+        ],
+        "video": [
+            "JulianLange_2018.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Kevin Lee"
+        ],
+        "title": "What Movies Are Selling You",
+        "subtitle": "A look at product placement in popular movies, the brands being marketed to you...",
+        "description": "A look at product placement in popular movies, the brands being marketed to you, and a shot-by-shot product analysis of the film that kick-started the biggest franchise in movie history.",
+        "student_url": "https://github.com/noalarms/MSDV-Thesis",
+        "project_url": "https://parsons.nyc/thesis-2018/kevinLee",
+        "project_repo": "https://github.com/noalarms/noalarms.github.io",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "competition",
+            "play"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/kevin.png"
+        ],
+        "video": [
+            "KevinLee_2018.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Max Carradine"
+        ],
+        "title": "The Influencers",
+        "subtitle": "Every two years we witness an unconscionable amount of money being spent in an election cycle...",
+        "description": "Every two \u201cyear\u201ds we witness an unconscionable amount of money being spent in an election cycle while candidates and elected officials spend an increasing amount of their time courting donations. This project seeks to visualize the financial forces behind the battleground US Senate elections from 2016. Bracketing the six most expensive elections, I identified the top ten outside groups pushing money into the races and then connected those groups\u2019 top ten sources of funds to the network. Patterns and relationships emerge in the biographical layer: a husband and wife give matching $17.5M dollar gifts, super PACs with dystopian \u201cname\u201ds are bankrolled by people with no connection to the state whose voters they seek to influence, dark sources are illuminated, and the methods in which these influential sources acquired and maintained their wealth are revealed.",
+        "student_url": "https://mbcarradine.github.io/",
+        "project_url": "https://parsons.nyc/thesis-2018/maxCarradine/thesis",
+        "project_repo": "https://github.com/mbcarradine/mbcarradine.github.io/tree/master/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "society",
+            "politics"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/max.png"
+        ],
+        "video": [
+            "MaxCarradine_2018.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Michal Bacon"
+        ],
+        "title": "Escaping Social Dilemmas",
+        "subtitle": "In game theory, social dilemmas are situations where the interests of the individual stand in direct opposition to the interests of the many.",
+        "description": "In game theory, social dilemmas are situations where the interests of the individual stand in direct opposition to the interests of the many. Game theory has demonstrated that in these scenarios the most rational choice for the individual is to act selfishly rather than for the collective good. However, when these social dilemmas are played out repeatedly, cooperative behavior can emerge as the more advantageous choice. This project explores three social dilemmas - the most famous being the Prisoner\u2019s Dilemma - and ten different strategies for playing these games repeatedly. We demonstrate how strategies, ranging in character from benevolent cooperators to unscrupulous defectors, can be more successful than others depending on the social dilemma to which they are applied. Furthermore, we aim to discover if certain strategies can elicit cooperation from their peers, thus creating a more trusting and ultimately more successful society.",
+        "student_url": "https://github.com/mibacon",
+        "project_url": "https://parsons.nyc/thesis-2018/michalBacon",
+        "project_repo": "https://github.com/visualizedata/socialdilemmas",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "competition",
+            "play"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/michal.png"
+        ],
+        "video": [
+            "https://github.com/visualizedata/michal-bacon-thesis/tree/master/video"
+        ]
+    },
+    {
+        "author": [
+            "Rik Ghosh"
+        ],
+        "title": "A Century of American Food",
+        "subtitle": "Americans are thought to be fond of following fad diets, paradigms of eating often based on novel, ever-changing nutrition research.",
+        "description": "Americans are thought to be fond of following fad diets, paradigms of eating often based on novel, ever-changing nutrition research. This project is concerned with finding in actuality how American food consumption has changed throughout the past century and illustrating to what extent it responds to relevant historical events. Towards that end, it considers the distribution of foods in the American food supply, which are\u2014to some extent\u2014the foods that Americans desire to eat and\u2014ultimately\u2014the foods that are available for them to eat. Tracking this over a span of 100 \u201cyear\u201ds, the visualization consists of a timeline exploring this changing distribution, which is then punctuated by qualitative information about significant events in areas like nutrition research, agricultural technology, trend diets, and official dietary guidelines. The project superimposes all of this information to create an honest depiction of the food supply (and, indirectly, food consumption) in America today and in the past. Avoiding reductive statistics and statements, it curates multiple previously uncombined sources of data and portrays them clearly and plainly; in doing so, it invites instructed readers to discover relationships between them.",
+        "student_url": "https://rikghosh.com/",
+        "project_url": "https://parsons.nyc/thesis-2018/rikGhosh",
+        "project_repo": "https://github.com/rikghosh/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "food",
+            "agriculture"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/rik.png"
+        ],
+        "video": [
+            "RikGhosh_2018.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Rye Zupancis"
+        ],
+        "title": "Vegetation and Socioeconomic Shifts",
+        "subtitle": "Vegetation indices derived from satellite flyover data.",
+        "description": "Vegetation indices derived from satellite flyover data tend to correlate with GDP, particularly in agrarian economies. This analysis explores the linkages between agricultural policymaking, land usage patterns/vegetation shifts, and economic output in sub-Saharan Africa. By aggregating thousands of sequential satellite measurements taken by Landsat 5, 7, and 8 between 1990 and present-day, this study constructs a normalized difference vegetation index (NDVI) using Google Earth Engine servers. Agricultural classification and geospatial masking are specified by the author.",
+        "student_url": "https://www.pikacreative.com/",
+        "project_url": "https://parsons.nyc/thesis-2018/ryeZupancis",
+        "project_repo": "https://github.com/ryezzz/Sub-Saharan-Africa-NDVI-Analysis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "food",
+            "agriculture"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/rye.png"
+        ],
+        "video": [
+            "RyeZupancis_2018.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Steven Hubbard"
+        ],
+        "title": "Patterns of Professional Identity in STEM",
+        "subtitle": "Students perform better in the classroom when their teachers are proficient in the subject they teach...",
+        "description": "Students perform better in the classroom when their teachers are proficient in the subject they teach and demonstrate high levels of commitment to the teaching profession. However, retaining K-12 educators has become a significant problem both nationally and locally. This is especially true for the math and science disciplines, which are in need of a diverse workforce for future economic development. This study explores and visualizes concepts of professional identity in math and science education to help educators, administrators, and policy makers create better solutions to retain educators. Using a data set from a science and math teaching fellowship program, this study analyzes and interprets professional identity by examining the written reflections of early and mid-career STEM educators and evaluates the effectiveness of using machine learning (K-means clustering) and data visualization tools as a means to analyze teaching motivation.",
+        "student_url": "https://github.com/hubideal",
+        "project_url": "https://parsons.nyc/thesis-2018/stevenHubbard/",
+        "project_repo": "https://github.com/hubideal/hubideal.github.io/tree/master/thesisHubbard",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "language",
+            "understanding"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/steven.png"
+        ],
+        "video": [
+            "StevenHubbard_2018.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Will Su"
+        ],
+        "title": "Refugee-Flow",
+        "subtitle": "To date, there were an unprecedented 65.6 million forcibly displaced people worldwide...",
+        "description": "To date, there were an unprecedented 65.6 million forcibly displaced people worldwide, or in other words, one out of every 113 people on Earth. The number are surpassing even post-World War II records, when the world was struggling to come to terms with the most devastating event in history. United Nations defines a refugee as an individual who has been forced to leave their country due to political or religious reasons, or due to threat of war and violence. Among all the forcibly displaced people around the world, one third of them are categorized as refugees, over half of whom are under the age of 18. In a world where nearly 20 people are forcibly displaced every minute as a result of armed conflict or persecution, this study aims to visualize a distinct cause-effect view, visualizing how wars and armed conflicts lead to the insurmountable displacement, and how seasonality plays an important role in attempting the deadly journey away from home to find asylum.",
+        "student_url": "https://willsu.io/",
+        "project_url": "http://refugeeflow.world/landing",
+        "project_repo": "https://github.com/Jiahao01121/refugee-flow",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "landscapes",
+            "pathways"
+        ],
+        "year": 2018,
+        "image": [
+            "preview-2018/will.gif"
+        ],
+        "video": [
+            "https://github.com/Jiahao01121/refugee-flow/blob/master/preview.gif"
+        ]
+    }
+]
