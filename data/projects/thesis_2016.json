@@ -1,0 +1,177 @@
+[
+    {
+        "author": [
+            "Linnea Lapp"
+        ],
+        "title": "Patterns of Vulnerability",
+        "subtitle": "Although Canada has no official measure of poverty, food insecurity (the financial and/or physical inability to access adequate food) is present in homes across the country.",
+        "description": "Although Canada has no official measure of poverty, food insecurity (the financial and/or physical inability to access adequate food) is present in homes across the country, with a particularly severe prominence in Canada\u2019s Northern territories of the Yukon, Northwest Territories, and Nunavut. Northern Canada\u2019s unique geographical and social landscape make its residents especially vulnerable to food insecurity. Extreme temperatures, low population density, isolated communities, inconsistent access, and a higher Aboriginal population set Canada\u2019s north apart. Declining physical and mental health, the deterioration of Aboriginal traditions, and a degeneration of society are at stake when food insecurity exists. Informed through current studies, reports, initiatives, and data collection, this investigation strives to synthesize the available resources into a single visual representation. The process revealed the inconsistency and lack of granularity within publicly available data related to Northern Canadian food insecurity, as well as the many determinants which intersect to create vulnerability within communities. The final visualization breaks down the complexity of the issue into an organized narrative in order to establish a foundational knowledge of Northern Canadian food insecurity.",
+        "student_url": "https://github.com/llapp/",
+        "project_url": "https://parsons.nyc/thesis-2016/linneaLapp/",
+        "project_repo": "https://github.com/llapp/majorstudio2",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "health",
+            "livelihood"
+        ],
+        "year": 2016,
+        "image": [
+            "preview-2016/linnea.png"
+        ],
+        "video": [
+            "https://github.com/llapp/majorstudio2/blob/master/documentation/interactivity.mov?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Barbara Compagnoni"
+        ],
+        "title": "Feeling.it",
+        "subtitle": "How our bodies interpret data is the result of our brain processing.",
+        "description": "How our bodies interpret data is the result of our brain processing the environment around us through our senses. The data collected from the environment triggers a response from the brain to different parts of the body. These physiological and psychological reactions become a unique series of signals and chain reactions controlled by the nervous system. These experiences become memories when data about the event is stored in the human brain. By collecting the environmental stimuli in its entirety, as well as the biometric data created by the electrical and chemical reactions communicating these responses throughout the body from the brain, we are able to evaluate the data without the influence of these filters. Each snapshot of intimate communication within our bodies is documented through the sensor readings of wearable technologies. These processors present biological data to the subject through the perceptions and realities created by the goals of the companies that produce these technologies. Feelin.it is an opportunity to share and compare this intimate data with others.",
+        "student_url": "http://b.parsons.edu/~compagnb/",
+        "project_url": "https://parsons.nyc/thesis-2016/barbaraCompagnoni/",
+        "project_repo": "https://github.com/compagnb/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "data",
+            "technology"
+        ],
+        "year": 2016,
+        "image": [
+            "preview-2016/barbara.png"
+        ],
+        "video": [
+            "BarbaraCompagnoni_2016.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Gabriella Steele"
+        ],
+        "title": "The Group Attachment Based Intervention",
+        "subtitle": "This project was fueled by the notion that the majority of data shared within the Social Science community\u2014specifically the field of Child Attachment\u2014is done so using static forms of communication.",
+        "description": "This project was fueled by the notion that the majority of data shared within the Social Science community\u2014specifically the field of Child Attachment\u2014is done so using static forms of communication. Scholarly articles, grants, and research papers serve as the dominant method of distributing work. This visualization sought to challenge that status quo by creating a digital resource that portrayed data collected by The Group Attachment Based Intervention (GABI) study, a pragmatic clinical trial focused on reducing child maltreatment in vulnerable families. It was developed jointly by The New School for Social Research Center for Attachment and Einstein Albert Einstein College of Medicine\u2019s Center for Babies, Toddlers and Families, in the South Bronx, the poorest congressional district in the United States. The intervention targets vulnerable families at high risk of maltreatment and abuse, specifically working with children ages 0-3. One in four children in the United States experiences child maltreatment at some point in their lives. Among these, one in four victims will be under the age of three. This visualization hopes to shed light on the important work being conducted by this study and provide a unique resource that can better share psychological datasets with all stakeholders involved in the work as well as greater interested audiences.",
+        "student_url": "https://github.com/gabisteele",
+        "project_url": "https://parsons.nyc/thesis-2016/gabiSteele/",
+        "project_repo": "https://github.com/gabisteele/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "data",
+            "policy"
+        ],
+        "year": 2016,
+        "image": [
+            "preview-2016/gabi.png"
+        ],
+        "video": [
+            "https://github.com/visualizedata/thesis/blob/main/assets/media/GabiSteele_2016.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Jacob Romer"
+        ],
+        "title": "Glimpse",
+        "subtitle": "Glimpse is a Chrome extension that reveals the network of entities that watch you on the web.",
+        "description": "Glimpse is a Chrome extension that reveals the network of entities that watch you on the web, across time, and across space. It shows you who can track your location on the internet and in real life. Every time you visit a website, the other party can decide whom to inform. These third parties may send you images and videos you want to see, serve you advertising you don\u2019t want to see, or track your behavior without your knowledge. They all have one thing in common: at the moment your browser interacts with them, they know what site you\u2019re on, what time you visited that site, and your physical location at that moment. This information can be used to build a profile, but you have no way of knowing who knows what. Glimpse is an attempt to create legibility around your online footprint: it hooks into your browser and keeps a record of the entities that receive information about you. You can keep a record of what part of your life is exposed to whom.",
+        "student_url": "https://glimpse.fyi/",
+        "project_url": "http://parsons.nyc/thesis-2016/jacobRomer/",
+        "project_repo": "https://github.com/jacobmbr/glimpse",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "data",
+            "technology"
+        ],
+        "year": 2016,
+        "image": [
+            "preview-2016/jacob.png"
+        ],
+        "video": [
+            "JacobRomer_2016.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Jaime Tanner"
+        ],
+        "title": "Taxonomic Bias",
+        "subtitle": "World species are declining at relatively high rates.",
+        "description": "World species are declining at relatively high rates. Researchers in the fields of ecology, conservation biology, and related areas of study are working to better understand species, and the factors contributing to their loss. In generating this knowledge, the scientific community in many ways shapes conservation policy and natural resource management. However, it has been shown that certain species and taxa receive much more attention than those that may be more difficult to access or less beneficial to humans. As a result, species which may be more critical to the overall health of an ecosystem may be at risk. With so much of our conservation practices dependent on the knowledge produced by the scientific community, it is critical to address this taxonomic bias in research. This project offers one solution to the challenge of communicating bias in organismal research. Using the publications from one major scientific journal, the visualization allows the the reader to explore animal species organized taxonomically and by number of publications where the species is mentioned. Readers can explore publications at a species level or use the sorting tools to observe trends. This visual investigation aims to provoke the reader into questioning prevailing practices for understanding nature. Using research publications as a lens through which we can explore scientific methods of inquiry, this piece visualizes not only the species which receive the most attention from humans but also those which may be least understood.",
+        "student_url": "http://www.jaimetanner.com/",
+        "project_url": "https://parsons.nyc/thesis-2016/jaimeTanner/project.html",
+        "project_repo": "https://github.com/tannerjaime/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "health",
+            "livelihood"
+        ],
+        "year": 2016,
+        "image": [
+            "preview-2016/jaime.png"
+        ],
+        "video": [
+            "JaimeTanner_2016.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Jonathan Thirkield"
+        ],
+        "title": "Visualizing Poetic Space",
+        "subtitle": "Written in the early 1300s, The Divine Comedy stands at the threshold of the Medieval and the Renaissance ages.",
+        "description": "Written in the early 1300s, The Divine Comedy stands at the threshold of the Medieval and the Renaissance ages. Both its grand universal scope \u2014 Dante travels through the center of earth, up through the planets, and beyond the stars \u2014 and the intimate, vivid realism with which Dante portrays the souls he encounters, have captivated readers for seven centuries. In the Renaissance, the specificity of Dante\u2019s geometry led figures such as Botticelli and Galileo to speculate on the exact topology of the Inferno. In the time since, artists from Bosch to Rodin to Twombly have imagined and reimagined the landscapes and populations of Hell, Purgatory, and Paradise. For poets and writers, the formal complexity, beauty, and radical inventiveness of Dante\u2019s poetry has opened countless pathways for remaking and reconceiving the written word. This project draws inspiration specifically from Italo Calvino and Jorge Luis Borges, the great 20th century fabulists, each of whom regarded Dante as a touchstone for the visual and spatial imagination. This project seeks to extend these speculations, inspirations, and reimaginations into the emergent 21st century paradigms of knowledge generation: the three-dimensional interactive capabilities of the graphical user interface, and the n-dimensional dynamics of data transit. Built in JavaScript, using the Threejs 3D library and a MongoDB database, this speculative map of Dante\u2019s poetic space serves as an environment for active, exploratory, deep, and collaborative reading of the poem. My central questions are: How can poetic space be visualized? And how can such a visualization lead us to new modes of reading, understanding, imagination, and expression?",
+        "student_url": "http://www.floatingmedia.com/",
+        "project_url": "https://parsons.nyc/thesis-2016/jonThirkield/",
+        "project_repo": "https://github.com/jthirkield/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "arts",
+            "leisure"
+        ],
+        "year": 2016,
+        "image": [
+            "preview-2016/jonathan.png"
+        ],
+        "video": [
+            "https://github.com/jthirkield/thesis/blob/master/screenpics/DanteInfernoScreenRecording.mov?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Justine Keller"
+        ],
+        "title": "Leadership Gender Gap",
+        "subtitle": "While 92% of girls believe anyone can acquire the skills of leadership, only 21% believe they currently have most of the key qualities required to be a good leader...",
+        "description": "While 92% of girls believe anyone can acquire the skills of leadership, only 21% believe they currently have most of the key qualities required to be a good leader (Schoenberg, Salmond, Fleshman, 2008). Political leadership determines the public policy of a country. Diverse political leadership ensures accurate representation of the population. In the United States, a gender gap exists in political leadership. Although women gained the right to vote 97 \u201cyear\u201ds ago, in federal and state politics women hold fewer than 20% of seats in congress (Pew Research Center, 2015). Girls and women are often not viewed in society as strong leaders, not only by boys and men, but equally by women themselves. Society needs to become aware of these false perceptions of female leaders and their negative impact on political representation. This visualization contrasts the perspectives of women, men, boys, and girls to the number of men and women in various political entities. Comparing these four viewpoints allows for a more comprehensive look at how gender and age affect the relationship between the perceptions of female leaders and the reality of the number of female leaders in politics.",
+        "student_url": "https://www.justinekeller.com/",
+        "project_url": "https://parsons.nyc/thesis-2016/justineKeller/",
+        "project_repo": "https://github.com/Justinerk2/MajorStudio2",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "society",
+            "politics"
+        ],
+        "year": 2016,
+        "image": [
+            "preview-2016/justine.png"
+        ],
+        "video": [
+            "JustineKeller_2016.mp4"
+        ]
+    }
+]

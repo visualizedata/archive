@@ -1,0 +1,477 @@
+[
+    {
+        "author": [
+            "Zui Chen"
+        ],
+        "title": "Unmasking Masks",
+        "subtitle": "Uncovering global attitudes towards masks.",
+        "description": "Uncovering global attitudes towards masks. Masks have recently become common objects in our daily life and triggered a world-wide dissonance due to COVID-19. And there is a clear difference in attitudes between East Asian countries and the Western world.",
+        "student_url": "https://www.zui-c.com/",
+        "project_url": "https://parsons.nyc/thesis-2020/zuiChen",
+        "project_repo": "https://github.com/azuic/unmasking-masks",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "health",
+            "livelihood"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/zui.png"
+        ],
+        "video": [
+            "https://github.com/azuic/unmask-mask/raw/master/demo.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Amanda Anderson-You"
+        ],
+        "title": "Climate & Sleep",
+        "subtitle": "Exploring the relationship between the climate crisis and sleep health",
+        "description": "Exploring the relationship between the climate crisis and sleep health",
+        "student_url": "https://www.amandersonyou.com/",
+        "project_url": "https://parsons.nyc/thesis-2020/amandaAnderson/",
+        "project_repo": "https://github.com/amandersonyou/ClimateSleepThesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "health",
+            "livelihood"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/amanda.png"
+        ],
+        "video": [
+            "https://github.com/amandersonyou/ClimateSleepThesis/raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Antonie Dreyer"
+        ],
+        "title": "From NACA to NASA",
+        "subtitle": "Visualizing research paper metadata in the field of Aerospace Engineering",
+        "description": "Visualizing research paper metadata in the field of Aerospace Engineering for more efficient knowledge exploration, research and learning. The project combines a flattened hierarchical \u201cfront-of-the book\u201d table of contents structure with a network-based \u201cback-of-the book\u201d index connectivity over time.",
+        "student_url": "https://github.com/acdreyer",
+        "project_url": "https://parsons.nyc/thesis-2020/antonieDreyer/",
+        "project_repo": "https://github.com/acdreyer/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "media",
+            "society"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/antonie.png"
+        ],
+        "video": [
+            "https://github.com/acdreyer/thesis/blob/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Brad MacDonald"
+        ],
+        "title": "The Rona and Me",
+        "subtitle": "An emoji-focused reflection on my experience with COVID-19.",
+        "description": "An emoji-focused reflection on my experience with COVID-19 in an era of imposed digital connection.",
+        "student_url": "https://www.bradmack.com/data-visualization",
+        "project_url": "https://emoji-epoch.glitch.me/",
+        "project_repo": "https://github.com/daggus/EmojiEpoch/",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "media",
+            "society"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/brad.png"
+        ],
+        "video": [
+            "https://github.com/daggus/EmojiEpoch//raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Caitlyn Ralph"
+        ],
+        "title": "Gut vs. Data",
+        "subtitle": "Mapping touring histories to British indie and alternative career arcs.",
+        "description": "The aim of this thesis is to map touring histories to British indie and alternative career arcs in a post-streaming world, ultimately creating and visualizing an artist\u2019s career fingerprint through live music.",
+        "student_url": "http://caitlynmralph.github.io/",
+        "project_url": "https://caitlynmralph.github.io/thesis-app-sandbox/",
+        "project_repo": "https://github.com/caitlynmralph/thesis-app-sandbox",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "food",
+            "culture"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/caitlyn.png"
+        ],
+        "video": [
+            "https://github.com/caitlynmralph/thesis-app-sandbox/raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Dan Grunebaum"
+        ],
+        "title": "Turning Japanese",
+        "subtitle": "The Globalization of Japanese Language and Concepts.",
+        "description": "The Globalization of Japanese Language and Concepts ",
+        "student_url": "https://dangrunebaum.github.io/portfolio/",
+        "project_url": "http://parsons.nyc/thesis-2020/danGrunebaum/turning-japanese/",
+        "project_repo": "https://github.com/dangrunebaum/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "food",
+            "culture"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/danG.png"
+        ],
+        "video": [
+            "https://github.com/dangrunebaum/thesis/raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Dan Ran"
+        ],
+        "title": "Shenzhen",
+        "subtitle": "Shenzhen, known as China\u2019s booming silicon valley today, used to be a small fish town 40 years ago.",
+        "description": "Shenzhen, known as China\u2019s booming silicon valley today, used to be a small fish town 40 \u201cyear\u201ds ago. Today, it ranks one of the top mega-cities in China and leading examples of urbanization in developing countries.",
+        "student_url": "https://randandesign.com/#/",
+        "project_url": "https://shuvitran.github.io/szapp/",
+        "project_repo": "https://github.com/shuvitRan/ShenzhenLivability",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "health",
+            "livelihood"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/danR.png"
+        ],
+        "video": [
+            "https://github.com/shuvitRan/ShenzhenLivability/raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Janice Yamanaka-Lew"
+        ],
+        "title": "Swamp Walk",
+        "subtitle": "Stepping into the Great Swamp Swamps have always been a source of terror and fascination but are actually valuable ecosystems.",
+        "description": "Stepping into the Great Swamp Swamps have always been a source of terror and fascination but are actually valuable ecosystems. Swamp Walk weaves together the cultural prejudices and the ecological value of swamps, along with archival graphics from the jetport battle that took place in The Great Swamp in New Jersey between 1959 to 1970.",
+        "student_url": "https://github.com/jyamanaka",
+        "project_url": "https://parsons.nyc/thesis-2020/janiceYamanakaLew/index.html",
+        "project_repo": "https://github.com/jyamanaka/MajorStudio2",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "media",
+            "society"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/janice.png"
+        ],
+        "video": [
+            "https://github.com/jyamanaka/MajorStudio2/raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "John Outwater"
+        ],
+        "title": "Sensing Blue",
+        "subtitle": "Modern blueberry breeding.",
+        "description": "The role of flavor perception in modern blueberry breeding",
+        "student_url": "http://www.johnoutwater.com/",
+        "project_url": "http://parsons.nyc/thesis-2020/johnOutwater/",
+        "project_repo": "https://github.com/joutwater/jo_berry_code",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "food",
+            "culture"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/john.png"
+        ],
+        "video": [
+            "https://github.com/joutwater/jo_berry_code/blob/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Lulu Tanenbaum"
+        ],
+        "title": "Your Brain on Political Media",
+        "subtitle": "Voting choices are made on more than just facts...",
+        "description": "Voting choices are made on more than just facts \u2013 emotion, bias and unconscious thought play an important role in one\u2019s decision-making process. But what effect does advertising have? This thesis visualizes American voters\u2019 unconscious response to political advertising & media.",
+        "student_url": "http://lulutanenbaum.com/",
+        "project_url": "http://lulutanenbaum.com/portfolio/thesis/",
+        "project_repo": "https://github.com/visualizedata/thesis-2020/tree/master/luluTannenbaum",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "media",
+            "society"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/lulu.png"
+        ],
+        "video": [
+            "https://vimeo.com/422526930"
+        ]
+    },
+    {
+        "author": [
+            "Marisa Ruiz Asari"
+        ],
+        "title": "Weapons of Mass Injustice",
+        "subtitle": "Visualizing the unequal impacts of gun violence.",
+        "description": "Visualizing the unequal impacts of gun violence and the search for peace in America\u2019s cities.",
+        "student_url": "https://www.marisaasari.com/",
+        "project_url": "https://weaponsofmassinjustice.netlify.app/",
+        "project_repo": "https://github.com/marisaruizasari/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "data",
+            "policy"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/marisa.png"
+        ],
+        "video": [
+            "https://github.com/marisaruizasari/thesis/raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Michael Desai"
+        ],
+        "title": "Visual Value",
+        "subtitle": "2019 Income Statements",
+        "description": "A User Interface for Exploring Income Statements",
+        "student_url": "http://michaeldesai.com/",
+        "project_url": "https://parsons.nyc/thesis-2020/michaelDesai/",
+        "project_repo": "https://github.com/mi-desai/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "data",
+            "policy"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/michael.png"
+        ],
+        "video": [
+            "https://github.com/mi-desai/thesis/raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Mio Akasako"
+        ],
+        "title": "Women in STEM",
+        "subtitle": "Exploring different facets of sexual misconduct, harassment, and discrimination in STEM academia...",
+        "description": "Exploring different facets of sexual misconduct, harassment, and discrimination in STEM academia to highlight how the environment has protected perpetrators of sexual misconduct, and facilitated a self-perpetuating gender gap to this day.",
+        "student_url": "https://mioakasako.com/",
+        "project_url": "https://miopio.github.io/thesis-play",
+        "project_repo": "https://github.com/miopio/thesis-play",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "data",
+            "policy"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/mio.png"
+        ],
+        "video": [
+            "https://github.com/miopio/thesis-play/raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Neil Oliver"
+        ],
+        "title": "Is Twitter Feeding Bitcoin?",
+        "subtitle": "An analysis of Twitter content.",
+        "description": "An analysis of Twitter content, user behavior, and correlation to Bitcoin market value.",
+        "student_url": "https://neil-oliver.github.io/WebAdvanced_Spring2020_olivn897/portfolio/",
+        "project_url": "http://neiloliver.co/influence/",
+        "project_repo": "https://github.com/neil-oliver/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "media",
+            "society"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/neil.png"
+        ],
+        "video": [
+            "https://github.com/neil-oliver/thesis/raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Nour Zein"
+        ],
+        "title": "Greening From the Rooftops",
+        "subtitle": "New York City\u2018s Green Roof Potential.",
+        "description": "A User Interface for Mapping New York City\u2018s Green Roof Potential",
+        "student_url": "https://nourzein.me/",
+        "project_url": "https://green-roof-potential.herokuapp.com/",
+        "project_repo": "https://github.com/nourzein/thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "health",
+            "livelihood"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/nour.png"
+        ],
+        "video": [
+            "https://github.com/nourzein/thesis/raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Robin Coenen"
+        ],
+        "title": "With Compliments to the Secretary General",
+        "subtitle": "Visualizing Maritime Claims at the UN.",
+        "description": "Visualizing Maritime Claims at the UN in regard to the Continental Shelf.",
+        "student_url": "http://robincoenen.de/",
+        "project_url": "https://parsons.nyc/thesis-2020/robinCoenen",
+        "project_repo": "https://github.com/robincoenen/thesis_production",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "data",
+            "policy"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/robin.png"
+        ],
+        "video": [
+            "https://github.com/robincoenen/thesis_production/raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Saloni Naishad Shah"
+        ],
+        "title": "Are Forest Money or Mitigation?",
+        "subtitle": "Carbon cap and trade markets on deforestation and emissions.",
+        "description": "Understanding the impact of carbon cap and trade markets on deforestation and emissions.",
+        "student_url": "https://github.com/salonieshah",
+        "project_url": "https://parsons.nyc/thesis-2020/saloniNaishadShah",
+        "project_repo": "https://github.com/salonieshah/money-or-mitigation",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "data",
+            "policy"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/saloni.png"
+        ],
+        "video": [
+            "https://github.com/salonieshah/money-or-mitigation/raw/master/demo.mp4?raw=true"
+        ]
+    },
+    {
+        "author": [
+            "Xingwei Huang"
+        ],
+        "title": "A Guilty Pleasure",
+        "subtitle": "Cocoa Production is Driving Deforestation.",
+        "description": "How Cocoa Production is Driving Deforestation in The Ivory Coast",
+        "student_url": "",
+        "project_url": "https://parsons.nyc/thesis-2020/xingweiHuang/",
+        "project_repo": "https://github.com/Xingwei726/MSthesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "food",
+            "culture"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/xingwei.png"
+        ],
+        "video": [
+            "https://github.com/Xingwei726/MSthesis/raw/master/demo.mp4"
+        ]
+    },
+    {
+        "author": [
+            "Yiran Ni"
+        ],
+        "title": "Global Travel of Zoonotic Diseases",
+        "subtitle": "how global wildlife trading is related to the zoonotic diseases.",
+        "description": "An analysis of how global wildlife trading is related to the zoonotic diseases.",
+        "student_url": "https://www.yiranni.me/",
+        "project_url": "https://parsons.nyc/thesis-2020/yiranNi",
+        "project_repo": "https://github.com/yiranni/master-thesis",
+        "category": [
+            "thesis"
+        ],
+        "tags": [
+            "health",
+            "livelihood"
+        ],
+        "year": 2020,
+        "image": [
+            "preview-2020/yiran.png"
+        ],
+        "video": [
+            "https://github.com/yiranni/master-thesis/raw/master/demo.mp4"
+        ]
+    }
+]
