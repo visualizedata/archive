@@ -220,7 +220,7 @@
     "category": ["thesis"],
     "description": "Many modern consumers have difficulty understanding traditional laundry care symbols and find it difficult to take proper care of garments due to the lack of guidance. As a result, garments tend to have a shorter life-cycle thus it is crucial to redesign and reform the way fabric care is communicated to better suit the needs of modern society. This will help to ensure that people are able to properly care for their garments, leading to longer-lasting clothing and a reduced environmental impact. Ultimately, the redesign and reform of laundry care communication will promote greater efficiency, convenience, and sustainability in the laundry process.\nThis project aims to deliver a user-friendly laundry application designed to provide users with a personalized guide on how to wash their clothes properly based on the type of garments. The app utilizes a comprehensive database of fabrics and garment types to recommend the appropriate water temperature and care methods to ensure that the user's clothes are cleaned effectively without damage.",
     "image": [
-      "thesis-2023/Chay.png"
+      "thesis-2023/Chay_new.png"
     ],
     "project_repo": "https://github.com/Chayanitoey/Thesis",
     "project_url": "https://www.perfectlaundryday.com",
