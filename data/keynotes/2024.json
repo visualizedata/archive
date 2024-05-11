@@ -1,0 +1,25 @@
+{
+  "year": 2024,
+  "title": "2024 Keynotes",
+  "department": "MS Data Visualization",
+  "description": "",
+
+  "location": "Tishman Auditorium",
+  "date": "2024-05-13",
+  "time": "6:00PM",
+  "url": "",
+
+  "students": [
+    "Sarah Bacharach",
+    "Gigie Hall",
+    "HaoChe Hung",
+    "Fern Itthisang",
+    "Elene Jikia",
+    "Chanel Kim",
+    "Mayank Munjal",
+    "Sheriff Oseni",
+    "YuMing Wu"
+  ],
+  "video_source_url": "https://vimeo.com/705791086",
+  "video_embed_html": "<iframe src=\"https://player.vimeo.com/video/705791086?h=cecead9c7e&title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
+}
