@@ -1,0 +1,31 @@
+{
+  "year": 2023,
+  "title": "2023 Keynotes",
+  "department": "MS Data Visualization",
+  "description": "",
+
+  "location": "Arnold Hall",
+  "date": "2023-05-13",
+  "time": "6:00PM",
+  "url": "",
+
+  "students": [
+    "Isabel Bonnet Belloso",
+    "Stephanie Dang",
+    "Angelica Hom",
+    "Hao Lun Hung",
+    "Tatiana Lahera Kalainoff",
+    "Asad Ahmad Khan",
+    "Jooyoung Lee",
+    "Tina Titus Mathew",
+    "Tanishia Lavette Williams Peterson",
+    "Huong Pham",
+    "Alix Marissa Scherer",
+    "Ladfah Suwichacherdchu",
+    "Chay Thawaranont",
+    "Zora Wan",
+    "Shuyao Xiao"
+  ],
+  "video_source_url": "https://cdnapisec.kaltura.com/p/5135432/embedPlaykitJs/uiconf_id/51972042?iframeembed=true&entry_id=1_e5d53edm",
+  "video_embed_html": "<iframe src=\"https://cdnapisec.kaltura.com/p/5135432/embedPlaykitJs/uiconf_id/51972042?iframeembed=true&entry_id=1_e5d53edm\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
+}
