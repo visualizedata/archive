@@ -20,6 +20,6 @@
     "Sheriff Oseni",
     "YuMing Wu"
   ],
-  "video_source_url": "https://vimeo.com/946369785",
-  "video_embed_html": "<video src='https://github.com/visualizedata/archive/raw/main/app/assets/media/2024/2024-keynotes.mp4' controls></video>"
+  "video_source_url": "https://github.com/visualizedata/archive/raw/main/app/assets/media/2024/2024-keynotes.mp4",
+  "video_embed_html": "<video controls preload='auto' src='https://github.com/visualizedata/archive/raw/main/app/assets/media/2024/2024-keynotes.mp4'></video>"
 }
