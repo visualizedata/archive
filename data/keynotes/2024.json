@@ -21,5 +21,5 @@
     "YuMing Wu"
   ],
   "video_source_url": "https://vimeo.com/946369785",
-  "video_embed_html": "<iframe src=\"https://player.vimeo.com/video/946369785?h=0a538d8103&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
+  "video_embed_html": "<video src='https://github.com/visualizedata/archive/raw/main/app/assets/media/2024/2024-keynotes.mp4' controls></video>"
 }
