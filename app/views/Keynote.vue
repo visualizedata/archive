@@ -1,7 +1,7 @@
 <template>
   <MaxWidth>
+  <link rel='preload' as='fetch' href='page.video_source_url'>
     <SiteHeader />
-    <link rel='preload' as='fetch' href='page.video_source_url'>
     <div>
       <div class="keynote-info">
         <h1>{{ page.title }}</h1>
