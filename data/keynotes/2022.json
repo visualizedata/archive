@@ -23,6 +23,6 @@
     "Jeremy Odell",
     "Kasey Zhuravlev"
   ],
-  "video_source_url": "https://vimeo.com/705791086",
-  "video_embed_html": "<iframe src=\"https://player.vimeo.com/video/705791086?h=cecead9c7e&title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
+ "video_source_url": "https://github.com/visualizedata/archive/raw/main/app/assets/media/2022keynotes.mp4",
+ "video_embed_html": "<video controls preload='auto' src='https://github.com/visualizedata/archive/raw/main/app/assets/media/2022keynotes.mp4'></video>"
 }
