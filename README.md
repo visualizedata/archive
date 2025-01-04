@@ -16,9 +16,9 @@ You will need the following command line tools.
 
 Required:
 
-- **Node.js (v16.15.0)**
+- **Node.js (v18.19.1)**
   [https://nodejs.org/](https://nodejs.org/)
-- **pnpm (v7.14.0)**
+- **pnpm (v9.15.2)**
   [https://pnpm.io/installation#using-npm](https://pnpm.io/installation#using-npm)
 
 Optional:
@@ -78,7 +78,7 @@ pnpm dev
 
 ## GitHub Actions
 
-This repository is set up to use GitHub Actions to check the status of commits made and to deploy the project to GitHub Pages. Each workflow is defined in a separate Yaml file in `.github/workflows/`
+This repository is set up to use GitHub Actions to check the status of commits made and to deploy the project to GitHub Pages. Each workflow is defined in a separate Yaml file in `.github/workflows/`. Check pnpm versions in each workflow if they fail to run successfully.
 
 | workflow | description                                                                                                    |
 | :------- | :------------------------------------------------------------------------------------------------------------- |
@@ -122,14 +122,14 @@ pnpm validate
 
    ```sh
    node --version
-   # v16.15.0
+   # v18.19.1
    ```
 
 2. Make sure you have the right version of pnpm
 
    ```sh
    pnpm --version
-   # >= 7.14.0
+   # >= 9.15.2
    ```
 
 3. Install dependencies
