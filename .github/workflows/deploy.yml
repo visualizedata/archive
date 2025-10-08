@@ -1,12 +1,5 @@
---- # ------------------------------------------------
-# ------------------------------------------------
-# deploy workflow
 name: Deploy
 
-# ------------------------------------------------
-# this workflow will run
-# • anytime a commit is pushed to the main branch
-# ------------------------------------------------
 on:
   push:
     branches:
@@ -14,83 +7,52 @@ on:
 
 jobs:
   deploy:
-    # --------------------------------------------
-    # workflow runs on an ubuntu image
-    # --------------------------------------------
     runs-on: ubuntu-latest
 
     steps:
-      # ------------------------------------------
-      # check out files tracked by git
-      # ------------------------------------------
       - name: Checkout
         uses: actions/checkout@v4
 
-      # ------------------------------------------
-      # set up pnpm
-      # ------------------------------------------
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: latest
 
-      # ------------------------------------------
-      # find node version
-      # ------------------------------------------
       - name: Determine node version
         id: nvm
         run: |
           if [ -f .nvmrc ]; then
             echo "NVMRC=$(cat .nvmrc)" >> $GITHUB_OUTPUT
+          else
+            echo "NVMRC=18" >> $GITHUB_OUTPUT  # fallback to Node 18
           fi
 
-      # ------------------------------------------
-      # setup node.js (no cache parameter)
-      # ------------------------------------------
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ steps.nvm.outputs.NVMRC }}
 
-      # ------------------------------------------
-      # install dependencies
-      # ------------------------------------------
       - name: Install dependencies
         run: pnpm install
 
-      # ------------------------------------------
-      # check formatting
-      # ------------------------------------------
+      - name: Install ESLint if missing
+        run: pnpm add -D eslint
+
       - name: Run formatter
         run: pnpm format
 
-      # ------------------------------------------
-      # check linting
-      # ------------------------------------------
       - name: Run linter
         run: pnpm lint
 
-      # ------------------------------------------
-      # run unit tests
-      # ------------------------------------------
       - name: Run unit tests
         run: pnpm test
 
-      # ------------------------------------------
-      # pull images/videos
-      # ------------------------------------------
       - name: Pull images from git lfs
         run: git lfs pull
 
-      # ------------------------------------------
-      # build assets
-      # ------------------------------------------
       - name: Build assets
         run: pnpm build
 
-      # ------------------------------------------
-      # deploy: this step pushes our dist folder to GitHub Pages
-      # ------------------------------------------
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
