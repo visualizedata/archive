@@ -11,7 +11,7 @@
     "tags": ["art", "fashion"],
     "year": 2022,
     "image": ["preview-2022/Zhuravlev.png"],
-    "video": ["/media/KaseyZhuravlev_2022.mp4"]
+    "video": ["https://vimeo.com/1129764890"]
   },
   {
     "author": ["Molly Cook"],
@@ -25,7 +25,7 @@
     "tags": ["health", "community"],
     "year": 2022,
     "image": ["preview-2022/Cook.png"],
-    "video": ["/media/MollyCook_2022.mp4"]
+    "video": ["https://vimeo.com/1129765179"]
   },
   {
     "author": ["Juliet Craig"],
@@ -39,7 +39,7 @@
     "tags": ["art", "fashion"],
     "year": 2022,
     "image": ["preview-2022/Craig.png"],
-    "video": ["/media/JulietCraig_2022.mp4"]
+    "video": ["https://vimeo.com/1129765317"]
   },
   {
     "author": ["G\u00edsli Gudj\u00f3nsson"],
@@ -53,7 +53,7 @@
     "tags": ["climate", "environment"],
     "year": 2022,
     "image": ["preview-2022/Gudj\u00f3nsson.png"],
-    "video": ["/media/G%C3%ADsliGudj%C3%B3nsson_2022.mp4"]
+    "video": ["https://vimeo.com/1129765381"]
   },
   {
     "author": ["Jiahui(Jessie) Han"],
@@ -67,7 +67,7 @@
     "tags": ["climate", "environment"],
     "year": 2022,
     "image": ["preview-2022/Han.png"],
-    "video": ["/media/Jiahui(Jessie)Han_2022.mp4"]
+    "video": ["https://vimeo.com/1129765420"]
   },
   {
     "author": ["Yann Kerblat"],
@@ -81,7 +81,7 @@
     "tags": ["climate", "environment"],
     "year": 2022,
     "image": ["preview-2022/Kerblat.png"],
-    "video": ["/media/YannKerblat_2022.mp4"]
+    "video": ["https://vimeo.com/1129765461"]
   },
   {
     "author": ["Yoana Kosturska"],
@@ -95,7 +95,7 @@
     "tags": ["health", "community"],
     "year": 2022,
     "image": ["preview-2022/Kosturska.png"],
-    "video": ["/media/YoanaKosturska_2022.mp4"]
+    "video": ["https://vimeo.com/1129765491"]
   },
   {
     "author": ["Baihan Lin"],
@@ -109,7 +109,7 @@
     "tags": ["health", "community"],
     "year": 2022,
     "image": ["preview-2022/Lin.png"],
-    "video": ["/media/BaihanLin_2022.mp4"]
+    "video": ["https://vimeo.com/1129765517"]
   },
   {
     "author": ["Wenqin Lu"],
@@ -123,7 +123,7 @@
     "tags": ["art", "fashion"],
     "year": 2022,
     "image": ["preview-2022/Lu.png"],
-    "video": ["/media/WenqinLu_2022.mp4"]
+    "video": ["https://vimeo.com/1129765531"]
   },
   {
     "author": ["Shea Molloy"],
@@ -137,7 +137,7 @@
     "tags": ["climate", "environment"],
     "year": 2022,
     "image": ["preview-2022/Molloy.png"],
-    "video": ["/media/SheaMolloy_2022.mp4"]
+    "video": ["https://vimeo.com/1129765537"]
   },
   {
     "author": ["Omar Nema"],
@@ -151,7 +151,7 @@
     "tags": ["art", "fashion"],
     "year": 2022,
     "image": ["preview-2022/Nema.png"],
-    "video": ["/media/OmarNema_2022.mp4"]
+    "video": ["https://vimeo.com/1129765554"]
   },
   {
     "author": ["Jeremy Odell"],
@@ -165,6 +165,6 @@
     "tags": ["health", "community"],
     "year": 2022,
     "image": ["preview-2022/Odell.png"],
-    "video": ["/media/JeremyOdell_2022.mp4"]
+    "video": ["https://vimeo.com/1129765564"]
   }
 ]

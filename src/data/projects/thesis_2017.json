@@ -11,7 +11,7 @@
     "tags": ["society", "politics"],
     "year": 2017,
     "image": ["preview-2017/sam.png"],
-    "video": ["SamVickars_2017.mp4"]
+    "video": ["https://vimeo.com/1130032953"]
   },
   {
     "author": ["Aseem Agarwal"],
@@ -25,7 +25,7 @@
     "tags": ["data", "policy"],
     "year": 2017,
     "image": ["preview-2017/aseem.png"],
-    "video": ["AseemAgarwal_2017.mp4"]
+    "video": ["https://vimeo.com/1130033043"]
   },
   {
     "author": ["Ian Smith"],
@@ -54,7 +54,7 @@
     "year": 2017,
     "image": ["preview-2017/joshua.png"],
     "video": [
-      "https://github.com/neuralism/thesis-app/blob/master/client/video/visualization.mp4?raw=true"
+      "https://vimeo.com/1130033012"
     ]
   },
   {
@@ -70,7 +70,7 @@
     "year": 2017,
     "image": ["preview-2017/nancy.png"],
     "video": [
-      "https://nancyzhao888.github.io/thesis/work/broadway/video/presentation.mp4?raw=true"
+      "https://vimeo.com/1130033023"
     ]
   },
   {
@@ -85,7 +85,7 @@
     "tags": ["landscapes", "pathways"],
     "year": 2017,
     "image": ["preview-2017/pj.png"],
-    "video": ["PJMoriarty_2017.mp4"]
+    "video": ["https://vimeo.com/1130033089"]
   },
   {
     "author": ["Riley Hoonan"],
@@ -99,7 +99,7 @@
     "tags": ["arts", "leisure"],
     "year": 2017,
     "image": ["preview-2017/riley.png"],
-    "video": ["RileyHoonan_2017.mp4"]
+    "video": ["https://vimeo.com/1130033124"]
   },
   {
     "author": ["Sambhav Jain"],
@@ -114,7 +114,7 @@
     "year": 2017,
     "image": ["preview-2017/sambhav.png"],
     "video": [
-      "https://github.com/jainsambhav91/thesis/blob/master/work/finalViz/viz2-final2.mp4?raw=true"
+      "https://vimeo.com/1130033134"
     ]
   }
 ]
