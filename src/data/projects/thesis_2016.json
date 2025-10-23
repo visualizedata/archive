@@ -12,7 +12,7 @@
     "year": 2016,
     "image": ["preview-2016/linnea.png"],
     "video": [
-      "https://github.com/llapp/majorstudio2/blob/master/documentation/interactivity.mov?raw=true"
+      "https://vimeo.com/1130034689"
     ]
   },
   {
@@ -27,7 +27,7 @@
     "tags": ["data", "technology"],
     "year": 2016,
     "image": ["preview-2016/barbara.png"],
-    "video": ["BarbaraCompagnoni_2016.mp4"]
+    "video": ["https://vimeo.com/1130034721"]
   },
   {
     "author": ["Gabriella Steele"],
@@ -42,7 +42,7 @@
     "year": 2016,
     "image": ["preview-2016/gabi.png"],
     "video": [
-      "https://github.com/visualizedata/thesis/blob/main/assets/media/GabiSteele_2016.mp4?raw=true"
+      "https://vimeo.com/1130034732"
     ]
   },
   {
@@ -57,7 +57,7 @@
     "tags": ["data", "technology"],
     "year": 2016,
     "image": ["preview-2016/jacob.png"],
-    "video": ["JacobRomer_2016.mp4"]
+    "video": ["https://vimeo.com/1130034755"]
   },
   {
     "author": ["Jaime Tanner"],
@@ -71,7 +71,7 @@
     "tags": ["health", "livelihood"],
     "year": 2016,
     "image": ["preview-2016/jaime.png"],
-    "video": ["JaimeTanner_2016.mp4"]
+    "video": ["https://vimeo.com/1130034785"]
   },
   {
     "author": ["Jonathan Thirkield"],
@@ -86,7 +86,7 @@
     "year": 2016,
     "image": ["preview-2016/jonathan.png"],
     "video": [
-      "https://github.com/jthirkield/thesis/blob/master/screenpics/DanteInfernoScreenRecording.mov?raw=true"
+      "https://vimeo.com/1130034817"
     ]
   },
   {
@@ -101,6 +101,6 @@
     "tags": ["society", "politics"],
     "year": 2016,
     "image": ["preview-2016/justine.png"],
-    "video": ["JustineKeller_2016.mp4"]
+    "video": ["https://vimeo.com/1130034845"]
   }
 ]

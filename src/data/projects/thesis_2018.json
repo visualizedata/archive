@@ -11,7 +11,7 @@
     "tags": ["food", "culture"],
     "year": 2018,
     "image": ["preview-2018/yicen.png"],
-    "video": ["YicenShi_2018.mp4"]
+    "video": ["https://vimeo.com/1129955559"]
   },
   {
     "author": ["Aucher Serr"],
@@ -41,7 +41,7 @@
     "tags": ["society", "politics"],
     "year": 2018,
     "image": ["preview-2018/benzamin.png"],
-    "video": ["BenzaminYi_2018.mp4"]
+    "video": ["https://vimeo.com/1129955578"]
   },
   {
     "author": ["Elena Paunova"],
@@ -55,7 +55,7 @@
     "tags": ["society", "politics"],
     "year": 2018,
     "image": ["preview-2018/elena.png"],
-    "video": ["ElenaPaunova_2018.mp4"]
+    "video": ["https://vimeo.com/1129955596"]
   },
   {
     "author": ["Ellie Frymire"],
@@ -69,7 +69,7 @@
     "tags": ["language", "understanding"],
     "year": 2018,
     "image": ["preview-2018/ellie.png"],
-    "video": ["EllieFrymire_2018.mp4"]
+    "video": ["https://vimeo.com/1129955621"]
   },
   {
     "author": ["Fl\u00e1vio Pessoa"],
@@ -99,7 +99,7 @@
     "tags": ["landscapes", "pathways"],
     "year": 2018,
     "image": ["preview-2018/george.png"],
-    "video": ["GeorgeSieniawski_2018.mp4"]
+    "video": ["https://vimeo.com/1129955634"]
   },
   {
     "author": ["Joe Steele"],
@@ -127,7 +127,7 @@
     "tags": ["competition", "play"],
     "year": 2018,
     "image": ["preview-2018/julian.png"],
-    "video": ["JulianLange_2018.mp4"]
+    "video": ["https://vimeo.com/1129955654"]
   },
   {
     "author": ["Kevin Lee"],
@@ -141,7 +141,7 @@
     "tags": ["competition", "play"],
     "year": 2018,
     "image": ["preview-2018/kevin.png"],
-    "video": ["KevinLee_2018.mp4"]
+    "video": ["https://vimeo.com/1129955677"]
   },
   {
     "author": ["Max Carradine"],
@@ -155,7 +155,7 @@
     "tags": ["society", "politics"],
     "year": 2018,
     "image": ["preview-2018/max.png"],
-    "video": ["MaxCarradine_2018.mp4"]
+    "video": ["https://vimeo.com/1129955698"]
   },
   {
     "author": ["Michal Bacon"],
@@ -185,7 +185,7 @@
     "tags": ["food", "agriculture"],
     "year": 2018,
     "image": ["preview-2018/rik.png"],
-    "video": ["RikGhosh_2018.mp4"]
+    "video": ["https://vimeo.com/1129955713"]
   },
   {
     "author": ["Rye Zupancis"],
@@ -199,7 +199,7 @@
     "tags": ["food", "agriculture"],
     "year": 2018,
     "image": ["preview-2018/rye.png"],
-    "video": ["RyeZupancis_2018.mp4"]
+    "video": ["https://vimeo.com/1129955737"]
   },
   {
     "author": ["Steven Hubbard"],
@@ -213,7 +213,7 @@
     "tags": ["language", "understanding"],
     "year": 2018,
     "image": ["preview-2018/steven.png"],
-    "video": ["StevenHubbard_2018.mp4"]
+    "video": ["https://vimeo.com/1129955748"]
   },
   {
     "author": ["Will Su"],
