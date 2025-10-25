@@ -2,12 +2,14 @@ import type { ProjectData, projectSchema } from '@/content.config'
 import { useState, useEffect } from 'react'
 import { ProjectCard } from './ProjectCard'
 import { ProjectFilters } from './ProjectFilters'
+import FeaturedCarousel from './FeaturedCarousel'
 
 type Props = {
   projects: ProjectData[]
+  highlightedIds?: string[]
 }
 
-export default function FilterableProjects({ projects }: Props) {
+export default function FilterableProjects({ projects, highlightedIds = [] }: Props) {
   const categoryOptions = projects.reduce<string[]>((acc, p) => {
     p.category.forEach((c) => {
       if (!acc.includes(c)) {
@@ -120,6 +122,14 @@ export default function FilterableProjects({ projects }: Props) {
           onSearchChange={setSearchQuery}
         />
       </div>
+
+      {highlightedIds.length > 0 && (
+        <div className="flex justify-center">
+          <div className="max-w-[1000px]">
+            <FeaturedCarousel highlightedIds={highlightedIds} allProjects={projects} />
+          </div>
+        </div>
+      )}
 
       <div className="flex-1">
         {filtered.length === 0 ? (
