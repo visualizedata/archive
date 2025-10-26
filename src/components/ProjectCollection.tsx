@@ -105,6 +105,10 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
     )
   }
 
+  // Check if any filters are active
+  const hasActiveFilters = category !== null || year !== null ||
+                          selectedTags.length > 0 || searchQuery.trim() !== '';
+
   return (
     <div className="max-w-[2000px] mx-auto">
       <div className={'pb-6'}>
@@ -123,7 +127,7 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
         />
       </div>
 
-      {highlightedIds.length > 0 && (
+      {!hasActiveFilters && highlightedIds.length > 0 && (
         <div className="flex justify-center">
           <div className="max-w-[1000px]">
             <FeaturedCarousel highlightedIds={highlightedIds} allProjects={projects} />
