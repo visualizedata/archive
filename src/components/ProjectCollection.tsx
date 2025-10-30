@@ -127,13 +127,14 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
         />
       </div>
 
-      {!hasActiveFilters && highlightedIds.length > 0 && (
+      {/* Temporarily hidden carousel */}
+      {/* {!hasActiveFilters && highlightedIds.length > 0 && (
         <div className="flex justify-center">
           <div className="max-w-[1000px]">
             <FeaturedCarousel highlightedIds={highlightedIds} allProjects={projects} />
           </div>
         </div>
-      )}
+      )} */}
 
       <div className="flex-1">
         {filtered.length === 0 ? (
