@@ -31,39 +31,48 @@ function isActive(href: string): boolean {
     <BaseHead title={title}/>
   </head>
   <body>
-    <nav class="z-50 fixed top-2 w-full h-20 px-4 py-2 flex items-center justify-center">
-      <div class="flex items-center gap-[60px]">
-        <!-- Left: Program Link -->
-        <a 
-          href="https://www.newschool.edu/parsons/ms-data-visualization/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="nav-button"
-        >
-          Parsons School of Design MS Data Visualization
-        </a>
+    <nav class="z-50 fixed top-0 w-full transition-transform duration-300 ease-in-out" id="navbar">
+      <!-- Desktop Layout -->
+      <div class="hidden md:flex h-20 px-4 py-2 items-center justify-center">
+        <div class="flex items-center gap-[60px]">
+          <!-- Left: Program Title (no link, looks selected) -->
+          <div class="nav-title">
+            Parsons School of Design MS Data Visualization
+          </div>
 
-        <!-- Right: Navigation Items (Desktop) -->
-        <div class="hidden md:flex items-center gap-2">
-          <a href={`${base}/`} class={`nav-item ${isActive(`${base}/`) ? 'active' : ''}`}>Projects</a>
-          <a href={`${base}/keynotes`} class={`nav-item ${isActive(`${base}/keynotes`) ? 'active' : ''}`}>Keynotes</a>
-          <a href={`${base}/about`} class={`nav-item ${isActive(`${base}/about`) ? 'active' : ''}`}>About</a>
+          <!-- Right: Navigation Items -->
+          <div class="flex items-center gap-2">
+            <a href={`${base}/`} class={`nav-item ${isActive(`${base}/`) ? 'active' : ''}`}>Projects</a>
+            <a href={`${base}/keynotes`} class={`nav-item ${isActive(`${base}/keynotes`) ? 'active' : ''}`}>Keynotes</a>
+            <a href={`${base}/about`} class={`nav-item ${isActive(`${base}/about`) ? 'active' : ''}`}>About</a>
+          </div>
         </div>
       </div>
 
-      <!-- Mobile Hamburger Menu -->
-      <button class="md:hidden absolute right-4 text-black/50 hover:text-black transition-colors duration-200" id="mobile-menu-btn">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
+      <!-- Mobile Layout -->
+      <div class="md:hidden bg-white/70 backdrop-blur-md">
+        <div class="px-4 py-3 flex items-start justify-between">
+          <!-- Left: Program Title (two lines, left aligned) -->
+          <div class="nav-title-mobile">
+            <div>Parsons School of Design</div>
+            <div>MS Data Visualization</div>
+          </div>
 
-      <!-- Mobile Menu Dropdown -->
-      <div class="absolute top-full left-0 w-full bg-white/70 backdrop-blur-md hidden" id="mobile-menu">
-        <div class="flex flex-col p-4 gap-2">
-          <a href={`${base}/`} class={`nav-item ${isActive(`${base}/`) ? 'active' : ''}`}>Projects</a>
-          <a href={`${base}/keynotes`} class={`nav-item ${isActive(`${base}/keynotes`) ? 'active' : ''}`}>Keynotes</a>
-          <a href={`${base}/about`} class={`nav-item ${isActive(`${base}/about`) ? 'active' : ''}`}>About</a>
+          <!-- Right: Hamburger Menu -->
+          <button class="text-black/50 hover:text-black transition-colors duration-200 mt-1" id="mobile-menu-btn">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div class="bg-white/70 backdrop-blur-md hidden" id="mobile-menu">
+          <div class="flex flex-col p-4 gap-2 border-t border-black/10">
+            <a href={`${base}/`} class={`nav-item ${isActive(`${base}/`) ? 'active' : ''}`}>Projects</a>
+            <a href={`${base}/keynotes`} class={`nav-item ${isActive(`${base}/keynotes`) ? 'active' : ''}`}>Keynotes</a>
+            <a href={`${base}/about`} class={`nav-item ${isActive(`${base}/about`) ? 'active' : ''}`}>About</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -94,6 +103,35 @@ function isActive(href: string): boolean {
             }
           });
         }
+
+        // Navbar scroll behavior
+        const navbar = document.getElementById('navbar');
+        let lastScrollY = window.scrollY;
+        let ticking = false;
+
+        function updateNavbar() {
+          const scrollY = window.scrollY;
+          
+          if (scrollY > lastScrollY && scrollY > 100) {
+            // Scrolling down & past threshold - hide navbar
+            navbar.style.transform = 'translateY(-100%)';
+          } else {
+            // Scrolling up or at top - show navbar
+            navbar.style.transform = 'translateY(0)';
+          }
+          
+          lastScrollY = scrollY;
+          ticking = false;
+        }
+
+        function onScroll() {
+          if (!ticking) {
+            requestAnimationFrame(updateNavbar);
+            ticking = true;
+          }
+        }
+
+        window.addEventListener('scroll', onScroll);
       });
     </script>
   </body>

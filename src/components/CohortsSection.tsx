@@ -18,59 +18,67 @@ export function CohortsSection({ cohortData }: CohortsProps) {
   // Find the year with the most names to set container height
   const maxNames = Math.max(...Object.values(cohortData).map(names => names.length))
 
+  // Calculate exact width needed - sum of all column widths + gaps
+  const exactWidth = years.reduce((totalWidth, year) => {
+    const longestName = cohortData[year].reduce((longest, current) => 
+      current.length > longest.length ? current : longest, ''
+    )
+    const columnWidth = Math.max(150, longestName.length * 8 + 20) // Base width calculation
+    return totalWidth + columnWidth
+  }, 0) + (years.length - 1) * 40 // Add gaps (2.5rem = 40px between columns)
+
   return (
     <section className="mb-16">
       <div className="grid grid-cols-[100px_1fr] items-start gap-8 text-base">
         <div className="font-bold">Cohorts</div>
         
         {/* Horizontally Scrollable Container */}
-        <div className="relative">
+        <div 
+          style={{ 
+            height: `${maxNames * 1.75 + 6}rem`,
+            overflowX: 'auto',
+            overflowY: 'hidden'
+          }}
+        >
           <div 
-            className="overflow-x-auto overflow-y-hidden scrollbar-hide"
             style={{ 
-              height: `${maxNames * 1.75 + 6}rem`, // Height based on most students + header + padding
-              width: '100%'
+              display: 'flex',
+              gap: '2.5rem',
+              width: `${exactWidth}px` // Exact width - no extra space
             }}
           >
-            {/* Content that holds ALL cohorts in a horizontal row */}
-            <div 
-              className="flex gap-10 h-full"
-              style={{
-                width: 'max-content',
-                minWidth: '150%' // Force content to be wider than container
-              }}
-            >
+            {years.map(year => {
+              // Calculate this column's width
+              const longestName = cohortData[year].reduce((longest, current) => 
+                current.length > longest.length ? current : longest, ''
+              )
+              const columnWidth = Math.max(150, longestName.length * 8 + 20)
               
-              {years.map(year => {
-                // Calculate width based on longest name in this year
-                const longestName = cohortData[year].reduce((longest, current) => 
-                  current.length > longest.length ? current : longest, ''
-                )
-                const estimatedWidth = Math.max(120, longestName.length * 9 + 30) // Slightly wider for safety
-                
-                return (
-                  <div 
-                    key={year} 
-                    className="flex-none"
-                    style={{ width: `${estimatedWidth}px` }}
-                  >
-                    <h3 className="font-bold mb-4 border-b-2 border-black pb-2 text-base whitespace-nowrap">
-                      {year}
-                    </h3>
-                    <div className="space-y-1 text-sm">
-                      {cohortData[year].map((name, index) => (
-                        <div key={`${year}-${index}`} className="whitespace-nowrap">{name}</div>
-                      ))}
-                    </div>
+              return (
+                <div key={year} style={{ minWidth: `${columnWidth}px`, flexShrink: 0 }}>
+                  <h3 style={{ 
+                    fontWeight: 'bold', 
+                    marginBottom: '1rem', 
+                    borderBottom: '2px solid black', 
+                    paddingBottom: '0.5rem',
+                    whiteSpace: 'nowrap'
+                  }}>
+                    {year}
+                  </h3>
+                  <div style={{ fontSize: '14px' }}>
+                    {cohortData[year].map((name, index) => (
+                      <div key={`${year}-${index}`} style={{ 
+                        whiteSpace: 'nowrap', 
+                        marginBottom: '0.25rem' 
+                      }}>
+                        {name}
+                      </div>
+                    ))}
                   </div>
-                )
-              })}
-              
-            </div>
+                </div>
+              )
+            })}
           </div>
-          
-          {/* Scroll Indicator */}
-          <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-[#F7F7F7] to-transparent pointer-events-none"></div>
         </div>
       </div>
     </section>
