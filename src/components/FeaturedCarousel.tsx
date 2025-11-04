@@ -28,6 +28,16 @@ export default function FeaturedCarousel({ highlightedIds, allProjects }: Featur
     [autoplayPlugin]
   );
 
+  // Track window width for responsive animation
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   // Dots functionality
   const scrollTo = useCallback(
     (index: number) => {
@@ -64,47 +74,69 @@ export default function FeaturedCarousel({ highlightedIds, allProjects }: Featur
   if (featuredProjects.length === 0) return null;
 
   return (
-    <div className="w-full mb-8">
-      <div className="overflow-hidden rounded-lg" ref={emblaRef}>
-        <div className="flex">
-          {featuredProjects.map((project) => (
-            <div
-              key={project.id}
-              className="flex-[0_0_100%] min-w-0"
-              style={{ aspectRatio: '21/9' }}
-            >
-              <a
-                href={`${base}/projects/${project.id}`}
-                className="block w-full h-full cursor-pointer"
+    <>
+      <div className="w-full mb-2 relative">
+        <div className="overflow-hidden rounded-lg" ref={emblaRef}>
+          <div className="flex">
+            {featuredProjects.map((project) => (
+              <div
+                key={project.id}
+                className="flex-[0_0_100%] min-w-0"
+                style={{ aspectRatio: '20/9' }}
               >
-                <img
-                  src={`${base}/images/${project.image[0]}`}
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                />
-              </a>
-            </div>
-          ))}
+                <a
+                  href={`${base}/projects/${project.id}`}
+                  className="block w-full h-full cursor-pointer"
+                >
+                  <img
+                    src={`${base}/images/${project.image[0]}`}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
+
+        {/* Dot controls - positioned on top of images */}
+        {featuredProjects.length > 1 && (
+          <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex gap-1.5">
+            {featuredProjects.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => scrollTo(index)}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  index === selectedIndex
+                    ? 'bg-white w-4'
+                    : 'bg-white/60 hover:bg-white/80 w-1.5'
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
-      {/* Dot controls */}
-      {featuredProjects.length > 1 && (
-        <div className="flex justify-center gap-2 mt-4">
-          {featuredProjects.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => scrollTo(index)}
-              className={`h-2.5 rounded-full transition-all duration-300 border border-black/20 ${
-                index === selectedIndex
-                  ? 'bg-black w-8'
-                  : 'bg-neutral-400 hover:bg-neutral-600 w-2.5'
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
+      {/* Dynamic title display - separate from carousel with vertical animation */}
+      {featuredProjects.length > 0 && (
+        <div className="mt-2 h-12 md:h-6 overflow-hidden px-0">
+          <div 
+            className="transition-transform duration-300 ease-in-out"
+            style={{ 
+              transform: `translateY(-${selectedIndex * (isMobile ? 48 : 24)}px)` 
+            }}
+          >
+            {featuredProjects.map((project, index) => (
+              <div key={project.id} className="h-12 md:h-6 flex items-start md:items-center text-left">
+                <h3 className="text-sm md:text-base font-sans font-bold leading-tight">
+                  {project.title} <span className="font-normal">by {project.author.join(', ')}</span>
+                </h3>
+              </div>
+            ))}
+          </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

@@ -1,5 +1,21 @@
 [
   {
+    "author": ["Josh Strupp"],
+    "category": ["thesis"],
+    "description": "Self-help is everywhere—books, podcasts, seminars—and whether we realize it or not, most of us are consuming it. But behind the advice to “optimize your life” lies something more insidious: a genre that often blames individuals for systemic problems, often profiting off our insecurities. This thesis examines American self-help literature—its rise, its authors, and its cultural influence—through the lens of a Goodreads dataset.",
+    "image": ["thesis-2025/Josh.png"],
+    "project_repo": "https://github.com/joshstrupp-dot-com/the-problem-presentation",
+    "project_url": "https://joshstrupp-dot-com.github.io/the-problem-presentation/",
+    "student_url": "",
+    "subtitle": "",
+    "tags": ["culture", "media", "social-justice"],
+    "title": "The Problem With Fixing Yourself",
+    "video": [
+      "https://vimeo.com/1129522857"
+    ],
+    "year": 2025
+  },
+  {
     "author": ["Lisa Sakai Quinley"],
     "category": ["thesis"],
     "description": "Extreme weather—droughts, floods, fires, hurricanes—is now the norm, driven by greenhouse gas emissions and global warming. Morocco, facing an unprecedented drought, is the focus of my thesis. What can be done now and in the future to prevent and mitigate climate disasters? While some solutions lie within Morocco, global action is crucial. I explore how to communicate climate realities and coping strategies to youth. Morocco’s case reflects a global challenge: countries must both endure the effects of climate change and work together to stop it.",
@@ -28,22 +44,6 @@
     "title": "ASK NYC: NYC Open Data Explorer",
     "video": [
       "https://vimeo.com/1129523022"
-    ],
-    "year": 2025
-  },
-  {
-    "author": ["Josh Strupp"],
-    "category": ["thesis"],
-    "description": "Self-help is everywhere—books, podcasts, seminars—and whether we realize it or not, most of us are consuming it. But behind the advice to “optimize your life” lies something more insidious: a genre that often blames individuals for systemic problems, often profiting off our insecurities. This thesis examines American self-help literature—its rise, its authors, and its cultural influence—through the lens of a Goodreads dataset.",
-    "image": ["thesis-2025/Josh.png"],
-    "project_repo": "https://github.com/joshstrupp-dot-com/the-problem-presentation",
-    "project_url": "https://joshstrupp-dot-com.github.io/the-problem-presentation/",
-    "student_url": "",
-    "subtitle": "",
-    "tags": ["culture", "media", "social-justice"],
-    "title": "The Problem With Fixing Yourself",
-    "video": [
-      "https://vimeo.com/1129522857"
     ],
     "year": 2025
   },
@@ -150,7 +150,7 @@
     "subtitle": "",
     "tags": ["art", "sound", "media"],
     "title": "Sound Stories: Visualizing Music in Film",
-    "video": [],
+    "video": ["https://vimeo.com/1133358210"],
     "year": 2025
   },
   {
@@ -203,7 +203,7 @@
     "description": "Public understanding of AI's energy cost is still at its infancy. Many users remain unaware that the AI query 'costs' anything beyond their internet connection. This project is an exploration of energy consumption of AI.",
     "image": ["thesis-2025/Ian.png"],
     "project_repo": "",
-    "project_url": "",
+    "project_url": "https://ianyyu.github.io/MasterThesis/",
     "student_url": "",
     "subtitle": "",
     "tags": ["technology", "environment", "data"],

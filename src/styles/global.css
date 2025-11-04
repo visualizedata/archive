@@ -16,4 +16,47 @@
 	--color-text: var(--text, #000);
 
 	--width-container: 90rem;
+	
+	/* Custom border radius values */
+	--radius-lg: 10px;
+}
+
+/* Navigation Styles */
+.nav-button {
+	@apply bg-white/70 text-black/50 hover:text-black transition-colors duration-200;
+	@apply px-4 py-2 rounded-md text-sm;
+	backdrop-filter: blur(6px);
+}
+
+.nav-item {
+	@apply bg-white/70 text-black/50 hover:text-black transition-colors duration-200;
+	@apply px-4 py-2 rounded-md text-sm;
+	backdrop-filter: blur(6px);
+}
+
+.nav-item.active {
+	@apply text-black;
+}
+
+/* Ensure content doesn't hide behind fixed nav */
+body {
+	@apply pt-4 md:pt-4;
+	background-color: #F7F7F7;
+	overflow-x: hidden; /* Prevent horizontal page scrolling */
+}
+
+/* Mobile: adjust content to start below navigation */
+@media (max-width: 768px) {
+	body {
+		padding-top: calc(32px + 80px + 16px); /* nav top position + nav height + spacing */
+	}
+}
+
+/* Hide scrollbars for horizontal scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }

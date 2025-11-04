@@ -40,7 +40,7 @@ export const ProjectFilters = ({
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
           placeholder="Search"
-          className="w-full border-0 bg-transparent outline-none text-xl placeholder:text-neutral-500"
+          className="w-full border-0 bg-transparent outline-none text-base placeholder:text-neutral-500"
         />
       </div>
 
@@ -51,8 +51,8 @@ export const ProjectFilters = ({
             onCategoryChange(value === 'all' ? null : value)
           }
         >
-          <Select.Trigger className="text-xl w-full flex gap-1 items-center justify-between focus:outline-none">
-            <Select.Value placeholder="All categories" />
+          <Select.Trigger className="text-base w-full flex gap-1 items-center justify-between focus:outline-none">
+            <Select.Value placeholder="All Courses" />
             <Select.Icon>
               <ChevronDownIcon className="text-black dark:text-white shrink-0 size-4 opacity-50" />
             </Select.Icon>
@@ -69,7 +69,7 @@ export const ProjectFilters = ({
                   value="all"
                   className="p-2 hover:bg-black/5 dark:hover:bg-white/5 rounded cursor-pointer text-black dark:text-white focus:outline-none focus:bg-black/5 dark:focus:bg-white/5"
                 >
-                  <Select.ItemText>All Categories</Select.ItemText>
+                  <Select.ItemText>All Courses</Select.ItemText>
                 </Select.Item>
                 {categoryOptions.map((option) => (
                   <Select.Item
@@ -93,7 +93,7 @@ export const ProjectFilters = ({
             onYearChange(value === 'all' ? null : value)
           }
         >
-          <Select.Trigger className="text-xl w-full flex items-center justify-between focus:outline-none">
+          <Select.Trigger className="text-base w-full flex items-center justify-between focus:outline-none">
             <Select.Value placeholder="All years" />
             <Select.Icon>
               <ChevronDownIcon className="text-black dark:text-white" />
