@@ -38,6 +38,17 @@
 	@apply text-black;
 }
 
+/* Program Title Styles */
+.nav-title {
+	@apply bg-white/70 text-black px-4 py-2 rounded-md text-sm;
+	backdrop-filter: blur(6px);
+}
+
+.nav-title-mobile {
+	@apply text-black text-sm leading-tight;
+	line-height: 1.2;
+}
+
 /* Ensure content doesn't hide behind fixed nav */
 body {
 	@apply pt-4 md:pt-4;
@@ -48,7 +59,7 @@ body {
 /* Mobile: adjust content to start below navigation */
 @media (max-width: 768px) {
 	body {
-		padding-top: calc(32px + 80px + 16px); /* nav top position + nav height + spacing */
+		padding-top: calc(32px + 70px + 16px); /* nav top position + mobile nav height + spacing */
 	}
 }
 
