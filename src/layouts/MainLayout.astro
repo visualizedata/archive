@@ -15,6 +15,12 @@ function isActive(href: string): boolean {
   if (href === `${base}/` || href === `${base}`) {
     return currentPath === base || currentPath === `${base}/`;
   }
+  
+  // Special case for keynotes: only highlight if we're on the keynotes index page
+  if (href === `${base}/keynotes`) {
+    return currentPath === `${base}/keynotes` || currentPath === `${base}/keynotes/`;
+  }
+  
   return currentPath.startsWith(href);
 }
 ---
@@ -25,7 +31,7 @@ function isActive(href: string): boolean {
     <BaseHead title={title}/>
   </head>
   <body>
-    <nav class="z-50 fixed top-2 w-full h-20 px-4 py-4 flex items-center justify-center">
+    <nav class="z-50 fixed top-2 w-full h-20 px-4 py-2 flex items-center justify-center">
       <div class="flex items-center gap-[60px]">
         <!-- Left: Program Link -->
         <a 

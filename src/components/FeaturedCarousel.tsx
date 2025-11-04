@@ -82,7 +82,7 @@ export default function FeaturedCarousel({ highlightedIds, allProjects }: Featur
               <div
                 key={project.id}
                 className="flex-[0_0_100%] min-w-0"
-                style={{ aspectRatio: '18/9' }}
+                style={{ aspectRatio: '20/9' }}
               >
                 <a
                   href={`${base}/projects/${project.id}`}

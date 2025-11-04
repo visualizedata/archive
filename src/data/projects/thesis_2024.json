@@ -1,20 +1,5 @@
 [
   {
-    "author": ["Sarah Bacharach"],
-    "category": ["thesis"],
-    "description": " Romance fiction, despite its immense popularity, is often dismissed, relegated to the periphery of literary discourse. This analysis unpacks its multifaceted appeal, exploring themes, structure, and reader psychology. It examines escapism, emotional fulfillment, and the genre's evolving representation to reflect diverse audiences. By analyzing the interplay between romance fiction and social forces like gender roles and technology, this work dismantles stereotypes and argues for its rightful place in literary discourse.",
-    "image": ["thesis-2024/Sarah.png"],
-    "project_repo": "https://github.com/sarahbacharach1/thesis2024",
-    "project_url": "https://sarahbacharach1.github.io/thesis2024/",
-    "student_url": "",
-    "subtitle": "",
-    "tags": [],
-    "title": "In Defense of the Happily Ever-After: Reevaluating the Romance Novel",
-    "video": ["https://vimeo.com/1129756956"],
-    "year": 2024
-  },
-
-  {
     "author": ["Gigie Hall"],
     "category": ["thesis"],
     "description": "The history of Los Angeles is defined by the need to tame the flow of water and nothing epitomizes this more than the Los Angeles Aqueduct and Los Angeles River. Completed in 1913, the aqueduct is both an incredible feat of engineering and an artifact of theft, corruption, and exploitation. To this day, it conveys a third of LA’s water from over 200 miles away, ecologically draining Owens Valley in the process. Meanwhile, the perception of the Los Angeles River as a concrete eyesore conceals the many layers of ecological and cultural significance it contains. This thesis explores both the history and potential future of water in Los Angeles.",
@@ -28,7 +13,20 @@
     "video": ["https://vimeo.com/1128952986"],
     "year": 2024
   },
-
+  {
+    "author": ["Sarah Bacharach"],
+    "category": ["thesis"],
+    "description": " Romance fiction, despite its immense popularity, is often dismissed, relegated to the periphery of literary discourse. This analysis unpacks its multifaceted appeal, exploring themes, structure, and reader psychology. It examines escapism, emotional fulfillment, and the genre's evolving representation to reflect diverse audiences. By analyzing the interplay between romance fiction and social forces like gender roles and technology, this work dismantles stereotypes and argues for its rightful place in literary discourse.",
+    "image": ["thesis-2024/Sarah.png"],
+    "project_repo": "https://github.com/sarahbacharach1/thesis2024",
+    "project_url": "https://sarahbacharach1.github.io/thesis2024/",
+    "student_url": "",
+    "subtitle": "",
+    "tags": [],
+    "title": "In Defense of the Happily Ever-After: Reevaluating the Romance Novel",
+    "video": ["https://vimeo.com/1129756956"],
+    "year": 2024
+  },
   {
     "author": ["HaoChe Hung"],
     "category": ["thesis"],

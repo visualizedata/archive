@@ -7,72 +7,79 @@ const base = import.meta.env.BASE_URL
 const keynotes = await getCollection('keynotes').then((k) =>
   k.map((k) => k.data).sort((a, b) => b.year - a.year)
 )
+
+// Get first thesis image for each year
+const getFirstThesisImage = async (year: number) => {
+  try {
+    const thesisData = await import(`../../data/projects/thesis_${year}.json`)
+    const firstProject = thesisData.default[0]
+    return firstProject?.image?.[0] || null
+  } catch {
+    return null
+  }
+}
+
+// Get thumbnail images for all keynote years
+const keynoteImages = await Promise.all(
+  keynotes.map(async (keynote) => ({
+    year: keynote.year,
+    image: await getFirstThesisImage(keynote.year)
+  }))
+)
+
+const keynoteImagesMap = Object.fromEntries(
+  keynoteImages.map(item => [item.year, item.image])
+)
 ---
 
 <MainLayout title="Keynotes">
-  <div class="max-w-5xl mx-auto px-4 py-8">
-    <h1 class="text-4xl font-bold mb-8">Keynotes</h1>
-
-    <div class="grid grid-cols-2 gap-8">
-      {
-        keynotes.map((keynote) => (
-          <article class="bg-white rounded-2xl border border-gray-300 p-6 flex flex-col">
-            <div class="flex justify-between items-start mb-4">
-              <div>
-                <h2 class="text-2xl font-semibold mb-2">
-                  {keynote.title}
-                </h2>
-                <p class="text-neutral-600">{keynote.department}</p>
-                {keynote.date ? (
-                  <div>
-                    <time class="text-neutral-600">
-                      {new Date(keynote.date).toLocaleDateString(
-                        undefined,
-                        {
-                          dateStyle: 'full',
-                        }
-                      )}
-                    </time>
-                    {keynote.time && (
-                      <span class="text-neutral-600">
-                        at {keynote.time}
-                      </span>
-                    )}
-                  </div>
-                ) : null}
-              </div>
+  <div class="grid grid-cols-2 gap-4">
+    {
+      keynotes.map((keynote) => {
+        const thumbnailImage = keynoteImagesMap[keynote.year]
+        const dateTimeLocation = [
+          keynote.date ? new Date(keynote.date).toLocaleDateString(undefined, { 
+            month: 'long', 
+            day: 'numeric',
+            year: 'numeric'
+          }) : null,
+          keynote.time,
+          keynote.location
+        ].filter(Boolean).join(' • ')
+        
+        return (
+          <a
+            href={`${base}/keynotes/${keynote.year}`}
+            class="group block hover:opacity-90 transition-opacity"
+          >
+            {/* Image thumbnail */}
+            <div class="aspect-video rounded-[10px] overflow-hidden bg-gray-100 mb-3">
+              {thumbnailImage && (
+                <img
+                  src={`${base}/images/${thumbnailImage}`}
+                  alt={`${keynote.year} Keynote`}
+                  class="w-full h-full object-cover"
+                />
+              )}
+              {!thumbnailImage && (
+                <div class="w-full h-full bg-gray-200" />
+              )}
             </div>
-
-            <p class="text-gray-700 mb-4">{keynote.description}</p>
-
-            {keynote.location && (
-              <p class="text-gray-600 mb-4">
-                <span class="font-medium">Location:</span> {keynote.location}
-              </p>
-            )}
-
-            {keynote.url && (
-              <a
-                href={keynote.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-blue-600 hover:text-blue-800 inline-block mb-4"
-              >
-                Event Link
-              </a>
-            )}
-
-            <div class="mt-auto pt-6 flex justify-end">
-              <a
-                href={`${base}/keynotes/${keynote.year}`}
-                class="inline-flex items-center rounded-full h-10 px-3 bg-tns-red text-white font-medium"
-              >
-                View →
-              </a>
+            
+            {/* Text information below */}
+            <div class="text-black">
+              <h2 class="text-base font-bold leading-tight mb-1">
+                {keynote.year} Keynotes
+              </h2>
+              {dateTimeLocation && (
+                <p class="text-base text-gray-600 leading-tight">
+                  {dateTimeLocation}
+                </p>
+              )}
             </div>
-          </article>
-        ))
-      }
-    </div>
+          </a>
+        )
+      })
+    }
   </div>
 </MainLayout>

@@ -1,5 +1,19 @@
 [
   {
+    "author": ["Xingwei Huang"],
+    "title": "A Guilty Pleasure",
+    "subtitle": "Cocoa Production is Driving Deforestation.",
+    "description": "How Cocoa Production is Driving Deforestation in The Ivory Coast",
+    "student_url": "",
+    "project_url": "https://parsons.nyc/thesis-2020/xingweiHuang/",
+    "project_repo": "https://github.com/Xingwei726/MSthesis",
+    "category": ["thesis"],
+    "tags": ["food", "culture"],
+    "year": 2020,
+    "image": ["preview-2020/xingwei.png"],
+    "video": ["https://vimeo.com/1129942339"]
+  },
+  {
     "author": ["Zui Chen"],
     "title": "Unmasking Masks",
     "subtitle": "Uncovering global attitudes towards masks.",
@@ -266,20 +280,6 @@
     "video": [
       "https://vimeo.com/1129942308"
     ]
-  },
-  {
-    "author": ["Xingwei Huang"],
-    "title": "A Guilty Pleasure",
-    "subtitle": "Cocoa Production is Driving Deforestation.",
-    "description": "How Cocoa Production is Driving Deforestation in The Ivory Coast",
-    "student_url": "",
-    "project_url": "https://parsons.nyc/thesis-2020/xingweiHuang/",
-    "project_repo": "https://github.com/Xingwei726/MSthesis",
-    "category": ["thesis"],
-    "tags": ["food", "culture"],
-    "year": 2020,
-    "image": ["preview-2020/xingwei.png"],
-    "video": ["https://vimeo.com/1129942339"]
   },
   {
     "author": ["Yiran Ni"],

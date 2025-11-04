@@ -1,5 +1,19 @@
 [
   {
+    "author": ["Jeremy Odell"],
+    "title": "Is This Your Stop? ",
+    "subtitle": "How Data Drives The MTA",
+    "description": "New York City is by many measures the most culturally and socioeconomically diverse cities in America. Coupled with NYC\u2019s massive population and intercity transit system, these factors put together have created the conditions for a diverse and interesting population of subway riders in NYC. Many people recognize and appreciate this fact, as there are several extremely popular social media accounts that capture the quirks, beautiful moments, and many inadequacies of the city's subway system. While these social media accounts provide a highly subjective and qualitative view of the demographics of the subway system, there have not been many efforts to quantify and visualize these demographics. This is important because these demographics, quirks, and inadequacies of the subway system have their roots in many different factors, including city politics, systemic inequality, and the hyper-capitalistic structure of the city itself. This visualization seeks to present a humanistic perspective of the diversity of the city, from the inside of a subway car. The visualization takes into account actual subway ridership data, neighborhood demographic data, to provide a holistic representation of a ride on the L train, from one side of the city to the other.",
+    "student_url": "https://github.com/jeremy0dell/major-studio-2",
+    "project_url": "https://jeremy0dell.github.io/is-this-your-stop-mta/",
+    "project_repo": "https://github.com/jeremy0dell/major-studio-2",
+    "category": ["thesis"],
+    "tags": ["health", "community"],
+    "year": 2022,
+    "image": ["preview-2022/Odell.png"],
+    "video": ["https://vimeo.com/1129765564"]
+  },
+  {
     "author": ["Kasey Zhuravlev"],
     "title": "Fashion and its History",
     "subtitle": "Does it Repeat Itself?",
@@ -152,19 +166,5 @@
     "year": 2022,
     "image": ["preview-2022/Nema.png"],
     "video": ["https://vimeo.com/1129765554"]
-  },
-  {
-    "author": ["Jeremy Odell"],
-    "title": "Is This Your Stop? ",
-    "subtitle": "How Data Drives The MTA",
-    "description": "New York City is by many measures the most culturally and socioeconomically diverse cities in America. Coupled with NYC\u2019s massive population and intercity transit system, these factors put together have created the conditions for a diverse and interesting population of subway riders in NYC. Many people recognize and appreciate this fact, as there are several extremely popular social media accounts that capture the quirks, beautiful moments, and many inadequacies of the city's subway system. While these social media accounts provide a highly subjective and qualitative view of the demographics of the subway system, there have not been many efforts to quantify and visualize these demographics. This is important because these demographics, quirks, and inadequacies of the subway system have their roots in many different factors, including city politics, systemic inequality, and the hyper-capitalistic structure of the city itself. This visualization seeks to present a humanistic perspective of the diversity of the city, from the inside of a subway car. The visualization takes into account actual subway ridership data, neighborhood demographic data, to provide a holistic representation of a ride on the L train, from one side of the city to the other.",
-    "student_url": "https://github.com/jeremy0dell/major-studio-2",
-    "project_url": "https://jeremy0dell.github.io/is-this-your-stop-mta/",
-    "project_repo": "https://github.com/jeremy0dell/major-studio-2",
-    "category": ["thesis"],
-    "tags": ["health", "community"],
-    "year": 2022,
-    "image": ["preview-2022/Odell.png"],
-    "video": ["https://vimeo.com/1129765564"]
   }
 ]

@@ -1,5 +1,21 @@
 [
   {
+    "author": ["Angelica Hom"],
+    "category": ["thesis"],
+    "description": "When someone watches Everything Everywhere All at Once for the first time, they can be left feeling confused by the end of the film. The chaotic nature of its multiverse story and its bizarre comedy make it easy for viewers to lose track of the main story. Although there are many written articles that analyze the film, nearly all of them do not include visual aids or visualizations. Additionally, data visualizations on the topic of film typically analyze how a film performs by industry metrics and benchmarks rather than a narrative analysis of a film. “Decoding Everything Everywhere All at Once” is a project that breaks down the movie into a visual guide of its characters, themes, structure, and universes. The main objective of the thesis project is to help viewers better understand how these elements work together to create the film’s overall complexion and to encourage viewers to approach the film’s layered story from different angles.",
+    "image": ["thesis-2023/Angelica.png"],
+    "project_repo": "https://github.com/angelica-hom/angelica-hom.github.io",
+    "project_url": "https://www.decodingeeaao.com/",
+    "student_url": "",
+    "subtitle": "",
+    "tags": ["movie", "culture"],
+    "title": "Decoding Everything Everywhere All at Once",
+    "video": [
+      "https://vimeo.com/1129758711"
+    ],
+    "year": 2023
+  },
+  {
     "author": ["Isabel Bonnet"],
     "category": ["thesis"],
     "description": "Under the dictatorship of Nicolas Maduro, Venezuela became a no-fly zone. Unlike the rest of the world, Venezuela’s aviation industry did not crash during the pandemic: it already had. Main airlines such as LATAM, Delta, Air France and Iberia had left prior to the pandemic. On top of becoming inaccessible, Venezuela was on top of the most catastrophic rankings for crime, medicine supply shortages, hyperinflation, repression, among many others. Within the first three years of Maduro’s government, the tourism industry had already shrunk by 60 percent.\nAs airlines return to Venezuela and new hotels and tours open up, I aim to understand the scope of Venezuela’s tourism industry's slow growth. Using a combination of several techniques to gather information, from web scraping to archive research of old airport arrivals and departures web portals, I collected a series of dataset on Venezuela’s aviation industry in the past decade.\nAlthough the dataset has several limitations, it is a good start to understand the slow but steady return of tourists in Venezuela, as the country struggles to keep afloat after years of humanitarian and economic crisis.",
@@ -25,22 +41,6 @@
     "tags": ["agriculture"],
     "title": "Beyond the Cob",
     "video": ["2023/Stephanie Dang - Presentation Video.mp4"],
-    "year": 2023
-  },
-  {
-    "author": ["Angelica Hom"],
-    "category": ["thesis"],
-    "description": "When someone watches Everything Everywhere All at Once for the first time, they can be left feeling confused by the end of the film. The chaotic nature of its multiverse story and its bizarre comedy make it easy for viewers to lose track of the main story. Although there are many written articles that analyze the film, nearly all of them do not include visual aids or visualizations. Additionally, data visualizations on the topic of film typically analyze how a film performs by industry metrics and benchmarks rather than a narrative analysis of a film. “Decoding Everything Everywhere All at Once” is a project that breaks down the movie into a visual guide of its characters, themes, structure, and universes. The main objective of the thesis project is to help viewers better understand how these elements work together to create the film’s overall complexion and to encourage viewers to approach the film’s layered story from different angles.",
-    "image": ["thesis-2023/Angelica.png"],
-    "project_repo": "https://github.com/angelica-hom/angelica-hom.github.io",
-    "project_url": "https://www.decodingeeaao.com/",
-    "student_url": "",
-    "subtitle": "",
-    "tags": ["movie", "culture"],
-    "title": "Decoding Everything Everywhere All at Once",
-    "video": [
-      "https://vimeo.com/1129758711"
-    ],
     "year": 2023
   },
   {
