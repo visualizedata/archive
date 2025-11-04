@@ -1,7 +1,91 @@
 ---
 import MainLayout from '@/layouts/MainLayout.astro'
+import { CohortsSection } from '@/components/CohortsSection'
+import { readFile } from 'fs/promises'
+import { join } from 'path'
+
+// Load cohort data server-side
+async function loadCohortData() {
+  const cohortData: { [year: number]: string[] } = {}
+  const years = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+  
+  for (const year of years) {
+    try {
+      const filePath = join(process.cwd(), 'src', 'data', 'projects', `thesis_${year}.json`)
+      const fileContent = await readFile(filePath, 'utf-8')
+      const projects = JSON.parse(fileContent)
+      
+      const names = projects
+        .map((project: any) => project.author?.[0])
+        .filter((name: string) => name)
+        .sort((a: string, b: string) => a.localeCompare(b))
+      
+      if (names.length > 0) {
+        cohortData[year] = names
+      }
+    } catch (error) {
+      // File doesn't exist or other error, skip this year
+      console.log(`No thesis data found for ${year}`)
+    }
+  }
+  
+  return cohortData
+}
+
+const cohortData = await loadCohortData()
+
+// Debug: log the cohort data
+console.log('Cohort data loaded:', Object.keys(cohortData), 'Total years:', Object.keys(cohortData).length)
+for (const [year, names] of Object.entries(cohortData)) {
+  console.log(`${year}: ${names.length} students`, names.slice(0, 3))
+}
 ---
 
-<MainLayout title="Keynotes">
-  <h1>About</h1>
+<MainLayout title="About">
+  <div class="px-4 md:px-8 lg:px-16 max-w-6xl mx-auto overflow-x-hidden">
+    
+    {/* Main Description Text */}
+    <section class="mt-20 mb-16">
+      <div class="text-left">
+        <p class="text-2xl">
+          The Master's in Data Visualization at Parsons is a multidisciplinary degree
+          that brings together visual design, computer science, statistical analysis,
+          and ethical considerations of data representation.
+        </p>
+        <p class="text-2xl mb-16">
+          The program responds to the increased demand for experts who can turn
+          data into insight. You learn to understand and develop the ways in which
+          the presentation of data shapes opinion, policy, and decision making in
+          today's information economy.
+        </p>
+      </div>
+
+      {/* Faculty Row */}
+      <div class="grid grid-cols-[100px_1fr] items-start gap-8 text-base mb-8">
+        <div class="font-bold">Faculty</div>
+        <div class="flex flex-wrap gap-x-10 gap-y-4">
+          <div>Richard The</div>
+          <div>Daniel Sauter</div>
+          <div>Sam Lavigne</div>
+          <div>Zach Krall</div>
+          <div>Jonathan Thirkield</div>
+          <div>Maria Massei-Rosato</div>
+        </div>
+      </div>
+
+      {/* Partners Row */}
+      <div class="grid grid-cols-[100px_1fr] items-start gap-8 text-base">
+        <div class="font-bold">Partners</div>
+        <div class="flex flex-wrap gap-x-10 gap-y-4">
+          <div>Smithsonian Institute</div>
+          <div>National Gallery of Art</div>
+          <div>The MET Museum</div>
+        </div>
+      </div>
+    </section>
+
+    {/* Cohorts Section - Data Driven */}
+    <CohortsSection cohortData={cohortData} client:load />
+
+  </div>
 </MainLayout>

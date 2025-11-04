@@ -111,6 +111,13 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
 
   return (
     <div className="max-w-[2000px] mx-auto">
+      {/* Featured carousel - always shown when highlighted projects exist */}
+      {highlightedIds.length > 0 && (
+        <div className="mb-8">
+          <FeaturedCarousel highlightedIds={highlightedIds} allProjects={projects} />
+        </div>
+      )}
+
       <div className={'pb-6'}>
         <ProjectFilters
           categoryOptions={categoryOptions}
@@ -126,15 +133,6 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
           onSearchChange={setSearchQuery}
         />
       </div>
-
-      {/* Temporarily hidden carousel */}
-      {/* {!hasActiveFilters && highlightedIds.length > 0 && (
-        <div className="flex justify-center">
-          <div className="max-w-[1000px]">
-            <FeaturedCarousel highlightedIds={highlightedIds} allProjects={projects} />
-          </div>
-        </div>
-      )} */}
 
       <div className="flex-1">
         {filtered.length === 0 ? (
@@ -153,7 +151,7 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
             </button>
           </div>
         ) : (
-          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6">
             {filtered.map((p) => (
               <li key={p.id}>
                 <ProjectCard project={p} />

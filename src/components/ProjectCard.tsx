@@ -8,7 +8,7 @@ export function ProjectCard({ project }: { project: ProjectData }) {
 
   return (
     <div className="relative h-full flex flex-col">
-      <div className="aspect-video bg-gray-100 rounded-2xl overflow-hidden [box-shadow:0_0_0_1px_rgba(0,0,0,0.1)]">
+      <div className="aspect-video bg-gray-100 rounded-[10px] overflow-hidden [box-shadow:0_0_0_1px_rgba(0,0,0,0.1)]">
         <motion.div
           onViewportEnter={() => setIsInView(true)}
           viewport={{ once: true }}
@@ -25,24 +25,10 @@ export function ProjectCard({ project }: { project: ProjectData }) {
         </motion.div>
       </div>
 
-      <div className="flex justify-between pt-4">
-        <div className="text-base flex-auto">
-          <h2 className="font-medium text-balance">{project.title}</h2>
-          <div className={'text-neutral-500'}>
-            {project.author.join(', ')}
-          </div>
-        </div>
-        <div className="text-base shrink-0 text-neutral-500 pl-3">
-          {project.year}
-        </div>
-      </div>
-
-      <div className={'mt-auto flex flex-wrap gap-2 pt-2'}>
-        {[...project.tags, ...project.category].map((tag) => (
-          <span className="text-xs bg-neutral-200/70 rounded-full px-2 text-neutral-800 h-5 flex items-center justify-center capitalize">
-            {tag}
-          </span>
-        ))}
+      <div className="pt-3">
+        <h2 className="text-sm text-balance">
+          <span className="font-bold">{project.title}</span> by {project.author.join(', ')}
+        </h2>
       </div>
 
       <a

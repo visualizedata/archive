@@ -66,26 +66,11 @@ const filteredAuthorProjects = allProjects
 ---
 
 <MainLayout>
-  <main class="max-w-7xl mx-auto">
-    <article class="space-y-8">
-      {/* Header Section */}
-      <header class="space-y-4">
-        <h1
-          class="text-5xl font-neue-display-random max-w-[40ch] text-balance"
-        >
-          {project.data.title}
-        </h1>
-        {
-          project.data.author && project.data.author.length > 0 && (
-            <div>by {project.data.author.join(', ')}</div>
-          )
-        }
-      </header>
-
-      {/* Video Section */}
+  <article>
+      {/* Video Section - First, 16px from top */}
       {
-        project.data.video && project.data.video.length > 0 && (
-          <div class="w-full aspect-video">
+        project.data.video && project.data.video.length > 0 ? (
+          <div class="w-full aspect-video mb-4 rounded-[10px] overflow-hidden">
             <VideoPlayer
               client:load
               src={project.data.video[0]}
@@ -97,13 +82,30 @@ const filteredAuthorProjects = allProjects
               }
             />
           </div>
+        ) : (
+          project.data.image && project.data.image.length > 0 && (
+            <div class="w-full aspect-video mb-4 rounded-[10px] overflow-hidden">
+              <img
+                src={`${base}/images/${project.data.image[0]}`}
+                alt={project.data.title}
+                class="w-full h-full object-cover"
+              />
+            </div>
+          )
         )
       }
 
+      {/* Title and Author - One line format like carousel */}
+      <div class="mb-4">
+        <h1 class="text-2xl font-sans">
+          <span class="font-bold">{project.data.title}</span> by {project.data.author?.join(', ')}
+        </h1>
+      </div>
 
+      {/* Description Paragraph */}
       {
         project.data.description && (
-          <div>
+          <div class="mb-6">
             {project.data.description.split('\n').map((text) => {
               return (
                 <p class="text-base max-w-prose pb-4 last:pb-0">{text}</p>
@@ -113,107 +115,44 @@ const filteredAuthorProjects = allProjects
         )
       }
 
-      {/* Tags and Categories Section */}
-      <div class="space-y-4">
-        {/* Categories */}
-        {
-          project.data.category && project.data.category.length > 0 && (
-            <div class="space-y-2">
-              <h3 class="text-sm font-medium text-neutral-600">Categories</h3>
-              <div class="flex flex-wrap gap-2">
-                {project.data.category.map((category) => (
-                  <a
-                    href={`/?category=${encodeURIComponent(category)}`}
-                    class="px-4 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100 hover:bg-blue-100 transition-colors"
-                  >
-                    {category}
-                  </a>
-                ))}
-              </div>
-            </div>
-          )
-        }
-
-        {/* Tags */}
-        {
-          project.data.tags && project.data.tags.length > 0 && (
-            <div class="space-y-2">
-              <h3 class="text-sm font-medium text-neutral-600">Tags</h3>
-              <div class="flex flex-wrap gap-2">
-                {project.data.tags.map((tag) => (
-                  <a
-                    href={`/?tags=${encodeURIComponent(tag)}`}
-                    class="px-3 py-1 bg-neutral-50 text-neutral-700 rounded-full text-sm border border-neutral-200 hover:bg-neutral-100 transition-colors"
-                  >
-                    {tag}
-                  </a>
-                ))}
-              </div>
-            </div>
-          )
-        }
-      </div>
-
-      {/* Images Section */}
-      {
-        project.data.image && project.data.image.length > 0 && (project.data.video.length < 1) && (
-          <div class="grid grid-cols-1 gap-4">
-            {project.data.image.map((img) => (
-              <img
-                src={`${base}/images/${img}`}
-                alt={`${project.data.title} project image`}
-                class="w-full h-auto rounded-lg object-cover [box-shadow:0_0_0_1px_rgba(0,0,0,0.1)]"
-              />
-            ))}
-          </div>
-        )
-      }
-
-      {/* Links Section */}
+      {/* Student Links - Styled as buttons */}
       {
         (project.data.project_url ||
           project.data.project_repo ||
           project.data.student_url) && (
-          <div class="border-t pt-6 border-neutral-300">
-            <h2 class="text-xl font-semibold mb-4">Links</h2>
-            <ul class="space-y-2">
+          <div class="mb-8">
+            <div class="flex flex-wrap gap-3">
               {project.data.project_url && (
-                <li>
-                  <a
-                    href={project.data.project_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-blue-600 hover:underline"
-                  >
-                    Project Website
-                  </a>
-                </li>
+                <a
+                  href={project.data.project_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="nav-item"
+                >
+                  Project Website
+                </a>
               )}
               {project.data.project_repo && (
-                <li>
-                  <a
-                    href={project.data.project_repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-blue-600 hover:underline"
-                  >
-                    Project Repository
-                  </a>
-                </li>
+                <a
+                  href={project.data.project_repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="nav-item"
+                >
+                  Project Repository
+                </a>
               )}
               {project.data.student_url && (
-                <li>
-                  <a
-                    href={project.data.student_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-blue-600 hover:underline"
-                  >
-                    Student Portfolio
-                  </a>
-                </li>
+                <a
+                  href={project.data.student_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="nav-item"
+                >
+                  Student Portfolio
+                </a>
               )}
-            </ul>
+            </div>
           </div>
         )
       }
