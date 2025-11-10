@@ -35,7 +35,7 @@ export const RelatedProjects = ({
   useEffect(() => {
     const shuffled = [...filteredProjects]
       .sort(() => Math.random() - 0.5)
-      .slice(0, 3)
+      .slice(0, 2)
     setRandomizedProjects(shuffled)
   }, [filteredProjects])
 
@@ -44,7 +44,7 @@ export const RelatedProjects = ({
   return (
     <div className="border-t pt-6 pb-8 border-neutral-300">
       <h2 className="text-xl font-semibold mb-4">{title}</h2>
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
         {randomizedProjects.map((project) => (
           <li key={project.id}>
             <ProjectCard project={project} />

@@ -8,7 +8,7 @@ export function ProjectCard({ project }: { project: ProjectData }) {
 
   return (
     <div className="relative h-full flex flex-col">
-      <div className="aspect-video bg-gray-100 rounded-[10px] overflow-hidden [box-shadow:0_0_0_1px_rgba(0,0,0,0.1)]">
+      <div className="aspect-video bg-gray-100 rounded-[10px] overflow-hidden">
         <motion.div
           onViewportEnter={() => setIsInView(true)}
           viewport={{ once: true }}

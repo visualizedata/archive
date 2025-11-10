@@ -35,10 +35,10 @@ function isActive(href: string): boolean {
       <!-- Desktop Layout -->
       <div class="hidden md:flex h-20 px-4 py-2 items-center justify-center">
         <div class="flex items-center gap-[60px]">
-          <!-- Left: Program Title (no link, looks selected) -->
-          <div class="nav-title">
+          <!-- Left: Program Title (clickable link to home) -->
+          <a href={`${base}/`} class="nav-title">
             Parsons School of Design MS Data Visualization
-          </div>
+          </a>
 
           <!-- Right: Navigation Items -->
           <div class="flex items-center gap-2">
@@ -52,11 +52,11 @@ function isActive(href: string): boolean {
       <!-- Mobile Layout -->
       <div class="md:hidden bg-white/70 backdrop-blur-md">
         <div class="px-4 py-3 flex items-start justify-between">
-          <!-- Left: Program Title (two lines, left aligned) -->
-          <div class="nav-title-mobile">
+          <!-- Left: Program Title (two lines, left aligned, clickable) -->
+          <a href={`${base}/`} class="nav-title-mobile">
             <div>Parsons School of Design</div>
             <div>MS Data Visualization</div>
-          </div>
+          </a>
 
           <!-- Right: Hamburger Menu -->
           <button class="text-black/50 hover:text-black transition-colors duration-200 mt-1" id="mobile-menu-btn">

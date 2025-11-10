@@ -57,9 +57,8 @@ export function CohortsSection({ cohortData }: CohortsProps) {
               return (
                 <div key={year} style={{ minWidth: `${columnWidth}px`, flexShrink: 0 }}>
                   <h3 style={{ 
-                    fontWeight: 'bold', 
                     marginBottom: '1rem', 
-                    borderBottom: '2px solid black', 
+                    borderBottom: '1px solid black', 
                     paddingBottom: '0.5rem',
                     whiteSpace: 'nowrap'
                   }}>
@@ -71,7 +70,12 @@ export function CohortsSection({ cohortData }: CohortsProps) {
                         whiteSpace: 'nowrap', 
                         marginBottom: '0.25rem' 
                       }}>
-                        {name}
+                        <a 
+                          href={`/archive/?q=${encodeURIComponent(name)}`}
+                          className="text-black/50 hover:text-black transition-colors duration-200"
+                        >
+                          {name}
+                        </a>
                       </div>
                     ))}
                   </div>
