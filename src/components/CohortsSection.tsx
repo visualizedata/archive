@@ -64,7 +64,7 @@ export function CohortsSection({ cohortData }: CohortsProps) {
                   }}>
                     {year}
                   </h3>
-                  <div style={{ fontSize: '14px' }}>
+                  <div style={{ fontSize: '16px' }}>
                     {cohortData[year].map((name, index) => (
                       <div key={`${year}-${index}`} style={{ 
                         whiteSpace: 'nowrap', 
