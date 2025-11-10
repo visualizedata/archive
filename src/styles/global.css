@@ -44,6 +44,18 @@
 	backdrop-filter: blur(6px);
 }
 
+.nav-title-unified {
+	@apply text-black text-sm;
+}
+
+.nav-item-unified {
+	@apply text-black/50 hover:text-black transition-colors duration-200 text-sm;
+}
+
+.nav-item-unified.active {
+	@apply text-black;
+}
+
 .nav-title-mobile {
 	@apply text-black text-sm leading-tight;
 	line-height: 1.2;
