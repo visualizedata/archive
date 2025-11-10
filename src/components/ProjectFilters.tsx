@@ -1,160 +1,172 @@
-import * as Select from '@radix-ui/react-select'
-import * as Checkbox from '@radix-ui/react-checkbox'
-import * as Label from '@radix-ui/react-label'
-import { CheckIcon, ChevronDownIcon } from '@radix-ui/react-icons'
+import { useState } from 'react'
 import { SearchIcon } from 'lucide-react'
 
 type FilterProps = {
   categoryOptions: string[]
   yearOptions: number[]
-  tagOptions: string[]
+  themeOptions: string[]
   category: string | null
   year: string | null
-  selectedTags: string[]
+  theme: string | null
   searchQuery: string
   onCategoryChange: (value: string | null) => void
   onYearChange: (value: string | null) => void
-  onTagChange: (tag: string) => void
+  onThemeChange: (value: string | null) => void
   onSearchChange: (value: string) => void
 }
+
+type FilterType = 'themes' | 'courses' | 'years' | null
 
 export const ProjectFilters = ({
   categoryOptions,
   yearOptions,
-  tagOptions,
+  themeOptions,
   category,
   year,
-  selectedTags,
+  theme,
   searchQuery,
   onCategoryChange,
   onYearChange,
-  onTagChange,
+  onThemeChange,
   onSearchChange,
 }: FilterProps) => {
+  const [openFilter, setOpenFilter] = useState<FilterType>(null)
+
+  const handleFilterClick = (filterType: FilterType) => {
+    setOpenFilter(openFilter === filterType ? null : filterType)
+  }
+
+  const handleOptionSelect = (filterType: FilterType, value: string) => {
+    if (filterType === 'themes') {
+      onThemeChange(value)
+    } else if (filterType === 'courses') {
+      onCategoryChange(value)
+    } else if (filterType === 'years') {
+      onYearChange(value)
+    }
+    setOpenFilter(null) // Close the filter row after selection
+  }
+
   return (
-    <div className="w-full flex items-center justify-between gap-6">
-      <div className={'flex-1 flex items-center gap-2 px-2 py-1'}>
-        <SearchIcon className={'size-6 opacity-20'} />
-        <input
-          type="text"
-          value={searchQuery}
-          onChange={(e) => onSearchChange(e.target.value)}
-          placeholder="Search"
-          className="w-full border-0 bg-transparent outline-none text-base placeholder:text-neutral-500"
-        />
-      </div>
+    <div className="w-full space-y-4">
+      {/* Search Bar and Filter Tags Row */}
+      <div className="w-full flex items-center justify-between">
+        {/* Search Bar - Left aligned */}
+        <div className={'flex-1 flex items-center gap-2 px-2 py-1'}>
+          <SearchIcon className={'size-6 opacity-20'} />
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => onSearchChange(e.target.value)}
+            placeholder="Search"
+            className="w-full border-0 bg-transparent outline-none text-sm placeholder:text-neutral-500"
+          />
+        </div>
 
-      <div className={'shrink-0 h-14 flex items-center'}>
-        <Select.Root
-          value={category ?? 'all'}
-          onValueChange={(value) =>
-            onCategoryChange(value === 'all' ? null : value)
-          }
-        >
-          <Select.Trigger className="text-base w-full flex gap-1 items-center justify-between focus:outline-none">
-            <Select.Value placeholder="All Courses" />
-            <Select.Icon>
-              <ChevronDownIcon className="text-black dark:text-white shrink-0 size-4 opacity-50" />
-            </Select.Icon>
-          </Select.Trigger>
-          <Select.Portal>
-            <Select.Content
-              align={'center'}
-              side={'bottom'}
-              position={'popper'}
-              className="bg-white dark:bg-black border border-black/10 rounded shadow-lg"
-            >
-              <Select.Viewport className="p-1">
-                <Select.Item
-                  value="all"
-                  className="p-2 hover:bg-black/5 dark:hover:bg-white/5 rounded cursor-pointer text-black dark:text-white focus:outline-none focus:bg-black/5 dark:focus:bg-white/5"
-                >
-                  <Select.ItemText>All Courses</Select.ItemText>
-                </Select.Item>
-                {categoryOptions.map((option) => (
-                  <Select.Item
-                    key={option}
-                    value={option}
-                    className="p-2 hover:bg-black/5 dark:hover:bg-white/5 rounded cursor-pointer text-black dark:text-white focus:outline-none focus:bg-black/5 dark:focus:bg-white/5"
-                  >
-                    <Select.ItemText>{option}</Select.ItemText>
-                  </Select.Item>
-                ))}
-              </Select.Viewport>
-            </Select.Content>
-          </Select.Portal>
-        </Select.Root>
-      </div>
+        {/* Filter Tags - Right aligned with 20px gaps */}
+        <div className="flex items-center gap-5">
+          {/* Themes Filter */}
+          <button
+            onClick={() => handleFilterClick('themes')}
+            className={`px-4 py-2.5 text-sm rounded-lg bg-white/85 transition-colors ${
+              theme || openFilter === 'themes'
+                ? 'text-black'
+                : 'text-black/50 hover:text-black'
+            }`}
+          >
+            {theme ? theme.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : 'All Themes'}
+          </button>
 
-      <div className={'shrink-0 h-14 flex items-center'}>
-        <Select.Root
-          value={year ?? 'all'}
-          onValueChange={(value) =>
-            onYearChange(value === 'all' ? null : value)
-          }
-        >
-          <Select.Trigger className="text-base w-full flex items-center justify-between focus:outline-none">
-            <Select.Value placeholder="All years" />
-            <Select.Icon>
-              <ChevronDownIcon className="text-black dark:text-white" />
-            </Select.Icon>
-          </Select.Trigger>
-          <Select.Portal>
-            <Select.Content
-              position={'popper'}
-              align={'center'}
-              side={'bottom'}
-              className="bg-white dark:bg-black border border-black/10 rounded shadow-lg"
-            >
-              <Select.Viewport className="p-1">
-                <Select.Item
-                  value="all"
-                  className="p-2 hover:bg-black/5 dark:hover:bg-white/5 rounded cursor-pointer text-black dark:text-white focus:outline-none focus:bg-black/5 dark:focus:bg-white/5"
-                >
-                  <Select.ItemText>All Years</Select.ItemText>
-                </Select.Item>
-                {yearOptions.map((option) => (
-                  <Select.Item
-                    key={option}
-                    value={option.toString()}
-                    className="p-2 hover:bg-black/5 dark:hover:bg-white/5 rounded cursor-pointer text-black dark:text-white focus:outline-none focus:bg-black/5 dark:focus:bg-white/5"
-                  >
-                    <Select.ItemText>{option}</Select.ItemText>
-                  </Select.Item>
-                ))}
-              </Select.Viewport>
-            </Select.Content>
-          </Select.Portal>
-        </Select.Root>
-      </div>
+          {/* Categories Filter */}
+          <button
+            onClick={() => handleFilterClick('courses')}
+            className={`px-4 py-2.5 text-sm rounded-lg bg-white/85 transition-colors ${
+              category || openFilter === 'courses'
+                ? 'text-black'
+                : 'text-black/50 hover:text-black'
+            }`}
+          >
+            {category || 'All Courses'}
+          </button>
 
-      <div className={'hidden'}>
-        <Label.Root className="block mb-2 text-sm font-medium text-black dark:text-white">
-          Tags
-        </Label.Root>
-        <div className="space-y-2">
-          {tagOptions.map((tag) => (
-            <div key={tag} className="flex items-center space-x-2">
-              <Checkbox.Root
-                id={`tag-${tag}`}
-                checked={selectedTags.includes(tag)}
-                onCheckedChange={() => onTagChange(tag)}
-                className="w-4 h-4 border border-black/10 rounded flex items-center justify-center bg-white dark:bg-black text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
-              >
-                <Checkbox.Indicator>
-                  <CheckIcon className="w-3 h-3" />
-                </Checkbox.Indicator>
-              </Checkbox.Root>
-              <Label.Root
-                htmlFor={`tag-${tag}`}
-                className="text-sm text-black dark:text-white"
-              >
-                {tag}
-              </Label.Root>
-            </div>
-          ))}
+          {/* Years Filter */}
+          <button
+            onClick={() => handleFilterClick('years')}
+            className={`px-4 py-2.5 text-sm rounded-lg bg-white/85 transition-colors ${
+              year || openFilter === 'years'
+                ? 'text-black'
+                : 'text-black/50 hover:text-black'
+            }`}
+          >
+            {year || 'All Years'}
+          </button>
         </div>
       </div>
+
+      {/* Expandable Options Row */}
+      {openFilter && (
+        <div className="flex flex-wrap justify-end gap-2 py-4 border-t border-gray-200">
+          {openFilter === 'themes' && (
+            <>
+              <button
+                onClick={() => handleOptionSelect('themes', '')}
+                className="px-4 py-2.5 text-sm rounded-lg bg-white/85 text-black/50 hover:text-black transition-colors"
+              >
+                All Themes
+              </button>
+              {themeOptions.map((option) => (
+                <button
+                  key={option}
+                  onClick={() => handleOptionSelect('themes', option)}
+                  className="px-4 py-2.5 text-sm rounded-lg bg-white/85 text-black/50 hover:text-black transition-colors capitalize"
+                >
+                  {option.replace(/-/g, ' ')}
+                </button>
+              ))}
+            </>
+          )}
+
+          {openFilter === 'courses' && (
+            <>
+              <button
+                onClick={() => handleOptionSelect('courses', '')}
+                className="px-4 py-2.5 text-sm rounded-lg bg-white/85 text-black/50 hover:text-black transition-colors"
+              >
+                All Courses
+              </button>
+              {categoryOptions.map((option) => (
+                <button
+                  key={option}
+                  onClick={() => handleOptionSelect('courses', option)}
+                  className="px-4 py-2.5 text-sm rounded-lg bg-white/85 text-black/50 hover:text-black transition-colors"
+                >
+                  {option}
+                </button>
+              ))}
+            </>
+          )}
+
+          {openFilter === 'years' && (
+            <>
+              <button
+                onClick={() => handleOptionSelect('years', '')}
+                className="px-4 py-2.5 text-sm rounded-lg bg-white/85 text-black/50 hover:text-black transition-colors"
+              >
+                All Years
+              </button>
+              {yearOptions.map((option) => (
+                <button
+                  key={option}
+                  onClick={() => handleOptionSelect('years', option.toString())}
+                  className="px-4 py-2.5 text-sm rounded-lg bg-white/85 text-black/50 hover:text-black transition-colors"
+                >
+                  {option}
+                </button>
+              ))}
+            </>
+          )}
+        </div>
+      )}
     </div>
   )
 }
