@@ -22,17 +22,34 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
   const yearOptions = [...new Set(projects.map((p) => p.year))].sort(
     (a, b) => b - a
   )
-  const tagOptions = [...new Set(projects.flatMap((p) => p.tags))].sort()
+  
+  const themeOptions = (() => {
+    // Count occurrences of each tag
+    const tagCounts = projects.reduce<Record<string, number>>((acc, project) => {
+      project.tags.forEach(tag => {
+        acc[tag] = (acc[tag] || 0) + 1
+      })
+      return acc
+    }, {})
+    
+    // Sort by count (descending) then alphabetically
+    return Object.entries(tagCounts)
+      .sort(([a, countA], [b, countB]) => {
+        if (countB !== countA) return countB - countA // Most used first
+        return a.localeCompare(b) // Alphabetical for ties
+      })
+      .map(([tag]) => tag)
+  })()
 
   const [category, setCategory] = useState<string | null>(null)
   const [year, setYear] = useState<string | null>(null)
-  const [selectedTags, setSelectedTags] = useState<string[]>([])
+  const [theme, setTheme] = useState<string | null>(null)
   const [searchQuery, setSearchQuery] = useState('')
 
   const resetFilters = () => {
     setCategory(null)
     setYear(null)
-    setSelectedTags([])
+    setTheme(null)
     setSearchQuery('')
   }
 
@@ -40,11 +57,11 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
     const params = new URLSearchParams(window.location.search)
     const cat = params.get('category')
     const yr = params.get('year')
-    const tags = params.get('tags')?.split(',') ?? []
+    const thm = params.get('theme')
     const query = params.get('q') ?? ''
     setCategory(cat)
     setYear(yr)
-    setSelectedTags(tags)
+    setTheme(thm)
     setSearchQuery(query)
   }, [])
 
@@ -60,10 +77,10 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
     } else {
       params.delete('year')
     }
-    if (selectedTags.length > 0) {
-      params.set('tags', selectedTags.join(','))
+    if (theme) {
+      params.set('theme', theme)
     } else {
-      params.delete('tags')
+      params.delete('theme')
     }
     if (searchQuery) {
       params.set('q', searchQuery)
@@ -72,16 +89,12 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
     }
     const newUrl = `${window.location.pathname}?${params.toString()}`
     window.history.replaceState(null, '', newUrl)
-  }, [category, year, selectedTags, searchQuery])
+  }, [category, year, theme, searchQuery])
 
   const filtered = projects.filter((project) => {
     if (category && !project.category?.includes(category)) return false
     if (year && project.year.toString() !== year) return false
-    if (
-      selectedTags.length > 0 &&
-      !selectedTags.every((tag) => project.tags.includes(tag))
-    )
-      return false
+    if (theme && !project.tags.includes(theme)) return false
 
     if (searchQuery) {
       const query = searchQuery.toLowerCase()
@@ -99,15 +112,9 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
     return true
   })
 
-  const handleTagChange = (tag: string) => {
-    setSelectedTags((prev) =>
-      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
-    )
-  }
-
   // Check if any filters are active
   const hasActiveFilters = category !== null || year !== null ||
-                          selectedTags.length > 0 || searchQuery.trim() !== '';
+                          theme !== null || searchQuery.trim() !== '';
 
   return (
     <div className="max-w-[2000px] mx-auto">
@@ -122,14 +129,14 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
         <ProjectFilters
           categoryOptions={categoryOptions}
           yearOptions={yearOptions}
-          tagOptions={tagOptions}
+          themeOptions={themeOptions}
           category={category}
           year={year}
-          selectedTags={selectedTags}
+          theme={theme}
           searchQuery={searchQuery}
           onCategoryChange={setCategory}
           onYearChange={setYear}
-          onTagChange={handleTagChange}
+          onThemeChange={setTheme}
           onSearchChange={setSearchQuery}
         />
       </div>
