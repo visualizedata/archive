@@ -96,9 +96,14 @@ const relatedProjects = allProjects
       keynote.students && keynote.students.length > 0 && (
         <div class="mb-8">
           <h3 class="font-bold text-sm mb-3">Students</h3>
-          <div class="flex flex-wrap gap-x-6 gap-y-1 text-sm">
+          <div class="flex flex-wrap gap-x-6 gap-y-1 text-sm leading-relaxed">
             {keynote.students.map((student) => (
-              <div>{student}</div>
+              <a 
+                href={`${base}/?q=${encodeURIComponent(student)}`}
+                class="text-black/50 hover:text-black transition-colors duration-200"
+              >
+                {student}
+              </a>
             ))}
           </div>
         </div>

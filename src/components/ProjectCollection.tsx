@@ -118,11 +118,16 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
 
   return (
     <div className="max-w-[2000px] mx-auto">
-      {/* Featured carousel - always shown when highlighted projects exist */}
-      {highlightedIds.length > 0 && (
+      {/* Featured carousel - shown when highlighted projects exist AND no search query */}
+      {highlightedIds.length > 0 && !searchQuery.trim() && (
         <div className="mb-8">
           <FeaturedCarousel highlightedIds={highlightedIds} allProjects={projects} />
         </div>
+      )}
+
+      {/* Spacer div when there's a search query - replaces carousel (desktop only) */}
+      {searchQuery.trim() && (
+        <div className="hidden md:block h-[60px]"></div>
       )}
 
       <div className={'pb-6'}>
