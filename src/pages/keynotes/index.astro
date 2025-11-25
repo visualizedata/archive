@@ -8,32 +8,34 @@ const keynotes = await getCollection('keynotes').then((k) =>
   k.map((k) => k.data).sort((a, b) => b.year - a.year)
 )
 
-// Get first thesis image for each year
-const getFirstThesisImage = async (year: number) => {
+// Extract Vimeo video ID from embed HTML and get thumbnail
+const getVimeoThumbnail = (videoEmbedHtml: string) => {
   try {
-    const thesisData = await import(`../../data/projects/thesis_${year}.json`)
-    const firstProject = thesisData.default[0]
-    return firstProject?.image?.[0] || null
+    const match = videoEmbedHtml.match(/vimeo\.com\/video\/(\d+)/)
+    if (match && match[1]) {
+      const videoId = match[1]
+      // Use Vimeo's thumbnail API - returns the largest available thumbnail
+      return `https://vumbnail.com/${videoId}.jpg`
+    }
   } catch {
-    return null
+    // If parsing fails, return null
   }
+  return null
 }
 
 // Get thumbnail images for all keynote years
-const keynoteImages = await Promise.all(
-  keynotes.map(async (keynote) => ({
-    year: keynote.year,
-    image: await getFirstThesisImage(keynote.year)
-  }))
-)
+const keynoteImages = keynotes.map((keynote) => ({
+  year: keynote.year,
+  thumbnail: getVimeoThumbnail(keynote.video_embed_html)
+}))
 
 const keynoteImagesMap = Object.fromEntries(
-  keynoteImages.map(item => [item.year, item.image])
+  keynoteImages.map(item => [item.year, item.thumbnail])
 )
 ---
 
 <MainLayout title="Keynotes">
-  <div class="grid grid-cols-2 gap-4">
+  <div class="grid grid-cols-2 gap-6">
     {
       keynotes.map((keynote) => {
         const thumbnailImage = keynoteImagesMap[keynote.year]
@@ -52,11 +54,11 @@ const keynoteImagesMap = Object.fromEntries(
             href={`${base}/keynotes/${keynote.year}`}
             class="group block hover:opacity-90 transition-opacity"
           >
-            {/* Image thumbnail */}
-            <div class="aspect-video rounded-[10px] overflow-hidden bg-gray-100 mb-3">
+            {/* Video thumbnail */}
+            <div class="aspect-video rounded-[10px] overflow-hidden bg-gray-100 mb-3 border border-gray-300">
               {thumbnailImage && (
                 <img
-                  src={`${base}/images/${thumbnailImage}`}
+                  src={thumbnailImage}
                   alt={`${keynote.year} Keynote`}
                   class="w-full h-full object-cover"
                 />

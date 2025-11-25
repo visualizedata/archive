@@ -8,7 +8,7 @@
     "project_url": "https://www.decodingeeaao.com/",
     "student_url": "",
     "subtitle": "",
-    "tags": ["movie", "culture"],
+    "tags": ["arts", "culture", "media"],
     "title": "Decoding Everything Everywhere All at Once",
     "video": [
       "https://vimeo.com/1129758711"
@@ -38,7 +38,7 @@
     "project_url": "https://stephaniedang.github.io/thesis-2023/",
     "student_url": "",
     "subtitle": "Exploring the Impact of Corn in America",
-    "tags": ["agriculture"],
+    "tags": ["food", "environment", "policy"],
     "title": "Beyond the Cob",
     "video": ["2023/Stephanie Dang - Presentation Video.mp4"],
     "year": 2023
@@ -52,7 +52,7 @@
     "project_url": "https://zorawan.github.io/TheFutureHistoryOfIcon/",
     "student_url": "",
     "subtitle": "Forecasting the use of 30 Common human-computer interaction Icons",
-    "tags": ["design"],
+    "tags": ["media", "culture"],
     "title": "The Future History of Icons",
     "video": ["https://vimeo.com/1129758837"],
     "year": 2023
@@ -66,7 +66,7 @@
     "project_url": "https://cloudlun.github.io/music-trends/",
     "student_url": "",
     "subtitle": "Visualizing the music trends of the 21st Century",
-    "tags": ["music"],
+    "tags": ["music", "media", "society"],
     "title": "Post-Millennium Soundscape",
     "video": ["https://vimeo.com/1129758740"],
     "year": 2023
@@ -80,7 +80,7 @@
     "project_url": "https://tkalainoff.github.io/major-studio-2/",
     "student_url": "",
     "subtitle": "Visualizing the Need for Multiracial Representation in American",
-    "tags": ["culture"],
+    "tags": ["culture", "media", "human-rights"],
     "title": "To See/Be Seen",
     "video": ["https://vimeo.com/1129758752"],
     "year": 2023
@@ -94,7 +94,7 @@
     "project_url": "https://asadahmadk.github.io/MSDVthesis/",
     "student_url": "https://asadakhan.myportfolio.com/",
     "subtitle": "An Intricate Interplay",
-    "tags": ["music"],
+    "tags": ["music", "health", "society"],
     "title": "COVID’19 and Mood of Spotify Users:",
     "video": [
       "https://vimeo.com/1129758729"
@@ -138,7 +138,7 @@
     "project_url": "https://hphamdesign.github.io/parsonsThesis/",
     "student_url": "",
     "subtitle": "",
-    "tags": ["media", "culture", "book"],
+    "tags": ["media", "culture"],
     "title": "Are The New York Times Best Seller Books Worth The Hype?",
     "video": ["https://vimeo.com/1129758775"],
     "year": 2023
@@ -152,7 +152,7 @@
     "project_url": "https://amscherer.github.io/",
     "student_url": "",
     "subtitle": "How a decades old product lingers in the background",
-    "tags": ["environment", "health", "fashion"],
+    "tags": ["policy", "health"],
     "title": "The Weight of Lead Based Paint",
     "video": [
       "https://vimeo.com/1129758654"
@@ -168,7 +168,7 @@
     "project_url": "https://skyladfah.github.io/parsonsThesis/",
     "student_url": "",
     "subtitle": "The Growing Popularity of Dog Ownership in United States",
-    "tags": ["leisure", "culture"],
+    "tags": ["play", "society", "culture"],
     "title": "Babies or Barkers",
     "video": ["https://vimeo.com/1129758822"],
     "year": 2023
@@ -182,7 +182,7 @@
     "project_url": "https://www.perfectlaundryday.com",
     "student_url": "",
     "subtitle": "Enhancing garments longevity with better laundry practices",
-    "tags": ["environment", "leisure"],
+    "tags": ["culture", "play"],
     "title": "Perfect Laundry Day",
     "video": ["https://vimeo.com/1129758720"],
     "year": 2023
@@ -196,7 +196,7 @@
     "project_url": "https://tanishialavette.github.io/thecolorofachievement/",
     "student_url": "https://thecolorofachievement.us",
     "subtitle": "An Analysis of US History Curriculum in American Public Schools",
-    "tags": ["education", "culture"],
+    "tags": ["education", "human-rights", "policy"],
     "title": "The Color of Achievement:",
     "video": ["https://vimeo.com/1129758757"],
     "year": 2023
@@ -210,7 +210,7 @@
     "project_url": "https://miaomiaorepo.github.io/authentic-nyc/",
     "student_url": "",
     "subtitle": "",
-    "tags": ["food", "culture", "community"],
+    "tags": ["food", "culture", "mapping"],
     "title": "Authentic Food in NYC",
     "video": ["https://vimeo.com/1129758805"],
     "year": 2023

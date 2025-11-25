@@ -8,7 +8,7 @@
     "project_url": "https://parsons.nyc/thesis-2017/samVickars/",
     "project_repo": "https://github.com/svickars/thesis",
     "category": ["thesis"],
-    "tags": ["society", "politics"],
+    "tags": ["society", "policy", "education", "mapping"],
     "year": 2017,
     "image": ["preview-2017/sam.png"],
     "video": ["https://vimeo.com/1130032953"]
@@ -22,7 +22,7 @@
     "project_url": "http://parsons.nyc/thesis-2017/aseemAgarwal/",
     "project_repo": "https://github.com/agaase/msdv-thesis",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["urban", "policy", "mapping"],
     "year": 2017,
     "image": ["preview-2017/aseem.png"],
     "video": ["https://vimeo.com/1130033043"]
@@ -36,7 +36,7 @@
     "project_url": "http://parsons.nyc/thesis-2017/ianSmith/",
     "project_repo": "https://github.com/Ianssmith/thesis",
     "category": ["thesis"],
-    "tags": ["language", "understanding"],
+    "tags": ["education", "society", "technology"],
     "year": 2017,
     "image": ["preview-2017/ian.png"],
     "video": ["https://vimeo.com/1130294663"]
@@ -50,7 +50,7 @@
     "project_url": "https://parsons.nyc/thesis-2017/joshuaLee/",
     "project_repo": "https://github.com/neuralism/thesis-app",
     "category": ["thesis"],
-    "tags": ["competition", "play"],
+    "tags": ["culture", "media", "play"],
     "year": 2017,
     "image": ["preview-2017/joshua.png"],
     "video": [
@@ -66,7 +66,7 @@
     "project_url": "http://parsons.nyc/thesis-2017/nancyZhao/",
     "project_repo": "https://github.com/nancyzhao888/thesis",
     "category": ["thesis"],
-    "tags": ["arts", "leisure"],
+    "tags": ["arts", "culture"],
     "year": 2017,
     "image": ["preview-2017/nancy.png"],
     "video": [
@@ -82,7 +82,7 @@
     "project_url": "https://parsons.nyc/thesis-2017/pjMoriarty/index.html",
     "project_repo": "https://github.com/moriartp/ms2",
     "category": ["thesis"],
-    "tags": ["landscapes", "pathways"],
+    "tags": ["urban", "mapping", "technology"],
     "year": 2017,
     "image": ["preview-2017/pj.png"],
     "video": ["https://vimeo.com/1130033089"]
@@ -96,7 +96,7 @@
     "project_url": "http://www.mappingdada.info/",
     "project_repo": "https://github.com/rhoon/thesis",
     "category": ["thesis"],
-    "tags": ["arts", "leisure"],
+    "tags": ["arts", "culture", "media"],
     "year": 2017,
     "image": ["preview-2017/riley.png"],
     "video": ["https://vimeo.com/1130033124"]
@@ -110,7 +110,7 @@
     "project_url": "http://parsons.nyc/thesis-2017/sambhavJain/",
     "project_repo": "https://github.com/jainsambhav91/thesis",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["society", "policy", "mapping"],
     "year": 2017,
     "image": ["preview-2017/sambhav.png"],
     "video": [

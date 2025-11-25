@@ -8,7 +8,7 @@
     "project_url": "https://parsons.nyc/thesis-2020/xingweiHuang/",
     "project_repo": "https://github.com/Xingwei726/MSthesis",
     "category": ["thesis"],
-    "tags": ["food", "culture"],
+    "tags": ["food", "climate", "environment"],
     "year": 2020,
     "image": ["preview-2020/xingwei.png"],
     "video": ["https://vimeo.com/1129942339"]
@@ -22,7 +22,7 @@
     "project_url": "https://parsons.nyc/thesis-2020/zuiChen",
     "project_repo": "https://github.com/azuic/unmasking-masks",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["health", "culture", "media"],
     "year": 2020,
     "image": ["preview-2020/zui.png"],
     "video": ["https://vimeo.com/1129942447"]
@@ -36,7 +36,7 @@
     "project_url": "https://parsons.nyc/thesis-2020/amandaAnderson/",
     "project_repo": "https://github.com/amandersonyou/ClimateSleepThesis",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["health", "climate"],
     "year": 2020,
     "image": ["preview-2020/amanda.png"],
     "video": [
@@ -52,7 +52,7 @@
     "project_url": "https://parsons.nyc/thesis-2020/antonieDreyer/",
     "project_repo": "https://github.com/acdreyer/thesis",
     "category": ["thesis"],
-    "tags": ["media", "society"],
+    "tags": ["technology", "education"],
     "year": 2020,
     "image": ["preview-2020/antonie.png"],
     "video": [
@@ -68,7 +68,7 @@
     "project_url": "https://emoji-epoch.glitch.me/",
     "project_repo": "https://github.com/daggus/EmojiEpoch/",
     "category": ["thesis"],
-    "tags": ["media", "society"],
+    "tags": ["health", "media"],
     "year": 2020,
     "image": ["preview-2020/brad.png"],
     "video": [
@@ -84,7 +84,7 @@
     "project_url": "https://caitlynmralph.github.io/thesis-app-sandbox/",
     "project_repo": "https://github.com/caitlynmralph/thesis-app-sandbox",
     "category": ["thesis"],
-    "tags": ["food", "culture"],
+    "tags": ["media", "culture", "music"],
     "year": 2020,
     "image": ["preview-2020/caitlyn.png"],
     "video": [
@@ -100,7 +100,7 @@
     "project_url": "http://parsons.nyc/thesis-2020/danGrunebaum/turning-japanese/",
     "project_repo": "https://github.com/dangrunebaum/thesis",
     "category": ["thesis"],
-    "tags": ["food", "culture"],
+    "tags": ["media", "culture"],
     "year": 2020,
     "image": ["preview-2020/danG.png"],
     "video": [
@@ -116,7 +116,7 @@
     "project_url": "https://shuvitran.github.io/szapp/",
     "project_repo": "https://github.com/shuvitRan/ShenzhenLivability",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["urban", "society"],
     "year": 2020,
     "image": ["preview-2020/danR.png"],
     "video": [
@@ -132,7 +132,7 @@
     "project_url": "https://parsons.nyc/thesis-2020/janiceYamanakaLew/index.html",
     "project_repo": "https://github.com/jyamanaka/MajorStudio2",
     "category": ["thesis"],
-    "tags": ["media", "society"],
+    "tags": ["environment", "policy"],
     "year": 2020,
     "image": ["preview-2020/janice.png"],
     "video": [
@@ -148,7 +148,7 @@
     "project_url": "http://parsons.nyc/thesis-2020/johnOutwater/",
     "project_repo": "https://github.com/joutwater/jo_berry_code",
     "category": ["thesis"],
-    "tags": ["food", "culture"],
+    "tags": ["food", "health", "policy"],
     "year": 2020,
     "image": ["preview-2020/john.png"],
     "video": [
@@ -164,7 +164,7 @@
     "project_url": "http://lulutanenbaum.com/portfolio/thesis/",
     "project_repo": "https://github.com/visualizedata/thesis-2020/tree/master/luluTannenbaum",
     "category": ["thesis"],
-    "tags": ["media", "society"],
+    "tags": ["media", "politics"],
     "year": 2020,
     "image": ["preview-2020/lulu.png"],
     "video": ["https://vimeo.com/1130293711"]
@@ -178,7 +178,7 @@
     "project_url": "https://weaponsofmassinjustice.netlify.app/",
     "project_repo": "https://github.com/marisaruizasari/thesis",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["politics", "policy", "human-rights", "society"],
     "year": 2020,
     "image": ["preview-2020/marisa.png"],
     "video": [
@@ -194,7 +194,7 @@
     "project_url": "https://parsons.nyc/thesis-2020/michaelDesai/",
     "project_repo": "https://github.com/mi-desai/thesis",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["technology", "policy"],
     "year": 2020,
     "image": ["preview-2020/michael.png"],
     "video": [
@@ -210,7 +210,7 @@
     "project_url": "https://miopio.github.io/thesis-play",
     "project_repo": "https://github.com/miopio/thesis-play",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["gender", "policy", "education"],
     "year": 2020,
     "image": ["preview-2020/mio.png"],
     "video": [
@@ -226,7 +226,7 @@
     "project_url": "http://neiloliver.co/influence/",
     "project_repo": "https://github.com/neil-oliver/thesis",
     "category": ["thesis"],
-    "tags": ["media", "society"],
+    "tags": ["media", "technology"],
     "year": 2020,
     "image": ["preview-2020/neil.png"],
     "video": [
@@ -242,7 +242,7 @@
     "project_url": "https://green-roof-potential.herokuapp.com/",
     "project_repo": "https://github.com/nourzein/thesis",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["urban", "mapping", "environment"],
     "year": 2020,
     "image": ["preview-2020/nour.png"],
     "video": [
@@ -258,7 +258,7 @@
     "project_url": "https://parsons.nyc/thesis-2020/robinCoenen",
     "project_repo": "https://github.com/robincoenen/thesis_production",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["politics", "policy"],
     "year": 2020,
     "image": ["preview-2020/robin.png"],
     "video": [
@@ -274,7 +274,7 @@
     "project_url": "https://parsons.nyc/thesis-2020/saloniNaishadShah",
     "project_repo": "https://github.com/salonieshah/money-or-mitigation",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["climate", "environment", "policy"],
     "year": 2020,
     "image": ["preview-2020/saloni.png"],
     "video": [
@@ -290,7 +290,7 @@
     "project_url": "https://parsons.nyc/thesis-2020/yiranNi",
     "project_repo": "https://github.com/yiranni/master-thesis",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["health", "envrionment"],
     "year": 2020,
     "image": ["preview-2020/yiran.png"],
     "video": [

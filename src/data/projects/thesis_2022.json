@@ -8,7 +8,7 @@
     "project_url": "https://jeremy0dell.github.io/is-this-your-stop-mta/",
     "project_repo": "https://github.com/jeremy0dell/major-studio-2",
     "category": ["thesis"],
-    "tags": ["health", "community"],
+    "tags": ["urban", "society", "culture"],
     "year": 2022,
     "image": ["preview-2022/Odell.png"],
     "video": ["https://vimeo.com/1129765564"]
@@ -22,7 +22,7 @@
     "project_url": "https://zhurk746.github.io/MAJOR_STUDIO_2/",
     "project_repo": "https://github.com/zhurk746/MAJOR_STUDIO_2/tree/main/fashion-project",
     "category": ["thesis"],
-    "tags": ["art", "fashion"],
+    "tags": ["art", "fashion", "culture"],
     "year": 2022,
     "image": ["preview-2022/Zhuravlev.png"],
     "video": ["https://vimeo.com/1129764890"]
@@ -36,7 +36,7 @@
     "project_url": "https://m0llyc00k.github.io/Thesis-2022",
     "project_repo": "https://github.com/m0llyc00k/Thesis-2022",
     "category": ["thesis"],
-    "tags": ["health", "community"],
+    "tags": ["health", "policy"],
     "year": 2022,
     "image": ["preview-2022/Cook.png"],
     "video": ["https://vimeo.com/1129765179"]
@@ -78,7 +78,7 @@
     "project_url": "https://jessiejessje.github.io/nyc-conaming/",
     "project_repo": "https://github.com/JessieJessJe/thesis",
     "category": ["thesis"],
-    "tags": ["climate", "environment"],
+    "tags": ["urban", "culture", "mapping"],
     "year": 2022,
     "image": ["preview-2022/Han.png"],
     "video": ["https://vimeo.com/1129765420"]
@@ -92,7 +92,7 @@
     "project_url": "https://ykerblat.github.io/thesis",
     "project_repo": "https://github.com/ykerblat/thesis",
     "category": ["thesis"],
-    "tags": ["climate", "environment"],
+    "tags": ["climate", "environment", "mapping"],
     "year": 2022,
     "image": ["preview-2022/Kerblat.png"],
     "video": ["https://vimeo.com/1129765461"]
@@ -106,7 +106,7 @@
     "project_url": "https://ykmsdv.github.io/thesis/",
     "project_repo": "https://github.com/ykmsdv/thesis",
     "category": ["thesis"],
-    "tags": ["health", "community"],
+    "tags": ["health", "food", "science"],
     "year": 2022,
     "image": ["preview-2022/Kosturska.png"],
     "video": ["https://vimeo.com/1129765491"]
@@ -120,7 +120,7 @@
     "project_url": "https://howbrain.work/",
     "project_repo": "https://github.com/doerlbh/neuroviz",
     "category": ["thesis"],
-    "tags": ["health", "community"],
+    "tags": ["health", "science"],
     "year": 2022,
     "image": ["preview-2022/Lin.png"],
     "video": ["https://vimeo.com/1129765517"]
@@ -134,7 +134,7 @@
     "project_url": "https://kanodesu.github.io/Thesis/app/",
     "project_repo": "https://github.com/kanodesu/Thesis",
     "category": ["thesis"],
-    "tags": ["art", "fashion"],
+    "tags": ["arts", "culture", "play"],
     "year": 2022,
     "image": ["preview-2022/Lu.png"],
     "video": ["https://vimeo.com/1129765531"]
@@ -148,7 +148,7 @@
     "project_url": "https:///papermashea.github.io/thesis",
     "project_repo": "https://github.com/papermashea/thesis",
     "category": ["thesis"],
-    "tags": ["climate", "environment"],
+    "tags": ["climate", "environment", "mapping"],
     "year": 2022,
     "image": ["preview-2022/Molloy.png"],
     "video": ["https://vimeo.com/1129765537"]
@@ -162,7 +162,7 @@
     "project_url": "http://omarnema.com/how-we-gaze/",
     "project_repo": "https://github.com/omar-nema/how-we-gaze/",
     "category": ["thesis"],
-    "tags": ["art", "fashion"],
+    "tags": ["arts", "technology"],
     "year": 2022,
     "image": ["preview-2022/Nema.png"],
     "video": ["https://vimeo.com/1129765554"]

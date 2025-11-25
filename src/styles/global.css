@@ -45,11 +45,13 @@
 }
 
 .nav-title-unified {
-	@apply text-black text-sm;
+	@apply text-black;
+	font-size: 14px;
 }
 
 .nav-item-unified {
-	@apply text-black/50 hover:text-black transition-colors duration-200 text-sm;
+	@apply text-black/50 hover:text-black transition-colors duration-200;
+	font-size: 14px;
 }
 
 .nav-item-unified.active {

@@ -8,7 +8,7 @@
     "project_url": "https://joshstrupp-dot-com.github.io/the-problem-presentation/",
     "student_url": "",
     "subtitle": "",
-    "tags": ["culture", "media", "social-justice"],
+    "tags": ["culture", "media", "machine-learning"],
     "title": "The Problem With Fixing Yourself",
     "video": [
       "https://vimeo.com/1129522857"
@@ -24,7 +24,7 @@
     "project_url": "https://lisasquinley.github.io/Thesis/",
     "student_url": "",
     "subtitle": "",
-    "tags": ["climate-change", "environment", "education"],
+    "tags": ["climate", "environment"],
     "title": "Droughts! Floods! Fires!",
     "video": [
       "https://vimeo.com/1128951300"
@@ -40,7 +40,7 @@
     "project_url": "https://takumanken.github.io/thesis/application/frontend/index.html",
     "student_url": "",
     "subtitle": "",
-    "tags": ["data", "technology", "interactive"],
+    "tags": ["technology", "machine-learning"],
     "title": "ASK NYC: NYC Open Data Explorer",
     "video": [
       "https://vimeo.com/1129523022"
@@ -56,7 +56,7 @@
     "project_url": "https://jjeeong17.github.io/thesis01/#/",
     "student_url": "",
     "subtitle": "",
-    "tags": ["health", "medicine", "education"],
+    "tags": ["health", "education"],
     "title": "Safe Alone, Risky Together",
     "video": [
       "https://vimeo.com/1129522843"
@@ -86,7 +86,7 @@
     "project_url": "https://monsichasris.github.io/thesis/",
     "student_url": "",
     "subtitle": "",
-    "tags": ["culture", "urban", "community"],
+    "tags": ["culture", "urban", "mapping"],
     "title": "Grocery Signery",
     "video": [
       "https://vimeo.com/1129522909"
@@ -102,7 +102,7 @@
     "project_url": "https://xuanx1.github.io/parsonsThesis-xuan/04final/",
     "student_url": "",
     "subtitle": "",
-    "tags": ["transportation", "urban", "mapping"],
+    "tags": ["urban", "mapping"],
     "title": "Trains, Lanes, and Data Grains: Mapping Southeast Asia’s Future",
     "video": [
       "https://vimeo.com/1129523047"
@@ -118,7 +118,7 @@
     "project_url": "https://hushbrush.github.io/thesis/",
     "student_url": "",
     "subtitle": "",
-    "tags": ["women", "culture", "religion"],
+    "tags": ["gender", "culture", "media"],
     "title": "Cookie Cutter Women",
     "video": [],
     "year": 2025
@@ -132,7 +132,7 @@
     "project_url": "https://noursaf.github.io/MSDV-thesis-25/",
     "student_url": "",
     "subtitle": "",
-    "tags": ["politics", "technology", "human-rights"],
+    "tags": ["politics", "machine-learning", "human-rights"],
     "title": "Language of Division",
     "video": [
       "https://vimeo.com/1129522940"
@@ -148,7 +148,7 @@
     "project_url": "https://chuik633.github.io/SoundStories/#about",
     "student_url": "https://www.kchuiart.com/home",
     "subtitle": "",
-    "tags": ["art", "sound", "media"],
+    "tags": ["arts", "music", "media"],
     "title": "Sound Stories: Visualizing Music in Film",
     "video": ["https://vimeo.com/1133358210"],
     "year": 2025
@@ -162,7 +162,7 @@
     "project_url": "https://annielee0313.github.io/msdv-thesis/ ",
     "student_url": "https://ayynniee.com/",
     "subtitle": "",
-    "tags": ["gender", "culture", "interactive"],
+    "tags": ["gender", "culture", "machine-learning"],
     "title": "Fluidnotes: Gender and Fragrance",
     "video": ["https://vimeo.com/1128944653"],
     "year": 2025
@@ -176,7 +176,7 @@
     "project_url": "",
     "student_url": "",
     "subtitle": "",
-    "tags": ["human-rights", "politics", "media"],
+    "tags": ["human-rights", "politics", "media", "machine-learning"],
     "title": "Narratives of Truth and Denial",
     "video": ["https://vimeo.com/1129521971"],
     "year": 2025
@@ -190,7 +190,7 @@
     "project_url": "https://stephhwu.github.io/parsonsthesis-2025/",
     "student_url": "",
     "subtitle": "",
-    "tags": ["nature", "science", "storytelling"],
+    "tags": ["play", "culture"],
     "title": "Dogs with Jobs",
     "video": [
       "https://vimeo.com/1129522961"
@@ -206,7 +206,7 @@
     "project_url": "https://ianyyu.github.io/MasterThesis/",
     "student_url": "",
     "subtitle": "",
-    "tags": ["technology", "environment", "data"],
+    "tags": ["technology", "machine-learning"],
     "title": "In the Age of AI",
     "video": [],
     "year": 2025
