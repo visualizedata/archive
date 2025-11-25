@@ -3,6 +3,24 @@ import MainLayout from '@/layouts/MainLayout.astro'
 import { CohortsSection } from '@/components/CohortsSection'
 import { readFile } from 'fs/promises'
 import { join } from 'path'
+import partnersData from '@/data/partners.json'
+
+const base = import.meta.env.BASE_URL
+
+// Helper function to convert faculty name to URL slug
+const facultyToSlug = (name: string) => {
+  return name.toLowerCase().replace(/\s+/g, '-')
+}
+
+// Faculty data with their names
+const faculty = [
+  'Richard The',
+  'Daniel Sauter', 
+  'Sam Lavigne',
+  'Zach Krall',
+  'Jonathan Thirkield',
+  'Maria Massei-Rosato'
+]
 
 // Load cohort data server-side
 async function loadCohortData() {
@@ -61,26 +79,56 @@ for (const [year, names] of Object.entries(cohortData)) {
       </div>
 
       {/* Faculty Row */}
-      <div class="grid grid-cols-[100px_1fr] items-start gap-8 text-base mb-8">
+      <div class="grid grid-cols-[100px_1fr] items-start gap-8 text-base mb-16">
         <div class="font-bold">Faculty</div>
         <div class="flex flex-wrap gap-x-10 gap-y-4">
-          <div>Richard The</div>
-          <div>Daniel Sauter</div>
-          <div>Sam Lavigne</div>
-          <div>Zach Krall</div>
-          <div>Jonathan Thirkield</div>
-          <div>Maria Massei-Rosato</div>
+          {faculty.map((name) => (
+            <a
+              href={`https://www.newschool.edu/parsons/faculty/${facultyToSlug(name)}/`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-black/50 hover:text-black transition-colors duration-200"
+            >
+              {name}
+            </a>
+          ))}
         </div>
       </div>
 
       {/* Partners Row */}
       <div class="grid grid-cols-[100px_1fr] items-start gap-8 text-base">
         <div class="font-bold">Partners</div>
-        <div class="flex flex-wrap gap-x-10 gap-y-4">
-          <div>Smithsonian Institute</div>
-          <div>National Gallery of Art</div>
-          <div>The MET Museum</div>
-          <div>UNDP</div>
+        <div class="flex flex-wrap items-center gap-16">
+          {partnersData.map((partner) => {
+            const logoSrc = `${base}/images/partners/${partner.logo}`
+            const content = (
+              <img
+                src={logoSrc}
+                alt={partner.alt}
+                class="max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200 opacity-70 hover:opacity-100"
+              />
+            )
+            
+            // If partner has a tag, make it clickable to filter projects
+            if (partner.tag) {
+              return (
+                <a 
+                  href={`${base}/?q=${encodeURIComponent(partner.tag)}`}
+                  class="block"
+                  title={`View ${partner.name} projects`}
+                >
+                  {content}
+                </a>
+              )
+            }
+            
+            // Otherwise just show the logo
+            return (
+              <div class="cursor-default">
+                {content}
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>

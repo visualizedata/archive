@@ -8,7 +8,7 @@
     "project_url": "https://tiffanyfrance.com/ml-books",
     "project_repo": "https://github.com/tiffanyfrance/thesis",
     "category": ["thesis"],
-    "tags": ["arts", "language"],
+    "tags": ["arts", "machine-learning", "media"],
     "year": 2021,
     "image": ["preview-2021/tiffany.png"],
     "video": [
@@ -56,7 +56,7 @@
     "project_url": "https://shmanzar.github.io/86ed/",
     "project_repo": "https://github.com/shmanzar/thesis",
     "category": ["thesis"],
-    "tags": ["food", "culture"],
+    "tags": ["food", "society", "policy"],
     "year": 2021,
     "image": ["preview-2021/shaheryar.png"],
     "video": [
@@ -72,7 +72,7 @@
     "project_url": "https://isabelstoddart.github.io/matilda-effect/",
     "project_repo": "https://github.com/isabelstoddart/msdv-thesis",
     "category": ["thesis"],
-    "tags": ["technology", "society"],
+    "tags": ["education", "society", "gender"],
     "year": 2021,
     "image": ["preview-2021/isabel.png"],
     "video": [
@@ -88,7 +88,7 @@
     "project_url": "https://ripleycleghorn.github.io/thesis/project-code/",
     "project_repo": "https://github.com/ripleycleghorn/thesis",
     "category": ["thesis"],
-    "tags": ["landscapes", "policy"],
+    "tags": ["climate", "environment", "science"],
     "year": 2021,
     "image": ["preview-2021/ripley.png"],
     "video": [
@@ -104,7 +104,7 @@
     "project_url": "https://dalbed349.github.io/20YearsOfWater/",
     "project_repo": "https://github.com/Dalbed349/AlabamaWater",
     "category": ["thesis"],
-    "tags": ["policy", "health"],
+    "tags": ["policy", "health", "environment", "mapping"],
     "year": 2021,
     "image": ["preview-2021/dallas.png"],
     "video": [
@@ -120,7 +120,7 @@
     "project_url": "https://amina-brown.github.io/nature-nurture/",
     "project_repo": "https://github.com/amina-brown/thesis",
     "category": ["thesis"],
-    "tags": ["landscapes", "society"],
+    "tags": ["environment", "society"],
     "year": 2021,
     "image": ["preview-2021/amina.png"],
     "video": [
@@ -152,7 +152,7 @@
     "project_url": "https://madhat5.github.io/project-repo/",
     "project_repo": "https://github.com/madhat5/MSDV_2021-Thesis",
     "category": ["thesis"],
-    "tags": ["competition", "health"],
+    "tags": ["sports", "health"],
     "year": 2021,
     "image": ["preview-2021/david.png"],
     "video": [
@@ -168,7 +168,7 @@
     "project_url": "https://jotnajoa.github.io/wordup/",
     "project_repo": "https://github.com/jotnajoa/Majorstudio2",
     "category": ["thesis"],
-    "tags": ["culture", "language"],
+    "tags": ["culture", "media", "music"],
     "year": 2021,
     "image": ["preview-2021/seungyu.png"],
     "video": [
@@ -184,7 +184,7 @@
     "project_url": "https://jamestroxel.github.io/karpovkorchnoi/#/prologue",
     "project_repo": "https://github.com/jamestroxel/Karpov-Korchnoi",
     "category": ["thesis"],
-    "tags": ["competition", "play"],
+    "tags": ["culture", "play"],
     "year": 2021,
     "image": ["preview-2021/james.png"],
     "video": [
@@ -200,7 +200,7 @@
     "project_url": "https://yujunmjiang.github.io/a-different-game/",
     "project_repo": "https://github.com/yujunmjiang/gaming-industry-tracker",
     "category": ["thesis"],
-    "tags": ["media", "arts"],
+    "tags": ["play", "culture", "media", "society"],
     "year": 2021,
     "image": ["preview-2021/yujun.png"],
     "video": [
@@ -216,7 +216,7 @@
     "project_url": "https://douglocke.github.io/myfellowcitizens/",
     "project_repo": "https://github.com/douglocke/mfc",
     "category": ["thesis"],
-    "tags": ["politics", "language"],
+    "tags": ["politics", "media"],
     "year": 2021,
     "image": ["preview-2021/douglas.png"],
     "video": [
@@ -232,7 +232,7 @@
     "project_url": "https://inhyelee-data.github.io/sonagi/",
     "project_repo": "https://github.com/InhyeLee-Data/thesis-2021",
     "category": ["thesis"],
-    "tags": ["language", "arts"],
+    "tags": ["mapping", "arts", "culture"],
     "year": 2021,
     "image": ["preview-2021/inhye.png"],
     "video": [
@@ -248,7 +248,7 @@
     "project_url": "https://justinkraus.github.io/tldr/",
     "project_repo": "https://github.com/justinkraus/thesis",
     "category": ["thesis"],
-    "tags": ["language", "society"],
+    "tags": ["education", "media", "society"],
     "year": 2021,
     "image": ["preview-2021/justin.png"],
     "video": [

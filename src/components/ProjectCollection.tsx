@@ -163,7 +163,7 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
             </button>
           </div>
         ) : (
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6">
             {filtered.map((p) => (
               <li key={p.id}>
                 <ProjectCard project={p} />

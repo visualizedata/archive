@@ -8,7 +8,7 @@
     "project_url": "https://parsons.nyc/thesis-2016/linneaLapp/",
     "project_repo": "https://github.com/llapp/majorstudio2",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["health", "human-rights"],
     "year": 2016,
     "image": ["preview-2016/linnea.png"],
     "video": [
@@ -24,7 +24,7 @@
     "project_url": "https://parsons.nyc/thesis-2016/barbaraCompagnoni/",
     "project_repo": "https://github.com/compagnb/thesis",
     "category": ["thesis"],
-    "tags": ["data", "technology"],
+    "tags": ["health", "technology", "science"],
     "year": 2016,
     "image": ["preview-2016/barbara.png"],
     "video": ["https://vimeo.com/1130034721"]
@@ -38,7 +38,7 @@
     "project_url": "https://parsons.nyc/thesis-2016/gabiSteele/",
     "project_repo": "https://github.com/gabisteele/thesis",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["health", "society"],
     "year": 2016,
     "image": ["preview-2016/gabi.png"],
     "video": [
@@ -54,7 +54,7 @@
     "project_url": "http://parsons.nyc/thesis-2016/jacobRomer/",
     "project_repo": "https://github.com/jacobmbr/glimpse",
     "category": ["thesis"],
-    "tags": ["data", "technology"],
+    "tags": ["media", "technology", "society"],
     "year": 2016,
     "image": ["preview-2016/jacob.png"],
     "video": ["https://vimeo.com/1130034755"]
@@ -68,7 +68,7 @@
     "project_url": "https://parsons.nyc/thesis-2016/jaimeTanner/project.html",
     "project_repo": "https://github.com/tannerjaime/thesis",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["environment", "science"],
     "year": 2016,
     "image": ["preview-2016/jaime.png"],
     "video": ["https://vimeo.com/1130034785"]
@@ -82,7 +82,7 @@
     "project_url": "https://parsons.nyc/thesis-2016/jonThirkield/",
     "project_repo": "https://github.com/jthirkield/thesis",
     "category": ["thesis"],
-    "tags": ["arts", "leisure"],
+    "tags": ["arts", "culture", "media"],
     "year": 2016,
     "image": ["preview-2016/jonathan.png"],
     "video": [
@@ -98,7 +98,7 @@
     "project_url": "https://parsons.nyc/thesis-2016/justineKeller/",
     "project_repo": "https://github.com/Justinerk2/MajorStudio2",
     "category": ["thesis"],
-    "tags": ["society", "politics"],
+    "tags": ["society", "politics", "gender"],
     "year": 2016,
     "image": ["preview-2016/justine.png"],
     "video": ["https://vimeo.com/1130034845"]

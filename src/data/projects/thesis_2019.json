@@ -8,7 +8,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/aaditiRokade/thesisProject/",
     "project_repo": "https://github.com/aaditirokade/thesis",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["climate", "policy", "environment"],
     "year": 2019,
     "image": ["preview-2019/aaditi.png"],
     "video": [
@@ -24,7 +24,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/alonsoAlcocerGuemez/",
     "project_repo": "https://github.com/alonsoag86/msdv-final",
     "category": ["thesis"],
-    "tags": ["media", "society"],
+    "tags": ["media", "politics"],
     "year": 2019,
     "image": ["preview-2019/alonso.png"],
     "video": [
@@ -40,7 +40,7 @@
     "project_url": "https://thewatercrisis.us/",
     "project_repo": "https://github.com/AndrewLevinson/thesis",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["climate", "environment"],
     "year": 2019,
     "image": ["preview-2019/andrew.png"],
     "video": [
@@ -56,7 +56,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/batoolAkbar/web/home.html",
     "project_repo": "https://github.com/bsakbar/thesis",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["health", "technology"],
     "year": 2019,
     "image": ["preview-2019/batool.png"],
     "video": [
@@ -72,7 +72,7 @@
     "project_url": "https://candicejmchan.github.io/candicethesis2019/#/",
     "project_repo": "https://github.com/candicejmchan/candicethesis",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["health", "policy"],
     "year": 2019,
     "image": ["preview-2019/candice.png"],
     "video": [
@@ -88,7 +88,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/clareChurchouse/",
     "project_repo": "https://github.com/churc/MajorStudio2",
     "category": ["thesis"],
-    "tags": ["arts", "leisure"],
+    "tags": ["arts", "culture"],
     "year": 2019,
     "image": ["preview-2019/clare.png"],
     "video": [
@@ -104,7 +104,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/colleenMcCaffrey/src/",
     "project_repo": "https://github.com/colmccaffrey/thesis",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["health", "policy"],
     "year": 2019,
     "image": ["preview-2019/colleen.png"],
     "video": [
@@ -120,7 +120,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/emilyChu/",
     "project_repo": "https://github.com/3milychu/thesis",
     "category": ["thesis"],
-    "tags": ["arts", "leisure"],
+    "tags": ["arts", "media", "music"],
     "year": 2019,
     "image": ["preview-2019/emily.png"],
     "video": [
@@ -136,7 +136,7 @@
     "project_url": "https://felixbuchholz.github.io/thesis2019/",
     "project_repo": "https://github.com/felixbuchholz/thesis",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["policy", "society"],
     "year": 2019,
     "image": ["preview-2019/felix.gif"],
     "video": [
@@ -152,7 +152,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/graceMartinez/",
     "project_repo": "https://github.com/graceiseverywhere/thesis/",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["society", "culture"],
     "year": 2019,
     "image": ["preview-2019/grace.png"],
     "video": [
@@ -200,7 +200,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/kirilTraykov/",
     "project_repo": "https://github.com/kiriltraykov/kiriltraykov.github.io/tree/master/thesis",
     "category": ["thesis"],
-    "tags": ["arts", "leisure"],
+    "tags": ["sports", "society"],
     "year": 2019,
     "image": ["preview-2019/kiril.png"],
     "video": [
@@ -216,7 +216,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/michaelWolf/",
     "project_repo": "https://github.com/wolfm2/thesis",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["climate", "policy"],
     "year": 2019,
     "image": ["preview-2019/michael.gif"],
     "video": ["https://vimeo.com/1129949571"]
@@ -230,7 +230,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/mikaelaErgasLenett/",
     "project_repo": "https://github.com/mikaela-el/thesis",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["policy", "human-rights", "gender"],
     "year": 2019,
     "image": ["preview-2019/mikaela.png"],
     "video": [
@@ -246,7 +246,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/nicStark/MicroSite/",
     "project_repo": "https://github.com/nicstark/thesis",
     "category": ["thesis"],
-    "tags": ["arts", "leisure"],
+    "tags": ["arts", "culture"],
     "year": 2019,
     "image": ["preview-2019/nic.png"],
     "video": ["https://vimeo.com/1129949624"]
@@ -260,7 +260,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/ryanBest/",
     "project_repo": "https://github.com/ryanabest/ms2-2019/tree/master/thesis",
     "category": ["thesis"],
-    "tags": ["data", "policy"],
+    "tags": ["human-rights", "policy", "mapping", "urban"],
     "year": 2019,
     "image": ["preview-2019/ryan.png"],
     "video": [
@@ -276,7 +276,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/simoneRachelleBetito/",
     "project_repo": "https://github.com/simone-betito/msdv-thesis-SB",
     "category": ["thesis"],
-    "tags": ["health", "livelihood"],
+    "tags": ["arts", "culture"],
     "year": 2019,
     "image": ["preview-2019/simone.png"],
     "video": [
@@ -292,7 +292,7 @@
     "project_url": "https://ssyung.github.io/thesis/",
     "project_repo": "https://github.com/ssyung/thesis",
     "category": ["thesis"],
-    "tags": ["media", "society"],
+    "tags": ["media", "society", "culture"],
     "year": 2019,
     "image": ["preview-2019/stephanie.png"],
     "video": [
@@ -308,7 +308,7 @@
     "project_url": "https://parsons.nyc/thesis-2019/suzannaSchmeelk/identitytheft.html#slide=1",
     "project_repo": "https://github.com/schmeelk/SchmeelkIdentityTheftVizThesis",
     "category": ["thesis"],
-    "tags": ["media", "society"],
+    "tags": ["health", "technology", "policy"],
     "year": 2019,
     "image": ["preview-2019/suzanna.png"],
     "video": [

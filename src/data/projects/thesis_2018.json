@@ -8,7 +8,7 @@
     "project_url": "https://parsons.nyc/thesis-2018/yicenShi/visualizations",
     "project_repo": "https://github.com/shiy918/thesis",
     "category": ["thesis"],
-    "tags": ["food", "culture"],
+    "tags": ["food", "health", "policy"],
     "year": 2018,
     "image": ["preview-2018/yicen.png"],
     "video": ["https://vimeo.com/1129955559"]
@@ -22,7 +22,7 @@
     "project_url": "https://auchers.github.io/data-visualization-thesis/#/",
     "project_repo": "https://github.com/auchers/data-visualization-thesis",
     "category": ["thesis"],
-    "tags": ["landscapes", "pathways"],
+    "tags": ["environment", "urban", "mapping"],
     "year": 2018,
     "image": ["preview-2018/aucher.png"],
     "video": [
@@ -38,7 +38,7 @@
     "project_url": "https://parsons.nyc/thesis-2018/benzaminYi",
     "project_repo": "https://github.com/benzyi/thesis",
     "category": ["thesis"],
-    "tags": ["society", "politics"],
+    "tags": ["society", "politics", "human-rights"],
     "year": 2018,
     "image": ["preview-2018/benzamin.png"],
     "video": ["https://vimeo.com/1129955578"]
@@ -66,7 +66,7 @@
     "project_url": "https://parsons.nyc/thesis-2018/ellieFrymire",
     "project_repo": "https://github.com/efrymire/thesis",
     "category": ["thesis"],
-    "tags": ["language", "understanding"],
+    "tags": ["gender", "human-rights", "society"],
     "year": 2018,
     "image": ["preview-2018/ellie.png"],
     "video": ["https://vimeo.com/1129955621"]
@@ -80,7 +80,7 @@
     "project_url": "https://parsons.nyc/thesis-2018/flavioPessoa/thesis",
     "project_repo": "https://github.com/pessoaflavio/thesis",
     "category": ["thesis"],
-    "tags": ["language", "understanding"],
+    "tags": ["education", "technology"],
     "year": 2018,
     "image": ["preview-2018/flavio.png"],
     "video": [
@@ -96,7 +96,7 @@
     "project_url": "https://parsons.nyc/thesis-2018/georgeSieniawski/public/",
     "project_repo": "https://github.com/visualizedata/thesis-2018/tree/master/georgeSieniawski",
     "category": ["thesis"],
-    "tags": ["landscapes", "pathways"],
+    "tags": ["politics", "policy"],
     "year": 2018,
     "image": ["preview-2018/george.png"],
     "video": ["https://vimeo.com/1129955634"]
@@ -110,7 +110,7 @@
     "project_url": "https://parsons.nyc/thesis-2018/joeSteele/redlining/dist",
     "project_repo": "https://github.com/jsteele2003/msdv_thesis",
     "category": ["thesis"],
-    "tags": ["landscapes", "pathways"],
+    "tags": ["human-rights","policy", "mapping"],
     "year": 2018,
     "image": ["preview-2018/joe.png"],
     "video": [""]
@@ -124,7 +124,7 @@
     "project_url": "https://parsons.nyc/thesis-2018/julianLange",
     "project_repo": "https://github.com/julianhlange/thesis",
     "category": ["thesis"],
-    "tags": ["competition", "play"],
+    "tags": ["culture", "sports"],
     "year": 2018,
     "image": ["preview-2018/julian.png"],
     "video": ["https://vimeo.com/1129955654"]
@@ -138,7 +138,7 @@
     "project_url": "https://parsons.nyc/thesis-2018/kevinLee",
     "project_repo": "https://github.com/noalarms/noalarms.github.io",
     "category": ["thesis"],
-    "tags": ["competition", "play"],
+    "tags": ["culture", "media"],
     "year": 2018,
     "image": ["preview-2018/kevin.png"],
     "video": ["https://vimeo.com/1129955677"]
@@ -166,7 +166,7 @@
     "project_url": "https://parsons.nyc/thesis-2018/michalBacon",
     "project_repo": "https://github.com/visualizedata/socialdilemmas",
     "category": ["thesis"],
-    "tags": ["competition", "play"],
+    "tags": ["politics", "society", "play"],
     "year": 2018,
     "image": ["preview-2018/michal.png"],
     "video": [
@@ -182,7 +182,7 @@
     "project_url": "https://parsons.nyc/thesis-2018/rikGhosh",
     "project_repo": "https://github.com/rikghosh/thesis",
     "category": ["thesis"],
-    "tags": ["food", "agriculture"],
+    "tags": ["food", "culture", "policy"],
     "year": 2018,
     "image": ["preview-2018/rik.png"],
     "video": ["https://vimeo.com/1129955713"]
@@ -196,7 +196,7 @@
     "project_url": "https://parsons.nyc/thesis-2018/ryeZupancis",
     "project_repo": "https://github.com/ryezzz/Sub-Saharan-Africa-NDVI-Analysis",
     "category": ["thesis"],
-    "tags": ["food", "agriculture"],
+    "tags": ["food", "environment", "policy"],
     "year": 2018,
     "image": ["preview-2018/rye.png"],
     "video": ["https://vimeo.com/1129955737"]
@@ -210,7 +210,7 @@
     "project_url": "https://parsons.nyc/thesis-2018/stevenHubbard/",
     "project_repo": "https://github.com/hubideal/hubideal.github.io/tree/master/thesisHubbard",
     "category": ["thesis"],
-    "tags": ["language", "understanding"],
+    "tags": ["society", "education", "machine-learning"],
     "year": 2018,
     "image": ["preview-2018/steven.png"],
     "video": ["https://vimeo.com/1129955748"]
@@ -224,7 +224,7 @@
     "project_url": "http://refugeeflow.world/landing",
     "project_repo": "https://github.com/Jiahao01121/refugee-flow",
     "category": ["thesis"],
-    "tags": ["landscapes", "pathways"],
+    "tags": ["human-rights", "policy", "mapping"],
     "year": 2018,
     "image": ["preview-2018/will.gif"],
     "video": [
