@@ -1,9 +1,9 @@
 [
   {
     "author": ["Olivia Kasmin"],
-    "title": "Bureaucracy in the Revolutionary War Era",
-    "subtitle": "The very human burden of applying for a pension",
-    "description": "This project explores pension data from the Revolution Crossroads - NARA Revolutionary War Pension Files collection. It provides historical context for the collection and examines the distribution of applications attributed to each category (survivors, widows, rejected, bounty land warrant, old war, and national archives accession [number]). I also extracted data from the text using a lightweight LLM model to collect the dollar amount awarded to the recipient as well as other related fields, such as where the pension was issued and which congressional act it corresponds to. This analysis is presented through an interactive  interface that allows users to select a year, applicant type  and location. A matching record is fetched and the scan is displayed for users to see a real example of this case.",
+    "title": "Bureaucracy in the Revolutionary War Era; The Very Human Burden of Applying for a Pension",
+    "subtitle": "",
+    "description": "This project explores pension data from the Revolution Crossroads - NARA Revolutionary War Pension Files collection. It provides historical context for the collection and examines the distribution of applications attributed to each category (survivors, widows, rejected, bounty land warrant, old war, and national archives accession). I also extracted data from the text using a lightweight LLM model to collect the dollar amount awarded to the recipient as well as other related fields, such as where the pension was issued and which congressional act it corresponds to. This analysis is presented through an interactive  interface that allows users to select a year, applicant type and location. A matching record is fetched and the scan is displayed for users to see a real example of this case.",
     "student_url": "",
     "project_url": "https://okasmin-parsons-major-studio-1.netlify.app/",
     "project_repo": "https://github.com/oliviakasmin/parsons-major-studio-1-fall-2025",
