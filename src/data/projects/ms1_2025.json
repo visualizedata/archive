@@ -8,7 +8,7 @@
     "project_url": "https://okasmin-parsons-major-studio-1.netlify.app/",
     "project_repo": "https://github.com/oliviakasmin/parsons-major-studio-1-fall-2025",
     "category": ["ms1"],
-    "tags": ["smithsonian"],
+    "tags": ["smithsonian", "policy", "society", "machine learning", "mapping"],
     "year": 2025,
     "image": [],
     "video": []
@@ -22,7 +22,7 @@
     "project_url": "https://mnav0.github.io/major-studio-1/stamp-collection/",
     "project_repo": "https://github.com/mnav0/major-studio-1",
     "category": ["ms1"],
-    "tags": ["smithsonian"],
+    "tags": ["smithsonian", "culture", "society", "arts", "mapping", "machine learning"],
     "year": 2025,
     "image": [],
     "video": []
@@ -36,7 +36,7 @@
     "project_url": "https://lara-yeyati-preiss.github.io/the-ordinaries/",
     "project_repo": "https://github.com/lara-yeyati-preiss/the-ordinaries",
     "category": ["ms1"],
-    "tags": ["smithsonian"],
+    "tags": ["smithsonian", "culture", "society", "arts", "mapping"],
     "year": 2025,
     "image": [],
     "video": []
@@ -50,7 +50,7 @@
     "project_url": "https://hoonkim0123.github.io/major-studio-1/",
     "project_repo": "https://github.com/hoonkim0123/major-studio-1",
     "category": ["ms1"],
-    "tags": ["smithsonian"],
+    "tags": ["smithsonian", "culture", "politics", "society", "technology"],
     "year": 2025,
     "image": [],
     "video": []
@@ -64,7 +64,7 @@
     "project_url": "https://narmanios.github.io/SilhouetteArt/index.html",
     "project_repo": "https://github.com/narmanios/major-studio-1/tree/main/SilhouetteArt",
     "category": ["ms1"],
-    "tags": ["smithsonian"],
+    "tags": ["smithsonian", "arts", "culture", "gender", "society", "machine learning"],
     "year": 2025,
     "image": [],
     "video": []
@@ -75,10 +75,10 @@
     "subtitle": "Tracking the changing faces of early America",
     "description": "The Revolutionary Crossroads supercollection has several pieces that contain 'sitters'. While the media type can change - from oil paintings, to coins, to graphic prints - these items all depict someone. Some sitters are depicted several times throughout the collection, most notably George Washington and other 'founding fathers' of the American Revolution. How did the depiction of these sitters change over the course of their lives, as the aged, participated in important early American historical events, and eventually passed away? Using data from the Revolutionary Crossroads dataset (linked above), I found sitters who were depicted in multiple (>10) objects, visually cropped their faces, and arranged them on an annotated timeline. By highlighting key dates, I hope viewers can see how historical events can influence the type and frequency of depiction for these important people.",
     "student_url": "",
-    "project_url": "https://nmolnar-parsons.github.io/RevPeriod_Smithsonian_Midterm/",
+    "project_url": "https://nmolnar-parsons.github.io/major-studio-1/",
     "project_repo": "https://github.com/nmolnar-parsons/major-studio-1",
     "category": ["ms1"],
-    "tags": ["smithsonian"],
+    "tags": ["smithsonian", "arts", "politics", "society", "mapping"],
     "year": 2025,
     "image": [],
     "video": []
@@ -92,7 +92,7 @@
     "project_url": "https://smolinaschmidt.github.io/major-studio/",
     "project_repo": "https://github.com/smolinaschmidt/major-studio-1",
     "category": ["ms1"],
-    "tags": ["smithsonian"],
+    "tags": ["smithsonian", "arts", "culture", "mapping"],
     "year": 2025,
     "image": [],
     "video": []
@@ -106,7 +106,7 @@
     "project_url": "https://derinsavasan.github.io/smithsonian/",
     "project_repo": "https://github.com/derinsavasan/smithsonian",
     "category": ["ms1"],
-    "tags": ["smithsonian"],
+    "tags": ["smithsonian", "arts", "gender", "society", "culture", "politics"],
     "year": 2025,
     "image": [],
     "video": []
@@ -120,7 +120,7 @@
     "project_url": "https://pabspadres.github.io/America_Through_The_Journalist_Glass/",
     "project_repo": "https://github.com/pabspadres/America_Through_The_Journalist_Glass",
     "category": ["ms1"],
-    "tags": ["smithsonian"],
+    "tags": ["smithsonian", "media", "culture", "society", "mapping", "politics"],
     "year": 2025,
     "image": [],
     "video": []
