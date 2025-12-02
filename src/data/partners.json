@@ -5,28 +5,28 @@
     "tag": "smithsonian",
     "alt": "Smithsonian Institute logo"
   },
-  {
-    "name": "National Gallery of Art",
-    "logo": "nga.png",
-    "tag": "nga",
-    "alt": "National Gallery of Art logo"
-  },
-  {
+    {
     "name": "The MET Museum", 
     "logo": "met.png",
     "tag": "the-met",
     "alt": "The MET Museum logo"
   },
   {
+    "name": "National Gallery of Art",
+    "logo": "nga.png",
+    "tag": "",
+    "alt": "National Gallery of Art logo"
+  },
+  {
     "name": "UNDP",
     "logo": "undp.png", 
-    "tag": "undp",
+    "tag": "",
     "alt": "UNDP logo"
   },
   {
     "name": "Netflix",
     "logo": "netflix.png",
-    "tag": "netflix",
+    "tag": "",
     "alt": "Netflix logo"
   }
 ]
