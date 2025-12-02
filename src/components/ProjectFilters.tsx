@@ -32,7 +32,9 @@ export const ProjectFilters = ({
 }: FilterProps) => {
   const [openFilter, setOpenFilter] = useState<FilterType>(null)
   const [showMobileFilters, setShowMobileFilters] = useState(false)
-  const [showAllThemes, setShowAllThemes] = useState(false)
+
+  // Sort themes alphabetically
+  const sortedThemeOptions = [...themeOptions].sort((a, b) => a.localeCompare(b))
 
   const handleFilterClick = (filterType: FilterType) => {
     setOpenFilter(openFilter === filterType ? null : filterType)
@@ -165,13 +167,7 @@ export const ProjectFilters = ({
           <div className="hidden md:flex flex-wrap justify-end gap-2 py-2 border-t border-gray-200 leading-tight">
             {openFilter === 'themes' && (
               <>
-                <button
-                  onClick={() => handleOptionSelect('themes', '')}
-                  className="px-3 py-1.5 text-sm text-black/50 hover:text-black transition-colors capitalize"
-                >
-                  All Themes
-                </button>
-                {(showAllThemes ? themeOptions : themeOptions.slice(0, 10)).map((option) => (
+                {sortedThemeOptions.map((option) => (
                   <button
                     key={option}
                     onClick={() => handleOptionSelect('themes', option)}
@@ -180,33 +176,11 @@ export const ProjectFilters = ({
                     {option.replace(/-/g, ' ')}
                   </button>
                 ))}
-                {themeOptions.length > 10 && !showAllThemes && (
-                  <button
-                    onClick={() => setShowAllThemes(true)}
-                    className="px-3 py-1.5 text-sm text-black/50 hover:text-black transition-colors"
-                  >
-                    +{themeOptions.length - 10} more
-                  </button>
-                )}
-                {showAllThemes && themeOptions.length > 10 && (
-                  <button
-                    onClick={() => setShowAllThemes(false)}
-                    className="px-3 py-1.5 text-sm text-black/50 hover:text-black transition-colors"
-                  >
-                    Show less
-                  </button>
-                )}
               </>
             )}
 
             {openFilter === 'courses' && (
               <>
-                <button
-                  onClick={() => handleOptionSelect('courses', '')}
-                  className="px-3 py-1.5 text-sm text-black/50 hover:text-black transition-colors"
-                >
-                  All Courses
-                </button>
                 {categoryOptions.map((option) => (
                   <button
                     key={option}
@@ -221,12 +195,6 @@ export const ProjectFilters = ({
 
             {openFilter === 'years' && (
               <>
-                <button
-                  onClick={() => handleOptionSelect('years', '')}
-                  className="px-3 py-1.5 text-sm text-black/50 hover:text-black transition-colors"
-                >
-                  All Years
-                </button>
                 {yearOptions.map((option) => (
                   <button
                     key={option}
@@ -306,7 +274,7 @@ export const ProjectFilters = ({
                   >
                     All Themes
                   </button>
-                  {(showAllThemes ? themeOptions : themeOptions.slice(0, 10)).map((option) => (
+                  {sortedThemeOptions.map((option) => (
                     <button
                       key={option}
                       onClick={() => {
@@ -320,22 +288,6 @@ export const ProjectFilters = ({
                       {option.replace(/-/g, ' ')}
                     </button>
                   ))}
-                  {themeOptions.length > 10 && !showAllThemes && (
-                    <button
-                      onClick={() => setShowAllThemes(true)}
-                      className="px-2 py-2 text-xs rounded-lg border transition-colors bg-gray-50 text-gray-600 hover:bg-gray-100"
-                    >
-                      +{themeOptions.length - 10} more
-                    </button>
-                  )}
-                  {showAllThemes && themeOptions.length > 10 && (
-                    <button
-                      onClick={() => setShowAllThemes(false)}
-                      className="px-2 py-2 text-xs rounded-lg border transition-colors bg-gray-50 text-gray-600 hover:bg-gray-100"
-                    >
-                      Show less
-                    </button>
-                  )}
                 </div>
               </div>
 
