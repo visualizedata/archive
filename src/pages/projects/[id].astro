@@ -23,6 +23,11 @@ const base = import.meta.env.BASE_URL
 // Get all projects for client-side filtering
 const allProjects = await getCollection('projects')
 
+const imgUrl = (project.data.image && project.data.image.length > 0)
+  && project.data.image[0].includes('http') 
+    ? project.data.image[0]
+    : `${base}/images/${project.data.image[0]}`;
+
 // Get filtered projects for initial render
 const filteredRelatedProjects = allProjects
   .filter(
@@ -75,18 +80,14 @@ const filteredAuthorProjects = allProjects
               client:load
               src={project.data.video[0]}
               title={project.data.title}
-              poster={
-                project.data.image?.[0]
-                  ? `${base}/images/${project.data.image[0]}`
-                  : undefined
-              }
+              poster={imgUrl}
             />
           </div>
         ) : (
           project.data.image && project.data.image.length > 0 && (
             <div class="w-full aspect-video mb-4 rounded-[10px] overflow-hidden">
               <img
-                src={`${base}/images/${project.data.image[0]}`}
+                src={imgUrl}
                 alt={project.data.title}
                 class="w-full h-full object-cover"
               />

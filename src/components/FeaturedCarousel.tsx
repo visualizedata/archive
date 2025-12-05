@@ -89,7 +89,10 @@ export default function FeaturedCarousel({ highlightedIds, allProjects }: Featur
                   className="block w-full h-full cursor-pointer"
                 >
                   <img
-                    src={`${base}/images/${project.image[0]}`}
+                    src={project.image[0].includes('http')
+                      ? project.image[0]
+                      : `${base}/images/${project.image[0]}`
+                    }
                     alt={project.title}
                     className="w-full h-full object-cover"
                   />
@@ -106,11 +109,10 @@ export default function FeaturedCarousel({ highlightedIds, allProjects }: Featur
               <button
                 key={index}
                 onClick={() => scrollTo(index)}
-                className={`h-1.5 rounded-full transition-all duration-300 ${
-                  index === selectedIndex
-                    ? 'bg-white w-4'
-                    : 'bg-white/60 hover:bg-white/80 w-1.5'
-                }`}
+                className={`h-1.5 rounded-full transition-all duration-300 ${index === selectedIndex
+                  ? 'bg-white w-4'
+                  : 'bg-white/60 hover:bg-white/80 w-1.5'
+                  }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
@@ -121,10 +123,10 @@ export default function FeaturedCarousel({ highlightedIds, allProjects }: Featur
       {/* Dynamic title display - separate from carousel with vertical animation */}
       {featuredProjects.length > 0 && (
         <div className="mt-2 h-12 md:h-6 overflow-hidden px-0">
-          <div 
+          <div
             className="transition-transform duration-300 ease-in-out"
-            style={{ 
-              transform: `translateY(-${selectedIndex * (isMobile ? 48 : 24)}px)` 
+            style={{
+              transform: `translateY(-${selectedIndex * (isMobile ? 48 : 24)}px)`
             }}
           >
             {featuredProjects.map((project, index) => (

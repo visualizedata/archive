@@ -6,6 +6,8 @@ export function ProjectCard({ project }: { project: ProjectData }) {
   const [isInView, setIsInView] = useState(false)
   const base = import.meta.env.BASE_URL
 
+  const imgUrl = project.image[0].includes('http') ? project.image[0] : `${base}/images/${project.image[0]}`;
+
   return (
     <div className="relative h-full flex flex-col">
       <div className="aspect-video bg-gray-100 rounded-[10px] overflow-hidden border border-gray-100">
@@ -16,7 +18,7 @@ export function ProjectCard({ project }: { project: ProjectData }) {
         >
           {isInView && (
             <img
-              src={`${base}/images/${project.image}`}
+              src={imgUrl}
               alt={project.title}
               className="w-full h-full object-cover"
               loading="lazy"
