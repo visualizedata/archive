@@ -64,14 +64,19 @@ for (const [year, names] of Object.entries(cohortData)) {
   <div class="px-4 md:px-8 lg:px-16 max-w-6xl mx-auto">
     
     {/* Main Description Text */}
-    <section class="mt-20 mb-16">
+    <section class="mt-8 mb-16">
       <div class="text-left">
-        <p class="text-3xl">
-          The Master's in Data Visualization at Parsons is a multidisciplinary degree
+        <p class="text-3xl font-bold">
+          The <a 
+            href="https://www.newschool.edu/parsons/ms-data-visualization/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-black/30 hover:text-black transition-colors duration-200"
+          >Master's in Data Visualization at Parsons</a> is a multidisciplinary degree
           that brings together visual design, computer science, statistical analysis,
           and ethical considerations of data representation.
         </p>
-        <p class="text-3xl mb-16">
+        <p class="text-3xl font-bold mb-16">
           The program responds to the increased demand for experts who can turn
           data into insight. You learn to understand and develop the ways in which
           the presentation of data shapes opinion, policy, and decision making in
@@ -81,14 +86,14 @@ for (const [year, names] of Object.entries(cohortData)) {
 
       {/* Faculty Row */}
       <div class="grid grid-cols-[100px_1fr] items-start gap-8 text-base mb-16">
-        <div class="font-bold">Faculty</div>
+        <div class="text-base font-bold">Faculty</div>
         <div class="flex flex-wrap gap-x-10 gap-y-4">
           {faculty.map((name) => (
             <a
               href={`https://www.newschool.edu/parsons/faculty/${facultyToSlug(name)}/`}
               target="_blank"
               rel="noopener noreferrer"
-              class="text-black/50 hover:text-black transition-colors duration-200"
+              class="text-base font-bold text-black hover:text-black/30 transition-colors duration-200"
             >
               {name}
             </a>
@@ -106,7 +111,7 @@ for (const [year, names] of Object.entries(cohortData)) {
               <img
                 src={logoSrc}
                 alt={partner.alt}
-                class="max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200 opacity-70 hover:opacity-100"
+                class="max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-200 opacity-100 hover:opacity-100"
               />
             )
             
@@ -129,7 +134,7 @@ for (const [year, names] of Object.entries(cohortData)) {
                 <img
                   src={logoSrc}
                   alt={partner.alt}
-                  class="max-h-12 w-auto object-contain grayscale opacity-70"
+                  class="max-h-12 w-auto object-contain grayscale opacity-100"
                 />
               </div>
             )

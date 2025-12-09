@@ -118,15 +118,15 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
 
   return (
     <div className="max-w-[2000px] mx-auto">
-      {/* Featured carousel - shown when highlighted projects exist AND no search query */}
-      {highlightedIds.length > 0 && !searchQuery.trim() && (
+      {/* Featured carousel - shown when highlighted projects exist AND no filters are active */}
+      {highlightedIds.length > 0 && !hasActiveFilters && (
         <div className="mb-8">
           <FeaturedCarousel highlightedIds={highlightedIds} allProjects={projects} />
         </div>
       )}
 
-      {/* Spacer div when there's a search query - replaces carousel (desktop only) */}
-      {searchQuery.trim() && (
+      {/* Spacer div when any filters are active - replaces carousel (desktop only) */}
+      {hasActiveFilters && (
         <div className="hidden md:block h-[60px]"></div>
       )}
 
@@ -163,7 +163,7 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
             </button>
           </div>
         ) : (
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
             {filtered.map((p) => (
               <li key={p.id}>
                 <ProjectCard project={p} />

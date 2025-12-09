@@ -31,7 +31,6 @@ export const ProjectFilters = ({
   onSearchChange,
 }: FilterProps) => {
   const [openFilter, setOpenFilter] = useState<FilterType>(null)
-  const [showMobileFilters, setShowMobileFilters] = useState(false)
 
   // Sort themes alphabetically
   const sortedThemeOptions = [...themeOptions].sort((a, b) => a.localeCompare(b))
@@ -63,37 +62,25 @@ export const ProjectFilters = ({
     <>
       <div className="w-full space-y-4">
         {/* Desktop and Mobile Layout */}
-        <div className="w-full flex items-center justify-between">
-          {/* Search Bar - Always visible */}
-          <div className={'flex-1 flex items-center gap-2 px-2 py-1 max-w-md'}>
-            <SearchIcon className={'size-6 opacity-20'} />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => onSearchChange(e.target.value)}
-              placeholder="Search"
-              className="w-full border-0 bg-transparent outline-none text-sm placeholder:text-neutral-500"
-            />
-          </div>
-
+        <div className="w-full flex items-center">
           {/* Desktop Filters - Hidden on mobile */}
-          <div className="hidden md:flex items-center gap-5">
+          <div className="hidden md:flex items-center gap-8">
             {/* Themes Filter */}
             <div className="flex items-center gap-0.5">
               <button
                 onClick={() => handleFilterClick('themes')}
-                className={`px-4 py-2.5 text-sm rounded-lg bg-white/85 transition-colors ${
+                className={`text-2xl font-bold uppercase transition-colors ${
                   theme || openFilter === 'themes'
                     ? 'text-black'
-                    : 'text-black/50 hover:text-black'
+                    : 'text-black/30 hover:text-black'
                 }`}
               >
-                {theme ? theme.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : 'All Themes'}
+                {theme ? theme.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : 'THEMES'}
               </button>
               {theme && (
                 <button
                   onClick={() => onThemeChange(null)}
-                  className="text-black/50 hover:text-black transition-colors p-1"
+                  className="text-black/30 hover:text-black transition-colors p-1"
                 >
                   <X className="size-3" />
                 </button>
@@ -104,18 +91,18 @@ export const ProjectFilters = ({
             <div className="flex items-center gap-0.5">
               <button
                 onClick={() => handleFilterClick('courses')}
-                className={`px-4 py-2.5 text-sm rounded-lg bg-white/85 transition-colors ${
+                className={`text-2xl font-bold uppercase transition-colors ${
                   category || openFilter === 'courses'
                     ? 'text-black'
-                    : 'text-black/50 hover:text-black'
+                    : 'text-black/30 hover:text-black'
                 }`}
               >
-                {category || 'All Courses'}
+                {category || 'COURSES'}
               </button>
               {category && (
                 <button
                   onClick={() => onCategoryChange(null)}
-                  className="text-black/50 hover:text-black transition-colors p-1"
+                  className="text-black/30 hover:text-black transition-colors p-1"
                 >
                   <X className="size-3" />
                 </button>
@@ -126,238 +113,151 @@ export const ProjectFilters = ({
             <div className="flex items-center gap-0.5">
               <button
                 onClick={() => handleFilterClick('years')}
-                className={`px-4 py-2.5 text-sm rounded-lg bg-white/85 transition-colors ${
+                className={`text-2xl font-bold uppercase transition-colors ${
                   year || openFilter === 'years'
                     ? 'text-black'
-                    : 'text-black/50 hover:text-black'
+                    : 'text-black/30 hover:text-black'
                 }`}
               >
-                {year || 'All Years'}
+                {year || 'YEARS'}
               </button>
               {year && (
                 <button
                   onClick={() => onYearChange(null)}
-                  className="text-black/50 hover:text-black transition-colors p-1"
+                  className="text-black/30 hover:text-black transition-colors p-1"
                 >
                   <X className="size-3" />
                 </button>
               )}
             </div>
+
+            {/* Search Input - Grouped with filters */}
+            <div className="flex items-center gap-2">
+              <SearchIcon 
+                size={24} 
+                className={`transition-colors fill-none stroke-[3]`}
+                style={{ color: searchQuery ? 'black' : '#B2B2B2' }}
+              />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => onSearchChange(e.target.value)}
+                placeholder="SEARCH"
+                className={`border-0 bg-transparent outline-none text-2xl font-bold uppercase transition-colors ${
+                  searchQuery 
+                    ? 'text-black placeholder:text-black/30' 
+                    : 'text-black/30 placeholder:text-black/30 hover:text-black focus:!text-black'
+                }`}
+              />
+            </div>
           </div>
 
-          {/* Mobile Filters Button - Visible only on mobile */}
-          <div className="md:hidden">
+          {/* Mobile Layout - Visible only on mobile */}
+          <div className="md:hidden flex items-center gap-2 w-full">
             <button
-              onClick={() => setShowMobileFilters(true)}
-              className="relative px-4 py-2.5 text-sm rounded-lg bg-white/85 text-black/50 hover:text-black transition-colors flex items-center gap-2"
+              onClick={() => handleFilterClick('themes')}
+              className={`text-base font-bold uppercase transition-colors ${
+                theme || openFilter === 'themes'
+                  ? 'text-black'
+                  : 'text-black/30 hover:text-black'
+              }`}
             >
-              <Filter className="size-4" />
-              Filters
-              {getActiveFiltersCount() > 0 && (
-                <span className="absolute -top-1 -right-1 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                  {getActiveFiltersCount()}
-                </span>
-              )}
+              {theme ? theme.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : 'THEMES'}
             </button>
+            
+            <button
+              onClick={() => handleFilterClick('courses')}
+              className={`text-base font-bold uppercase transition-colors ${
+                category || openFilter === 'courses'
+                  ? 'text-black'
+                  : 'text-black/30 hover:text-black'
+              }`}
+            >
+              {category || 'COURSES'}
+            </button>
+            
+            <button
+              onClick={() => handleFilterClick('years')}
+              className={`text-base font-bold uppercase transition-colors ${
+                year || openFilter === 'years'
+                  ? 'text-black'
+                  : 'text-black/30 hover:text-black'
+              }`}
+            >
+              {year || 'YEARS'}
+            </button>
+
+            <div className="flex items-center gap-1 flex-1">
+              <SearchIcon 
+                size={16} 
+                className={`transition-colors fill-none stroke-[3]`}
+                style={{ color: searchQuery ? 'black' : '#B2B2B2' }}
+              />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => onSearchChange(e.target.value)}
+                placeholder="SEARCH"
+                className={`flex-1 border-0 bg-transparent outline-none text-base font-bold uppercase transition-colors ${
+                  searchQuery 
+                    ? 'text-black placeholder:text-black/30' 
+                    : 'text-black/30 placeholder:text-black/30 hover:!text-black focus:!text-black'
+                }`}
+              />
+            </div>
           </div>
         </div>
 
-        {/* Desktop Expandable Options Row */}
+        {/* Expandable Options Row - Shows on all devices */}
         {openFilter && (
-          <div className="hidden md:flex flex-wrap justify-end gap-2 py-2 border-t border-gray-200 leading-tight">
+          <div className="py-4 border-t border-gray-200">
             {openFilter === 'themes' && (
-              <>
+              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-6 gap-x-8 gap-y-2 items-start leading-tight">
                 {sortedThemeOptions.map((option) => (
                   <button
                     key={option}
                     onClick={() => handleOptionSelect('themes', option)}
-                    className="px-3 py-1.5 text-sm text-black/50 hover:text-black transition-colors capitalize"
+                    className="text-left text-base capitalize text-black hover:text-black/30 transition-colors font-bold hyphens-auto break-words leading-tight"
+                    style={{ wordBreak: 'break-word', hyphens: 'auto' }}
                   >
                     {option.replace(/-/g, ' ')}
                   </button>
                 ))}
-              </>
+              </div>
             )}
 
             {openFilter === 'courses' && (
-              <>
+              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-x-8 gap-y-2 items-start leading-tight">
                 {categoryOptions.map((option) => (
                   <button
                     key={option}
                     onClick={() => handleOptionSelect('courses', option)}
-                    className="px-3 py-1.5 text-sm text-black/50 hover:text-black transition-colors"
+                    className="text-left text-base text-black hover:text-black/30 transition-colors font-bold hyphens-auto break-words leading-tight"
+                    style={{ wordBreak: 'break-word', hyphens: 'auto' }}
                   >
                     {option}
                   </button>
                 ))}
-              </>
+              </div>
             )}
 
             {openFilter === 'years' && (
-              <>
+              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-x-8 gap-y-2 items-start leading-tight">
                 {yearOptions.map((option) => (
                   <button
                     key={option}
                     onClick={() => handleOptionSelect('years', option.toString())}
-                    className="px-3 py-1.5 text-sm text-black/50 hover:text-black transition-colors"
+                    className="text-left text-base text-black hover:text-black/30 transition-colors font-bold hyphens-auto break-words leading-tight"
+                    style={{ wordBreak: 'break-word', hyphens: 'auto' }}
                   >
                     {option}
                   </button>
                 ))}
-              </>
+              </div>
             )}
           </div>
         )}
       </div>
-
-      {/* Mobile Filters Modal */}
-      {showMobileFilters && (
-        <div className="fixed inset-0 z-50 bg-black/20 md:hidden">
-          <div className="fixed inset-x-0 bottom-0 bg-white rounded-t-3xl p-6 space-y-6 max-h-[80vh] overflow-y-auto">
-            {/* Header */}
-            <div className="flex items-center justify-end">
-              <button
-                onClick={() => setShowMobileFilters(false)}
-                className="p-2 hover:bg-gray-100 rounded-full"
-              >
-                <X className="size-5" />
-              </button>
-            </div>
-
-            {/* Active Filters Summary */}
-            {getActiveFiltersCount() > 0 && (
-              <div className="space-y-2">
-                <h4 className="text-sm font-medium text-gray-700">Active Filters:</h4>
-                <div className="flex flex-wrap gap-2">
-                  {theme && (
-                    <span className="px-3 py-1 bg-gray-100 rounded-full text-sm flex items-center gap-2">
-                      Theme: {theme.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                      <button onClick={() => onThemeChange('')} className="text-gray-500 hover:text-gray-700">
-                        <X className="size-3" />
-                      </button>
-                    </span>
-                  )}
-                  {category && (
-                    <span className="px-3 py-1 bg-gray-100 rounded-full text-sm flex items-center gap-2">
-                      Course: {category}
-                      <button onClick={() => onCategoryChange('')} className="text-gray-500 hover:text-gray-700">
-                        <X className="size-3" />
-                      </button>
-                    </span>
-                  )}
-                  {year && (
-                    <span className="px-3 py-1 bg-gray-100 rounded-full text-sm flex items-center gap-2">
-                      Year: {year}
-                      <button onClick={() => onYearChange('')} className="text-gray-500 hover:text-gray-700">
-                        <X className="size-3" />
-                      </button>
-                    </span>
-                  )}
-                </div>
-              </div>
-            )}
-
-            {/* Filter Sections */}
-            <div className="space-y-6">
-              {/* Themes */}
-              <div>
-                <h4 className="text-sm font-medium text-gray-700 mb-3">Themes</h4>
-                <div className="flex flex-wrap gap-2">
-                  <button
-                    onClick={() => {
-                      onThemeChange('')
-                      setShowMobileFilters(false)
-                    }}
-                    className={`px-2 py-2 text-xs rounded-lg border text-left transition-colors ${
-                      !theme ? 'bg-black text-white' : 'bg-white text-gray-700 hover:bg-gray-50'
-                    }`}
-                  >
-                    All Themes
-                  </button>
-                  {sortedThemeOptions.map((option) => (
-                    <button
-                      key={option}
-                      onClick={() => {
-                        onThemeChange(option)
-                        setShowMobileFilters(false)
-                      }}
-                      className={`px-2 py-2 text-xs rounded-lg border text-left transition-colors capitalize ${
-                        theme === option ? 'bg-black text-white' : 'bg-white text-gray-700 hover:bg-gray-50'
-                      }`}
-                    >
-                      {option.replace(/-/g, ' ')}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Courses */}
-              <div>
-                <h4 className="text-sm font-medium text-gray-700 mb-3">Courses</h4>
-                <div className="flex flex-wrap gap-2">
-                  <button
-                    onClick={() => {
-                      onCategoryChange('')
-                      setShowMobileFilters(false)
-                    }}
-                    className={`px-2 py-2 text-xs rounded-lg border text-left transition-colors ${
-                      !category ? 'bg-black text-white' : 'bg-white text-gray-700 hover:bg-gray-50'
-                    }`}
-                  >
-                    All Courses
-                  </button>
-                  {categoryOptions.map((option) => (
-                    <button
-                      key={option}
-                      onClick={() => {
-                        onCategoryChange(option)
-                        setShowMobileFilters(false)
-                      }}
-                      className={`px-2 py-2 text-xs rounded-lg border text-left transition-colors ${
-                        category === option ? 'bg-black text-white' : 'bg-white text-gray-700 hover:bg-gray-50'
-                      }`}
-                    >
-                      {option}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Years */}
-              <div>
-                <h4 className="text-sm font-medium text-gray-700 mb-3">Years</h4>
-                <div className="flex flex-wrap gap-2">
-                  <button
-                    onClick={() => {
-                      onYearChange('')
-                      setShowMobileFilters(false)
-                    }}
-                    className={`px-2 py-2 text-xs rounded-lg border text-center transition-colors ${
-                      !year ? 'bg-black text-white' : 'bg-white text-gray-700 hover:bg-gray-50'
-                    }`}
-                  >
-                    All Years
-                  </button>
-                  {yearOptions.map((option) => (
-                    <button
-                      key={option}
-                      onClick={() => {
-                        onYearChange(option.toString())
-                        setShowMobileFilters(false)
-                      }}
-                      className={`px-2 py-2 text-xs rounded-lg border text-center transition-colors ${
-                        year === option.toString() ? 'bg-black text-white' : 'bg-white text-gray-700 hover:bg-gray-50'
-                      }`}
-                    >
-                      {option}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </>
   )
 }

@@ -31,35 +31,35 @@ function isActive(href: string): boolean {
     <BaseHead title={title}/>
   </head>
   <body>
-    <nav class="z-50 fixed top-0 w-full transition-transform duration-300 ease-in-out" id="navbar">
+    <nav class="z-50 fixed top-0 w-full bg-white" id="navbar">
       <!-- Desktop Layout -->
-      <div class="hidden md:flex h-20 px-4 py-2 items-center justify-center">
-        <div class="bg-white/70 backdrop-blur-md rounded-[5px] px-4 py-2 flex items-center gap-[60px]">
+      <div class="hidden md:flex px-4 md:px-12 base:px-12 py-4 items-start justify-center">
+        <div class="flex items-start justify-between w-full">
           <!-- Left: Program Title (clickable link to home) -->
-          <a href={`${base}/`} class="nav-title-unified">
-            Parsons School of Design MS Data Visualization
+          <a href={`${base}/`} class="text-black font-bold text-base uppercase leading-tight">
+            Parsons School of Design <br> MS Data Visualization <span class="text-black/100">Projects Archive</span>
           </a>
 
           <!-- Right: Navigation Items -->
-          <div class="flex items-center gap-6">
-            <a href={`${base}/`} class={`nav-item-unified ${isActive(`${base}/`) ? 'active' : ''}`}>Projects</a>
-            <a href={`${base}/keynotes`} class={`nav-item-unified ${isActive(`${base}/keynotes`) ? 'active' : ''}`}>Keynotes</a>
-            <a href={`${base}/about`} class={`nav-item-unified ${isActive(`${base}/about`) ? 'active' : ''}`}>About</a>
+          <div class="flex items-start gap-6">
+            <a href={`${base}/`} class={`font-bold text-base uppercase transition-colors duration-500 ${isActive(`${base}/`) ? 'text-black' : 'text-black/30 hover:text-black'}`}>Projects</a>
+            <a href={`${base}/keynotes`} class={`font-bold text-base uppercase transition-colors duration-500 ${isActive(`${base}/keynotes`) ? 'text-black' : 'text-black/30 hover:text-black'}`}>Keynotes</a>
+            <a href={`${base}/about`} class={`font-bold text-base uppercase transition-colors duration-500 ${isActive(`${base}/about`) ? 'text-black' : 'text-black/30 hover:text-black'}`}>About</a>
           </div>
         </div>
       </div>
 
       <!-- Mobile Layout -->
-      <div class="md:hidden bg-white/70 backdrop-blur-md">
-        <div class="px-4 py-3 flex items-start justify-between">
+      <div class="md:hidden">
+        <div class="px-4 md:px-12 base:px-12 py-3 flex items-start justify-between">
           <!-- Left: Program Title (two lines, left aligned, clickable) -->
-          <a href={`${base}/`} class="nav-title-mobile">
+          <a href={`${base}/`} class="text-black font-bold text-base leading-tight uppercase">
             <div>Parsons School of Design</div>
             <div>MS Data Visualization</div>
           </a>
 
           <!-- Right: Hamburger Menu -->
-          <button class="text-black/50 hover:text-black transition-colors duration-200 mt-1" id="mobile-menu-btn">
+          <button class="text-black/30 hover:text-black transition-colors duration-300 mt-1" id="mobile-menu-btn">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
@@ -68,17 +68,17 @@ function isActive(href: string): boolean {
 
         <!-- Mobile Menu Dropdown -->
         <div class="bg-white/70 backdrop-blur-md hidden" id="mobile-menu">
-          <div class="flex flex-col p-4 gap-2 border-t border-black/10">
-            <a href={`${base}/`} class={`nav-item ${isActive(`${base}/`) ? 'active' : ''}`}>Projects</a>
-            <a href={`${base}/keynotes`} class={`nav-item ${isActive(`${base}/keynotes`) ? 'active' : ''}`}>Keynotes</a>
-            <a href={`${base}/about`} class={`nav-item ${isActive(`${base}/about`) ? 'active' : ''}`}>About</a>
+          <div class="flex flex-col px-4 md:px-6 base:px-6 py-4 gap-2 border-t border-black/10">
+            <a href={`${base}/`} class={`font-bold text-base px-2 py-1 uppercase transition-colors duration-200 ${isActive(`${base}/`) ? 'text-black' : 'text-black/50 hover:text-black'}`}>Projects</a>
+            <a href={`${base}/keynotes`} class={`font-bold text-base px-2 py-1 uppercase transition-colors duration-200 ${isActive(`${base}/keynotes`) ? 'text-black' : 'text-black/50 hover:text-black'}`}>Keynotes</a>
+            <a href={`${base}/about`} class={`font-bold text-base px-2 py-1 uppercase transition-colors duration-200 ${isActive(`${base}/about`) ? 'text-black' : 'text-black/50 hover:text-black'}`}>About</a>
           </div>
         </div>
       </div>
     </nav>
 
 
-    <div class="px-4 md:px-6 lg:px-6 pb-2">
+    <div class="px-4 md:px-12 base:px-12 pb-2 pt-4">
       <slot />
     </div>
 
@@ -104,34 +104,8 @@ function isActive(href: string): boolean {
           });
         }
 
-        // Navbar scroll behavior
-        const navbar = document.getElementById('navbar');
-        let lastScrollY = window.scrollY;
-        let ticking = false;
-
-        function updateNavbar() {
-          const scrollY = window.scrollY;
-          
-          if (scrollY > lastScrollY && scrollY > 100) {
-            // Scrolling down & past threshold - hide navbar
-            navbar.style.transform = 'translateY(-100%)';
-          } else {
-            // Scrolling up or at top - show navbar
-            navbar.style.transform = 'translateY(0)';
-          }
-          
-          lastScrollY = scrollY;
-          ticking = false;
-        }
-
-        function onScroll() {
-          if (!ticking) {
-            requestAnimationFrame(updateNavbar);
-            ticking = true;
-          }
-        }
-
-        window.addEventListener('scroll', onScroll);
+        // Navbar is now fixed and doesn't scroll away
+        // Removed scroll behavior to keep navbar always visible
       });
     </script>
   </body>

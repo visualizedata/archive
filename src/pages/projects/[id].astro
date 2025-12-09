@@ -70,7 +70,7 @@ const filteredAuthorProjects = allProjects
       {/* Video Section - First, 16px from top */}
       {
         project.data.video && project.data.video.length > 0 ? (
-          <div class="w-full aspect-video mb-4 rounded-[10px] overflow-hidden">
+          <div class="w-full aspect-video mb-6 overflow-hidden">
             <VideoPlayer
               client:load
               src={project.data.video[0]}
@@ -84,7 +84,7 @@ const filteredAuthorProjects = allProjects
           </div>
         ) : (
           project.data.image && project.data.image.length > 0 && (
-            <div class="w-full aspect-video mb-4 rounded-[10px] overflow-hidden">
+            <div class="w-full aspect-video mb-4 overflow-hidden">
               <img
                 src={`${base}/images/${project.data.image[0]}`}
                 alt={project.data.title}
@@ -96,21 +96,42 @@ const filteredAuthorProjects = allProjects
       }
 
       {/* Title and Author - One line format like carousel */}
-      <div class="mb-4">
-        <h1 class="text-2xl font-sans">
-          <span class="font-bold">{project.data.title}</span> by {project.data.author?.join(', ')}
+      <div class="mb-6">
+        <h1 class="text-4xl font-sans">
+          <span class="font-bold uppercase">{project.data.title}</span> <a href={`${base}/?q=${encodeURIComponent(project.data.author?.join(', ') || '')}`} class="font-bold uppercase text-black/30 hover:text-black transition-colors duration-200">{project.data.author?.join(', ')}</a>
         </h1>
       </div>
 
-      {/* Description Paragraph */}
+      {/* Description and Tags Grid */}
       {
         project.data.description && (
-          <div class="mb-6">
-            {project.data.description.split('\n').map((text) => {
-              return (
-                <p class="text-base max-w-prose pb-4 last:pb-0">{text}</p>
+          <div class="mb-6 grid grid-cols-4 gap-6">
+            {/* Description - spans first 3 columns */}
+            <div class="col-span-3 font-bold text-sm md:text-base">
+              {project.data.description.split('\n').map((text) => {
+                return (
+                  <p class="text-base max-w-prose pb-4 last:pb-0">{text}</p>
+                )
+              })}
+            </div>
+            
+            {/* Tags - 4th column */}
+            {
+              project.data.tags && project.data.tags.length > 0 && (
+                <div class="col-span-1">
+                  <div class="flex flex-col gap-y-1 text-sm leading-relaxed">
+                    {project.data.tags.sort().map((tag) => (
+                      <a 
+                        href={`${base}/?theme=${encodeURIComponent(tag)}`}
+                        class="text-black/30 text-sm md:text-base font-bold leading-tight hover:text-black transition-colors duration-200 capitalize text-left"
+                      >
+                        {tag.replace(/-/g, ' ')}
+                      </a>
+                    ))}
+                  </div>
+                </div>
               )
-            })}
+            }
           </div>
         )
       }
@@ -121,13 +142,13 @@ const filteredAuthorProjects = allProjects
           project.data.project_repo ||
           project.data.student_url) && (
           <div class="mb-8">
-            <div class="flex flex-wrap gap-3">
+            <div class="flex flex-wrap gap-8">
               {project.data.project_url && (
                 <a
                   href={project.data.project_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="nav-item"
+                  class="py-2 text-sm md:text-base lg:text-base font-bold uppercase text-black/30 hover:text-black transition-colors duration-200"
                 >
                   Project Website
                 </a>
@@ -137,7 +158,7 @@ const filteredAuthorProjects = allProjects
                   href={project.data.project_repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="nav-item"
+                  class="py-2 text-sm md:text-base lg:text-base font-bold uppercase text-black/30 hover:text-black transition-colors duration-200"
                 >
                   Project Repository
                 </a>
@@ -147,7 +168,7 @@ const filteredAuthorProjects = allProjects
                   href={project.data.student_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="nav-item"
+                  class="py-2 text-sm md:text-base lg:text-base font-bold uppercase text-black/30 hover:text-black transition-colors duration-200"
                 >
                   Student Portfolio
                 </a>
