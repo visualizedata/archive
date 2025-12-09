@@ -90,7 +90,7 @@
     "description": "Art of Scale is a project that explores the physical dimensions and visual impact of artworks from The Revolutionary Era Art Collections across different historical decades. It analyzes how the physical size of the art, which includes 18th-century miniatures and larger canvases, has changed or remained consistent over time, using real dimensions to visually illustrate these scale differences for the entire dataset of paintings and miniatures.",
     "student_url": "https://github.com/smolinaschmidt",
     "project_url": "https://smolinaschmidt.github.io/major-studio/",
-    "project_repo": "https://github.com/smolinaschmidt/major-studio-1",
+    "project_repo": "https://github.com/smolinaschmidt/major-studio",
     "category": ["ms1"],
     "tags": ["smithsonian", "arts", "culture", "mapping"],
     "year": 2025,
