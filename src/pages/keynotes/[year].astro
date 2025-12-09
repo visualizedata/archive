@@ -34,7 +34,7 @@ const relatedProjects = allProjects
     {/* Video Section - First, 16px from top, full width with margins */}
     {
       keynote.video_embed_html && (
-        <div class="w-full aspect-video mb-4 rounded-[10px] overflow-hidden mt-4">
+        <div class="w-full aspect-video mb-4 overflow-hidden mt-4">
           <div
             set:html={keynote.video_embed_html}
             class="[&_iframe]:w-full [&_iframe]:h-full w-full h-full"
@@ -45,19 +45,14 @@ const relatedProjects = allProjects
 
     {/* Title Section */}
     <div class="mb-2">
-      <h1 class="text-2xl font-sans mb-2">
-        <span class="font-bold">{keynote.title}</span>
+      <h1 class="text-4xl font-sans mb-2">
+        <span class="font-bold capitalize">{keynote.title}</span>
       </h1>
-    </div>
-
-    {/* Description */}
-    <div class="mb-0">
-      <p class="text-base max-w-prose pb-4">{keynote.description}</p>
     </div>
 
     {/* Details Section */}
     <div class="mb-8">
-      <div class="text-sm">
+      <div class="text-base font-bold">
         {(keynote.date || keynote.location) && (
           <div>
             {keynote.date && (
@@ -68,7 +63,6 @@ const relatedProjects = allProjects
                 {keynote.time && <span> at {keynote.time}</span>}
               </>
             )}
-            {keynote.date && keynote.location}
             {keynote.location && (
               <>
                 <span class="text-sm">at</span> {keynote.location}
@@ -91,16 +85,22 @@ const relatedProjects = allProjects
       </div>
     </div>
 
+    {/* Description */}
+    <div class="mb-2">
+      <p class="text-base max-w-prose pb-4">{keynote.description}</p>
+    </div>
+
     {/* Students Section */}
     {
       keynote.students && keynote.students.length > 0 && (
         <div class="mb-8">
-          <h3 class="font-bold text-sm mb-3">Students</h3>
-          <div class="flex flex-wrap gap-x-6 gap-y-1 text-sm leading-relaxed">
+          <h3 class="font-bold text-sm md:text-base mb-3 uppercase">Students</h3>
+          <div class="flex flex-wrap gap-x-6 gap-y-1 text-sm leading-tight lg:grid lg:grid-cols-4 lg:gap-x-6 lg:gap-y-2">
             {keynote.students.map((student) => (
               <a 
                 href={`${base}/?q=${encodeURIComponent(student)}`}
-                class="text-black/50 hover:text-black transition-colors duration-200"
+                class="text-sm md:text-base text-black/30 hover:text-black transition-colors duration-200 font-bold hyphens-auto break-words"
+                style="word-break: break-word; hyphens: auto;"
               >
                 {student}
               </a>
@@ -114,8 +114,8 @@ const relatedProjects = allProjects
     {
       relatedProjects.length > 0 && (
         <section class="mt-12">
-          <h3 class="font-bold text-sm mb-6">Featured Projects</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6">
+          <h3 class="font-bold text-sm md:text-base mb-3 uppercase">Featured Projects</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
             {relatedProjects.map((project) => (
               <ProjectCard client:load project={project} />
             ))}

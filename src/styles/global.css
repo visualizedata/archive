@@ -2,8 +2,23 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Forma DJR Micro Font Faces */
+@font-face {
+  font-family: 'forma-djr-micro';
+  src: url('/archive/fonts/FormaDJRMicro/FormaDJRMicro-Regular.otf') format('opentype');
+  font-weight: 400;  /* Normal weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'forma-djr-micro';
+  src: url('/archive/fonts/FormaDJRMicro/FormaDJRMicro-Bold.otf') format('opentype');
+  font-weight: 700;  /* Bold weight */
+  font-style: normal;
+}
+
 @theme {
-	--font-sans: "InterVariable", sans-serif;
+	--font-sans: "forma-djr-micro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	--font-mono: "Fira Mono", monospace;
 	--font-neue-regular: "neue-regular", sans-serif;
 	--font-neue-display-black: "neue-display-black", sans-serif;
@@ -21,51 +36,9 @@
 	--radius-lg: 10px;
 }
 
-/* Navigation Styles */
-.nav-button {
-	@apply bg-white/70 text-black/50 hover:text-black transition-colors duration-200;
-	@apply px-4 py-2 rounded-md text-sm;
-	backdrop-filter: blur(6px);
-}
-
-.nav-item {
-	@apply bg-white/70 text-black/50 hover:text-black transition-colors duration-200;
-	@apply px-4 py-2 rounded-md text-sm;
-	backdrop-filter: blur(6px);
-}
-
-.nav-item.active {
-	@apply text-black;
-}
-
-/* Program Title Styles */
-.nav-title {
-	@apply bg-white/70 text-black px-4 py-2 rounded-md text-sm;
-	backdrop-filter: blur(6px);
-}
-
-.nav-title-unified {
-	@apply text-black;
-	font-size: 14px;
-}
-
-.nav-item-unified {
-	@apply text-black/50 hover:text-black transition-colors duration-200;
-	font-size: 14px;
-}
-
-.nav-item-unified.active {
-	@apply text-black;
-}
-
-.nav-title-mobile {
-	@apply text-black text-sm leading-tight;
-	line-height: 1.2;
-}
-
 /* Ensure content doesn't hide behind fixed nav */
 body {
-	@apply pt-4 md:pt-4;
+	@apply pt-16 md:pt-16;
 	/* background-color: #F7F7F7; */
 	overflow-x: hidden; /* Prevent horizontal page scrolling */
 }
@@ -73,7 +46,7 @@ body {
 /* Mobile: adjust content to start below navigation */
 @media (max-width: 768px) {
 	body {
-		padding-top: calc(32px + 70px + 16px); /* nav top position + mobile nav height + spacing */
+		padding-top: calc(16px + 60px + 16px); /* nav padding + mobile nav height + spacing */
 	}
 }
 
@@ -84,4 +57,30 @@ body {
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
+}
+
+/* Custom text selection (highlight) color */
+::selection {
+  background-color: #78FFBE; 
+  color: black;
+}
+
+/* For Firefox compatibility */
+::-moz-selection {
+  background-color: #FF6600; /* Bright orange background */
+  color: white; /* White text for contrast */
+}
+
+/* Force sharp corners on video players */
+video,
+.vds-player,
+.vds-media,
+[data-media-player],
+[data-media-provider] {
+  border-radius: 0 !important;
+}
+
+.vds-player *,
+[data-media-player] * {
+  border-radius: 0 !important;
 }

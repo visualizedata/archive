@@ -76,13 +76,13 @@ export default function FeaturedCarousel({ highlightedIds, allProjects }: Featur
   return (
     <>
       <div className="w-full mb-2 relative">
-        <div className="overflow-hidden rounded-lg" ref={emblaRef}>
+        <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
             {featuredProjects.map((project) => (
               <div
                 key={project.id}
                 className="flex-[0_0_100%] min-w-0"
-                style={{ aspectRatio: '20/9' }}
+                style={{ aspectRatio: '16/9' }}
               >
                 <a
                   href={`${base}/projects/${project.id}`}
@@ -132,7 +132,18 @@ export default function FeaturedCarousel({ highlightedIds, allProjects }: Featur
             {featuredProjects.map((project, index) => (
               <div key={project.id} className="h-12 md:h-6 flex items-start md:items-center text-left">
                 <h3 className="text-sm md:text-base font-sans font-bold leading-tight">
-                  {project.title} <span className="font-normal">by {project.author.join(', ')}</span>
+                  <a
+                    href={`${base}/projects/${project.id}`}
+                    className="uppercase text-black"
+                  >
+                    {project.title}
+                  </a>{' '}
+                  <a
+                    href={`${base}/?q=${encodeURIComponent(project.author.join(', '))}`}
+                    className="font-bold uppercase text-black/30 hover:text-black transition-colors"
+                  >
+                    {project.author.join(', ')}
+                  </a>
                 </h3>
               </div>
             ))}

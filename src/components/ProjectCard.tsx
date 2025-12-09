@@ -10,7 +10,10 @@ export function ProjectCard({ project }: { project: ProjectData }) {
 
   return (
     <div className="relative h-full flex flex-col">
-      <div className="aspect-video bg-gray-100 rounded-[10px] overflow-hidden border border-gray-100">
+      <a
+        href={`${base}/projects/${project.id}`}
+        className="aspect-video bg-gray-100 overflow-hidden border border-gray-100 block"
+      >
         <motion.div
           onViewportEnter={() => setIsInView(true)}
           viewport={{ once: true }}
@@ -25,20 +28,25 @@ export function ProjectCard({ project }: { project: ProjectData }) {
             />
           )}
         </motion.div>
-      </div>
+      </a>
 
-      <div className="pt-3">
-        <h2 className="text-sm text-balance">
-          <span className="font-bold">{project.title}</span> by {project.author.join(', ')}
+      <div className="pt-2">
+        <h2 className="text-sm md:text-base text-balance">
+          <a
+            href={`${base}/projects/${project.id}`}
+            className="font-bold uppercase hover:text-black/70 transition-colors"
+          >
+            {project.title}
+          </a>{' '}
+          <a
+            href={`${base}/?q=${encodeURIComponent(project.author.join(', '))}`}
+            className="font-bold uppercase text-black/30 hover:text-black transition-colors relative z-10"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {project.author.join(', ')}
+          </a>
         </h2>
       </div>
-
-      <a
-        href={`${base}/projects/${project.id}`}
-        className="block p-4 text-sm absolute inset-0"
-      >
-        <span className="sr-only">View Project</span>
-      </a>
     </div>
   )
 }

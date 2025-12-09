@@ -43,9 +43,13 @@ export const VideoPlayer = ({ src, poster, title }: VideoPlayerProps) => {
   if (!src) return null
 
   return (
-    <div className="w-full aspect-video relative isolate">
-      <MediaPlayer title={title} src={src} className="absolute inset-0">
-        <MediaProvider>
+    <div className="w-full aspect-video relative isolate rounded-none">
+      <MediaPlayer 
+        title={title} 
+        src={src} 
+        className="absolute inset-0 rounded-none [&>*]:rounded-none [&_video]:rounded-none [&_*]:rounded-none"
+      >
+        <MediaProvider className="rounded-none">
           {poster && <VideoPoster src={poster} title={title} />}
         </MediaProvider>
         <DefaultVideoLayout icons={defaultLayoutIcons} />

@@ -28,7 +28,7 @@ export function CohortsSection({ cohortData }: CohortsProps) {
   }, 0) + (years.length - 1) * 40 // Add gaps (2.5rem = 40px between columns)
 
   return (
-    <section className="mb-16">
+    <section className="mb-4">
       <div className="grid grid-cols-[100px_1fr] items-start gap-8 text-base">
         <div className="font-bold">Cohorts</div>
         
@@ -56,15 +56,15 @@ export function CohortsSection({ cohortData }: CohortsProps) {
               
               return (
                 <div key={year} style={{ minWidth: `${columnWidth}px`, flexShrink: 0 }}>
-                  <h3 style={{ 
-                    marginBottom: '1rem', 
-                    borderBottom: '1px solid black', 
-                    paddingBottom: '0.5rem',
-                    whiteSpace: 'nowrap'
-                  }}>
-                    {year}
+                  <h3 className="mb-4 whitespace-nowrap">
+                    <a 
+                      href={`/archive/?year=${year}`}
+                      className="text-base font-bold text-black hover:text-black/30 transition-colors duration-200"
+                    >
+                      {year}
+                    </a>
                   </h3>
-                  <div style={{ fontSize: '16px' }}>
+                  <div className="text-base">
                     {cohortData[year].map((name, index) => (
                       <div key={`${year}-${index}`} style={{ 
                         whiteSpace: 'nowrap', 
@@ -72,7 +72,7 @@ export function CohortsSection({ cohortData }: CohortsProps) {
                       }}>
                         <a 
                           href={`/archive/?q=${encodeURIComponent(name)}`}
-                          className="text-black/50 hover:text-black transition-colors duration-200"
+                          className="text-base font-bold text-black hover:text-black/30 transition-colors duration-200"
                         >
                           {name}
                         </a>

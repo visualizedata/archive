@@ -42,9 +42,9 @@ export const RelatedProjects = ({
   if (randomizedProjects.length === 0) return null
 
   return (
-    <div className="border-t pt-6 pb-8 border-neutral-300">
-      <h2 className="text-xl font-semibold mb-4">{title}</h2>
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
+    <div className="border-t pt-4 pb-12 border-neutral-300">
+      <h2 className="capitalize text-sm md:text-base font-semibold mb-4">{title}</h2>
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
         {randomizedProjects.map((project) => (
           <li key={project.id}>
             <ProjectCard project={project} />
