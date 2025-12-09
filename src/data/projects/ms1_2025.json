@@ -62,11 +62,11 @@
     "description": "Silhouette Art of Early America' is a data visualization inspired by the work of William Bache. It explores over 1800 of his silhouettes. The sitters include unidentified as well as named men, women and children. A technique used to create these silhouettes involved carefully tracing a person's profile using a device called a physiognotrace. The outlines and 'tracing' of these profiles is visualized in this project. Any combination of silhouettes can be selected and explored at any time. This project also visualizes the figures without names, by allowing viewers to generate images from these unknown silhouettes to uncover an imagined face of someone history left unidentified. To personalise this experience, you can generate your own silhouette highlighting how the act of capturing one's image remains a deeply human form of self representation.",
     "student_url": "https://nevenarmanios.com",
     "project_url": "https://narmanios.github.io/SilhouetteArt/",
-    "project_repo": "https://github.com/narmanios/major-studio-1/tree/main/SilhouetteArt",
+    "project_repo": "https://github.com/narmanios/SilhouetteArt",
     "category": ["ms1"],
     "tags": ["smithsonian", "arts", "culture", "gender", "society", "machine learning"],
     "year": 2025,
-    "image": ["https://raw.githubusercontent.com/narmanios/major-studio-1/refs/heads/main/SilhouetteArt/screenshots/landing.jpg"],
+    "image": ["https://raw.githubusercontent.com/narmanios/SilhouetteArt/refs/heads/main/screenshots/landing.jpg"],
     "video": []
   },
   {
