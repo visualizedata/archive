@@ -53,15 +53,10 @@ async function loadCohortData() {
 
 const cohortData = await loadCohortData()
 
-// Debug: log the cohort data
-console.log('Cohort data loaded:', Object.keys(cohortData), 'Total years:', Object.keys(cohortData).length)
-for (const [year, names] of Object.entries(cohortData)) {
-  console.log(`${year}: ${names.length} students`, names.slice(0, 3))
-}
 ---
 
 <MainLayout title="About">
-  <div class="px-4 md:px-8 lg:px-16 max-w-6xl mx-auto">
+  <div class="max-w-6xl mx-auto">
     
     {/* Main Description Text */}
     <section class="mt-8 mb-16">

@@ -64,12 +64,12 @@ export const ProjectFilters = ({
         {/* Desktop and Mobile Layout */}
         <div className="w-full flex items-center">
           {/* Desktop Filters - Hidden on mobile */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8 overflow-x-auto scrollbar-hide whitespace-nowrap">
             {/* Themes Filter */}
             <div className="flex items-center gap-0.5">
               <button
                 onClick={() => handleFilterClick('themes')}
-                className={`text-2xl font-bold uppercase transition-colors ${
+                className={`text-2xl font-bold uppercase whitespace-nowrap transition-colors ${
                   theme || openFilter === 'themes'
                     ? 'text-black'
                     : 'text-black/30 hover:text-black'
@@ -91,7 +91,7 @@ export const ProjectFilters = ({
             <div className="flex items-center gap-0.5">
               <button
                 onClick={() => handleFilterClick('courses')}
-                className={`text-2xl font-bold uppercase transition-colors ${
+                className={`text-2xl font-bold uppercase whitespace-nowrap transition-colors ${
                   category || openFilter === 'courses'
                     ? 'text-black'
                     : 'text-black/30 hover:text-black'
@@ -113,7 +113,7 @@ export const ProjectFilters = ({
             <div className="flex items-center gap-0.5">
               <button
                 onClick={() => handleFilterClick('years')}
-                className={`text-2xl font-bold uppercase transition-colors ${
+                className={`text-2xl font-bold uppercase whitespace-nowrap transition-colors ${
                   year || openFilter === 'years'
                     ? 'text-black'
                     : 'text-black/30 hover:text-black'
