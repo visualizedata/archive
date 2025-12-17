@@ -35,7 +35,7 @@ const keynoteImagesMap = Object.fromEntries(
 ---
 
 <MainLayout title="Keynotes">
-  <div class="grid grid-cols-2 gap-8">
+  <div class="grid grid-cols-2 gap-4 md:gap-8">
     {
       keynotes.map((keynote) => {
         const thumbnailImage = keynoteImagesMap[keynote.year]
@@ -70,7 +70,7 @@ const keynoteImagesMap = Object.fromEntries(
             
             {/* Text information below */}
             <div class="text-black">
-              <h2 class="text-sm md:text-3xl font-bold capitalize">
+              <h2 class="text- base md:text-3xl font-bold capitalize">
                 {keynote.year} Keynotes
               </h2>
               {dateTimeLocation && (

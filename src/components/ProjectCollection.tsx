@@ -117,7 +117,7 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
                           theme !== null || searchQuery.trim() !== '';
 
   return (
-    <div className="max-w-[2000px] mx-auto">
+    <div className="w-full md:max-w-[2000px] md:mx-auto">
       {/* Featured carousel - shown when highlighted projects exist AND no filters are active */}
       {highlightedIds.length > 0 && !hasActiveFilters && (
         <div className="mb-8">
@@ -163,7 +163,7 @@ export default function FilterableProjects({ projects, highlightedIds = [] }: Pr
             </button>
           </div>
         ) : (
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-0 md:gap-x-8 gap-y-4 md:gap-y-8">
             {filtered.map((p) => (
               <li key={p.id}>
                 <ProjectCard project={p} />
