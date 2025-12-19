@@ -36,15 +36,15 @@ function isActive(href: string): boolean {
       <div class="hidden md:flex px-4 md:px-12 base:px-12 py-4 items-start justify-center">
         <div class="flex items-start justify-between w-full">
           <!-- Left: Program Title (clickable link to home) -->
-          <a href={`${base}/`} class="text-black font-bold text-base uppercase leading-tight">
+          <a href={`${base}/`} class="text-black !font-bold !text-base uppercase leading-tight">
             Parsons School of Design <br> MS Data Visualization <span class="text-black/100">Projects Archive</span>
           </a>
 
           <!-- Right: Navigation Items -->
           <div class="flex items-start gap-6">
-            <a href={`${base}/`} class={`font-bold text-base uppercase transition-colors duration-500 ${isActive(`${base}/`) ? 'text-black' : 'text-black/30 hover:text-black'}`}>Projects</a>
-            <a href={`${base}/keynotes`} class={`font-bold text-base uppercase transition-colors duration-500 ${isActive(`${base}/keynotes`) ? 'text-black' : 'text-black/30 hover:text-black'}`}>Keynotes</a>
-            <a href={`${base}/about`} class={`font-bold text-base uppercase transition-colors duration-500 ${isActive(`${base}/about`) ? 'text-black' : 'text-black/30 hover:text-black'}`}>About</a>
+            <a href={`${base}/`} class={`!font-bold !text-base uppercase transition-colors duration-500 ${isActive(`${base}/`) ? 'text-black' : 'text-black/30 hover:text-black'}`}>Projects</a>
+            <a href={`${base}/keynotes`} class={`!font-bold !text-base uppercase transition-colors duration-500 ${isActive(`${base}/keynotes`) ? 'text-black' : 'text-black/30 hover:text-black'}`}>Keynotes</a>
+            <a href={`${base}/about`} class={`!font-bold !text-base uppercase transition-colors duration-500 ${isActive(`${base}/about`) ? 'text-black' : 'text-black/30 hover:text-black'}`}>About</a>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ function isActive(href: string): boolean {
       <div class="md:hidden">
         <div class="px-4 md:px-12 base:px-12 py-3 flex items-start justify-between">
           <!-- Left: Program Title (two lines, left aligned, clickable) -->
-          <a href={`${base}/`} class="text-black font-bold text-base leading-tight uppercase">
+          <a href={`${base}/`} class="text-black !text-base !font-bold leading-tight uppercase">
             <div>Parsons School of Design</div>
             <div>MS Data Visualization</div>
           </a>
@@ -69,9 +69,9 @@ function isActive(href: string): boolean {
         <!-- Mobile Menu Dropdown -->
         <div class="bg-white/70 backdrop-blur-md hidden" id="mobile-menu">
           <div class="flex flex-col px-4 md:px-6 base:px-6 py-4 gap-2 border-t border-black/10">
-            <a href={`${base}/`} class={`font-bold text-base px-2 py-1 uppercase transition-colors duration-200 ${isActive(`${base}/`) ? 'text-black' : 'text-black/50 hover:text-black'}`}>Projects</a>
-            <a href={`${base}/keynotes`} class={`font-bold text-base px-2 py-1 uppercase transition-colors duration-200 ${isActive(`${base}/keynotes`) ? 'text-black' : 'text-black/50 hover:text-black'}`}>Keynotes</a>
-            <a href={`${base}/about`} class={`font-bold text-base px-2 py-1 uppercase transition-colors duration-200 ${isActive(`${base}/about`) ? 'text-black' : 'text-black/50 hover:text-black'}`}>About</a>
+            <a href={`${base}/`} class={`!font-bold !text-base px-2 py-1 uppercase transition-colors duration-200 ${isActive(`${base}/`) ? 'text-black' : 'text-black/50 hover:text-black'}`}>Projects</a>
+            <a href={`${base}/keynotes`} class={`!font-bold !text-base px-2 py-1 uppercase transition-colors duration-200 ${isActive(`${base}/keynotes`) ? 'text-black' : 'text-black/50 hover:text-black'}`}>Keynotes</a>
+            <a href={`${base}/about`} class={`!font-bold !text-base px-2 py-1 uppercase transition-colors duration-200 ${isActive(`${base}/about`) ? 'text-black' : 'text-black/50 hover:text-black'}`}>About</a>
           </div>
         </div>
       </div>
