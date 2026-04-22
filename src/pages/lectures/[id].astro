@@ -1,0 +1,69 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro'
+import { getCollection } from 'astro:content'
+import type { LectureData } from '@/content.config'
+
+export async function getStaticPaths() {
+  const lectures = await getCollection('lectures')
+  return lectures.map((entry) => ({
+    params: { id: entry.id },
+    props: { lecture: entry.data },
+  }))
+}
+
+interface Props {
+  lecture: LectureData
+}
+
+const { lecture } = Astro.props as Props
+
+const formattedDate = (() => {
+  if (!lecture.date || lecture.date === 'YYYY-MM-DD') return null
+  const [year, month, day] = lecture.date.split('-').map(Number)
+  return new Date(year, month - 1, day).toLocaleDateString(undefined, {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  })
+})()
+
+const meta = [formattedDate, lecture.location].filter(Boolean).join(' • ')
+
+---
+
+<MainLayout title={`${lecture.title ? `${lecture.title}: ` : ''}${lecture.speaker}`}>
+
+  {/* Video embed — full width, top of page */}
+  {lecture.video_embed_html && (
+    <div class="w-full aspect-video mb-4 mt-4 overflow-hidden">
+      <div
+        set:html={lecture.video_embed_html}
+        class="[&_iframe]:w-full [&_iframe]:h-full w-full h-full"
+      />
+    </div>
+  )}
+
+  {/* Title */}
+  <div class="mb-2 mt-8">
+    <h1 class="text-4xl font-sans font-bold">
+      {lecture.speaker}{lecture.title ? `: ${lecture.title}` : ''}
+    </h1>
+  </div>
+
+  {/* Date • Location */}
+  {meta && (
+    <div class="mb-6">
+      <p class="text-base font-bold text-black/30">{meta}</p>
+    </div>
+  )}
+
+  {/* Description */}
+  {lecture.description && (
+    <div class="mb-8 grid grid-cols-6">
+      <div class="col-span-4 font-bold text-sm md:text-base whitespace-pre-wrap">
+        {lecture.description}
+      </div>
+    </div>
+  )}
+
+</MainLayout>

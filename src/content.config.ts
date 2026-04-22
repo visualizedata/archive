@@ -120,7 +120,35 @@ const keynotes = defineCollection({
   schema: keynotesSchema,
 })
 
+export const lecturesSchema = z.object({
+  year: z.number().optional(),
+  date: z.string(),
+  title: z.string(),
+  speaker: z.string(),
+  location: z.string(),
+  description: z.string(),
+  video_embed_html: z.string(),
+})
+
+export type LectureData = z.infer<typeof lecturesSchema>
+
+const lectures = defineCollection({
+  loader: async () => {
+    const content = await fs.readFile('src/data/lectures/lectures.json', 'utf-8')
+    return z.array(lecturesSchema).parse(JSON.parse(content)).map((item) => {
+      const year = item.year ?? (item.date && item.date !== 'YYYY-MM-DD' ? parseInt(item.date.split('-')[0]) : 0)
+      return {
+        id: item.date && item.date !== 'YYYY-MM-DD' ? item.date : `placeholder-${item.speaker.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+        ...item,
+        year,
+      }
+    })
+  },
+  schema: lecturesSchema,
+})
+
 export const collections = {
   projects,
   keynotes,
+  lectures,
 }
