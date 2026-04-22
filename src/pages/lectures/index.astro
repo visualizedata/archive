@@ -1,0 +1,80 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro'
+import { getCollection } from 'astro:content'
+
+const base = import.meta.env.BASE_URL
+
+const lectures = await getCollection('lectures').then((l) =>
+  l.map((entry) => ({ id: entry.id, ...entry.data })).sort((a, b) => {
+    const aDate = a.date && a.date !== 'YYYY-MM-DD' ? a.date : '0000-00-00'
+    const bDate = b.date && b.date !== 'YYYY-MM-DD' ? b.date : '0000-00-00'
+    return bDate.localeCompare(aDate) // newest first
+  })
+)
+
+const formatDate = (dateStr: string) => {
+  if (!dateStr || dateStr === 'YYYY-MM-DD') return null
+  const [year, month, day] = dateStr.split('-').map(Number)
+  return new Date(year, month - 1, day).toLocaleDateString(undefined, {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  })
+}
+
+const getVimeoThumbnail = (videoEmbedHtml: string) => {
+  try {
+    const match = videoEmbedHtml.match(/vimeo\.com\/video\/(\d+)/)
+    if (match && match[1]) {
+      return `https://vumbnail.com/${match[1]}.jpg`
+    }
+  } catch {
+    // ignore
+  }
+  return null
+}
+---
+
+<MainLayout title="Lectures">
+  <div class="mb-10 mt-4 text-center">
+    <h1 class="text-3xl md:text-5xl font-bold mb-2">Parsons Data Visualization Lecture Series</h1>
+    <p class="text-sm md:text-base font-bold text-black/30">Archive of lectures by the MS Data Visualization program at Parsons School of Design at The New School.</p>
+  </div>
+  <div class="grid grid-cols-2 gap-4 md:gap-8">
+    {lectures.map((lecture) => {
+      const thumbnail = getVimeoThumbnail(lecture.video_embed_html ?? '')
+      const formattedDate = formatDate(lecture.date ?? '')
+      const meta = [formattedDate, lecture.location].filter(Boolean).join(' • ')
+
+      return (
+        <a
+          href={`${base}/lectures/${lecture.id}`}
+          class="group block hover:opacity-90 transition-opacity"
+        >
+          {/* Thumbnail */}
+          <div class="aspect-video overflow-hidden bg-gray-100 mb-3 border border-gray-300">
+            {thumbnail ? (
+              <img
+                src={thumbnail}
+                alt={lecture.speaker}
+                class="w-full h-full object-cover"
+              />
+            ) : (
+              <div class="w-full h-full bg-gray-200" />
+            )}
+          </div>
+
+          {/* Line 1: Speaker: Title */}
+          <h2 class="text-base md:text-2xl font-bold mt-1">
+            {lecture.speaker}{lecture.title ? <>: <span class="text-black/30 hover:text-black transition-colors duration-200">{lecture.title}</span></> : ''}
+          </h2>
+
+          {/* Line 2: Date • Location */}
+          {meta && (
+            <p class="text-sm :text-base font-bold text-black/30 mt-1">{meta}</p>
+          )}
+        </a>
+      )
+    })}
+  </div>
+</MainLayout>

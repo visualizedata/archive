@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2026-03-24",
+    "title": "at Parsons School of Design",
+    "speaker": "Giorgia Lupi",
+    "location": "66 West 12th Street Kaplan Hall",
+    "description": "Giorgia Lupi is an information designer and Partner at Pentagram in New York.\n\nGiorgia grew up in Modena, Italy. After receiving her master’s degree in Architecture, she earned her PhD in Design at Politecnico di Milano. In 2011, she co-founded Accurat, an internationally acclaimed data-driven design firm with offices in Milan and New York, before joining Pentagram in 2019.\n\nGiorgia’s work is centered around her philosophy of Data Humanism, which was the subject of her first TED TALK in 2017. Her second TED TALK, “What Long Covid has Taught Me About Life (and Data),” was released in 2024.\n\nHer collaborative personal data-collection project, “Dear Data,” is part of the permanent collection of the Museum of Modern Art, where in 2017 she was also commissioned by Paola Antonelli to create an original site-specific piece. In 2024, she published 1,374 Days: My life with long COVID, a visual OpEd in The New York Times, which was awarded the prestigious Compasso D’oro in 2025.\n\nShe is co-author of Dear Data, Observe, Collect, Draw—A Visual Journal, This is Me and Only Me, and her latest book, Speak Data. Giorgia also created a one-of-a-kind art book called Book of Life for Moleskine Foundation, telling her story through data represented by thousands of colorful embroidered stitches.\n\nShe has been profiled in The New Yorker, covered by Vogue, Vanity Fair, and Forbes, among others for her collaboration with & Other Stories, and featured in the Roku documentary series, Full Bleed.\n\nGiorgia was named one of Fast Company’s “100 Most Creative People in Business” in 2018, when she also joined MIT Media Lab as a Director’s Fellow. She is also a member of the World Economic Forum’s Global Future Council on New Metrics, a Fellow of the Royal Society of Art, and a National Geographic explorer. She is part of the advisory council for the Data Visualization Society. She has been named three times as one of the 400 most creative people that shape America by Wallpaper.\n\nGiorgia is the 2022 National Design Award for Communication Design winner presented by Cooper Hewitt, Smithsonian Design Museum. That year, she also received an honorary degree in Fine Arts from the Maryland Institute College of Art. In 2024, she was invited to become a member of Alliance Graphique Internationale.",
+    "video_embed_html": "<iframe src=\"https://player.vimeo.com/video/1180516672\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
+  },
+  {
+    "date": "2026-04-07",
+    "title": "Radical Cartography",
+    "speaker": "William Rankin",
+    "location": "66 West 12th Street",
+    "description": "",
+    "video_embed_html": "<iframe src=\"https://player.vimeo.com/video/1181634805\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
+  },
+  {
+    "date": "2026-02-05",
+    "title": "There’s a Crack in Everything: Gaps, Seams, and the Work of Knowing",
+    "speaker": "Eric Rodenbeck",
+    "location": "66 West 12th Street",
+    "description": "A proud alumnus of the New School, Eric Rodenbeck is the founder of Stamen, an award-winning design and technology studio, and Lecturer in Architecture at Harvard’s Graduate School of Design. For more than twenty years, under Eric’s leadership, Stamen’s work has helped shape the practices, aesthetics, and public understanding of online mapping and data visualization.\n\nWhen interfaces break, explode, or fail, they reveal how data is structured, bounded, and contested. Rather than treating failure as error to be smoothed away, this talk approaches gaps, seams, and breakdowns in data visualization as sources of inquiry, investigation, and revelation. Drawing on projects that engage volatile territories, incomplete archives, and uneven infrastructures, the talk argues for an ecstatic data visualization practice that learns from instability and embraces the knowledge produced when systems are pushed beyond their limits.\n\nRadically interdisciplinary and collaborative, Eric’s work has been featured in galleries and museums around the world and is in the permanent collections of the Museum of Modern Art and the Smithsonian. An amateur geometer, ink maker, fermenter, and knot tyer, he has workshops in each of these areas and relishes the interplay between the digital and the physical, the controlled and the wild.\n\nIn 2017, Stamen was awarded the National Design Award for Interaction Design by the Cooper Hewitt Smithsonian Museum. You can read his academic papers Communications Principles for Inviting Inquiry and Exploration Through Science and Data Visualization at this link and Seeing the System: Data Visualization as Critical Practice at this link.\n\nPresented by Data Visualization, the Data Viz Club and the School of Art, Media, and Technology at Parsons School of Design.",
+    "video_embed_html": "<iframe src=\"https://player.vimeo.com/video/1163776094\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
+  },
+  {
+    "date": "2025-10-28",
+    "title": "Deviant Data—a Bestiary of the Unruly and Unmeasured",
+    "speaker": "Dietmar Offenhuber",
+    "location": "66 West 12th Street Kaplan Hall",
+    "description": "Data are laconic descriptions of the world, or are they? My talk explores forms of data that do not fit into this mold, forms of data overlooked in the visualization discourse. They cannot be visualized with traditional means or interpreted with traditional frames of mind. They do not represent something, but act on their surroundings. By focusing on the agency of data, I argue that representation alone obscures the relational, material, and economic dimensions through which data operate.\n\nDietmar Offenhuber is Professor and Chair of the Department of Art + Design at Northeastern University, with a secondary appointment in the School of Public Policy. Trained as an architect, he received a Master of Science from the MIT Media Lab and a PhD in Urban Planning from the Massachusetts Institute of Technology. His research focuses on data infrastructures, environmental information, visualization, and evidence construction. He has published several books, including the award-winning Waste is Information – Infrastructure Legibility and Governance (MIT Press). His new book, Autographic Design - the Matter of Data in a Self-Inscribing World, published by MIT Press, examines design practices based on material forms of information.",
+    "video_embed_html": "<iframe src=\"https://player.vimeo.com/video/1162625184\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
+  }
+]
