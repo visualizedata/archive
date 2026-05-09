@@ -6,6 +6,8 @@ import { ProjectCard } from '@/components/ProjectCard'
 import { VideoPlayer } from '@/components/VideoPlayer'
 import { RelatedProjects } from '@/components/RelatedProjects'
 import { AuthorProjects } from '@/components/AuthorProjects'
+import fs from 'fs/promises'
+import path from 'path'
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -27,6 +29,28 @@ const imgUrl = (project.data.image && project.data.image.length > 0)
   && project.data.image[0].includes('http') 
     ? project.data.image[0]
     : `${base}/images/${project.data.image[0]}`;
+
+// Auto-detect extra screenshots (e.g. annie_1.png ... annie_5.png)
+const extraImages: string[] = []
+if (project.data.image && project.data.image.length > 0 && !project.data.image[0].includes('http')) {
+  const firstImage = project.data.image[0] // e.g. "thesis-2025/Annie.gif"
+  const folder = path.dirname(firstImage)   // e.g. "thesis-2025"
+  const baseName = path.basename(firstImage, path.extname(firstImage)).toLowerCase() // e.g. "annie"
+  try {
+    const dirPath = path.join(process.cwd(), 'public', 'images', folder)
+    const files = await fs.readdir(dirPath)
+    const extras = files
+      .filter(f => {
+        const name = path.basename(f, path.extname(f))
+        return /^_\d+$/.test(name.slice(baseName.length)) && name.toLowerCase().startsWith(baseName)
+      })
+      .sort()
+      .map(f => `${folder}/${f}`)
+    extraImages.push(...extras)
+  } catch {
+    // folder not found, skip
+  }
+}
 
 // Get filtered projects for initial render
 const filteredRelatedProjects = allProjects
@@ -178,6 +202,21 @@ const filteredAuthorProjects = allProjects
           </div>
         )
       }
+
+      {/* Extra Screenshots Grid */}
+      {extraImages.length > 0 && (
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          {extraImages.map((img) => (
+            <div class="overflow-hidden bg-gray-100 flex items-center justify-center">
+              <img
+                src={`${base}/images/${img}`}
+                alt={project.data.title}
+                class="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Other Projects by Author Section */}
       <RelatedProjects
