@@ -11,7 +11,7 @@ jobs:
 
     # Run all steps inside a Node Docker container—no Actions caching at all
     container:
-      image: node:18
+      image: node:22
 
     steps:
       - name: Checkout code
