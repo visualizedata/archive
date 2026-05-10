@@ -33,7 +33,7 @@ jobs:
           if [ -f .nvmrc ]; then
             echo "NVMRC=$(cat .nvmrc)" >> $GITHUB_OUTPUT
           else
-            echo "NVMRC=18" >> $GITHUB_OUTPUT
+            echo "NVMRC=22" >> $GITHUB_OUTPUT
           fi
 
       - name: Setup Node.js

@@ -46,5 +46,8 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "pnpm": {
+    "onlyBuiltDependencies": ["@tailwindcss/oxide", "esbuild", "sharp"]
+  }
 }
