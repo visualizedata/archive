@@ -9,19 +9,25 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    # Run all steps inside a Node Docker container—no Actions caching at all
-    container:
-      image: node:22
-
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: false
+          fetch-depth: 1
+      
+      - name: Fetch LFS files
+        run: git lfs pull --include="public/**"
 
-      - name: Verify Node version
-        run: node --version
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.33.0
 
-      - name: Install pnpm
-        run: npm install -g pnpm@latest
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.22.2
 
       - name: Install dependencies
         run: pnpm install
