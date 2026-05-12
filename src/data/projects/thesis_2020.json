@@ -39,9 +39,7 @@
     "tags": ["health", "climate"],
     "year": 2020,
     "image": ["preview-2020/amanda.png"],
-    "video": [
-      "https://vimeo.com/1129941800"
-    ]
+    "video": ["https://vimeo.com/1129941800"]
   },
   {
     "author": ["Antonie Dreyer"],
@@ -55,9 +53,7 @@
     "tags": ["technology", "education"],
     "year": 2020,
     "image": ["preview-2020/antonie.png"],
-    "video": [
-      "https://vimeo.com/1129941846"
-    ]
+    "video": ["https://vimeo.com/1129941846"]
   },
   {
     "author": ["Brad MacDonald"],
@@ -71,9 +67,7 @@
     "tags": ["health", "media"],
     "year": 2020,
     "image": ["preview-2020/brad.png"],
-    "video": [
-      "https://vimeo.com/1129941866"
-    ]
+    "video": ["https://vimeo.com/1129941866"]
   },
   {
     "author": ["Caitlyn Ralph"],
@@ -87,9 +81,7 @@
     "tags": ["media", "culture", "music"],
     "year": 2020,
     "image": ["preview-2020/caitlyn.png"],
-    "video": [
-      "https://vimeo.com/1129941909"
-    ]
+    "video": ["https://vimeo.com/1129941909"]
   },
   {
     "author": ["Dan Grunebaum"],
@@ -103,9 +95,7 @@
     "tags": ["media", "culture"],
     "year": 2020,
     "image": ["preview-2020/danG.png"],
-    "video": [
-      "https://vimeo.com/1129941952"
-    ]
+    "video": ["https://vimeo.com/1129941952"]
   },
   {
     "author": ["Dan Ran"],
@@ -119,9 +109,7 @@
     "tags": ["urban", "society"],
     "year": 2020,
     "image": ["preview-2020/danR.png"],
-    "video": [
-      "https://vimeo.com/1129941994"
-    ]
+    "video": ["https://vimeo.com/1129941994"]
   },
   {
     "author": ["Janice Yamanaka-Lew"],
@@ -135,9 +123,7 @@
     "tags": ["environment", "policy"],
     "year": 2020,
     "image": ["preview-2020/janice.png"],
-    "video": [
-      "https://vimeo.com/1129942026"
-    ]
+    "video": ["https://vimeo.com/1129942026"]
   },
   {
     "author": ["John Outwater"],
@@ -151,9 +137,7 @@
     "tags": ["food", "health", "policy"],
     "year": 2020,
     "image": ["preview-2020/john.png"],
-    "video": [
-      "https://vimeo.com/1129941759"
-    ]
+    "video": ["https://vimeo.com/1129941759"]
   },
   {
     "author": ["Lulu Tanenbaum"],
@@ -181,9 +165,7 @@
     "tags": ["politics", "policy", "human-rights", "society"],
     "year": 2020,
     "image": ["preview-2020/marisa.png"],
-    "video": [
-      "https://vimeo.com/1129942058"
-    ]
+    "video": ["https://vimeo.com/1129942058"]
   },
   {
     "author": ["Michael Desai"],
@@ -197,9 +179,7 @@
     "tags": ["technology", "policy"],
     "year": 2020,
     "image": ["preview-2020/michael.png"],
-    "video": [
-      "https://vimeo.com/1129942090"
-    ]
+    "video": ["https://vimeo.com/1129942090"]
   },
   {
     "author": ["Mio Akasako"],
@@ -213,9 +193,7 @@
     "tags": ["gender", "policy", "education"],
     "year": 2020,
     "image": ["preview-2020/mio.png"],
-    "video": [
-      "https://vimeo.com/1129942129"
-    ]
+    "video": ["https://vimeo.com/1129942129"]
   },
   {
     "author": ["Neil Oliver"],
@@ -229,9 +207,7 @@
     "tags": ["media", "technology"],
     "year": 2020,
     "image": ["preview-2020/neil.png"],
-    "video": [
-      "https://vimeo.com/1129942187"
-    ]
+    "video": ["https://vimeo.com/1129942187"]
   },
   {
     "author": ["Nour Zein"],
@@ -245,9 +221,7 @@
     "tags": ["urban", "mapping", "environment"],
     "year": 2020,
     "image": ["preview-2020/nour.png"],
-    "video": [
-      "https://vimeo.com/1129942223"
-    ]
+    "video": ["https://vimeo.com/1129942223"]
   },
   {
     "author": ["Robin Coenen"],
@@ -261,9 +235,7 @@
     "tags": ["politics", "policy"],
     "year": 2020,
     "image": ["preview-2020/robin.png"],
-    "video": [
-      "https://vimeo.com/1129942259"
-    ]
+    "video": ["https://vimeo.com/1129942259"]
   },
   {
     "author": ["Saloni Naishad Shah"],
@@ -277,9 +249,7 @@
     "tags": ["climate", "environment", "policy"],
     "year": 2020,
     "image": ["preview-2020/saloni.png"],
-    "video": [
-      "https://vimeo.com/1129942308"
-    ]
+    "video": ["https://vimeo.com/1129942308"]
   },
   {
     "author": ["Yiran Ni"],
@@ -293,8 +263,6 @@
     "tags": ["health", "environment"],
     "year": 2020,
     "image": ["preview-2020/yiran.png"],
-    "video": [
-      "https://vimeo.com/1129942391"
-    ]
+    "video": ["https://vimeo.com/1129942391"]
   }
 ]

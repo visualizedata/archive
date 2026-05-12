@@ -11,9 +11,7 @@
     "tags": ["arts", "machine-learning", "media"],
     "year": 2021,
     "image": ["preview-2021/tiffany.png"],
-    "video": [
-      "https://vimeo.com/1129767630"
-    ]
+    "video": ["https://vimeo.com/1129767630"]
   },
   {
     "author": ["Lee Kuczewski"],
@@ -27,9 +25,7 @@
     "tags": ["technology", "policy"],
     "year": 2021,
     "image": ["preview-2021/lee.png"],
-    "video": [
-      "https://vimeo.com/1129767616"
-    ]
+    "video": ["https://vimeo.com/1129767616"]
   },
   {
     "author": ["Qinglu (Luella) Lu"],
@@ -43,9 +39,7 @@
     "tags": ["food", "culture"],
     "year": 2021,
     "image": ["preview-2021/qinglu.png"],
-    "video": [
-      "https://vimeo.com/1129767605"
-    ]
+    "video": ["https://vimeo.com/1129767605"]
   },
   {
     "author": ["Shaheryar (Sherry) Manzar"],
@@ -59,9 +53,7 @@
     "tags": ["food", "society", "policy"],
     "year": 2021,
     "image": ["preview-2021/shaheryar.png"],
-    "video": [
-      "https://vimeo.com/1129767594"
-    ]
+    "video": ["https://vimeo.com/1129767594"]
   },
   {
     "author": ["Isabel Stoddart"],
@@ -75,9 +67,7 @@
     "tags": ["education", "society", "gender"],
     "year": 2021,
     "image": ["preview-2021/isabel.png"],
-    "video": [
-      "https://vimeo.com/1129767584"
-    ]
+    "video": ["https://vimeo.com/1129767584"]
   },
   {
     "author": ["Ripley Cleghorn"],
@@ -91,9 +81,7 @@
     "tags": ["climate", "environment", "science"],
     "year": 2021,
     "image": ["preview-2021/ripley.png"],
-    "video": [
-      "https://vimeo.com/1129767572"
-    ]
+    "video": ["https://vimeo.com/1129767572"]
   },
   {
     "author": ["Dallas Alberti"],
@@ -107,9 +95,7 @@
     "tags": ["policy", "health", "environment", "mapping"],
     "year": 2021,
     "image": ["preview-2021/dallas.png"],
-    "video": [
-      "https://vimeo.com/1129767556"
-    ]
+    "video": ["https://vimeo.com/1129767556"]
   },
   {
     "author": ["Amina Brown"],
@@ -123,9 +109,7 @@
     "tags": ["environment", "society"],
     "year": 2021,
     "image": ["preview-2021/amina.png"],
-    "video": [
-      "https://vimeo.com/1129767545"
-    ]
+    "video": ["https://vimeo.com/1129767545"]
   },
   {
     "author": ["Zhibang Jiang"],
@@ -139,9 +123,7 @@
     "tags": ["society", "arts"],
     "year": 2021,
     "image": ["preview-2021/zhibang.png"],
-    "video": [
-      "https://vimeo.com/1129767530"
-    ]
+    "video": ["https://vimeo.com/1129767530"]
   },
   {
     "author": ["David Malary"],
@@ -155,9 +137,7 @@
     "tags": ["sports", "health"],
     "year": 2021,
     "image": ["preview-2021/david.png"],
-    "video": [
-      "https://vimeo.com/1129767523"
-    ]
+    "video": ["https://vimeo.com/1129767523"]
   },
   {
     "author": ["Seungyu Paik"],
@@ -171,9 +151,7 @@
     "tags": ["culture", "media", "music"],
     "year": 2021,
     "image": ["preview-2021/seungyu.png"],
-    "video": [
-      "https://vimeo.com/1129767513"
-    ]
+    "video": ["https://vimeo.com/1129767513"]
   },
   {
     "author": ["James Troxel"],
@@ -187,9 +165,7 @@
     "tags": ["culture", "play"],
     "year": 2021,
     "image": ["preview-2021/james.png"],
-    "video": [
-      "https://vimeo.com/1129767501"
-    ]
+    "video": ["https://vimeo.com/1129767501"]
   },
   {
     "author": ["Yujun Jiang"],
@@ -203,9 +179,7 @@
     "tags": ["play", "culture", "media", "society"],
     "year": 2021,
     "image": ["preview-2021/yujun.png"],
-    "video": [
-      "https://vimeo.com/1129767492"
-    ]
+    "video": ["https://vimeo.com/1129767492"]
   },
   {
     "author": ["Douglas Locke"],
@@ -219,9 +193,7 @@
     "tags": ["politics", "media"],
     "year": 2021,
     "image": ["preview-2021/douglas.png"],
-    "video": [
-      "https://vimeo.com/1129767481"
-    ]
+    "video": ["https://vimeo.com/1129767481"]
   },
   {
     "author": ["Inhye Lee"],
@@ -235,9 +207,7 @@
     "tags": ["mapping", "arts", "culture"],
     "year": 2021,
     "image": ["preview-2021/inhye.png"],
-    "video": [
-      "https://vimeo.com/1129767471"
-    ]
+    "video": ["https://vimeo.com/1129767471"]
   },
   {
     "author": ["Justin Kraus"],
@@ -251,8 +221,6 @@
     "tags": ["education", "media", "society"],
     "year": 2021,
     "image": ["preview-2021/justin.png"],
-    "video": [
-      "https://vimeo.com/1129767460"
-    ]
+    "video": ["https://vimeo.com/1129767460"]
   }
 ]
