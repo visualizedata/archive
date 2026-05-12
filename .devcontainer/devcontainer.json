@@ -1,0 +1,32 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git-lfs:1": {}
+  },
+  "waitFor": "onCreateCommand",
+  "postCreateCommand": "git rm --cached -r . && git reset --hard && git lfs pull",
+  "customizations": {
+    "codespaces": { "openFiles": [] },
+    "vscode": {
+      "settings": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false,
+        "extensions.autoCheckUpdates": false,
+        "extensions.autoUpdate": false,
+        "chat.disableAIFeatures": true,
+        "chat.editor.delegateToAgent.enabled": false,
+        "interactive.input.delegateToAgent": false,
+        "githubPullRequests.codingAgent.codeLens": false,
+        "chat.agent.enabled": false,
+        "telemetry.enableTelemetry": false,
+        "telemetry.feedback.enabled": false,
+        "telemetry.telemetryLevel": "off"
+      },
+      "extensions": []
+    }
+  }
+}
