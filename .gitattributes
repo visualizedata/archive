@@ -58,3 +58,4 @@ public/media/RikGhosh_2018.mp4 filter=lfs diff=lfs merge=lfs -text
 public/media/YannKerblat_2022.mp4 filter=lfs diff=lfs merge=lfs -text
 public/images filter=lfs diff=lfs merge=lfs -text
 public/media filter=lfs diff=lfs merge=lfs -text
+public/images/smithsonian-2025 filter=lfs diff=lfs merge=lfs -text
