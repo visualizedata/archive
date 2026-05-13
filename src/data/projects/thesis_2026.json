@@ -10,8 +10,8 @@
     "image": [
       "thesis-2026/neven.png"
     ],
-    "project_repo": "",
-    "project_url": "",
+    "project_repo": "https://github.com/narmanios/louis-armstrong",
+    "project_url": "https://louis-armstrong.vercel.app/",
     "student_url": "https://www.nevenarmanios.com/",
     "subtitle": "",
     "tags": [
@@ -33,8 +33,8 @@
     "image": [
       "thesis-2026/olivia.png"
     ],
-    "project_repo": "",
-    "project_url": "",
+    "project_repo": "https://github.com/oliviakasmin/okasmin-parsons-thesis-2026",
+    "project_url": "https://okasmin-thesis-vessels.netlify.app/",
     "student_url": "https://github.com/oliviakasmin",
     "subtitle": "",
     "tags": [
@@ -57,8 +57,8 @@
     "image": [
       "thesis-2026/saehun.png"
     ],
-    "project_repo": "",
-    "project_url": "",
+    "project_repo": "https://github.com/hoonkim0123/thesis",
+    "project_url": "https://hoonkim0123.github.io/thesis/",
     "student_url": "https://github.com/hoonkim0123",
     "subtitle": "",
     "tags": [
@@ -80,8 +80,8 @@
     "image": [
       "thesis-2026/sofia.png"
     ],
-    "project_repo": "",
-    "project_url": "",
+    "project_repo": "https://github.com/smolinaschmidt/Thesis",
+    "project_url": "https://sofiams.com/Thesis/",
     "student_url": "https://sofiams.com/",
     "subtitle": "",
     "tags": [
@@ -103,8 +103,8 @@
     "image": [
       "thesis-2026/nichos.png"
     ],
-    "project_repo": "",
-    "project_url": "",
+    "project_repo": "https://github.com/nmolnar-parsons/thesis",
+    "project_url": "https://nmolnar-parsons.github.io/thesis/",
     "student_url": "https://github.com/nmolnar-parsons",
     "subtitle": "",
     "tags": [
@@ -126,8 +126,8 @@
     "image": [
       "thesis-2026/maggie.gif"
     ],
-    "project_repo": "",
-    "project_url": "",
+    "project_repo": "https://github.com/mnav0/thesis",
+    "project_url": "https://mnav0.github.io/thesis/",
     "student_url": "https://www.maggie-navracruz.com/",
     "subtitle": "",
     "tags": [
@@ -150,7 +150,7 @@
       "thesis-2026/luispablo.png"
     ],
     "project_repo": "",
-    "project_url": "",
+    "project_url": "https://github.com/pabspadres/thesis",
     "student_url": "https://github.com/pabspadres",
     "subtitle": "",
     "tags": [
@@ -170,10 +170,10 @@
     ],
     "description": "American novelist Kurt Vonnegut once suggested that stories could be drawn as simple curves. Later researchers proved he was right. Emotional trajectories can be extracted from text and grouped into recurring shapes. The categories hold. What remains unclear is whether the shapes themselves have stayed the same. By analyzing movie screenplays from 1980 through 2025, I test whether the structure of mainstream film storytelling has shifted. I track five dimensions of narrative form: emotional trajectory, pacing, dialogue density, narrative reversals, and closure strength. I parse movie screenplays for scenes, dialogue, and action; generate arcs using sentiment modelling; and classify these arcs into six recurring shapes using Archetypal Analysis. The results show measurable narrative and structural drift across time.",
     "image": [
-      "thesis-2026/derin.png"
+      "thesis-2026/derin.gif"
     ],
-    "project_repo": "",
-    "project_url": "",
+    "project_repo": "https://github.com/derinsavasan/thesis",
+    "project_url": "https://derinsavasan.github.io/thesis/",
     "student_url": "https://github.com/derinsavasan",
     "subtitle": "",
     "tags": [
@@ -195,9 +195,9 @@
     "image": [
       "thesis-2026/lara.png"
     ],
-    "project_repo": "",
-    "project_url": "",
-    "student_url": "",
+    "project_repo": "https://github.com/lara-yeyati-preiss/space-talk",
+    "project_url": "https://lara-yeyati-preiss.github.io/space-talk/",
+    "student_url": "https://larayeyatipreiss.com/",
     "subtitle": "",
     "tags": [
       "Politics",
