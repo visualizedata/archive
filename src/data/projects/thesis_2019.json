@@ -11,7 +11,7 @@
     "tags": ["climate", "policy", "environment"],
     "year": 2019,
     "image": ["preview-2019/aaditi.png"],
-    "video": ["https://github.com/aaditirokade/thesis/blob/master/demo.m4v?raw=true"]
+    "video": []
   },
   {
     "author": ["Alonso Alcocer Guemez"],
@@ -151,7 +151,7 @@
     "tags": ["media", "society"],
     "year": 2019,
     "image": ["preview-2019/isabel.png"],
-    "video": ["https://github.com/IsVer/mst/blob/cc863da387b53f4608aa7b51e24b3d0d4d9c0db7/demo.mov?raw=true"]
+    "video": []
   },
   {
     "author": ["Jed Crocker"],

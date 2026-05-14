@@ -24,8 +24,8 @@
     "category": ["thesis"],
     "tags": ["environment", "urban", "mapping"],
     "year": 2018,
-    "image": ["preview-2018/aucher.png"],
-    "video": ["https://github.com/auchers/data-visualization-thesis/blob/master/thesis-preview.gif"]
+    "image": ["preview-2018/aucher.gif"],
+    "video": []
   },
   {
     "author": ["Benzamin Yi"],
@@ -81,7 +81,7 @@
     "tags": ["education", "technology"],
     "year": 2018,
     "image": ["preview-2018/flavio.png"],
-    "video": ["https://github.com/visualizedata/thesis/blob/main/assets/media/FlavioPessoa_2018.mp4?raw=true"]
+    "video": ["https://dv.parsons.edu/archive-media/videos/2018/thesis_flavio.mp4"]
   },
   {
     "author": ["George Sieniawski"],
@@ -165,7 +165,7 @@
     "tags": ["politics", "society", "play"],
     "year": 2018,
     "image": ["preview-2018/michal.png"],
-    "video": ["https://github.com/visualizedata/michal-bacon-thesis/tree/master/video"]
+    "video": []
   },
   {
     "author": ["Rik Ghosh"],
@@ -221,6 +221,6 @@
     "tags": ["human-rights", "policy", "mapping"],
     "year": 2018,
     "image": ["preview-2018/will.gif"],
-    "video": ["https://github.com/Jiahao01121/refugee-flow/blob/master/preview.gif"]
+    "video": []
   }
 ]
