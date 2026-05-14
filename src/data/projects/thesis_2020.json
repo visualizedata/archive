@@ -10,7 +10,7 @@
     "category": ["thesis"],
     "tags": ["food", "climate", "environment"],
     "year": 2020,
-    "image": ["preview-2020/xingwei.png"],
+    "image": ["thesis_2020/xingwei.png"],
     "video": ["https://vimeo.com/1129942339"]
   },
   {
@@ -24,7 +24,7 @@
     "category": ["thesis"],
     "tags": ["health", "culture", "media"],
     "year": 2020,
-    "image": ["preview-2020/zui.png"],
+    "image": ["thesis_2020/zui.png"],
     "video": ["https://vimeo.com/1129942447"]
   },
   {
@@ -38,7 +38,7 @@
     "category": ["thesis"],
     "tags": ["health", "climate"],
     "year": 2020,
-    "image": ["preview-2020/amanda.png"],
+    "image": ["thesis_2020/amanda.png"],
     "video": ["https://vimeo.com/1129941800"]
   },
   {
@@ -52,7 +52,7 @@
     "category": ["thesis"],
     "tags": ["technology", "education"],
     "year": 2020,
-    "image": ["preview-2020/antonie.png"],
+    "image": ["thesis_2020/antonie.png"],
     "video": ["https://vimeo.com/1129941846"]
   },
   {
@@ -66,7 +66,7 @@
     "category": ["thesis"],
     "tags": ["health", "media"],
     "year": 2020,
-    "image": ["preview-2020/brad.png"],
+    "image": ["thesis_2020/brad.png"],
     "video": ["https://vimeo.com/1129941866"]
   },
   {
@@ -80,7 +80,7 @@
     "category": ["thesis"],
     "tags": ["media", "culture", "music"],
     "year": 2020,
-    "image": ["preview-2020/caitlyn.png"],
+    "image": ["thesis_2020/caitlyn.png"],
     "video": ["https://vimeo.com/1129941909"]
   },
   {
@@ -94,7 +94,7 @@
     "category": ["thesis"],
     "tags": ["media", "culture"],
     "year": 2020,
-    "image": ["preview-2020/danG.png"],
+    "image": ["thesis_2020/danG.png"],
     "video": ["https://vimeo.com/1129941952"]
   },
   {
@@ -108,7 +108,7 @@
     "category": ["thesis"],
     "tags": ["urban", "society"],
     "year": 2020,
-    "image": ["preview-2020/danR.png"],
+    "image": ["thesis_2020/danR.png"],
     "video": ["https://vimeo.com/1129941994"]
   },
   {
@@ -122,7 +122,7 @@
     "category": ["thesis"],
     "tags": ["environment", "policy"],
     "year": 2020,
-    "image": ["preview-2020/janice.png"],
+    "image": ["thesis_2020/janice.png"],
     "video": ["https://vimeo.com/1129942026"]
   },
   {
@@ -136,7 +136,7 @@
     "category": ["thesis"],
     "tags": ["food", "health", "policy"],
     "year": 2020,
-    "image": ["preview-2020/john.png"],
+    "image": ["thesis_2020/john.png"],
     "video": ["https://vimeo.com/1129941759"]
   },
   {
@@ -150,7 +150,7 @@
     "category": ["thesis"],
     "tags": ["media", "politics"],
     "year": 2020,
-    "image": ["preview-2020/lulu.png"],
+    "image": ["thesis_2020/lulu.png"],
     "video": ["https://vimeo.com/1130293711"]
   },
   {
@@ -164,7 +164,7 @@
     "category": ["thesis"],
     "tags": ["politics", "policy", "human-rights", "society"],
     "year": 2020,
-    "image": ["preview-2020/marisa.png"],
+    "image": ["thesis_2020/marisa.png"],
     "video": ["https://vimeo.com/1129942058"]
   },
   {
@@ -178,7 +178,7 @@
     "category": ["thesis"],
     "tags": ["technology", "policy"],
     "year": 2020,
-    "image": ["preview-2020/michael.png"],
+    "image": ["thesis_2020/michael.png"],
     "video": ["https://vimeo.com/1129942090"]
   },
   {
@@ -192,7 +192,7 @@
     "category": ["thesis"],
     "tags": ["gender", "policy", "education"],
     "year": 2020,
-    "image": ["preview-2020/mio.png"],
+    "image": ["thesis_2020/mio.png"],
     "video": ["https://vimeo.com/1129942129"]
   },
   {
@@ -206,7 +206,7 @@
     "category": ["thesis"],
     "tags": ["media", "technology"],
     "year": 2020,
-    "image": ["preview-2020/neil.png"],
+    "image": ["thesis_2020/neil.png"],
     "video": ["https://vimeo.com/1129942187"]
   },
   {
@@ -220,7 +220,7 @@
     "category": ["thesis"],
     "tags": ["urban", "mapping", "environment"],
     "year": 2020,
-    "image": ["preview-2020/nour.png"],
+    "image": ["thesis_2020/nour.png"],
     "video": ["https://vimeo.com/1129942223"]
   },
   {
@@ -234,7 +234,7 @@
     "category": ["thesis"],
     "tags": ["politics", "policy"],
     "year": 2020,
-    "image": ["preview-2020/robin.png"],
+    "image": ["thesis_2020/robin.png"],
     "video": ["https://vimeo.com/1129942259"]
   },
   {
@@ -248,7 +248,7 @@
     "category": ["thesis"],
     "tags": ["climate", "environment", "policy"],
     "year": 2020,
-    "image": ["preview-2020/saloni.png"],
+    "image": ["thesis_2020/saloni.png"],
     "video": ["https://vimeo.com/1129942308"]
   },
   {
@@ -262,7 +262,7 @@
     "category": ["thesis"],
     "tags": ["health", "environment"],
     "year": 2020,
-    "image": ["preview-2020/yiran.png"],
+    "image": ["thesis_2020/yiran.png"],
     "video": ["https://vimeo.com/1129942391"]
   }
 ]
