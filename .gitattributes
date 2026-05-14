@@ -45,7 +45,6 @@ public/media/SamVickars_2017.mp4 filter=lfs diff=lfs merge=lfs -text
 public/media/JaimeTanner_2016.mp4 filter=lfs diff=lfs merge=lfs -text
 public/media/JulianLange_2018.mp4 filter=lfs diff=lfs merge=lfs -text
 public/media/JustineKeller_2016.mp4 filter=lfs diff=lfs merge=lfs -text
-public/media/2023 filter=lfs diff=lfs merge=lfs -text
 public/media/AseemAgarwal_2017.mp4 filter=lfs diff=lfs merge=lfs -text
 public/media/Jiahui(Jessie)Han_2022.mp4 filter=lfs diff=lfs merge=lfs -text
 public/media/NicStark_2019.mp4 filter=lfs diff=lfs merge=lfs -text
@@ -55,3 +54,17 @@ public/media/MollyCook_2022.mp4 filter=lfs diff=lfs merge=lfs -text
 public/media/RikGhosh_2018.mp4 filter=lfs diff=lfs merge=lfs -text
 public/media/YannKerblat_2022.mp4 filter=lfs diff=lfs merge=lfs -text
 public/images/smithsonian-2025 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/HuongPham-thesis.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/IsabelBonnet-FinalKeynote.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/Joo-thesis-video.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/Angelica[[:space:]]Hom[[:space:]]-[[:space:]]Thesis[[:space:]]Presentation[[:space:]]-[[:space:]]FINAL.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/FINAL_WilliamsProject.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/shuyao-thesis.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/Sky[[:space:]]-[[:space:]]Video[[:space:]]Thesis[[:space:]]Final.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/tina_final_final_thesis_video_2.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/ZoraWan_Thesis_Keynote.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/AlixScherer_The[[:space:]]Weight[[:space:]]of[[:space:]]Lead-Based[[:space:]]Paint.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/ChayThawaranont_Thesis_keynote.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/COVID_19[[:space:]]and[[:space:]]Mood[[:space:]]of[[:space:]]Spotify[[:space:]]Users[[:space:]]-[[:space:]]Asad.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/Final_Hao[[:space:]]Lun[[:space:]]Hung.mp4 filter=lfs diff=lfs merge=lfs -text
+public/media/2023/Final_ThesisPres_TLK.mp4 filter=lfs diff=lfs merge=lfs -text
