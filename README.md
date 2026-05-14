@@ -1,8 +1,4 @@
-<img src="./.github/assets/tns.png" width="50" height="50"/>
-
 # MSDV Archive
-
-<a href="http://newschool.edu"><img src="https://img.shields.io/badge/made%20at-The%20New%20School-E82E21.svg" height="20px"/></a> <img src="https://img.shields.io/badge/npm-16.15.0-informational.svg" height="20px"/>
 
 This repository archives projects made by students of the MS Data Visualization program at Parsons School of Design.
 
@@ -16,9 +12,9 @@ You will need the following command line tools.
 
 Required:
 
-- **Node.js (v18.19.1)**
+- **Node.js (v22.22.2)**
   [https://nodejs.org/](https://nodejs.org/)
-- **pnpm (v9.15.2)**
+- **pnpm (v10.33.0)**
   [https://pnpm.io/installation#using-npm](https://pnpm.io/installation#using-npm)
 
 Optional:
@@ -95,14 +91,14 @@ The projects array follows this template:
 
    ```sh
    node --version
-   # v18.19.1
+   # v22.22.2
    ```
 
 2. Make sure you have the right version of pnpm
 
    ```sh
    pnpm --version
-   # >= 9.15.2
+   # 10.33.0
    ```
 
 3. Install dependencies

@@ -11,9 +11,7 @@
     "tags": ["health", "human-rights"],
     "year": 2016,
     "image": ["preview-2016/linnea.png"],
-    "video": [
-      "https://vimeo.com/1130034689"
-    ]
+    "video": ["https://vimeo.com/1130034689"]
   },
   {
     "author": ["Barbara Compagnoni"],
@@ -41,9 +39,7 @@
     "tags": ["health", "society"],
     "year": 2016,
     "image": ["preview-2016/gabi.png"],
-    "video": [
-      "https://vimeo.com/1130034732"
-    ]
+    "video": ["https://vimeo.com/1130034732"]
   },
   {
     "author": ["Jacob Romer"],
@@ -85,9 +81,7 @@
     "tags": ["arts", "culture", "media"],
     "year": 2016,
     "image": ["preview-2016/jonathan.png"],
-    "video": [
-      "https://vimeo.com/1130034817"
-    ]
+    "video": ["https://vimeo.com/1130034817"]
   },
   {
     "author": ["Justine Keller"],
