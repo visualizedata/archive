@@ -10,7 +10,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_Lisa.png"],
+    "image": ["ms1_2024/lisa.png"],
     "video": []
   },
   {
@@ -24,7 +24,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_Annie.png"],
+    "image": ["ms1_2024/annie.png"],
     "video": []
   },
   {
@@ -38,7 +38,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_EvaLucy.png"],
+    "image": ["ms1_2024/evalucy.png"],
     "video": []
   },
   {
@@ -52,7 +52,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_SaniAni.png"],
+    "image": ["ms1_2024/saniani.png"],
     "video": []
   },
   {
@@ -66,7 +66,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_XuanBella.jpg"],
+    "image": ["ms1_2024/xuanbella.jpg"],
     "video": []
   },
   {
@@ -80,7 +80,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_Nour.png"],
+    "image": ["ms1_2024/nour.png"],
     "video": []
   },
   {
@@ -94,7 +94,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_Tak.png"],
+    "image": ["ms1_2024/tak0.png"],
     "video": []
   },
   {
@@ -108,7 +108,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_Tak2.png"],
+    "image": ["ms1_2024/tak1.png"],
     "video": []
   },
   {
@@ -122,7 +122,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_Josh.png"],
+    "image": ["ms1_2024/josh.png"],
     "video": []
   },
   {
@@ -136,7 +136,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_Daia.png"],
+    "image": ["ms1_2024/daia.png"],
     "video": []
   },
   {
@@ -150,7 +150,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_Katherine.png"],
+    "image": ["ms1_2024/katherine.png"],
     "video": []
   },
   {
@@ -164,7 +164,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_Sophia.png"],
+    "image": ["ms1_2024/sophie.png"],
     "video": []
   },
   {
@@ -178,7 +178,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_Harshita.png"],
+    "image": ["ms1_2024/harshita.png"],
     "video": []
   },
   {
@@ -192,7 +192,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_Monsicha.png"],
+    "image": ["ms1_2024/monsicha.png"],
     "video": []
   },
   {
@@ -206,7 +206,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian"],
     "year": 2024,
-    "image": ["smithsonian-2024/hero_StephIan.png"],
+    "image": ["ms1_2024/stephian.png"],
     "video": []
   }
 ]
