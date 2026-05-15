@@ -10,7 +10,7 @@
     "category": ["thesis"],
     "tags": ["food", "health", "policy"],
     "year": 2018,
-    "image": ["preview-2018/yicen.png"],
+    "image": ["thesis_2018/yicen.png"],
     "video": ["https://vimeo.com/1129955559"]
   },
   {
@@ -24,8 +24,8 @@
     "category": ["thesis"],
     "tags": ["environment", "urban", "mapping"],
     "year": 2018,
-    "image": ["preview-2018/aucher.png"],
-    "video": ["https://github.com/auchers/data-visualization-thesis/blob/master/thesis-preview.gif"]
+    "image": ["thesis_2018/aucher.gif"],
+    "video": []
   },
   {
     "author": ["Benzamin Yi"],
@@ -38,7 +38,7 @@
     "category": ["thesis"],
     "tags": ["society", "politics", "human-rights"],
     "year": 2018,
-    "image": ["preview-2018/benzamin.png"],
+    "image": ["thesis_2018/benzamin.png"],
     "video": ["https://vimeo.com/1129955578"]
   },
   {
@@ -52,7 +52,7 @@
     "category": ["thesis"],
     "tags": ["society", "politics"],
     "year": 2018,
-    "image": ["preview-2018/elena.png"],
+    "image": ["thesis_2018/elena.png"],
     "video": ["https://vimeo.com/1129955596"]
   },
   {
@@ -66,7 +66,7 @@
     "category": ["thesis"],
     "tags": ["gender", "human-rights", "society"],
     "year": 2018,
-    "image": ["preview-2018/ellie.png"],
+    "image": ["thesis_2018/ellie.png"],
     "video": ["https://vimeo.com/1129955621"]
   },
   {
@@ -80,8 +80,8 @@
     "category": ["thesis"],
     "tags": ["education", "technology"],
     "year": 2018,
-    "image": ["preview-2018/flavio.png"],
-    "video": ["https://github.com/visualizedata/thesis/blob/main/assets/media/FlavioPessoa_2018.mp4?raw=true"]
+    "image": ["thesis_2018/flavio.png"],
+    "video": ["https://dv.parsons.edu/archive-media/videos/2018/thesis_flavio.mp4"]
   },
   {
     "author": ["George Sieniawski"],
@@ -94,7 +94,7 @@
     "category": ["thesis"],
     "tags": ["politics", "policy"],
     "year": 2018,
-    "image": ["preview-2018/george.png"],
+    "image": ["thesis_2018/george.png"],
     "video": ["https://vimeo.com/1129955634"]
   },
   {
@@ -108,7 +108,7 @@
     "category": ["thesis"],
     "tags": ["human-rights","policy", "mapping"],
     "year": 2018,
-    "image": ["preview-2018/joe.png"],
+    "image": ["thesis_2018/joe.png"],
     "video": []
   },
   {
@@ -122,7 +122,7 @@
     "category": ["thesis"],
     "tags": ["culture", "sports"],
     "year": 2018,
-    "image": ["preview-2018/julian.png"],
+    "image": ["thesis_2018/julian.png"],
     "video": ["https://vimeo.com/1129955654"]
   },
   {
@@ -136,7 +136,7 @@
     "category": ["thesis"],
     "tags": ["culture", "media"],
     "year": 2018,
-    "image": ["preview-2018/kevin.png"],
+    "image": ["thesis_2018/kevin.png"],
     "video": ["https://vimeo.com/1129955677"]
   },
   {
@@ -150,7 +150,7 @@
     "category": ["thesis"],
     "tags": ["society", "politics"],
     "year": 2018,
-    "image": ["preview-2018/max.png"],
+    "image": ["thesis_2018/max.png"],
     "video": ["https://vimeo.com/1129955698"]
   },
   {
@@ -164,8 +164,8 @@
     "category": ["thesis"],
     "tags": ["politics", "society", "play"],
     "year": 2018,
-    "image": ["preview-2018/michal.png"],
-    "video": ["https://github.com/visualizedata/michal-bacon-thesis/tree/master/video"]
+    "image": ["thesis_2018/michal.png"],
+    "video": []
   },
   {
     "author": ["Rik Ghosh"],
@@ -178,7 +178,7 @@
     "category": ["thesis"],
     "tags": ["food", "culture", "policy"],
     "year": 2018,
-    "image": ["preview-2018/rik.png"],
+    "image": ["thesis_2018/rik.png"],
     "video": ["https://vimeo.com/1129955713"]
   },
   {
@@ -192,7 +192,7 @@
     "category": ["thesis"],
     "tags": ["food", "environment", "policy"],
     "year": 2018,
-    "image": ["preview-2018/rye.png"],
+    "image": ["thesis_2018/rye.png"],
     "video": ["https://vimeo.com/1129955737"]
   },
   {
@@ -206,7 +206,7 @@
     "category": ["thesis"],
     "tags": ["society", "education", "machine-learning"],
     "year": 2018,
-    "image": ["preview-2018/steven.png"],
+    "image": ["thesis_2018/steven.png"],
     "video": ["https://vimeo.com/1129955748"]
   },
   {
@@ -220,7 +220,7 @@
     "category": ["thesis"],
     "tags": ["human-rights", "policy", "mapping"],
     "year": 2018,
-    "image": ["preview-2018/will.gif"],
-    "video": ["https://github.com/Jiahao01121/refugee-flow/blob/master/preview.gif"]
+    "image": ["thesis_2018/will.gif"],
+    "video": []
   }
 ]

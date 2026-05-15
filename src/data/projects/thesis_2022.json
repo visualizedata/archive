@@ -10,7 +10,7 @@
     "category": ["thesis"],
     "tags": ["urban", "society", "culture"],
     "year": 2022,
-    "image": ["preview-2022/Odell.png"],
+    "image": ["thesis_2022/jeremy.png"],
     "video": ["https://vimeo.com/1129765564"]
   },
   {
@@ -24,7 +24,7 @@
     "category": ["thesis"],
     "tags": ["art", "fashion", "culture"],
     "year": 2022,
-    "image": ["preview-2022/Zhuravlev.png"],
+    "image": ["thesis_2022/kasey.png"],
     "video": ["https://vimeo.com/1129764890"]
   },
   {
@@ -38,7 +38,7 @@
     "category": ["thesis"],
     "tags": ["health", "policy"],
     "year": 2022,
-    "image": ["preview-2022/Cook.png"],
+    "image": ["thesis_2022/molly.png"],
     "video": ["https://vimeo.com/1129765179"]
   },
   {
@@ -52,7 +52,7 @@
     "category": ["thesis"],
     "tags": ["art", "fashion"],
     "year": 2022,
-    "image": ["preview-2022/Craig.png"],
+    "image": ["thesis_2022/juliet.png"],
     "video": ["https://vimeo.com/1129765317"]
   },
   {
@@ -66,7 +66,7 @@
     "category": ["thesis"],
     "tags": ["climate", "environment"],
     "year": 2022,
-    "image": ["preview-2022/Gudj\u00f3nsson.png"],
+    "image": ["thesis_2022/gisli.png"],
     "video": ["https://vimeo.com/1129765381"]
   },
   {
@@ -80,7 +80,7 @@
     "category": ["thesis"],
     "tags": ["urban", "culture", "mapping"],
     "year": 2022,
-    "image": ["preview-2022/Han.png"],
+    "image": ["thesis_2022/jessie.png"],
     "video": ["https://vimeo.com/1129765420"]
   },
   {
@@ -94,7 +94,7 @@
     "category": ["thesis"],
     "tags": ["climate", "environment", "mapping"],
     "year": 2022,
-    "image": ["preview-2022/Kerblat.png"],
+    "image": ["thesis_2022/yann.png"],
     "video": ["https://vimeo.com/1129765461"]
   },
   {
@@ -108,7 +108,7 @@
     "category": ["thesis"],
     "tags": ["health", "food", "science"],
     "year": 2022,
-    "image": ["preview-2022/Kosturska.png"],
+    "image": ["thesis_2022/yoana.png"],
     "video": ["https://vimeo.com/1129765491"]
   },
   {
@@ -122,7 +122,7 @@
     "category": ["thesis"],
     "tags": ["health", "science", "music"],
     "year": 2022,
-    "image": ["preview-2022/Lin.png"],
+    "image": ["thesis_2022/baihan.png"],
     "video": ["https://vimeo.com/1129765517"]
   },
   {
@@ -136,7 +136,7 @@
     "category": ["thesis"],
     "tags": ["arts", "culture", "play"],
     "year": 2022,
-    "image": ["preview-2022/Lu.png"],
+    "image": ["thesis_2022/wenqin.png"],
     "video": ["https://vimeo.com/1129765531"]
   },
   {
@@ -150,7 +150,7 @@
     "category": ["thesis"],
     "tags": ["climate", "environment", "mapping"],
     "year": 2022,
-    "image": ["preview-2022/Molloy.png"],
+    "image": ["thesis_2022/shea.png"],
     "video": ["https://vimeo.com/1129765537"]
   },
   {
@@ -164,7 +164,7 @@
     "category": ["thesis"],
     "tags": ["arts", "technology"],
     "year": 2022,
-    "image": ["preview-2022/Nema.png"],
+    "image": ["thesis_2022/omar.png"],
     "video": ["https://vimeo.com/1129765554"]
   }
 ]

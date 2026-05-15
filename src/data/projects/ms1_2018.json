@@ -10,7 +10,7 @@
     "category": ["ms1"],
     "tags": ["the-met"],
     "year": 2018,
-    "image": ["met-2018/emily.png"],
+    "image": ["ms1_2018/emily0.png"],
     "video": []
   },
   {
@@ -24,7 +24,7 @@
     "category": ["ms1"],
     "tags": ["the-met"],
     "year": 2018,
-    "image": ["met-2018/MigrationOfArt.png"],
+    "image": ["ms1_2018/ryan0.png"],
     "video": []
   },
   {
@@ -38,7 +38,7 @@
     "category": ["ms1"],
     "tags": ["the-met"],
     "year": 2018,
-    "image": ["met-2018/clare2.png"],
+    "image": ["ms1_2018/clare.png"],
     "video": []
   },
   {
@@ -52,7 +52,7 @@
     "category": ["ms1"],
     "tags": ["the-met"],
     "year": 2018,
-    "image": ["met-2018/colleen.jpg"],
+    "image": ["ms1_2018/colleen.jpg"],
     "video": []
   },
   {
@@ -66,7 +66,7 @@
     "category": ["ms1"],
     "tags": ["the-met"],
     "year": 2018,
-    "image": ["met-2018/meterials.png"],
+    "image": ["ms1_2018/emily1.png"],
     "video": []
   },
   {
@@ -80,7 +80,7 @@
     "category": ["ms1"],
     "tags": ["the-met"],
     "year": 2018,
-    "image": ["met-2018/CollectingMet.png"],
+    "image": ["ms1_2018/ryan1.png"],
     "video": []
   }
 ]
