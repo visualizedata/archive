@@ -169,3 +169,10 @@ pnpm-debug.log*
 # Large video files (too big for GitHub Pages)
 public/media/**/*.mp4
 *.mp4
+
+__pycache__
+*.py.*
+*.pyc
+*.pyc.*
+scripts/*.csv
+scripts/*.json
