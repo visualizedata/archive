@@ -30,10 +30,11 @@ export const projectSchema = z
     tags: z.array(z.string()).transform((arr) => {
       // transform art to arts
       return arr.map((t) => {
-        if (t === 'art') {
+        const tLower = t.toLowerCase()
+        if (tLower === 'art') {
           return 'arts'
         }
-        return t
+        return tLower
       })
     }),
     year: z.number(),
