@@ -27,7 +27,7 @@ REQUIRED_COLUMNS = [
 
 
 def make_author_slug(name):
-  return name.lower().replace(" ", "")
+  return name.lower().replace(" ", "").replace("-", "").replace("(", "").replace(")", "").replace("'", "")
 
 def make_collection_id(definitions):
   return definitions["course"].lower() + "_" + str(definitions["year"])

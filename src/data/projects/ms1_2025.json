@@ -10,7 +10,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian", "policy", "society", "machine learning", "mapping"],
     "year": 2025,
-    "image": ["ms1_2025/olivia.png"],
+    "image": ["ms1_2025/oliviakasmin0.png"],
     "video": ["https://vimeo.com/1146716723/c07f943f90"]
   },
   {
@@ -24,7 +24,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian", "culture", "society", "arts", "mapping", "machine learning"],
     "year": 2025,
-    "image": ["ms1_2025/maggie.png"],
+    "image": ["ms1_2025/maggienavracruz0.png"],
     "video": ["https://vimeo.com/1146714330/7eaaaae4b3"]
   },
   {
@@ -38,7 +38,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian", "culture", "society", "arts", "mapping"],
     "year": 2025,
-    "image": ["ms1_2025/lara.png"],
+    "image": ["ms1_2025/larayeyatipreiss0.png"],
     "video": ["https://vimeo.com/1146717064/391694bd5f"]
   },
   {
@@ -52,7 +52,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian", "culture", "politics", "society", "technology"],
     "year": 2025,
-    "image": ["ms1_2025/saehun.png"],
+    "image": ["ms1_2025/saehunkim0.png"],
     "video": ["https://vimeo.com/1146716801/b0c034d954"]
   },
   {
@@ -66,7 +66,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian", "arts", "culture", "gender", "society", "machine learning"],
     "year": 2025,
-    "image": ["ms1_2025/neven.png"],
+    "image": ["ms1_2025/nevenarmaniosrodriguez0.png"],
     "video": ["https://vimeo.com/1146717042/69c0ab5ce8"]
   },
   {
@@ -80,7 +80,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian", "arts", "politics", "society", "mapping"],
     "year": 2025,
-    "image": ["ms1_2025/nichos.png"],
+    "image": ["ms1_2025/nichosmolnar0.png"],
     "video": ["https://vimeo.com/1146716583/1275947b74"]
   },
   {
@@ -94,7 +94,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian", "arts", "culture", "mapping"],
     "year": 2025,
-    "image": ["ms1_2025/sofia.png"],
+    "image": ["ms1_2025/sofiamolina0.png"],
     "video": ["https://vimeo.com/1146716836/e492023a03"]
   },
   {
@@ -108,7 +108,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian", "arts", "gender", "society", "culture", "politics"],
     "year": 2025,
-    "image": ["ms1_2025/derin.png"],
+    "image": ["ms1_2025/derinsavasan0.png"],
     "video": ["https://vimeo.com/1146716404/5925d3f954"]
   },
   {
@@ -122,8 +122,7 @@
     "category": ["ms1"],
     "tags": ["smithsonian", "media", "culture", "society", "mapping", "politics"],
     "year": 2025,
-    "image": ["ms1_2025/luispablo.png"],
+    "image": ["ms1_2025/luispablopadres0.png"],
     "video": ["https://vimeo.com/1146714581/433ef69c64"]
   }
 ]
-
