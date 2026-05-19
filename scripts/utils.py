@@ -21,7 +21,7 @@ TEMP_COLUMNS = [
 
 REQUIRED_COLUMNS = [
   "author", "title", "subtitle", "description",
-  "tags", "project_repo", "project_url", "student_url",
+  "tags", "repo_url", "project_url", "student_url",
   "category", "year", "image", "video",
 ]
 
@@ -95,7 +95,7 @@ def extract_data(data_, data_definitions, collection_definitions, optional=[]):
   res_df["video"] = ""
   res_df["video"] = res_df["video"].apply(lambda x: [])
   res_df["description"] = data[data_definitions["project_description"]]
-  res_df["project_repo"] = data[data_definitions["repo_url"]]
+  res_df["repo_url"] = data[data_definitions["repo_url"]]
   res_df["project_url"] = data[data_definitions["project_url"]]
   res_df["student_url"] = data[data_definitions["student_url"]]
 

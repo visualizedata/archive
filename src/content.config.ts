@@ -12,7 +12,7 @@ export const projectSchema = z
     description: z.string(),
     student_url: z.string(),
     project_url: z.string(),
-    project_repo: z.string(),
+    repo_url: z.string(),
     category: z.array(
       z.string().transform((c) => {
         if (c === 'ms1') {
