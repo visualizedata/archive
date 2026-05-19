@@ -6,11 +6,11 @@
     "description": "This project explores pension data from the American Revolutionary War Pension Files collection. It provides historical context for the files and examines the distribution of applications attributed to each category (including survivors, widows, rejected, and bounty land warrants). Data has been extracted from the text using a lightweight LLM model to collect the dollar amount awarded to the recipient as well as other related fields, such as where the pension was issued and which congressional act it corresponds to. Furthermore, the text has been analyzed for commonly occurring words and themes to discover content included in these files beyond the bureaucratic paperwork. The analysis is presented through interactive interfaces that allows users to discover this rich collection and provide an opportunity to have an individual dialogue with Americans from hundreds of years ago.",
     "student_url": "",
     "project_url": "https://okasmin-parsons-major-studio-1.netlify.app/",
-    "project_repo": "https://github.com/oliviakasmin/parsons-major-studio-1-fall-2025",
+    "repo_url": "https://github.com/oliviakasmin/parsons-major-studio-1-fall-2025",
     "category": ["ms1"],
     "tags": ["smithsonian", "policy", "society", "machine learning", "mapping"],
     "year": 2025,
-    "image": ["ms1_2025/olivia.png"],
+    "image": ["ms1_2025/oliviakasmin0.png"],
     "video": ["https://vimeo.com/1146716723/c07f943f90"]
   },
   {
@@ -20,11 +20,11 @@
     "description": "This project explores how we can trace a path through history using the National Postal Museum's collection of stamps and letters - from the first stamp as part of The Stamp Act of 1765 to where they begin to live more permanently in America's modern day postal system and culture. Categorized by decade from 1760 to 1890, themes, colors, materials, and imagery are extracted and supplemented with historical context to explore how their history laid the foundation for stamps to become a symbol of resistance, revolutionary spirit, and independence.",
     "student_url": "",
     "project_url": "https://mnav0.github.io/major-studio-1/stamp-collection/",
-    "project_repo": "https://github.com/mnav0/major-studio-1",
+    "repo_url": "https://github.com/mnav0/major-studio-1",
     "category": ["ms1"],
     "tags": ["smithsonian", "culture", "society", "arts", "mapping", "machine learning"],
     "year": 2025,
-    "image": ["ms1_2025/maggie.png"],
+    "image": ["ms1_2025/maggienavracruz0.png"],
     "video": ["https://vimeo.com/1146714330/7eaaaae4b3"]
   },
   {
@@ -34,11 +34,11 @@
     "description": "The Ordinaries explores the American Revolutionary era through the material traces of daily life, drawing on objects from the Smithsonian's collections. The things people handled every day — what they crafted, traded, cared for — offer a glimpse into how their world was imagined and ordered. The site offers two complementary ways to navigate this universe of objects. A curated selection situates specific artifacts within the rhythms of ritual and habit to which they belonged, from teapots and samplers to apothecary jars and fire marks. An interactive treemap allows visitors to explore the full database by action family or material. A taxonomy of the ordinary, made visible.",
     "student_url": "",
     "project_url": "https://lara-yeyati-preiss.github.io/the-ordinaries/",
-    "project_repo": "https://github.com/lara-yeyati-preiss/the-ordinaries",
+    "repo_url": "https://github.com/lara-yeyati-preiss/the-ordinaries",
     "category": ["ms1"],
     "tags": ["smithsonian", "culture", "society", "arts", "mapping"],
     "year": 2025,
-    "image": ["ms1_2025/lara.png"],
+    "image": ["ms1_2025/larayeyatipreiss0.png"],
     "video": ["https://vimeo.com/1146717064/391694bd5f"]
   },
   {
@@ -48,11 +48,11 @@
     "description": "This project visualizes how language evolved across more than 400 text-based documents from 1770 to 1810. By classifying each document into topics such as Military, Politics, Society, Business, and Religion, the visualization reveals how different themes coexisted within the same period and how their vocabularies shifted over time. Users can explore patterns across decades through an interactive tiles of archival materials.",
     "student_url": "",
     "project_url": "https://hoonkim0123.github.io/major-studio-1/",
-    "project_repo": "https://github.com/hoonkim0123/major-studio-1",
+    "repo_url": "https://github.com/hoonkim0123/major-studio-1",
     "category": ["ms1"],
     "tags": ["smithsonian", "culture", "politics", "society", "technology"],
     "year": 2025,
-    "image": ["ms1_2025/saehun.png"],
+    "image": ["ms1_2025/saehunkim0.png"],
     "video": ["https://vimeo.com/1146716801/b0c034d954"]
   },
   {
@@ -62,11 +62,11 @@
     "description": "Silhouette Art of Early America' is a data visualization inspired by the work of William Bache. It explores over 1800 of his silhouettes. The sitters include unidentified as well as named men, women and children. A technique used to create these silhouettes involved carefully tracing a person's profile using a device called a physiognotrace. The outlines and 'tracing' of these profiles is visualized in this project. Any combination of silhouettes can be selected and explored at any time. This project also visualizes the figures without names, by allowing viewers to generate images from these unknown silhouettes to uncover an imagined face of someone history left unidentified. To personalise this experience, you can generate your own silhouette highlighting how the act of capturing one's image remains a deeply human form of self representation.",
     "student_url": "https://nevenarmanios.com",
     "project_url": "https://narmanios.github.io/SilhouetteArt/",
-    "project_repo": "https://github.com/narmanios/SilhouetteArt",
+    "repo_url": "https://github.com/narmanios/SilhouetteArt",
     "category": ["ms1"],
     "tags": ["smithsonian", "arts", "culture", "gender", "society", "machine learning"],
     "year": 2025,
-    "image": ["ms1_2025/neven.png"],
+    "image": ["ms1_2025/nevenarmaniosrodriguez0.png"],
     "video": ["https://vimeo.com/1146717042/69c0ab5ce8"]
   },
   {
@@ -76,11 +76,11 @@
     "description": "How many founding fathers can you recognize at a glance? Maybe one or two (like George Washington, or Benjamin Franklin) but likely not many more. Faces of the Fathers uses image data from the Revolutionary Crossroads dataset to highlight how the depiction of individuals varies throughout the collection, influenced by date of painting, medium, and historical events. Faces of the Fathers challenges the viewer to closely pay attention to these historical figures and tests their skills at facial recognition with a worldle-style game.",
     "student_url": "",
     "project_url": "https://nmolnar-parsons.github.io/major-studio-1/final/",
-    "project_repo": "https://nmolnar-parsons.github.io/major-studio-1/",
+    "repo_url": "https://nmolnar-parsons.github.io/major-studio-1/",
     "category": ["ms1"],
     "tags": ["smithsonian", "arts", "politics", "society", "mapping"],
     "year": 2025,
-    "image": ["ms1_2025/nichos.png"],
+    "image": ["ms1_2025/nichosmolnar0.png"],
     "video": ["https://vimeo.com/1146716583/1275947b74"]
   },
   {
@@ -90,11 +90,11 @@
     "description": "Art of Scale is a project that explores the physical dimensions and visual impact of artworks from The Revolutionary Era Art Collections across different historical decades. It analyzes how the physical size of the art, which includes 18th-century miniatures and larger canvases, has changed or remained consistent over time, using real dimensions to visually illustrate these scale differences for the entire dataset of paintings and miniatures.",
     "student_url": "",
     "project_url": "https://smolinaschmidt.github.io/major-studio/",
-    "project_repo": "https://github.com/smolinaschmidt/major-studio",
+    "repo_url": "https://github.com/smolinaschmidt/major-studio",
     "category": ["ms1"],
     "tags": ["smithsonian", "arts", "culture", "mapping"],
     "year": 2025,
-    "image": ["ms1_2025/sofia.png"],
+    "image": ["ms1_2025/sofiamolina0.png"],
     "video": ["https://vimeo.com/1146716836/e492023a03"]
   },
   {
@@ -104,11 +104,11 @@
     "description": "Remember Me? looks at portraits from the American Revolution and asks a basic question: who actually made it into the frame? I scraped data from the National Portrait Gallery and built a set of interactives (filters, connection game) that let you see the gaps for yourself. Men everywhere. Women barely visible. A handful of artists shaping what the “founders” even look like. It's history told through portraits, but the absences say more than the faces. This isn't about patriotism. It's about who gets remembered, and who gets edited out.",
     "student_url": "",
     "project_url": "https://derinsavasan.github.io/smithsonian/",
-    "project_repo": "https://github.com/derinsavasan/smithsonian",
+    "repo_url": "https://github.com/derinsavasan/smithsonian",
     "category": ["ms1"],
     "tags": ["smithsonian", "arts", "gender", "society", "culture", "politics"],
     "year": 2025,
-    "image": ["ms1_2025/derin.png"],
+    "image": ["ms1_2025/derinsavasan0.png"],
     "video": ["https://vimeo.com/1146716404/5925d3f954"]
   },
   {
@@ -118,12 +118,11 @@
     "description": "This project follows a database of journalistic issues from a variety of news publications from multiple states in Revolutionary America. The purpose of the project is to view this time in our country thorugh a journalisitc perspective. What states were pushing out the most information? What was the information? What years were the most information codensed? All these questions are meant to push the user into an immersive experience where they can view the real-time information that was being shared at the time. ",
     "student_url": "",
     "project_url": "https://pabspadres.github.io/America_Through_The_Journalist_Glass/",
-    "project_repo": "https://github.com/pabspadres/America_Through_The_Journalist_Glass",
+    "repo_url": "https://github.com/pabspadres/America_Through_The_Journalist_Glass",
     "category": ["ms1"],
     "tags": ["smithsonian", "media", "culture", "society", "mapping", "politics"],
     "year": 2025,
-    "image": ["ms1_2025/luispablo.png"],
+    "image": ["ms1_2025/luispablopadres0.png"],
     "video": ["https://vimeo.com/1146714581/433ef69c64"]
   }
 ]
-

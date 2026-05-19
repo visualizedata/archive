@@ -6,11 +6,11 @@
     "description": "This is a project that seeks to understand how popular forms in clothing originated from humble beginnings and gained momentum over time. Machine learning was used to extract form from images at the MET's Costume Institute. Items were then clustered with kmeans, a statistical model that can be used to train machines to predict the items that are most similar from the information given. Kantar Information is Beautiful 2018 shortlist for People, Language & Identity.",
     "student_url": "http://3milychu.github.io/",
     "project_url": "https://3milychu.github.io/clusteringfashion",
-    "project_repo": "",
+    "repo_url": "https://github.com/3milychu/clusteringfashion",
     "category": ["ms1"],
     "tags": ["the-met"],
     "year": 2018,
-    "image": ["ms1_2018/emily0.png"],
+    "image": ["ms1_2018/emilychu0.png"],
     "video": []
   },
   {
@@ -20,11 +20,11 @@
     "description": "This visualization explores how artwork travels across the globe through ownership changes and exhibitions, focusing on The Met's collection of Van Gogh paintings.",
     "student_url": "https://ryanabest.com/",
     "project_url": "https://ryanabest.com/work/MigrationOfArt/",
-    "project_repo": "",
+    "repo_url": "",
     "category": ["ms1"],
     "tags": ["the-met"],
     "year": 2018,
-    "image": ["ms1_2018/ryan0.png"],
+    "image": ["ms1_2018/ryanbest0.png"],
     "video": []
   },
   {
@@ -34,11 +34,11 @@
     "description": "Narrative investigation of who has made the artworks in the collection by gender, the top collected artists by gender, what medium the artworks are, and the relation between medium and gender.",
     "student_url": "https://www.clarechurchouse.com/",
     "project_url": "https://churc.github.io/MajorStudio1/Interactive/genderObj/",
-    "project_repo": "",
+    "repo_url": "https://github.com/churc/MajorStudio1/tree/master/Interactive",
     "category": ["ms1"],
     "tags": ["the-met"],
     "year": 2018,
-    "image": ["ms1_2018/clare.png"],
+    "image": ["ms1_2018/clarechurchouse0.png"],
     "video": []
   },
   {
@@ -48,11 +48,11 @@
     "description": "Qualitative project that explores the famous series of landscape prints by the Japanese ukiyo-e artist Hokusai, \u201cThe Thirty-Six Views of Mount Fuji\u201d. Secondary data maps their corresponding geolocations, and re-imagines the creation experience through Google Street Views.",
     "student_url": "https://github.com/colmccaffrey/",
     "project_url": "https://colmccaffrey.github.io/DV5200/project_2/src",
-    "project_repo": "",
+    "repo_url": "https://github.com/colmccaffrey/DV5200/tree/master/project_2",
     "category": ["ms1"],
     "tags": ["the-met"],
     "year": 2018,
-    "image": ["ms1_2018/colleen.jpg"],
+    "image": ["ms1_2018/colleenmccaffrey0.jpg"],
     "video": []
   },
   {
@@ -62,11 +62,11 @@
     "description": "Met-erials provides a new entry into the Met's museum collection by way of their most common material.",
     "student_url": "http://3milychu.github.io/",
     "project_url": "https://3milychu.github.io/met-erials/",
-    "project_repo": "",
+    "repo_url": "https://github.com/3milychu/met-erials/",
     "category": ["ms1"],
     "tags": ["the-met"],
     "year": 2018,
-    "image": ["ms1_2018/emily1.png"],
+    "image": ["ms1_2018/emilychu1.png"],
     "video": []
   },
   {
@@ -76,11 +76,11 @@
     "description": "This visualization dives into one of the world's most widespread collections of human culture, exploring its development over time and its reflection of history.",
     "student_url": "https://ryanabest.com/",
     "project_url": "https://ryanabest.com/work/HistoryOfCollecting/",
-    "project_repo": "",
+    "repo_url": "",
     "category": ["ms1"],
     "tags": ["the-met"],
     "year": 2018,
-    "image": ["ms1_2018/ryan1.png"],
+    "image": ["ms1_2018/ryanbest1.png"],
     "video": []
   }
 ]

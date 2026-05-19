@@ -12,7 +12,7 @@ type Project = {
   image?: string[]
   video?: string[]
   project_url?: string
-  project_repo?: string
+  repo_url?: string
   student_url?: string
   subtitle?: string
 }

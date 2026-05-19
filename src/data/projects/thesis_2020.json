@@ -4,13 +4,13 @@
     "title": "A Guilty Pleasure",
     "subtitle": "Cocoa Production is Driving Deforestation.",
     "description": "How Cocoa Production is Driving Deforestation in The Ivory Coast",
-    "student_url": "",
+    "student_url": "https://github.com/Xingwei726",
     "project_url": "https://parsons.nyc/thesis-2020/xingweiHuang/",
-    "project_repo": "https://github.com/Xingwei726/MSthesis",
+    "repo_url": "https://github.com/Xingwei726/MSthesis",
     "category": ["thesis"],
     "tags": ["food", "climate", "environment"],
     "year": 2020,
-    "image": ["thesis_2020/xingwei.png"],
+    "image": ["thesis_2020/xingweihuang0.png"],
     "video": ["https://vimeo.com/1129942339"]
   },
   {
@@ -20,11 +20,11 @@
     "description": "Uncovering global attitudes towards masks. Masks have recently become common objects in our daily life and triggered a world-wide dissonance due to COVID-19. And there is a clear difference in attitudes between East Asian countries and the Western world.",
     "student_url": "https://www.zui-c.com/",
     "project_url": "https://parsons.nyc/thesis-2020/zuiChen",
-    "project_repo": "https://github.com/azuic/unmasking-masks",
+    "repo_url": "https://github.com/azuic/unmasking-masks",
     "category": ["thesis"],
     "tags": ["health", "culture", "media"],
     "year": 2020,
-    "image": ["thesis_2020/zui.png"],
+    "image": ["thesis_2020/zuichen0.png"],
     "video": ["https://vimeo.com/1129942447"]
   },
   {
@@ -34,11 +34,11 @@
     "description": "Exploring the relationship between the climate crisis and sleep health",
     "student_url": "https://www.amandersonyou.com/",
     "project_url": "https://parsons.nyc/thesis-2020/amandaAnderson/",
-    "project_repo": "https://github.com/amandersonyou/ClimateSleepThesis",
+    "repo_url": "https://github.com/amandersonyou/ClimateSleepThesis",
     "category": ["thesis"],
     "tags": ["health", "climate"],
     "year": 2020,
-    "image": ["thesis_2020/amanda.png"],
+    "image": ["thesis_2020/amandaandersonyou0.png"],
     "video": ["https://vimeo.com/1129941800"]
   },
   {
@@ -48,11 +48,11 @@
     "description": "Visualizing research paper metadata in the field of Aerospace Engineering for more efficient knowledge exploration, research and learning. The project combines a flattened hierarchical \u201cfront-of-the book\u201d table of contents structure with a network-based \u201cback-of-the book\u201d index connectivity over time.",
     "student_url": "https://github.com/acdreyer",
     "project_url": "https://parsons.nyc/thesis-2020/antonieDreyer/",
-    "project_repo": "https://github.com/acdreyer/thesis",
+    "repo_url": "https://github.com/acdreyer/thesis",
     "category": ["thesis"],
     "tags": ["technology", "education"],
     "year": 2020,
-    "image": ["thesis_2020/antonie.png"],
+    "image": ["thesis_2020/antoniedreyer0.png"],
     "video": ["https://vimeo.com/1129941846"]
   },
   {
@@ -60,13 +60,13 @@
     "title": "The Rona and Me",
     "subtitle": "An emoji-focused reflection on my experience with COVID-19.",
     "description": "An emoji-focused reflection on my experience with COVID-19 in an era of imposed digital connection.",
-    "student_url": "https://www.bradmack.com/data-visualization",
+    "student_url": "https://www.bradmack.com",
     "project_url": "https://emoji-epoch.glitch.me/",
-    "project_repo": "https://github.com/daggus/EmojiEpoch/",
+    "repo_url": "https://github.com/daggus/EmojiEpoch/",
     "category": ["thesis"],
     "tags": ["health", "media"],
     "year": 2020,
-    "image": ["thesis_2020/brad.png"],
+    "image": ["thesis_2020/bradmacdonald0.png"],
     "video": ["https://vimeo.com/1129941866"]
   },
   {
@@ -76,11 +76,11 @@
     "description": "The aim of this thesis is to map touring histories to British indie and alternative career arcs in a post-streaming world, ultimately creating and visualizing an artist\u2019s career fingerprint through live music.",
     "student_url": "http://caitlynmralph.github.io/",
     "project_url": "https://caitlynmralph.github.io/thesis-app-sandbox/",
-    "project_repo": "https://github.com/caitlynmralph/thesis-app-sandbox",
+    "repo_url": "https://github.com/caitlynmralph/thesis-app-sandbox",
     "category": ["thesis"],
     "tags": ["media", "culture", "music"],
     "year": 2020,
-    "image": ["thesis_2020/caitlyn.png"],
+    "image": ["thesis_2020/caitlynralph0.png"],
     "video": ["https://vimeo.com/1129941909"]
   },
   {
@@ -90,11 +90,11 @@
     "description": "The Globalization of Japanese Language and Concepts ",
     "student_url": "https://dangrunebaum.github.io/portfolio/",
     "project_url": "http://parsons.nyc/thesis-2020/danGrunebaum/turning-japanese/",
-    "project_repo": "https://github.com/dangrunebaum/thesis",
+    "repo_url": "https://github.com/dangrunebaum/thesis",
     "category": ["thesis"],
     "tags": ["media", "culture"],
     "year": 2020,
-    "image": ["thesis_2020/danG.png"],
+    "image": ["thesis_2020/dangrunebaum0.png"],
     "video": ["https://vimeo.com/1129941952"]
   },
   {
@@ -104,11 +104,11 @@
     "description": "Shenzhen, known as China\u2019s booming silicon valley today, used to be a small fish town 40 \u201cyear\u201ds ago. Today, it ranks one of the top mega-cities in China and leading examples of urbanization in developing countries.",
     "student_url": "https://randandesign.com/#/",
     "project_url": "https://shuvitran.github.io/szapp/",
-    "project_repo": "https://github.com/shuvitRan/ShenzhenLivability",
+    "repo_url": "https://github.com/shuvitRan/ShenzhenLivability",
     "category": ["thesis"],
     "tags": ["urban", "society"],
     "year": 2020,
-    "image": ["thesis_2020/danR.png"],
+    "image": ["thesis_2020/danran0.png"],
     "video": ["https://vimeo.com/1129941994"]
   },
   {
@@ -118,11 +118,11 @@
     "description": "Stepping into the Great Swamp Swamps have always been a source of terror and fascination but are actually valuable ecosystems. Swamp Walk weaves together the cultural prejudices and the ecological value of swamps, along with archival graphics from the jetport battle that took place in The Great Swamp in New Jersey between 1959 to 1970.",
     "student_url": "https://github.com/jyamanaka",
     "project_url": "https://parsons.nyc/thesis-2020/janiceYamanakaLew/index.html",
-    "project_repo": "https://github.com/jyamanaka/MajorStudio2",
+    "repo_url": "https://github.com/jyamanaka/MajorStudio2",
     "category": ["thesis"],
     "tags": ["environment", "policy"],
     "year": 2020,
-    "image": ["thesis_2020/janice.png"],
+    "image": ["thesis_2020/janiceyamanakalew0.png"],
     "video": ["https://vimeo.com/1129942026"]
   },
   {
@@ -132,11 +132,11 @@
     "description": "The role of flavor perception in modern blueberry breeding",
     "student_url": "http://www.johnoutwater.com/",
     "project_url": "http://parsons.nyc/thesis-2020/johnOutwater/",
-    "project_repo": "https://github.com/joutwater/jo_berry_code",
+    "repo_url": "https://github.com/joutwater/jo_berry_code",
     "category": ["thesis"],
     "tags": ["food", "health", "policy"],
     "year": 2020,
-    "image": ["thesis_2020/john.png"],
+    "image": ["thesis_2020/johnoutwater0.png"],
     "video": ["https://vimeo.com/1129941759"]
   },
   {
@@ -146,11 +146,11 @@
     "description": "Voting choices are made on more than just facts \u2013 emotion, bias and unconscious thought play an important role in one\u2019s decision-making process. But what effect does advertising have? This thesis visualizes American voters\u2019 unconscious response to political advertising & media.",
     "student_url": "http://lulutanenbaum.com/",
     "project_url": "http://lulutanenbaum.com/portfolio/thesis/",
-    "project_repo": "https://github.com/visualizedata/thesis-2020/tree/master/luluTannenbaum",
+    "repo_url": "https://github.com/visualizedata/thesis-2020/tree/master/luluTannenbaum",
     "category": ["thesis"],
     "tags": ["media", "politics"],
     "year": 2020,
-    "image": ["thesis_2020/lulu.png"],
+    "image": ["thesis_2020/lulutanenbaum0.png"],
     "video": ["https://vimeo.com/1130293711"]
   },
   {
@@ -160,11 +160,11 @@
     "description": "Visualizing the unequal impacts of gun violence and the search for peace in America\u2019s cities.",
     "student_url": "https://www.marisaasari.com/",
     "project_url": "https://weaponsofmassinjustice.netlify.app/",
-    "project_repo": "https://github.com/marisaruizasari/thesis",
+    "repo_url": "https://github.com/marisaruizasari/thesis",
     "category": ["thesis"],
     "tags": ["politics", "policy", "human-rights", "society"],
     "year": 2020,
-    "image": ["thesis_2020/marisa.png"],
+    "image": ["thesis_2020/marisaruizasari0.png"],
     "video": ["https://vimeo.com/1129942058"]
   },
   {
@@ -174,11 +174,11 @@
     "description": "A User Interface for Exploring Income Statements",
     "student_url": "http://michaeldesai.com/",
     "project_url": "https://parsons.nyc/thesis-2020/michaelDesai/",
-    "project_repo": "https://github.com/mi-desai/thesis",
+    "repo_url": "https://github.com/mi-desai/thesis",
     "category": ["thesis"],
     "tags": ["technology", "policy"],
     "year": 2020,
-    "image": ["thesis_2020/michael.png"],
+    "image": ["thesis_2020/michaeldesai0.png"],
     "video": ["https://vimeo.com/1129942090"]
   },
   {
@@ -188,11 +188,11 @@
     "description": "Exploring different facets of sexual misconduct, harassment, and discrimination in STEM academia to highlight how the environment has protected perpetrators of sexual misconduct, and facilitated a self-perpetuating gender gap to this day.",
     "student_url": "https://mioakasako.com/",
     "project_url": "https://miopio.github.io/thesis-play",
-    "project_repo": "https://github.com/miopio/thesis-play",
+    "repo_url": "https://github.com/miopio/thesis-play",
     "category": ["thesis"],
     "tags": ["gender", "policy", "education"],
     "year": 2020,
-    "image": ["thesis_2020/mio.png"],
+    "image": ["thesis_2020/mioakasako0.png"],
     "video": ["https://vimeo.com/1129942129"]
   },
   {
@@ -202,11 +202,11 @@
     "description": "An analysis of Twitter content, user behavior, and correlation to Bitcoin market value.",
     "student_url": "https://neil-oliver.github.io/WebAdvanced_Spring2020_olivn897/portfolio/",
     "project_url": "http://neiloliver.co/influence/",
-    "project_repo": "https://github.com/neil-oliver/thesis",
+    "repo_url": "https://github.com/neil-oliver/thesis",
     "category": ["thesis"],
     "tags": ["media", "technology"],
     "year": 2020,
-    "image": ["thesis_2020/neil.png"],
+    "image": ["thesis_2020/neiloliver0.png"],
     "video": ["https://vimeo.com/1129942187"]
   },
   {
@@ -216,11 +216,11 @@
     "description": "A User Interface for Mapping New York City\u2018s Green Roof Potential",
     "student_url": "https://nourzein.me/",
     "project_url": "https://green-roof-potential.herokuapp.com/",
-    "project_repo": "https://github.com/nourzein/thesis",
+    "repo_url": "https://github.com/nourzein/thesis",
     "category": ["thesis"],
     "tags": ["urban", "mapping", "environment"],
     "year": 2020,
-    "image": ["thesis_2020/nour.png"],
+    "image": ["thesis_2020/nourzein0.png"],
     "video": ["https://vimeo.com/1129942223"]
   },
   {
@@ -230,11 +230,11 @@
     "description": "Visualizing Maritime Claims at the UN in regard to the Continental Shelf.",
     "student_url": "http://robincoenen.de/",
     "project_url": "https://parsons.nyc/thesis-2020/robinCoenen",
-    "project_repo": "https://github.com/robincoenen/thesis_production",
+    "repo_url": "https://github.com/robincoenen/thesis_production",
     "category": ["thesis"],
     "tags": ["politics", "policy"],
     "year": 2020,
-    "image": ["thesis_2020/robin.png"],
+    "image": ["thesis_2020/robincoenen0.png"],
     "video": ["https://vimeo.com/1129942259"]
   },
   {
@@ -244,11 +244,11 @@
     "description": "Understanding the impact of carbon cap and trade markets on deforestation and emissions.",
     "student_url": "https://github.com/salonieshah",
     "project_url": "https://parsons.nyc/thesis-2020/saloniNaishadShah",
-    "project_repo": "https://github.com/salonieshah/money-or-mitigation",
+    "repo_url": "https://github.com/salonieshah/money-or-mitigation",
     "category": ["thesis"],
     "tags": ["climate", "environment", "policy"],
     "year": 2020,
-    "image": ["thesis_2020/saloni.png"],
+    "image": ["thesis_2020/saloninaishadshah0.png"],
     "video": ["https://vimeo.com/1129942308"]
   },
   {
@@ -258,11 +258,11 @@
     "description": "An analysis of how global wildlife trading is related to the zoonotic diseases.",
     "student_url": "https://www.yiranni.me/",
     "project_url": "https://parsons.nyc/thesis-2020/yiranNi",
-    "project_repo": "https://github.com/yiranni/master-thesis",
+    "repo_url": "https://github.com/yiranni/master-thesis",
     "category": ["thesis"],
     "tags": ["health", "environment"],
     "year": 2020,
-    "image": ["thesis_2020/yiran.png"],
+    "image": ["thesis_2020/yiranni0.png"],
     "video": ["https://vimeo.com/1129942391"]
   }
 ]

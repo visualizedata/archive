@@ -164,7 +164,7 @@ const filteredAuthorProjects = allProjects
       {/* Student Links - Styled as buttons */}
       {
         (project.data.project_url ||
-          project.data.project_repo ||
+          project.data.repo_url ||
           project.data.student_url) && (
           <div class="mb-8">
             <div class="flex flex-wrap gap-8">
@@ -178,9 +178,9 @@ const filteredAuthorProjects = allProjects
                   Project Website
                 </a>
               )}
-              {project.data.project_repo && (
+              {project.data.repo_url && (
                 <a
-                  href={project.data.project_repo}
+                  href={project.data.repo_url}
                   target="_blank"
                   rel="noopener noreferrer"
                   class="py-2 text-sm md:text-base lg:text-base font-bold uppercase text-black/30 hover:text-black transition-colors duration-200"
