@@ -8,6 +8,7 @@ import highlightedData from '../data/highlighted.json';
 const projects = await getCollection('projects').then(p => {
   return p
   .map(p => p.data)
+  .filter(p => (p.category?.includes('Thesis') || p.category?.includes('Major Studio')))
   .sort((a, b) => {
     // Descending year
     if (a.year !== b.year) return b.year - a.year
