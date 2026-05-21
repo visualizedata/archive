@@ -7,8 +7,8 @@ from PIL import Image as PImage
 
 
 EXPECTED_DATA_DEFINITIONS = [
-  "first_name", "last_name", "project_title",
-  "project_subtitle", "project_description", "project_tags",
+  "first_name", "last_name", "course_name", "project_title",
+  "project_subtitle", "project_description", "project_tags", "outside_partner",
   "repo_url", "project_url", "student_url", "image_url",
 ]
 
@@ -25,6 +25,7 @@ REQUIRED_COLUMNS = [
   "category", "year", "image", "video",
 ]
 
+PARTNER_MAPPING_FILE_PATH = "../src/data/partners.json"
 
 def make_author_slug(name):
   return name.lower().replace(" ", "").replace("-", "").replace("(", "").replace(")", "").replace("'", "")
@@ -99,14 +100,26 @@ def extract_data(data_, data_definitions, collection_definitions, optional=[]):
   res_df["project_url"] = data[data_definitions["project_url"]]
   res_df["student_url"] = data[data_definitions["student_url"]]
 
+  with open(PARTNER_MAPPING_FILE_PATH, "r") as ifp:
+    partner_data = json.load(ifp)
+    partner_mapping = { p["name"] : p["tag"] for p in partner_data if p["tag"] != "" }
+    partner_col = data_definitions["outside_partner"] if data_definitions["outside_partner"] in data else None
+
   res_df["tags"] = ""
   res_df["tags"] = res_df["tags"].apply(lambda x: [])
   for idx,row in res_df.iterrows():
     for tag_col in data_definitions["project_tags"]:
       if data.iloc[idx][tag_col]:
         row["tags"].append(data.iloc[idx][tag_col])
+    if partner_col:
+      partner_name = data.iloc[idx][partner_col]
+      if partner_name in partner_mapping:
+        row["tags"].append(partner_mapping[partner_name])
 
-  res_df["category"] = collection_definitions["course"]
+  course_col = data_definitions["course_name"] if data_definitions["course_name"] in data else None
+  course_cat = collection_definitions["course"]
+
+  res_df["category"] = data[course_col] if course_col and course_cat == "other" else data[data_definitions["course_name"]]
   res_df["category"] = res_df["category"].apply(lambda x: [x])
   res_df["year"] = collection_definitions["year"]
 
