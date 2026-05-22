@@ -1,0 +1,24 @@
+{
+  "year": 2026,
+  "title": "2026 Keynotes",
+  "department": "MS Data Visualization",
+  "description": "",
+
+  "location": "",
+  "date": "",
+  "time": "",
+  "url": "",
+
+  "students": [
+    "Neven Armanios",
+    "Olivia Kasmin",
+    "Saehun Kim",
+    "Sofia Molina",
+    "Nichos Molnar",
+    "Maggie Navracruz",
+    "LuisPablo Padres",
+    "Derin Savasan",
+    "Lara Yeyati Preiss"
+  ],
+  "video_embed_html": "<iframe src=\"https://player.vimeo.com/video/1194770381?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" title=\"2025 MS Data Visualization Keynotes | Parsons at The New School\"></iframe>"
+}
