@@ -1,0 +1,48 @@
+[
+  {
+    "author": [
+      "Nichos Molnar"
+    ],
+    "category": [
+      "Data as Material"
+    ],
+    "description": "What other day across time and space has the same weather as today? Explore 25 years of weather data across North America.",
+    "image": [
+      "other_2026/nichosmolnar0.png"
+    ],
+    "project_url": "https://nmolnar-parsons.github.io/data_as_material/04_Data-Experience/",
+    "repo_url": "https://github.com/nmolnar-parsons/data_as_material/",
+    "student_url": "https://nichosmolnar.github.io/portfolio/",
+    "subtitle": "",
+    "tags": [
+      "climate",
+      "environment"
+    ],
+    "title": "A Day Like This",
+    "video": [],
+    "year": 2026
+  },
+  {
+    "author": [
+      "Sofia Molina"
+    ],
+    "category": [
+      "Data as Material"
+    ],
+    "description": "Remix is an experimental web project that explores remix as a creative method. The piece reinterprets a poem by Mario Benedetti, transforming the literary text into a visual and interactive digital experience. Through the combination of typography and motion, the project translates the emotional tone of the poem into a dynamic visual language.",
+    "image": [
+      "other_2026/sofiamolina0.png"
+    ],
+    "project_url": "https://sofiams.com/remix_01/index.html",
+    "repo_url": "https://github.com/smolinaschmidt/remix_01",
+    "student_url": "https://sofiams.com/",
+    "subtitle": "",
+    "tags": [
+      "arts",
+      "media"
+    ],
+    "title": "Little Stones At My Window",
+    "video": [],
+    "year": 2026
+  }
+]
