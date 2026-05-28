@@ -21,12 +21,14 @@ type RelatedProjectsProps = {
   currentProject: Project
   filteredProjects: Project[]
   title: string
+  count: number
 }
 
 export const RelatedProjects = ({
   currentProject,
   filteredProjects,
   title,
+  count=2,
 }: RelatedProjectsProps) => {
   const [randomizedProjects, setRandomizedProjects] = useState<Project[]>(
     []
@@ -35,7 +37,7 @@ export const RelatedProjects = ({
   useEffect(() => {
     const shuffled = [...filteredProjects]
       .sort(() => Math.random() - 0.5)
-      .slice(0, 2)
+      .slice(0, count)
     setRandomizedProjects(shuffled)
   }, [filteredProjects])
 
