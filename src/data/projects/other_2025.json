@@ -29,7 +29,7 @@
     "category": [
       "Data Visualization and Information Aesthetics"
     ],
-    "description": "This project explores horror as a cultural barometer—capturing, distorting, and projecting our collective fears back to us.\n\nUsing Netflix’s Engagement Report (Jan–Jun 2025), it examines what the platform’s most-watched horror titles reveal about contemporary anxieties.\n\nThe site unfolds as a scrollytelling narrative. It begins by analyzing the Hit Matrix, which visualizes how a hit looks across genres by mapping quadrants defined by IMDb ratings (as a proxy for prestige) and total views (as a proxy for reach).\nIt then zooms in on horror as the poster child of the “cult corner”: lower budgets, strong identity, and small but loyal audiences.\nFinally, it traces horror’s recurring fear patterns, inviting users to explore them through an interactive bar chart that visualizes the genre’s emotional architecture.",
+    "description": "This project explores horror as a cultural barometer — capturing, distorting, and projecting our collective fears back to us. Using Netflix's Engagement Report (Jan–Jun 2025), it examines what the platform's most-watched horror titles reveal about contemporary anxieties.",
     "image": [
       "other_2025/larayeyatipreiss0.png"
     ],
