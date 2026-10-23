@@ -300,3 +300,4 @@ public/images/other_2025/larayeyatipreiss0.png filter=lfs diff=lfs merge=lfs -te
 public/images/other_2025/maggienavracruz0.png filter=lfs diff=lfs merge=lfs -text
 public/images/other_2026/nichosmolnar0.png filter=lfs diff=lfs merge=lfs -text
 public/images/other_2026/sofiamolina0.png filter=lfs diff=lfs merge=lfs -text
+public/images/partners/moodys.png filter=lfs diff=lfs merge=lfs -text
