@@ -28,5 +28,11 @@
     "logo": "netflix.png",
     "tag": "netflix",
     "alt": "Netflix logo"
+  },
+  {
+    "name": "Moody's",
+    "logo": "moodys.png",
+    "tag": "moodys",
+    "alt": "Moody's logo"
   }
 ]

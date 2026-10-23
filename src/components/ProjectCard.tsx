@@ -6,6 +6,8 @@ export function ProjectCard({ project }: { project: ProjectData }) {
   const [isInView, setIsInView] = useState(false)
   const base = import.meta.env.BASE_URL
 
+  if (project.title === "") return;
+
   const imgUrl = project.image[0].includes('http') ? project.image[0] : `${base}/images/${project.image[0]}`;
 
   return (
